@@ -1,0 +1,114 @@
+{
+  "schema": "bhakti-study.book.v1",
+  "id": "ekc-es",
+  "title": "Elevación a la Conciencia de Kṛṣṇa",
+  "creator": "A.C. Bhaktivedanta Swami Prabhupāda",
+  "publisher": "Bhaktivedanta Book Trust",
+  "language": "es",
+  "source_format": "EPUB",
+  "source_file": "ekc-es.epub",
+  "sections": [
+    {
+      "id": "la-elecci-n-entre-la-vida-humana-y-la-vida-animal",
+      "kind": "front-back-matter",
+      "title": "La elección entre la vida humana y la vida animal",
+      "source_href": "chapter-1.xhtml",
+      "verses": [
+        {
+          "id": "ekc-es.La elección entre la vida humana y la vida animal",
+          "reference": "La elección entre la vida humana y la vida animal",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "la-ardua-lucha-por-la-felicidad",
+      "kind": "front-back-matter",
+      "title": "La ardua lucha por la felicidad",
+      "source_href": "chapter-2.xhtml",
+      "verses": [
+        {
+          "id": "ekc-es.La ardua lucha por la felicidad",
+          "reference": "La ardua lucha por la felicidad",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "hacia-una-sociedad-pac-fica",
+      "kind": "front-back-matter",
+      "title": "Hacia una sociedad pacífica",
+      "source_href": "chapter-3.xhtml",
+      "verses": [
+        {
+          "id": "ekc-es.Hacia una sociedad pacífica",
+          "reference": "Hacia una sociedad pacífica",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "conocer-a-k-a-tal-como-l-es",
+      "kind": "front-back-matter",
+      "title": "Conocer a Kṛṣṇa tal como Él es",
+      "source_href": "chapter-4.xhtml",
+      "verses": [
+        {
+          "id": "ekc-es.Conocer a Kṛṣṇa tal como Él es",
+          "reference": "Conocer a Kṛṣṇa tal como Él es",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "conocer-las-energ-as-de-k-a",
+      "kind": "front-back-matter",
+      "title": "Conocer las energías de Kṛṣṇa",
+      "source_href": "chapter-5.xhtml",
+      "verses": [
+        {
+          "id": "ekc-es.Conocer las energías de Kṛṣṇa",
+          "reference": "Conocer las energías de Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "adoptar-la-conciencia-de-k-a",
+      "kind": "front-back-matter",
+      "title": "Adoptar la conciencia de Kṛṣṇa",
+      "source_href": "chapter-6.xhtml",
+      "verses": [
+        {
+          "id": "ekc-es.Adoptar la conciencia de Kṛṣṇa",
+          "reference": "Adoptar la conciencia de Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    }
+  ]
+}

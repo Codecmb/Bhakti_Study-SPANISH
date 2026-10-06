@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Question Sheet · Bhakti Study Academy</title>
+  <title>Hoja de Preguntas · Bhakti Study Academy</title>
   <link rel="stylesheet" href="../shared/styles.css">
 </head>
 <body>
@@ -11,14 +11,14 @@
   <aside class="sidebar"></aside>
 
   <main class="main">
-    <div class="eyebrow">Central Question Bank</div>
+    <div class="eyebrow">Banco Central de Preguntas</div>
     <div class="reader-actions" style="margin:0 0 18px">
-      <a class="button secondary" href="index.html">← Question Bank</a>
-      <a class="button secondary" href="../index.html">Academy Home</a>
+      <a class="button secondary" href="index.html">← Banco de Preguntas</a>
+      <a class="button secondary" href="../index.html">Inicio de la Academia</a>
     </div>
 
     <div id="sheet">
-      <div class="card">Loading question sheet…</div>
+      <div class="card">Cargando hoja de preguntas…</div>
     </div>
   </main>
 </div>
@@ -52,10 +52,10 @@ const BOOK_LABELS={
 };
 
 const KIND_LABELS={
-  'closed-book-short':'Closed Book Short',
-  'closed-book':'Closed Book Questions',
-  'open-book-essay':'Open Book Essays',
-  'open-book':'Open Book Questions'
+  'closed-book-short':'Respuestas Breves sin Consultar el Libro',
+  'closed-book':'Preguntas sin Consultar el Libro',
+  'open-book-essay':'Ensayos con Consulta del Libro',
+  'open-book':'Preguntas con Consulta del Libro'
 };
 
 async function loadRecord(){
@@ -65,10 +65,10 @@ async function loadRecord(){
   const registry=await response.json();
   const record=(registry.sheets||[]).find(x=>x.id===id);
 
-  if(!record)throw new Error('Question sheet not found.');
+  if(!record)throw new Error('No se encontró la hoja de preguntas.');
 
   const dataResponse=await fetch('../'+record.data);
-  if(!dataResponse.ok)throw new Error(`Question sheet HTTP ${dataResponse.status}`);
+  if(!dataResponse.ok)throw new Error(`Hoja de preguntas HTTP ${dataResponse.status}`);
 
   return {record,data:await dataResponse.json()};
 }
@@ -98,7 +98,7 @@ function structured(record,data){
             ${thematic?'Bhagavad-gītā 1–6':'Bhagavad-gītā'}
           </div>
 
-          <h2>${thematic?'Thematic Questions':'Chapter '+esc(g.chapter)}</h2>
+          <h2>${thematic?'Preguntas Temáticas':'Capítulo '+esc(g.chapter)}</h2>
 
           ${g.sections.map((section,sectionIndex)=>`
             <p>
@@ -185,7 +185,7 @@ async function init(){
 
   }catch(error){
     host.innerHTML=
-      `<div class="card missing">Could not load question sheet: ${esc(error.message)}</div>`;
+      `<div class="card missing">No se pudo cargar la hoja de preguntas: ${esc(error.message)}</div>`;
   }
 }
 

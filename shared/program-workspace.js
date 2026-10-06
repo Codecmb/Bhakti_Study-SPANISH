@@ -28,14 +28,14 @@
     document.querySelector('#sub').textContent=`${course.title||programId} · ${unit.id}${canonical?' · '+canonical:''}`;
     document.querySelector('#workflowTabs').innerHTML=StudyWorkflow.tabs(course,ctx);
     const ix=units.findIndex(x=>x.id===unit.id),prev=units[ix-1],next=units[ix+1];
-    document.querySelector('#unitNav').innerHTML=`${prev?`<a class="button secondary" href="tools.html?unit=${encodeURIComponent(prev.id)}&mode=${encodeURIComponent(mode)}">← Back</a>`:'<span></span>'}<a class="button secondary" href="${programHref}">↑ Program</a>${next?`<a class="button secondary" href="tools.html?unit=${encodeURIComponent(next.id)}&mode=${encodeURIComponent(mode)}">Forward →</a>`:'<span></span>'}`;
+    document.querySelector('#unitNav').innerHTML=`${prev?`<a class="button secondary" href="tools.html?unit=${encodeURIComponent(prev.id)}&mode=${encodeURIComponent(mode)}">← Atrás</a>`:'<span></span>'}<a class="button secondary" href="${programHref}">↑ Área de Estudio</a>${next?`<a class="button secondary" href="tools.html?unit=${encodeURIComponent(next.id)}&mode=${encodeURIComponent(mode)}">Siguiente →</a>`:'<span></span>'}`;
     const content=document.querySelector('#content'),scope=canonical||unit.id,studentId=`${programId}.${scope}.${mode}`;
-    const returnSource=sourceHref?`<a class="button secondary" href="${esc(sourceHref)}"${sourceTarget?.kind==='external'?' target="_blank" rel="noopener"':''}>Study the Sources</a>`:'';
+    const returnSource=sourceHref?`<a class="button secondary" href="${esc(sourceHref)}"${sourceTarget?.kind==='external'?' target="_blank" rel="noopener"':''}>Estudiar las Fuentes</a>`:'';
     if(mode==='read'){
-      content.innerHTML=`<h2>Read Source</h2><p><strong>${esc(unit.range||unit.title)}</strong></p><p>The Academy opens its internal source first. External Vedabase is used only when the requested canonical passage is not available internally.</p>${sourceHref?`<a class="button" href="${esc(sourceHref)}"${sourceTarget?.kind==='external'?' target="_blank" rel="noopener"':''}>${sourceTarget?.kind==='external'?'Open external source ↗':'Open internal source'}</a>`:'<p class="small">No internal source route is configured for this unit yet.</p>'}`;
+      content.innerHTML=`<h2>Leer Fuente</h2><p><strong>${esc(unit.range||unit.title)}</strong></p><p>La Academia abre primero su fuente interna. Vedabase externo se utiliza únicamente cuando el pasaje canónico solicitado no está disponible internamente.</p>${sourceHref?`<a class="button" href="${esc(sourceHref)}"${sourceTarget?.kind==='external'?' target="_blank" rel="noopener"':''}>${sourceTarget?.kind==='external'?'Abrir fuente externa ↗':'Abrir fuente interna'}</a>`:'<p class="small">Aún no hay una ruta de fuente interna configurada para esta unidad.</p>'}`;
     }else if(mode==='understanding'){
       const old=`bhakti-study.${programId}.${scope}.${mode}`;StudentStore.migrate(old,mode,studentId);
-      content.innerHTML=`<h2>My Understanding</h2><p>Write first, then return to the primary source and revise your understanding.</p><textarea id="entry" class="field" placeholder="What do I understand from this study unit${canonical?' / '+esc(canonical):''}?"></textarea><button id="save" class="button lotus">Save Understanding</button> <button id="clearWork" class="button secondary">Clear</button> ${returnSource}<p id="msg" class="small"></p>`;
+      content.innerHTML=`<h2>Mi Comprensión</h2><p>Escribe primero, luego vuelve a la fuente primaria y revisa tu comprensión.</p><textarea id="entry" class="field" placeholder="¿Qué comprendo de esta unidad de estudio${canonical?' / '+esc(canonical):''}?"></textarea><button id="save" class="button lotus">Guardar Comprensión</button> <button id="clearWork" class="button secondary">Borrar</button> ${returnSource}<p id="msg" class="small"></p>`;
       entry.value=StudentStore.get(mode,studentId,'');
       const understandingDraft=global.StudentWorkDraft?.attach?.({
         id:studentId,
@@ -45,7 +45,7 @@
       });
       save.onclick=()=>understandingDraft
         ? understandingDraft.save()
-        : (StudentStore.set(mode,studentId,entry.value),msg.textContent='Saved in this browser.');
+        : (StudentStore.set(mode,studentId,entry.value),msg.textContent='Guardado en este navegador.');
       clearWork.onclick=()=>{
         if(global.StudentWorkDraft?.clearWork){
           StudentWorkDraft.clearWork({
@@ -53,12 +53,12 @@
             field:entry,
             status:msg,
             onClear:()=>StudentStore.remove(mode,studentId),
-            message:'Clear My Understanding? This cannot be undone.'
+            message:'¿Borrar Mi Comprensión? Esta acción no se puede deshacer.'
           });
         }
       };
     }else if(mode==='notes'){
-      content.innerHTML=`<h2>Notes</h2><p>Notes remain independent of the book files and are attached to ${canonical?'the canonical passage':'this study unit'}.</p><textarea id="entry" class="field" placeholder="Study notes"></textarea><button id="save" class="button">Save Notes</button> <button id="clearWork" class="button secondary">Clear</button> ${returnSource}<p id="msg" class="small"></p>`;
+      content.innerHTML=`<h2>Notas</h2><p>Las notas permanecen independientes de los archivos de los libros y están vinculadas a ${canonical?'el pasaje canónico':'esta unidad de estudio'}.</p><textarea id="entry" class="field" placeholder="Notas de estudio"></textarea><button id="save" class="button">Guardar Notas</button> <button id="clearWork" class="button secondary">Borrar</button> ${returnSource}<p id="msg" class="small"></p>`;
       const notesId=`${programId}.${scope}`;
       entry.value=StudentStore.get('notes',notesId,'');
       const notesDraft=global.StudentWorkDraft?.attach?.({
@@ -69,7 +69,7 @@
       });
       save.onclick=()=>notesDraft
         ? notesDraft.save()
-        : (StudentStore.set('notes',notesId,entry.value),msg.textContent='Saved in this browser.');
+        : (StudentStore.set('notes',notesId,entry.value),msg.textContent='Guardado en este navegador.');
       clearWork.onclick=()=>{
         if(global.StudentWorkDraft?.clearWork){
           StudentWorkDraft.clearWork({
@@ -77,14 +77,14 @@
             field:entry,
             status:msg,
             onClear:()=>StudentStore.remove('notes',notesId),
-            message:'Clear these Notes? This cannot be undone.'
+            message:'¿Borrar estas notas? Esta acción no se puede deshacer.'
           });
         }
       };
     }else if(mode==='assessment'){
       const rules=course['completion-rules']?.academyUnitCompletion;
-      if(!rules?.enabled){content.innerHTML=`<h2>Assessment</h2><div class="notice">Academy completion requirements for this program have not been configured yet. Official framework information remains separate and is not converted into Academy requirements automatically.</div>${returnSource}`}
-      else content.innerHTML=`<h2>Assessment</h2><p>Assessment requirements are configured by this program's completion-rules module.</p>${returnSource}`;
+      if(!rules?.enabled){content.innerHTML=`<h2>Evaluación</h2><div class="notice">Los requisitos de finalización de la Academia para esta área de estudio aún no han sido configurados. La información del marco oficial permanece separada y no se convierte automáticamente en requisitos de la Academia.</div>${returnSource}`}
+      else content.innerHTML=`<h2>Evaluación</h2><p>Los requisitos de evaluación están configurados por el módulo de reglas de finalización de esta área de estudio.</p>${returnSource}`;
     }
     if(canonical)StudyContext?.set?.({program:programId,unit:unit.id,canonical,mode});
     SourceResolver.linkify(content);

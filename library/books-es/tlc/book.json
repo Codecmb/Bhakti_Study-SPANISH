@@ -1,0 +1,624 @@
+{
+  "schema": "bhakti-study.book.v1",
+  "id": "tlc-es",
+  "title": "Las Enseñanzas del Señor Caitanya",
+  "creator": "A.C. Bhaktivedanta Swami Prabhupāda",
+  "publisher": "Bhaktivedanta Book Trust",
+  "language": "es",
+  "source_format": "EPUB",
+  "source_file": "tlc-es.epub",
+  "sections": [
+    {
+      "id": "prefacio",
+      "kind": "front-back-matter",
+      "title": "Prefacio",
+      "source_href": "chapter-0a.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.Prefacio",
+          "reference": "Prefacio",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "pr-logo",
+      "kind": "front-back-matter",
+      "title": "Prólogo",
+      "source_href": "chapter-0b.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.Prólogo",
+          "reference": "Prólogo",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "la-misi-n-del-se-or-chaitanya",
+      "kind": "front-back-matter",
+      "title": "La misión del Señor Chaitanya",
+      "source_href": "chapter-0c.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.La misión del Señor Chaitanya",
+          "reference": "La misión del Señor Chaitanya",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "introducci-n",
+      "kind": "front-back-matter",
+      "title": "Introducción",
+      "source_href": "chapter-0d.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.Introducción",
+          "reference": "Introducción",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "1-ense-anzas-a-rupa-goswami",
+      "kind": "front-back-matter",
+      "title": "1. Enseñanzas a Rupa Goswami",
+      "source_href": "chapter-1.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.1. Enseñanzas a Rupa Goswami",
+          "reference": "1. Enseñanzas a Rupa Goswami",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "2-sanatan-goswami",
+      "kind": "front-back-matter",
+      "title": "2. Sanatan Goswami",
+      "source_href": "chapter-2.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.2. Sanatan Goswami",
+          "reference": "2. Sanatan Goswami",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "3-ense-anzas-a-sanatan-goswami",
+      "kind": "front-back-matter",
+      "title": "3. Enseñanzas a Sanatan Goswami",
+      "source_href": "chapter-3.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.3. Enseñanzas a Sanatan Goswami",
+          "reference": "3. Enseñanzas a Sanatan Goswami",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "4-el-hombre-sabio",
+      "kind": "front-back-matter",
+      "title": "4. El hombre sabio",
+      "source_href": "chapter-4.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.4. El hombre sabio",
+          "reference": "4. El hombre sabio",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "5-c-mo-acercarse-a-dios",
+      "kind": "front-back-matter",
+      "title": "5. Cómo acercarse a Dios",
+      "source_href": "chapter-5.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.5. Cómo acercarse a Dios",
+          "reference": "5. Cómo acercarse a Dios",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "6-sus-formas-son-una-y-la-misma",
+      "kind": "front-back-matter",
+      "title": "6. Sus formas son una y la misma",
+      "source_href": "chapter-6.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.6. Sus formas son una y la misma",
+          "reference": "6. Sus formas son una y la misma",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "7-formas-ilimitadas-de-dios",
+      "kind": "front-back-matter",
+      "title": "7. Formas ilimitadas de Dios",
+      "source_href": "chapter-7.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.7. Formas ilimitadas de Dios",
+          "reference": "7. Formas ilimitadas de Dios",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "8-los-avataras",
+      "kind": "front-back-matter",
+      "title": "8. Los avataras",
+      "source_href": "chapter-8.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.8. Los avataras",
+          "reference": "8. Los avataras",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "9-las-opulencias-de-krishna",
+      "kind": "front-back-matter",
+      "title": "9. Las opulencias de Krishna",
+      "source_href": "chapter-9.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.9. Las opulencias de Krishna",
+          "reference": "9. Las opulencias de Krishna",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "10-la-belleza-de-krishna",
+      "kind": "front-back-matter",
+      "title": "10. La belleza de Krishna",
+      "source_href": "chapter-10.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.10. La belleza de Krishna",
+          "reference": "10. La belleza de Krishna",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "11-el-servicio-al-se-or",
+      "kind": "front-back-matter",
+      "title": "11. El servicio al Señor",
+      "source_href": "chapter-11.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.11. El servicio al Señor",
+          "reference": "11. El servicio al Señor",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "12-el-devoto",
+      "kind": "front-back-matter",
+      "title": "12. El devoto",
+      "source_href": "chapter-12.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.12. El devoto",
+          "reference": "12. El devoto",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "13-el-servicio-devocional-con-apego",
+      "kind": "front-back-matter",
+      "title": "13. El servicio devocional con apego",
+      "source_href": "chapter-13.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.13. El servicio devocional con apego",
+          "reference": "13. El servicio devocional con apego",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "14-el-xtasis-del-se-or-y-sus-devotos",
+      "kind": "front-back-matter",
+      "title": "14. El éxtasis del Señor y Sus devotos",
+      "source_href": "chapter-14.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.14. El éxtasis del Señor y Sus devotos",
+          "reference": "14. El éxtasis del Señor y Sus devotos",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "15-explicaci-n-del-verso-atmarama-del-srimad-bhagwatam",
+      "kind": "front-back-matter",
+      "title": "15. Explicación del verso Atmarama del Srimad Bhagwatam",
+      "source_href": "chapter-15.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.15. Explicación del verso Atmarama del Srimad Bhagwatam",
+          "reference": "15. Explicación del verso Atmarama del Srimad Bhagwatam",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "16-conclusi-n-de-las-ense-anzas-a-sanatan-goswami",
+      "kind": "front-back-matter",
+      "title": "16. Conclusión de las enseñanzas a Sanatan Goswami",
+      "source_href": "chapter-16.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.16. Conclusión de las enseñanzas a Sanatan Goswami",
+          "reference": "16. Conclusión de las enseñanzas a Sanatan Goswami",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "17-el-se-or-chaitanya-la-personalidad-de-dios-original",
+      "kind": "front-back-matter",
+      "title": "17. El Señor Chaitanya, la Personalidad de Dios original",
+      "source_href": "chapter-17.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.17. El Señor Chaitanya, la Personalidad de Dios original",
+          "reference": "17. El Señor Chaitanya, la Personalidad de Dios original",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "18-las-conversaciones-con-prakasananda",
+      "kind": "front-back-matter",
+      "title": "18. Las conversaciones con Prakasananda",
+      "source_href": "chapter-18.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.18. Las conversaciones con Prakasananda",
+          "reference": "18. Las conversaciones con Prakasananda",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "20-la-meta-del-estudio-del-vedanta",
+      "kind": "front-back-matter",
+      "title": "20. La meta del estudio del Vedanta",
+      "source_href": "chapter-19.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.20. La meta del estudio del Vedanta",
+          "reference": "20. La meta del estudio del Vedanta",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "21-los-fil-sofos-mayavadis-se-convierten",
+      "kind": "front-back-matter",
+      "title": "21. Los filósofos mayavadis se convierten",
+      "source_href": "chapter-20.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.21. Los filósofos mayavadis se convierten",
+          "reference": "21. Los filósofos mayavadis se convierten",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "19-m-s-conversaciones-con-prakasananda",
+      "kind": "front-back-matter",
+      "title": "19. Más conversaciones con Prakasananda",
+      "source_href": "chapter-21.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.19. Más conversaciones con Prakasananda",
+          "reference": "19. Más conversaciones con Prakasananda",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "22-el-srimad-bhagwatam",
+      "kind": "front-back-matter",
+      "title": "22. El Srimad Bhagwatam",
+      "source_href": "chapter-22.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.22. El Srimad Bhagwatam",
+          "reference": "22. El Srimad Bhagwatam",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "23-por-qu-estudiar-el-vedanta-sutra",
+      "kind": "front-back-matter",
+      "title": "23. ¿Por qué estudiar el Vedanta-sutra?",
+      "source_href": "chapter-23.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.23. ¿Por qué estudiar el Vedanta-sutra?",
+          "reference": "23. ¿Por qué estudiar el Vedanta-sutra?",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "24-conversaciones-con-sarvabhauma-bhattacharya",
+      "kind": "front-back-matter",
+      "title": "24. Conversaciones con Sarvabhauma Bhattacharya",
+      "source_href": "chapter-24.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.24. Conversaciones con Sarvabhauma Bhattacharya",
+          "reference": "24. Conversaciones con Sarvabhauma Bhattacharya",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "25-comprensi-n-personal-e-impersonal",
+      "kind": "front-back-matter",
+      "title": "25. Comprensión personal e impersonal",
+      "source_href": "chapter-25.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.25. Comprensión personal e impersonal",
+          "reference": "25. Comprensión personal e impersonal",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "26-bhattacharya-se-convierte",
+      "kind": "front-back-matter",
+      "title": "26. Bhattacharya se convierte",
+      "source_href": "chapter-26.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.26. Bhattacharya se convierte",
+          "reference": "26. Bhattacharya se convierte",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "27-el-se-or-chaitanya-y-ramananda-raya",
+      "kind": "front-back-matter",
+      "title": "27. El Señor Chaitanya y Ramananda Raya",
+      "source_href": "chapter-27.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.27. El Señor Chaitanya y Ramananda Raya",
+          "reference": "27. El Señor Chaitanya y Ramananda Raya",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "28-la-relaci-n-con-el-supremo",
+      "kind": "front-back-matter",
+      "title": "28. La relación con el Supremo",
+      "source_href": "chapter-28.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.28. La relación con el Supremo",
+          "reference": "28. La relación con el Supremo",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "29-amor-puro-por-krishna",
+      "kind": "front-back-matter",
+      "title": "29. Amor puro por Krishna",
+      "source_href": "chapter-29.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.29. Amor puro por Krishna",
+          "reference": "29. Amor puro por Krishna",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "30-los-pasatiempos-trascendentales-de-radha-y-krishna",
+      "kind": "front-back-matter",
+      "title": "30. Los pasatiempos trascendentales de Radha y Krishna",
+      "source_href": "chapter-30.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.30. Los pasatiempos trascendentales de Radha y Krishna",
+          "reference": "30. Los pasatiempos trascendentales de Radha y Krishna",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "31-la-perfecci-n-suprema",
+      "kind": "front-back-matter",
+      "title": "31. La perfección suprema",
+      "source_href": "chapter-31.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.31. La perfección suprema",
+          "reference": "31. La perfección suprema",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "conclusi-n",
+      "kind": "front-back-matter",
+      "title": "Conclusión",
+      "source_href": "chapter-32.xhtml",
+      "verses": [
+        {
+          "id": "tlc-es.Conclusión",
+          "reference": "Conclusión",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    }
+  ]
+}

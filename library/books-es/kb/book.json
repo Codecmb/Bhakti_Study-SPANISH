@@ -1,0 +1,1593 @@
+{
+  "schema": "bhakti-study.book.v1",
+  "id": "kb-es",
+  "title": "Kṛṣṇa, la Suprema Personalidad de Dios",
+  "creator": "A.C. Bhaktivedanta Swami Prabhupāda",
+  "publisher": "Bhaktivedanta Book Trust",
+  "language": "es",
+  "source_format": "EPUB",
+  "source_file": "kb-es.epub",
+  "sections": [
+    {
+      "id": "dedicatoria",
+      "kind": "front-back-matter",
+      "title": "Dedicatoria",
+      "source_href": "chapter-0a.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.Dedicatoria",
+          "reference": "Dedicatoria",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "palabras-de-apple",
+      "kind": "front-back-matter",
+      "title": "Palabras de Apple",
+      "source_href": "chapter-0b.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.Palabras de Apple",
+          "reference": "Palabras de Apple",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "prefacio",
+      "kind": "front-back-matter",
+      "title": "Prefacio",
+      "source_href": "chapter-0c.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.Prefacio",
+          "reference": "Prefacio",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "introducci-n",
+      "kind": "front-back-matter",
+      "title": "Introducción",
+      "source_href": "chapter-0d.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.Introducción",
+          "reference": "Introducción",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "1-advenimiento-del-se-or-k-a",
+      "kind": "front-back-matter",
+      "title": "1. Advenimiento del Señor Kṛṣṇa",
+      "source_href": "chapter-1.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.1. Advenimiento del Señor Kṛṣṇa",
+          "reference": "1. Advenimiento del Señor Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "2-oraciones-de-los-semidioses-por-el-se-or-k-a-en-el-vientre",
+      "kind": "front-back-matter",
+      "title": "2. Oraciones de los semidioses por el Señor Kṛṣṇa en el vientre",
+      "source_href": "chapter-2.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.2. Oraciones de los semidioses por el Señor Kṛṣṇa en el vientre",
+          "reference": "2. Oraciones de los semidioses por el Señor Kṛṣṇa en el vientre",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "3-nacimiento-del-se-or-k-a",
+      "kind": "front-back-matter",
+      "title": "3. Nacimiento del Señor Kṛṣṇa",
+      "source_href": "chapter-3.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.3. Nacimiento del Señor Kṛṣṇa",
+          "reference": "3. Nacimiento del Señor Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "4-ka-sa-comienza-sus-persecuciones",
+      "kind": "front-back-matter",
+      "title": "4. Kaṁsa comienza sus persecuciones",
+      "source_href": "chapter-4.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.4. Kaṁsa comienza sus persecuciones",
+          "reference": "4. Kaṁsa comienza sus persecuciones",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "5-encuentro-de-nanda-y-vasudeva",
+      "kind": "front-back-matter",
+      "title": "5. Encuentro de Nanda y Vasudeva",
+      "source_href": "chapter-5.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.5. Encuentro de Nanda y Vasudeva",
+          "reference": "5. Encuentro de Nanda y Vasudeva",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "6-p-tan-muerta",
+      "kind": "front-back-matter",
+      "title": "6. Pūtanā muerta",
+      "source_href": "chapter-6.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.6. Pūtanā muerta",
+          "reference": "6. Pūtanā muerta",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "7-la-salvaci-n-de-t-varta",
+      "kind": "front-back-matter",
+      "title": "7. La salvación de Tṛṇāvarta",
+      "source_href": "chapter-7.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.7. La salvación de Tṛṇāvarta",
+          "reference": "7. La salvación de Tṛṇāvarta",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "8-visi-n-de-la-forma-universal",
+      "kind": "front-back-matter",
+      "title": "8. Visión de la forma universal",
+      "source_href": "chapter-8.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.8. Visión de la forma universal",
+          "reference": "8. Visión de la forma universal",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "9-la-madre-ya-od-ata-al-se-or-k-a",
+      "kind": "front-back-matter",
+      "title": "9. La madre Yaśodā ata al Señor Kṛṣṇa",
+      "source_href": "chapter-9.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.9. La madre Yaśodā ata al Señor Kṛṣṇa",
+          "reference": "9. La madre Yaśodā ata al Señor Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "10-la-liberaci-n-de-nalak-vara-y-ma-igr-va",
+      "kind": "front-back-matter",
+      "title": "10. La liberación de Nalakūvara y Maṇigrīva",
+      "source_href": "chapter-10.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.10. La liberación de Nalakūvara y Maṇigrīva",
+          "reference": "10. La liberación de Nalakūvara y Maṇigrīva",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "11-la-matanza-de-los-demonios-vats-sura-y-bak-sura",
+      "kind": "front-back-matter",
+      "title": "11. La matanza de los demonios Vatsāsura y Bakāsura",
+      "source_href": "chapter-11.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.11. La matanza de los demonios Vatsāsura y Bakāsura",
+          "reference": "11. La matanza de los demonios Vatsāsura y Bakāsura",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "12-la-matanza-del-demonio-agh-sura",
+      "kind": "front-back-matter",
+      "title": "12. La matanza del demonio Aghāsura",
+      "source_href": "chapter-12.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.12. La matanza del demonio Aghāsura",
+          "reference": "12. La matanza del demonio Aghāsura",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "13-el-robo-de-los-ni-os-y-los-terneros-por-brahm",
+      "kind": "front-back-matter",
+      "title": "13. El robo de los niños y los terneros por Brahmā",
+      "source_href": "chapter-13.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.13. El robo de los niños y los terneros por Brahmā",
+          "reference": "13. El robo de los niños y los terneros por Brahmā",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "14-oraciones-ofrecidas-por-el-se-or-brahm-al-se-or-k-a",
+      "kind": "front-back-matter",
+      "title": "14. Oraciones ofrecidas por el Señor Brahmā al Señor Kṛṣṇa",
+      "source_href": "chapter-14.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.14. Oraciones ofrecidas por el Señor Brahmā al Señor Kṛṣṇa",
+          "reference": "14. Oraciones ofrecidas por el Señor Brahmā al Señor Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "15-la-muerte-de-dhenuk-sura",
+      "kind": "front-back-matter",
+      "title": "15. La muerte de Dhenukāsura",
+      "source_href": "chapter-15.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.15. La muerte de Dhenukāsura",
+          "reference": "15. La muerte de Dhenukāsura",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "16-el-sometimiento-de-k-liya",
+      "kind": "front-back-matter",
+      "title": "16. El sometimiento de Kāliya",
+      "source_href": "chapter-16.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.16. El sometimiento de Kāliya",
+          "reference": "16. El sometimiento de Kāliya",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "17-la-extinci-n-del-incendio-forestal",
+      "kind": "front-back-matter",
+      "title": "17. La extinción del incendio forestal",
+      "source_href": "chapter-17.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.17. La extinción del incendio forestal",
+          "reference": "17. La extinción del incendio forestal",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "18-la-muerte-del-demonio-pralamb-sura",
+      "kind": "front-back-matter",
+      "title": "18. La muerte del demonio Pralambāsura",
+      "source_href": "chapter-18.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.18. La muerte del demonio Pralambāsura",
+          "reference": "18. La muerte del demonio Pralambāsura",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "19-devorando-el-incendio-forestal",
+      "kind": "front-back-matter",
+      "title": "19. Devorando el incendio forestal",
+      "source_href": "chapter-19.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.19. Devorando el incendio forestal",
+          "reference": "19. Devorando el incendio forestal",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "20-descripci-n-del-oto-o",
+      "kind": "front-back-matter",
+      "title": "20. Descripción del otoño",
+      "source_href": "chapter-20.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.20. Descripción del otoño",
+          "reference": "20. Descripción del otoño",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "21-las-gop-s-atra-das-por-la-flauta",
+      "kind": "front-back-matter",
+      "title": "21. Las gopīs atraídas por la flauta",
+      "source_href": "chapter-21.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.21. Las gopīs atraídas por la flauta",
+          "reference": "21. Las gopīs atraídas por la flauta",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "22-el-robo-de-las-ropas-de-las-gop-s-solteras",
+      "kind": "front-back-matter",
+      "title": "22. El robo de las ropas de las gopīs solteras",
+      "source_href": "chapter-22.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.22. El robo de las ropas de las gopīs solteras",
+          "reference": "22. El robo de las ropas de las gopīs solteras",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "23-la-liberaci-n-de-las-esposas-de-los-br-hma-as-que-celebraban-sacrificios",
+      "kind": "front-back-matter",
+      "title": "23. La liberación de las esposas de los brāhmaṇas que celebraban sacrificios",
+      "source_href": "chapter-23.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.23. La liberación de las esposas de los brāhmaṇas que celebraban sacrificios",
+          "reference": "23. La liberación de las esposas de los brāhmaṇas que celebraban sacrificios",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "24-la-adoraci-n-de-la-colina-govardhana",
+      "kind": "front-back-matter",
+      "title": "24. La adoración de la colina Govardhana",
+      "source_href": "chapter-24.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.24. La adoración de la colina Govardhana",
+          "reference": "24. La adoración de la colina Govardhana",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "25-lluvias-devastadoras-en-v-nd-vana",
+      "kind": "front-back-matter",
+      "title": "25. Lluvias devastadoras en Vṛndāvana",
+      "source_href": "chapter-25.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.25. Lluvias devastadoras en Vṛndāvana",
+          "reference": "25. Lluvias devastadoras en Vṛndāvana",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "26-el-maravilloso-k-a",
+      "kind": "front-back-matter",
+      "title": "26. El maravilloso Kṛṣṇa",
+      "source_href": "chapter-26.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.26. El maravilloso Kṛṣṇa",
+          "reference": "26. El maravilloso Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "27-las-oraciones-de-indra-el-rey-del-cielo",
+      "kind": "front-back-matter",
+      "title": "27. Las oraciones de Indra, el rey del cielo",
+      "source_href": "chapter-27.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.27. Las oraciones de Indra, el rey del cielo",
+          "reference": "27. Las oraciones de Indra, el rey del cielo",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "28-la-liberaci-n-de-nanda-mah-r-ja-de-las-garras-de-varu-a",
+      "kind": "front-back-matter",
+      "title": "28. La liberación de Nanda Mahārāja de las garras de Varuṇa",
+      "source_href": "chapter-28.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.28. La liberación de Nanda Mahārāja de las garras de Varuṇa",
+          "reference": "28. La liberación de Nanda Mahārāja de las garras de Varuṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "introducci-n",
+      "kind": "front-back-matter",
+      "title": "introducción",
+      "source_href": "chapter-29.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.29. La danza del rāsa: introducción",
+          "reference": "29. La danza del rāsa: introducción",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "30-k-a-se-oculta-de-las-gop-s",
+      "kind": "front-back-matter",
+      "title": "30. Kṛṣṇa se oculta de las gopīs",
+      "source_href": "chapter-30.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.30. Kṛṣṇa se oculta de las gopīs",
+          "reference": "30. Kṛṣṇa se oculta de las gopīs",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "31-canciones-de-las-gop-s",
+      "kind": "front-back-matter",
+      "title": "31. Canciones de las gopīs",
+      "source_href": "chapter-31.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.31. Canciones de las gopīs",
+          "reference": "31. Canciones de las gopīs",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "32-descripci-n-de-la-danza-del-r-sa",
+      "kind": "front-back-matter",
+      "title": "32. Descripción de la danza del rāsa",
+      "source_href": "chapter-32.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.32. Descripción de la danza del rāsa",
+          "reference": "32. Descripción de la danza del rāsa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "33-la-liberaci-n-de-vidy-dhara-y-la-muerte-del-demonio-a-kh-sura",
+      "kind": "front-back-matter",
+      "title": "33. La liberación de Vidyādhara y la muerte del demonio Śaṅkhāsura",
+      "source_href": "chapter-33.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.33. La liberación de Vidyādhara y la muerte del demonio Śaṅkhāsura",
+          "reference": "33. La liberación de Vidyādhara y la muerte del demonio Śaṅkhāsura",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "34-los-sentimientos-de-separaci-n-de-las-gop-s",
+      "kind": "front-back-matter",
+      "title": "34. Los sentimientos de separación de las gopīs",
+      "source_href": "chapter-34.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.34. Los sentimientos de separación de las gopīs",
+          "reference": "34. Los sentimientos de separación de las gopīs",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "35-ka-sa-env-a-a-akr-ra-a-buscar-a-k-a",
+      "kind": "front-back-matter",
+      "title": "35. Kaṁsa envía a Akrūra a buscar a Kṛṣṇa",
+      "source_href": "chapter-35.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.35. Kaṁsa envía a Akrūra a buscar a Kṛṣṇa",
+          "reference": "35. Kaṁsa envía a Akrūra a buscar a Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "36-la-muerte-del-demonio-ke-y-vyom-sura",
+      "kind": "front-back-matter",
+      "title": "36. La muerte del demonio Keśī y Vyomāsura",
+      "source_href": "chapter-36.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.36. La muerte del demonio Keśī y Vyomāsura",
+          "reference": "36. La muerte del demonio Keśī y Vyomāsura",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "37-la-llegada-de-akr-ra-a-v-nd-vana",
+      "kind": "front-back-matter",
+      "title": "37. La llegada de Akrūra a Vṛndāvana",
+      "source_href": "chapter-37.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.37. La llegada de Akrūra a Vṛndāvana",
+          "reference": "37. La llegada de Akrūra a Vṛndāvana",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "38-el-viaje-de-regreso-de-akr-ra-y-su-visita-a-vi-uloka-dentro-del-r-o-yamun",
+      "kind": "front-back-matter",
+      "title": "38. El viaje de regreso de Akrūra y su visita a Viṣṇuloka dentro del río Yamunā",
+      "source_href": "chapter-38.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.38. El viaje de regreso de Akrūra y su visita a Viṣṇuloka dentro del río Yamunā",
+          "reference": "38. El viaje de regreso de Akrūra y su visita a Viṣṇuloka dentro del río Yamunā",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "39-las-plegarias-de-akr-ra",
+      "kind": "front-back-matter",
+      "title": "39. Las plegarias de Akrūra",
+      "source_href": "chapter-39.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.39. Las plegarias de Akrūra",
+          "reference": "39. Las plegarias de Akrūra",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "40-k-a-entra-en-mathur",
+      "kind": "front-back-matter",
+      "title": "40. Kṛṣṇa entra en Mathurā",
+      "source_href": "chapter-40.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.40. Kṛṣṇa entra en Mathurā",
+          "reference": "40. Kṛṣṇa entra en Mathurā",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "41-la-rotura-del-arco-en-la-arena-del-sacrificio",
+      "kind": "front-back-matter",
+      "title": "41. La rotura del arco en la arena del sacrificio",
+      "source_href": "chapter-41.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.41. La rotura del arco en la arena del sacrificio",
+          "reference": "41. La rotura del arco en la arena del sacrificio",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "42-la-muerte-del-elefante-kuvalay-p-a",
+      "kind": "front-back-matter",
+      "title": "42. La muerte del elefante Kuvalayāpīḍa",
+      "source_href": "chapter-42.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.42. La muerte del elefante Kuvalayāpīḍa",
+          "reference": "42. La muerte del elefante Kuvalayāpīḍa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "43-la-muerte-de-ka-sa",
+      "kind": "front-back-matter",
+      "title": "43. La muerte de Kaṁsa",
+      "source_href": "chapter-43.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.43. La muerte de Kaṁsa",
+          "reference": "43. La muerte de Kaṁsa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "44-k-a-recupera-al-hijo-de-su-maestro",
+      "kind": "front-back-matter",
+      "title": "44. Kṛṣṇa recupera al hijo de Su maestro",
+      "source_href": "chapter-44.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.44. Kṛṣṇa recupera al hijo de Su maestro",
+          "reference": "44. Kṛṣṇa recupera al hijo de Su maestro",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "45-uddhava-visita-v-nd-vana",
+      "kind": "front-back-matter",
+      "title": "45. Uddhava visita Vṛndāvana",
+      "source_href": "chapter-45.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.45. Uddhava visita Vṛndāvana",
+          "reference": "45. Uddhava visita Vṛndāvana",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "46-entrega-del-mensaje-de-k-a-a-las-gop-s",
+      "kind": "front-back-matter",
+      "title": "46. Entrega del mensaje de Kṛṣṇa a las gopīs",
+      "source_href": "chapter-46.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.46. Entrega del mensaje de Kṛṣṇa a las gopīs",
+          "reference": "46. Entrega del mensaje de Kṛṣṇa a las gopīs",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "47-k-a-complace-a-sus-devotos",
+      "kind": "front-back-matter",
+      "title": "47. Kṛṣṇa complace a Sus devotos",
+      "source_href": "chapter-47.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.47. Kṛṣṇa complace a Sus devotos",
+          "reference": "47. Kṛṣṇa complace a Sus devotos",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "48-dh-tar-ra-el-malintencionado",
+      "kind": "front-back-matter",
+      "title": "48. Dhṛtarāṣṭra, el malintencionado",
+      "source_href": "chapter-48.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.48. Dhṛtarāṣṭra, el malintencionado",
+          "reference": "48. Dhṛtarāṣṭra, el malintencionado",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "49-k-a-erige-el-fuerte-de-dv-rak",
+      "kind": "front-back-matter",
+      "title": "49. Kṛṣṇa erige el fuerte de Dvārakā",
+      "source_href": "chapter-49.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.49. Kṛṣṇa erige el fuerte de Dvārakā",
+          "reference": "49. Kṛṣṇa erige el fuerte de Dvārakā",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "50-la-liberaci-n-de-mucukunda",
+      "kind": "front-back-matter",
+      "title": "50. La liberación de Mucukunda",
+      "source_href": "chapter-50.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.50. La liberación de Mucukunda",
+          "reference": "50. La liberación de Mucukunda",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "51-k-a-el-ranchor",
+      "kind": "front-back-matter",
+      "title": "51. Kṛṣṇa, el Ranchor",
+      "source_href": "chapter-51.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.51. Kṛṣṇa, el Ranchor",
+          "reference": "51. Kṛṣṇa, el Ranchor",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "52-k-a-rapta-a-rukmi",
+      "kind": "front-back-matter",
+      "title": "52. Kṛṣṇa rapta a Rukmiṇī",
+      "source_href": "chapter-52.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.52. Kṛṣṇa rapta a Rukmiṇī",
+          "reference": "52. Kṛṣṇa rapta a Rukmiṇī",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "53-k-a-derrota-a-todos-los-pr-ncipes-y-lleva-a-rukmi-a-dv-rak",
+      "kind": "front-back-matter",
+      "title": "53. Kṛṣṇa derrota a todos los príncipes y lleva a Rukmiṇī a Dvārakā",
+      "source_href": "chapter-53.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.53. Kṛṣṇa derrota a todos los príncipes y lleva a Rukmiṇī a Dvārakā",
+          "reference": "53. Kṛṣṇa derrota a todos los príncipes y lleva a Rukmiṇī a Dvārakā",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "54-pradyumna-nace-de-k-a-y-rukmi",
+      "kind": "front-back-matter",
+      "title": "54. Pradyumna nace de Kṛṣṇa y Rukmiṇī",
+      "source_href": "chapter-54.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.54. Pradyumna nace de Kṛṣṇa y Rukmiṇī",
+          "reference": "54. Pradyumna nace de Kṛṣṇa y Rukmiṇī",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "55-la-historia-de-la-joya-syamantaka",
+      "kind": "front-back-matter",
+      "title": "55. La historia de la joya Syamantaka",
+      "source_href": "chapter-55.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.55. La historia de la joya Syamantaka",
+          "reference": "55. La historia de la joya Syamantaka",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "56-la-muerte-de-satr-jit-y-atadhanv",
+      "kind": "front-back-matter",
+      "title": "56. La muerte de Satrājit y Śatadhanvā",
+      "source_href": "chapter-56.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.56. La muerte de Satrājit y Śatadhanvā",
+          "reference": "56. La muerte de Satrājit y Śatadhanvā",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "57-las-cinco-reinas-con-las-que-se-cas-k-a",
+      "kind": "front-back-matter",
+      "title": "57. Las cinco reinas con las que se casó Kṛṣṇa",
+      "source_href": "chapter-57.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.57. Las cinco reinas con las que se casó Kṛṣṇa",
+          "reference": "57. Las cinco reinas con las que se casó Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "58-la-liberaci-n-del-demonio-bhaum-sura",
+      "kind": "front-back-matter",
+      "title": "58. La liberación del demonio Bhaumāsura",
+      "source_href": "chapter-58.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.58. La liberación del demonio Bhaumāsura",
+          "reference": "58. La liberación del demonio Bhaumāsura",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "59-conversaciones-entre-k-a-y-rukmi",
+      "kind": "front-back-matter",
+      "title": "59. Conversaciones entre Kṛṣṇa y Rukmiṇī",
+      "source_href": "chapter-59.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.59. Conversaciones entre Kṛṣṇa y Rukmiṇī",
+          "reference": "59. Conversaciones entre Kṛṣṇa y Rukmiṇī",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "60-la-tabla-geneal-gica-de-la-familia-de-k-a",
+      "kind": "front-back-matter",
+      "title": "60. La tabla genealógica de la familia de Kṛṣṇa",
+      "source_href": "chapter-60.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.60. La tabla genealógica de la familia de Kṛṣṇa",
+          "reference": "60. La tabla genealógica de la familia de Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "61-el-encuentro-de-u-y-aniruddha",
+      "kind": "front-back-matter",
+      "title": "61. El encuentro de Uṣā y Aniruddha",
+      "source_href": "chapter-61.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.61. El encuentro de Uṣā y Aniruddha",
+          "reference": "61. El encuentro de Uṣā y Aniruddha",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "62-el-se-or-k-a-lucha-con-b-sura",
+      "kind": "front-back-matter",
+      "title": "62. El Señor Kṛṣṇa lucha con Bāṇāsura",
+      "source_href": "chapter-62.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.62. El Señor Kṛṣṇa lucha con Bāṇāsura",
+          "reference": "62. El Señor Kṛṣṇa lucha con Bāṇāsura",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "63-la-historia-del-rey-n-ga",
+      "kind": "front-back-matter",
+      "title": "63. La historia del rey Nṛga",
+      "source_href": "chapter-63.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.63. La historia del rey Nṛga",
+          "reference": "63. La historia del rey Nṛga",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "64-el-se-or-balar-ma-visita-v-nd-vana",
+      "kind": "front-back-matter",
+      "title": "64. El Señor Balarāma visita Vṛndāvana",
+      "source_href": "chapter-64.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.64. El Señor Balarāma visita Vṛndāvana",
+          "reference": "64. El Señor Balarāma visita Vṛndāvana",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "65-la-liberaci-n-de-pau-raka-y-el-rey-de-k",
+      "kind": "front-back-matter",
+      "title": "65. La liberación de Pauṇḍraka y el rey de Kāśī",
+      "source_href": "chapter-65.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.65. La liberación de Pauṇḍraka y el rey de Kāśī",
+          "reference": "65. La liberación de Pauṇḍraka y el rey de Kāśī",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "66-la-liberaci-n-del-gorila-dvivida",
+      "kind": "front-back-matter",
+      "title": "66. La liberación del gorila Dvivida",
+      "source_href": "chapter-66.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.66. La liberación del gorila Dvivida",
+          "reference": "66. La liberación del gorila Dvivida",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "67-el-matrimonio-de-s-mba",
+      "kind": "front-back-matter",
+      "title": "67. El matrimonio de Sāmba",
+      "source_href": "chapter-67.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.67. El matrimonio de Sāmba",
+          "reference": "67. El matrimonio de Sāmba",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "68-el-gran-sabio-n-rada-visita-los-diferentes-hogares-del-se-or-k-a",
+      "kind": "front-back-matter",
+      "title": "68. El gran sabio Nārada visita los diferentes hogares del Señor Kṛṣṇa",
+      "source_href": "chapter-68.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.68. El gran sabio Nārada visita los diferentes hogares del Señor Kṛṣṇa",
+          "reference": "68. El gran sabio Nārada visita los diferentes hogares del Señor Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "69-las-actividades-diarias-del-se-or-k-a",
+      "kind": "front-back-matter",
+      "title": "69. Las actividades diarias del Señor Kṛṣṇa",
+      "source_href": "chapter-69.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.69. Las actividades diarias del Señor Kṛṣṇa",
+          "reference": "69. Las actividades diarias del Señor Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "70-el-se-or-k-a-en-la-ciudad-de-indraprastha",
+      "kind": "front-back-matter",
+      "title": "70. El Señor Kṛṣṇa en la ciudad de Indraprastha",
+      "source_href": "chapter-70.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.70. El Señor Kṛṣṇa en la ciudad de Indraprastha",
+          "reference": "70. El Señor Kṛṣṇa en la ciudad de Indraprastha",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "71-la-liberaci-n-del-rey-jar-sandha",
+      "kind": "front-back-matter",
+      "title": "71. La liberación del rey Jarāsandha",
+      "source_href": "chapter-71.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.71. La liberación del rey Jarāsandha",
+          "reference": "71. La liberación del rey Jarāsandha",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "72-el-se-or-k-a-regresa-a-la-ciudad-de-hastin-pura",
+      "kind": "front-back-matter",
+      "title": "72. El Señor Kṛṣṇa regresa a la ciudad de Hastināpura",
+      "source_href": "chapter-72.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.72. El Señor Kṛṣṇa regresa a la ciudad de Hastināpura",
+          "reference": "72. El Señor Kṛṣṇa regresa a la ciudad de Hastināpura",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "73-la-liberaci-n-de-i-up-la",
+      "kind": "front-back-matter",
+      "title": "73. La liberación de Śiśupāla",
+      "source_href": "chapter-73.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.73. La liberación de Śiśupāla",
+          "reference": "73. La liberación de Śiśupāla",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "74-por-qu-duryodhana-se-sinti-insultado-al-final-del-sacrificio-r-jas-ya",
+      "kind": "front-back-matter",
+      "title": "74. Por qué Duryodhana se sintió insultado al final del sacrificio Rājasūya",
+      "source_href": "chapter-74.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.74. Por qué Duryodhana se sintió insultado al final del sacrificio Rājasūya",
+          "reference": "74. Por qué Duryodhana se sintió insultado al final del sacrificio Rājasūya",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "75-la-batalla-entre-lva-y-la-dinast-a-yadu",
+      "kind": "front-back-matter",
+      "title": "75. La batalla entre Śālva y la dinastía Yadu",
+      "source_href": "chapter-75.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.75. La batalla entre Śālva y la dinastía Yadu",
+          "reference": "75. La batalla entre Śālva y la dinastía Yadu",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "76-la-liberaci-n-de-lva",
+      "kind": "front-back-matter",
+      "title": "76. La liberación de Śālva",
+      "source_href": "chapter-76.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.76. La liberación de Śālva",
+          "reference": "76. La liberación de Śālva",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "77-la-muerte-de-dantavakra-vid-ratha-y-romahar-a-a",
+      "kind": "front-back-matter",
+      "title": "77. La muerte de Dantavakra, Vidūratha y Romaharṣaṇa",
+      "source_href": "chapter-77.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.77. La muerte de Dantavakra, Vidūratha y Romaharṣaṇa",
+          "reference": "77. La muerte de Dantavakra, Vidūratha y Romaharṣaṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "78-la-liberaci-n-de-balvala-y-el-recorrido-del-se-or-balar-ma-por-los-lugares-sagrados",
+      "kind": "front-back-matter",
+      "title": "78. La liberación de Balvala, y el recorrido del Señor Balarāma por los lugares sagrados",
+      "source_href": "chapter-78.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.78. La liberación de Balvala, y el recorrido del Señor Balarāma por los lugares sagrados",
+          "reference": "78. La liberación de Balvala, y el recorrido del Señor Balarāma por los lugares sagrados",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "79-el-encuentro-del-se-or-k-a-con-sud-m-br-hma-a",
+      "kind": "front-back-matter",
+      "title": "79. El encuentro del Señor Kṛṣṇa con Sudāmā Brāhmaṇa",
+      "source_href": "chapter-79.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.79. El encuentro del Señor Kṛṣṇa con Sudāmā Brāhmaṇa",
+          "reference": "79. El encuentro del Señor Kṛṣṇa con Sudāmā Brāhmaṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "80-el-br-hma-a-sud-m-bendecido-por-el-se-or-k-a",
+      "kind": "front-back-matter",
+      "title": "80. El brāhmaṇa Sudāmā bendecido por el Señor Kṛṣṇa",
+      "source_href": "chapter-80.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.80. El brāhmaṇa Sudāmā bendecido por el Señor Kṛṣṇa",
+          "reference": "80. El brāhmaṇa Sudāmā bendecido por el Señor Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "81-el-se-or-k-a-y-balar-ma-se-encuentran-con-los-habitantes-de-v-nd-vana",
+      "kind": "front-back-matter",
+      "title": "81. El Señor Kṛṣṇa y Balarāma se encuentran con los habitantes de Vṛndāvana",
+      "source_href": "chapter-81.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.81. El Señor Kṛṣṇa y Balarāma se encuentran con los habitantes de Vṛndāvana",
+          "reference": "81. El Señor Kṛṣṇa y Balarāma se encuentran con los habitantes de Vṛndāvana",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "82-draupad-conoce-a-las-reinas-de-k-a",
+      "kind": "front-back-matter",
+      "title": "82. Draupadī conoce a las reinas de Kṛṣṇa",
+      "source_href": "chapter-82.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.82. Draupadī conoce a las reinas de Kṛṣṇa",
+          "reference": "82. Draupadī conoce a las reinas de Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "83-ceremonias-de-sacrificio-ejecutadas-por-vasudeva",
+      "kind": "front-back-matter",
+      "title": "83. Ceremonias de sacrificio ejecutadas por Vasudeva",
+      "source_href": "chapter-83.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.83. Ceremonias de sacrificio ejecutadas por Vasudeva",
+          "reference": "83. Ceremonias de sacrificio ejecutadas por Vasudeva",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "84-instrucci-n-espiritual-para-vasudeva-y-el-regreso-de-los-seis-hijos-muertos-de-devak-por-el-se-or-k-a",
+      "kind": "front-back-matter",
+      "title": "84. Instrucción espiritual para Vasudeva y el regreso de los seis hijos muertos de Devakī por el Señor Kṛṣṇa",
+      "source_href": "chapter-84.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.84. Instrucción espiritual para Vasudeva y el regreso de los seis hijos muertos de Devakī por el Señor Kṛṣṇa",
+          "reference": "84. Instrucción espiritual para Vasudeva y el regreso de los seis hijos muertos de Devakī por el Señor Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "85-el-rapto-de-subhadr-y-la-visita-del-se-or-k-a-a-rutadeva-y-bahul-va",
+      "kind": "front-back-matter",
+      "title": "85. El rapto de Subhadrā y la visita del Señor Kṛṣṇa a Śrutadeva y Bahulāśva",
+      "source_href": "chapter-85.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.85. El rapto de Subhadrā y la visita del Señor Kṛṣṇa a Śrutadeva y Bahulāśva",
+          "reference": "85. El rapto de Subhadrā y la visita del Señor Kṛṣṇa a Śrutadeva y Bahulāśva",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "86-oraciones-de-los-vedas-personificados",
+      "kind": "front-back-matter",
+      "title": "86. Oraciones de los Vedas personificados",
+      "source_href": "chapter-86.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.86. Oraciones de los Vedas personificados",
+          "reference": "86. Oraciones de los Vedas personificados",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "87-la-liberaci-n-del-se-or-iva",
+      "kind": "front-back-matter",
+      "title": "87. La liberación del Señor Śiva",
+      "source_href": "chapter-87.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.87. La liberación del Señor Śiva",
+          "reference": "87. La liberación del Señor Śiva",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "88-el-superexcelente-poder-de-k-a",
+      "kind": "front-back-matter",
+      "title": "88. El superexcelente poder de Kṛṣṇa",
+      "source_href": "chapter-88.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.88. El superexcelente poder de Kṛṣṇa",
+          "reference": "88. El superexcelente poder de Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "89-descripci-n-resumida-de-los-pasatiempos-del-se-or-k-a",
+      "kind": "front-back-matter",
+      "title": "89. Descripción resumida de los pasatiempos del Señor Kṛṣṇa",
+      "source_href": "chapter-89.xhtml",
+      "verses": [
+        {
+          "id": "kb-es.89. Descripción resumida de los pasatiempos del Señor Kṛṣṇa",
+          "reference": "89. Descripción resumida de los pasatiempos del Señor Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    }
+  ]
+}

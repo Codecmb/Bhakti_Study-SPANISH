@@ -1,6 +1,6 @@
 (function(global){
   const S=global.StudentStore;
-  const WORK_TYPES={understanding:'My Understanding',reflection:'Revised Understanding',notes:'Notes',answer:'Answer','question-answer':'Question Answer','question-revision':'Revised Question Answer','my-question':'My Question',assessment:'Assessment'};
+  const WORK_TYPES={understanding:'Mi Comprensión',reflection:'Comprensión Revisada',notes:'Notas',answer:'Respuesta','question-answer':'Respuesta a la Pregunta','question-revision':'Respuesta Revisada a la Pregunta','my-question':'Mi Pregunta',assessment:'Evaluación'};
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const PROGRAMS=[
     'bhakti-sastri',
@@ -62,7 +62,7 @@
             canonical:question.canonical_ref||canonical,
             questionId:qid,
             href:`../question-bank/questions.html?${q}`,
-            label:'Open Question'
+            label:'Abrir Pregunta'
           };
         }
       }
@@ -111,7 +111,7 @@
     return {
       program,unit,canonical,mode,
       href:`../programs/${program}/tools.html?${q}`,
-      label:'Open Study'
+      label:'Abrir Estudio'
     };
   }
 
@@ -149,7 +149,7 @@
     const data=JSON.parse(await file.text());return S.importBackup(data,{replace});
   }
   const rtfEsc=s=>String(s??'').replace(/\\/g,'\\\\').replace(/{/g,'\\{').replace(/}/g,'\\}').replace(/\r?\n/g,'\\par\n').replace(/[^\x20-\x7E]/g,ch=>'\\u'+ch.charCodeAt(0)+'?');
-  function exportRTF(selected=records(),title='Bhakti Study — Student Portfolio'){
+  function exportRTF(selected=records(),title='Bhakti Study — Portafolio del Estudiante'){
     let body=`{\\rtf1\\ansi\\deff0{\\fonttbl{\\f0 Arial;}}\\fs24\\b ${rtfEsc(title)}\\b0\\par\\par`;
     for(const r of selected){
       body+=`\\b ${rtfEsc(r.ref)} — ${rtfEsc(r.label)}\\b0\\par ${rtfEsc(r.value)}\\par\\par`;

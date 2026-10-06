@@ -1,12 +1,12 @@
 {
   "workflow": {
     "schema": "bhakti-study-workflow-v1",
-    "policy": "Manifest-driven study tools. Internal sources resolve before external sources.",
+    "policy": "Herramientas de estudio modulares. Las fuentes internas se resuelven antes que las fuentes externas.",
     "tools": [
       {
         "id": "read-source",
         "mode": "read",
-        "label": "Read Source",
+        "label": "Leer Fuente",
         "className": "",
         "showInUnit": true,
         "showInWorkspace": true
@@ -14,7 +14,7 @@
       {
         "id": "understanding",
         "mode": "understanding",
-        "label": "My Understanding",
+        "label": "Mi Comprensión",
         "className": "lotus",
         "showInUnit": true,
         "showInWorkspace": true
@@ -22,7 +22,7 @@
       {
         "id": "notes",
         "mode": "notes",
-        "label": "Notes",
+        "label": "Notas",
         "className": "secondary",
         "showInUnit": true,
         "showInWorkspace": true
@@ -30,7 +30,7 @@
       {
         "id": "progress",
         "route": "progress",
-        "label": "Progress",
+        "label": "Progreso",
         "className": "secondary",
         "showInUnit": true,
         "showInWorkspace": true

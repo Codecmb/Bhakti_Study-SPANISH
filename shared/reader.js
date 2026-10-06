@@ -6,17 +6,17 @@ const cleanText=s=>(s??'').toString().replace(/\\n/g,'\n');
 const esc=s=>cleanText(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function canonicalOf(v){let r=String(v.reference||'');if(meta.canonicalId==='BG')return 'BG.'+r;if(meta.canonicalId?.startsWith('SB.'))return 'SB.'+r;if(meta.canonicalId?.startsWith('CC.')){let m=r.match(/(adi|madhya|antya)\.(\d+)\.(\d+(?:-\d+)?)/i);if(m)return `CC.${m[1].toUpperCase()}.${m[2]}.${m[3]}`}if(meta.canonicalId==='ISO'||meta.canonicalId==='NOI'){let m=r.match(/(\d+)/);if(m)return `${meta.canonicalId}.${m[1]}`}if(meta.canonicalId==='NOD'){if(/^NOD\.(?:Dedication|Preface|Introduction|\d+)$/i.test(v.id||''))return v.id;let m=r.match(/^\s*(\d+)/);if(m)return `NOD.${m[1]}`}return v.id||r}
 async function load(){
- if(!bookId){el.status.textContent='No book selected.';return}
+ if(!bookId){el.status.textContent='No se ha seleccionado ningún libro.';return}
  try{
   const catalog=await json('../data/books.json'); meta=catalog.find(b=>b.id===bookId);
-  if(!meta||meta.status!=='imported'){el.status.textContent='This book source has not been registered yet.';return}
-  book=await json('../'+meta.dataPath); el.bookTitle.textContent=book.title; el.bookMeta.textContent=[book.creator,book.publisher,`Internal source: ${meta.source}`,`Format: ${book.source_format}`].filter(Boolean).join(' · ');
+  if(!meta||meta.status!=='imported'){el.status.textContent='La fuente de este libro aún no ha sido registrada.';return}
+  book=await json('../'+meta.dataPath); el.bookTitle.textContent=book.title; el.bookMeta.textContent=[book.creator,book.publisher,`Fuente interna: ${meta.source}`,`Formato: ${book.source_format}`].filter(Boolean).join(' · ');
   el.status.hidden=true;el.reader.hidden=false;renderSections(); if(!openTarget()) openSection(0);
- }catch(e){el.status.textContent='Unable to load this book. '+e.message}
+ }catch(e){el.status.textContent='No se pudo cargar este libro. '+e.message}
 }
 function openTarget(){if(!targetRef)return false;let want=targetRef.toUpperCase().replace(/Ā/g,'A');for(let si=0;si<book.sections.length;si++){const vs=book.sections[si].verses||[];for(let vi=0;vi<vs.length;vi++){if(canonicalOf(vs[vi]).toUpperCase().replace(/Ā/g,'A')===want){openSection(si,false);openVerse(vi);return true}}}return false}
-function renderSections(){el.chapters.innerHTML=book.sections.map((s,i)=>`<button class="chapter-btn" data-i="${i}">${esc(s.title||`Section ${i+1}`)}</button>`).join('');el.chapters.onclick=e=>{let b=e.target.closest('.chapter-btn');if(b)openSection(+b.dataset.i)}}
-function openSection(i,first=true){sectionIndex=i;verseIndex=0;[...el.chapters.children].forEach((b,j)=>b.classList.toggle('active',j===i));let s=book.sections[i];el.sectionHeader.innerHTML=`<h2>${esc(s.title)}</h2><p class="small muted">${esc(s.kind||'section')} · ${s.verses?.length||0} study record(s)</p>`;el.verses.innerHTML=(s.verses||[]).map((v,j)=>`<button class="verse-btn" data-i="${j}">${esc(v.reference||v.id||`Text ${j+1}`)}</button>`).join('');el.verses.onclick=e=>{let b=e.target.closest('.verse-btn');if(b)openVerse(+b.dataset.i)};if(first){if(s.verses?.length)openVerse(0);else el.passage.innerHTML='<p>No verse-level record in this section.</p>'}}
+function renderSections(){el.chapters.innerHTML=book.sections.map((s,i)=>`<button class="chapter-btn" data-i="${i}">${esc(s.title||`Sección ${i+1}`)}</button>`).join('');el.chapters.onclick=e=>{let b=e.target.closest('.chapter-btn');if(b)openSection(+b.dataset.i)}}
+function openSection(i,first=true){sectionIndex=i;verseIndex=0;[...el.chapters.children].forEach((b,j)=>b.classList.toggle('active',j===i));let s=book.sections[i];el.sectionHeader.innerHTML=`<h2>${esc(s.title)}</h2><p class="small muted">${esc(s.kind||'sección')} · ${s.verses?.length||0} registro(s) de estudio</p>`;el.verses.innerHTML=(s.verses||[]).map((v,j)=>`<button class="verse-btn" data-i="${j}">${esc(v.reference||v.id||`Texto ${j+1}`)}</button>`).join('');el.verses.onclick=e=>{let b=e.target.closest('.verse-btn');if(b)openVerse(+b.dataset.i)};if(first){if(s.verses?.length)openVerse(0);else el.passage.innerHTML='<p>No hay registros a nivel de verso en esta sección.</p>'}}
 function neighbor(delta){let si=sectionIndex,vi=verseIndex+delta;while(si>=0&&si<book.sections.length){let vs=book.sections[si].verses||[];if(vi>=0&&vi<vs.length)return {si,vi,v:vs[vi]};if(delta>0){si++;vi=0}else{si--;if(si>=0)vi=(book.sections[si].verses||[]).length-1}}return null}
 function jump(n){if(!n)return;if(n.si!==sectionIndex)openSection(n.si,false);openVerse(n.vi)}
 
@@ -27,7 +27,7 @@ function returnToQuestion(){
 
  if(!ctx?.returnHref)return '';
 
- return `<a class="button lotus" href="${esc(ctx.returnHref)}">← Return to Question Bank</a>`;
+ return `<a class="button lotus" href="${esc(ctx.returnHref)}">← Volver al Banco de Preguntas</a>`;
 }
 
 function renderStudyContext(canonical){
@@ -35,11 +35,11 @@ function renderStudyContext(canonical){
  if(!host)return;
 
  const study=programId&&unitId
-   ? `<a class="button lotus" href="../programs/${encodeURIComponent(programId)}/tools.html?unit=${encodeURIComponent(unitId)}&ref=${encodeURIComponent(canonical)}&mode=understanding">Study</a>`
+   ? `<a class="button lotus" href="../programs/${encodeURIComponent(programId)}/tools.html?unit=${encodeURIComponent(unitId)}&ref=${encodeURIComponent(canonical)}&mode=understanding">Estudiar</a>`
    : '';
 
  const studied=window.StudentStore
-   ? `<button id="markPassageStudied" class="button secondary" type="button">Mark passage studied</button>`
+   ? `<button id="markPassageStudied" class="button secondary" type="button">Marcar pasaje como estudiado</button>`
    : '';
 
  host.innerHTML=(study||studied)
@@ -52,15 +52,15 @@ function renderStudyContext(canonical){
    const already=StudentStore.get('reading',canonical)==='1';
 
    if(already){
-     mark.textContent='✓ Passage studied';
+     mark.textContent='✓ Pasaje estudiado';
    }
 
    mark.onclick=()=>{
      StudentStore.set('reading',canonical,'1');
-     mark.textContent='✓ Passage studied';
+     mark.textContent='✓ Pasaje estudiado';
 
      const message=document.getElementById('studyProgressMessage');
-     if(message)message.textContent='Saved to your reading progress.';
+     if(message)message.textContent='Guardado en tu progreso de lectura.';
    };
  }
 }
@@ -68,7 +68,7 @@ function renderStudyContext(canonical){
 async function openVerse(i){verseIndex=i;let s=book.sections[sectionIndex],v=s.verses[i];[...el.verses.children].forEach((b,j)=>b.classList.toggle('active',j===i));let prev=neighbor(-1),next=neighbor(1),canonical=canonicalOf(v);
  renderStudyContext(canonical);
  if(window.StudyContext)StudyContext.write({program:programId,unit:unitId,canonical,book:bookId});
- el.passage.innerHTML=`<div class="study-nav">${returnToQuestion()}<span>${prev?'<button id="prevVerse" class="button secondary">← Previous Verse</button>':'<button class="button secondary" disabled>← Previous Verse</button>'}</span>${programId&&unitId?`<a class="button secondary" href="../programs/${encodeURIComponent(programId)}/index.html#${encodeURIComponent(unitId)}">Back to Study Unit</a>`:''}<a class="button secondary" href="../programs/${encodeURIComponent(programId||'bhakti-sastri')}/index.html">↑ Program</a><a class="button secondary" href="../index.html">Academy Home</a>${SourceResolver.external(canonical)?`<a class="button secondary" href="${SourceResolver.external(canonical)}" target="_blank" rel="noopener">Vedabase ↗</a>`:''}${/^BG\.\d+\.\d+$/.test(canonical)?`<a class="button secondary" href="https://vanipedia.org/wiki/ES/${canonical.replaceAll('.', '_')}" target="_blank" rel="noopener">Vanipedia ↗</a>`:''}<span>${next?'<button id="nextVerse" class="button secondary">Next Verse →</button>':'<button class="button secondary" disabled>Next Verse →</button>'}</span></div><div class="eyebrow">Internal Academy Source</div><h2>${esc(canonical)}</h2>${v.source_text?`<h3>Source Text</h3><div class="scripture source-linkable">${esc(v.source_text)}</div>`:''}${v.devanagari?`<h3>Text</h3><div class="scripture">${esc(v.devanagari)}</div>`:''}${v.transliteration?`<h3>Transliteration</h3><div class="scripture">${esc(v.transliteration)}</div>`:''}${v.synonyms?`<h3>Word-for-word</h3><div class="purport source-linkable">${esc(v.synonyms).replace(/\n/g,' ')}</div>`:''}${v.translation?`<h3>Translation</h3><div class="purport source-linkable">${esc(v.translation)}</div>`:''}${v.purport?`<h3>${/Bhaktivedanta Swami Prabhup/i.test(book.creator||'')?"Śrīla Prabhupāda's Purport":'Purport'}</h3><div class="purport source-linkable">${esc(v.purport).replace(/\n/g,' ')}</div>`:''}${v.content?`<div class="purport source-linkable">${esc(v.content)}</div>`:''}`;
+ el.passage.innerHTML=`<div class="study-nav">${returnToQuestion()}<span>${prev?'<button id="prevVerse" class="button secondary">← Verso Anterior</button>':'<button class="button secondary" disabled>← Verso Anterior</button>'}</span>${programId&&unitId?`<a class="button secondary" href="../programs/${encodeURIComponent(programId)}/index.html#${encodeURIComponent(unitId)}">Volver a la Unidad de Estudio</a>`:''}<a class="button secondary" href="../programs/${encodeURIComponent(programId||'bhakti-sastri')}/index.html">↑ Área de Estudio</a><a class="button secondary" href="../index.html">Inicio de la Academia</a>${SourceResolver.external(canonical)?`<a class="button secondary" href="${SourceResolver.external(canonical)}" target="_blank" rel="noopener">Vedabase ↗</a>`:''}${/^BG\.\d+\.\d+$/.test(canonical)?`<a class="button secondary" href="https://vanipedia.org/wiki/ES/${canonical.replaceAll('.', '_')}" target="_blank" rel="noopener">Vanipedia ↗</a>`:''}<span>${next?'<button id="nextVerse" class="button secondary">Verso Siguiente →</button>':'<button class="button secondary" disabled>Verso Siguiente →</button>'}</span></div><div class="eyebrow">Fuente Interna de la Academia</div><h2>${esc(canonical)}</h2>${v.source_text?`<h3>Texto Fuente</h3><div class="scripture source-linkable">${esc(v.source_text)}</div>`:''}${v.devanagari?`<h3>Texto</h3><div class="scripture">${esc(v.devanagari)}</div>`:''}${v.transliteration?`<h3>Transliteración</h3><div class="scripture">${esc(v.transliteration)}</div>`:''}${v.synonyms?`<h3>Palabra por Palabra</h3><div class="purport source-linkable">${esc(v.synonyms).replace(/\n/g,' ')}</div>`:''}${v.translation?`<h3>Traducción</h3><div class="purport source-linkable">${esc(v.translation)}</div>`:''}${v.purport?`<h3>${/Bhaktivedanta Swami Prabhup/i.test(book.creator||'')?"Significado de Śrīla Prabhupāda":'Significado'}</h3><div class="purport source-linkable">${esc(v.purport).replace(/\n/g,' ')}</div>`:''}${v.content?`<div class="purport source-linkable">${esc(v.content)}</div>`:''}`;
  document.querySelector('#prevVerse')?.addEventListener('click',()=>jump(prev));document.querySelector('#nextVerse')?.addEventListener('click',()=>jump(next));
  await SourceResolver.linkify(el.passage);
  if(window.AcademyHighlighter)AcademyHighlighter.attach(el.passage,canonical);

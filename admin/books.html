@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Manage Books · Bhakti Study</title>
+<title>Administrar Libros · Bhakti Study</title>
 <link rel="stylesheet" href="../shared/styles.css">
 
 <style>
@@ -57,24 +57,24 @@
 
 <main class="main">
 
-<div class="eyebrow">Manage Academy</div>
-<h1>Books</h1>
+<div class="eyebrow">Administrar Academia</div>
+<h1>Libros</h1>
 
 <p class="lead">
-View and manage the canonical books installed in this Academy.
+Consulta y administra los libros canónicos instalados en esta Academia.
 </p>
 
 <p>
-<a class="button secondary" href="index.html">← Manage Academy</a>
-<a class="button secondary" href="../library/index.html">View Library</a>
+<a class="button secondary" href="index.html">← Administrar Academia</a>
+<a class="button secondary" href="../library/index.html">Ver Biblioteca</a>
 </p>
 
 <section class="card">
-<h2>Add a Book</h2>
+<h2>Añadir un Libro</h2>
 
 <p>
-Add an EPUB to the Academy. The book will be processed,
-registered and added to the Library automatically.
+Añade un EPUB a la Academia. El libro será procesado,
+registrado y añadido automáticamente a la Biblioteca.
 </p>
 
 <form id="importForm">
@@ -82,7 +82,7 @@ registered and added to the Library automatically.
 
     <div>
       <label for="bookFile">
-        <strong>Book file</strong>
+        <strong>Archivo del libro</strong>
       </label>
       <input
         id="bookFile"
@@ -92,22 +92,22 @@ registered and added to the Library automatically.
         accept=".epub,application/epub+zip"
         required>
       <div class="small">
-        EPUB is supported right now.
+        Actualmente se admite el formato EPUB.
       </div>
     </div>
 
     <div>
       <label for="canonicalId">
-        <strong>Canonical ID</strong>
+        <strong>ID canónico</strong>
       </label>
       <input
         id="canonicalId"
         name="canonical_id"
         class="field"
         type="text"
-        placeholder="Optional — e.g. BS">
+        placeholder="Opcional — p. ej. BS">
       <div class="small">
-        Optional. Leave blank to use the book's metadata.
+        Opcional. Déjalo en blanco para usar los metadatos del libro.
       </div>
     </div>
 
@@ -117,7 +117,7 @@ registered and added to the Library automatically.
     id="importButton"
     class="button"
     type="submit">
-    Import Book
+    Importar Libro
   </button>
 
   <span id="importStatus" class="small"></span>
@@ -127,28 +127,28 @@ registered and added to the Library automatically.
 </section>
 
 <section class="card">
-<h2>Installed Books</h2>
+<h2>Libros Instalados</h2>
 
 <p id="summary" class="small">
-Loading canonical book registry…
+Cargando registro de libros canónicos…
 </p>
 
 <div class="book-toolbar">
 <div>
-<label for="search"><strong>Find a book</strong></label>
+<label for="search"><strong>Buscar un libro</strong></label>
 <input
   id="search"
   class="field"
   type="search"
-  placeholder="Search title, author or ID">
+  placeholder="Buscar por título, autor o ID">
 </div>
 
 <div>
-<label for="status"><strong>Status</strong></label>
+<label for="status"><strong>Estado</strong></label>
 <select id="status" class="field">
-<option value="all">All</option>
-<option value="imported">Imported</option>
-<option value="disabled">Disabled</option>
+<option value="all">Todos</option>
+<option value="imported">Importados</option>
+<option value="disabled">Deshabilitados</option>
 </select>
 </div>
 </div>
@@ -159,10 +159,238 @@ Loading canonical book registry…
 <div id="serviceWarning"
      class="notice service-warning"
      hidden>
-<strong>Local management service unavailable.</strong>
-The Academy can still be used normally, but book administration
-requires the local Academy service.
+<strong>El servicio de administración local no está disponible.</strong>
+La Academia puede seguir utilizándose normalmente, pero la administración de libros
+requiere el servicio local de la Academia.
 </div>
+
+<section id="contentEditor" class="card" style="margin-top:1.5rem" hidden>
+  <div style="display:flex;justify-content:space-between;gap:1rem;align-items:start;flex-wrap:wrap">
+    <div>
+      <div class="eyebrow">Editor del Libro</div>
+      <h2>Editar Contenido</h2>
+      <p id="contentEditorBook" class="small"></p>
+    </div>
+
+    <button id="closeContentEditor"
+            class="button secondary"
+            type="button">
+      Cerrar Editor
+    </button>
+  </div>
+
+  <div class="book-toolbar">
+    <div>
+      <label for="contentChapter">
+        <strong>Capítulo</strong>
+      </label>
+      <select id="contentChapter" class="field">
+        <option value="">Selecciona un capítulo</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="contentVerse">
+        <strong>Texto</strong>
+      </label>
+      <select id="contentVerse" class="field" disabled>
+        <option value="">Selecciona un texto</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="book-toolbar">
+    <div>
+      <label for="contentReference">
+        <strong>Referencia</strong>
+      </label>
+
+      <input id="contentReference"
+             class="field"
+             type="text"
+             placeholder="p. ej. 10.14.1">
+    </div>
+
+    <button id="loadContentRecord"
+            class="button secondary"
+            type="button">
+      Cargar Texto
+    </button>
+  </div>
+
+  <p id="contentEditorStatus" class="small"></p>
+
+  <div id="contentEditorFields" hidden>
+
+    <div class="notice" style="margin-bottom:1rem">
+      <strong id="contentRecordReference"></strong><br>
+      ID interno: <span id="contentRecordId"></span>
+    </div>
+
+    <p>
+      <label for="contentSynonyms">
+        <strong>Palabra por Palabra</strong>
+      </label>
+      <textarea id="contentSynonyms"
+                class="field"
+                style="width:100%;min-height:140px;box-sizing:border-box"></textarea>
+    </p>
+
+    <p>
+      <label for="contentTranslation">
+        <strong>Traducción</strong>
+      </label>
+      <textarea id="contentTranslation"
+                class="field"
+                style="width:100%;min-height:140px;box-sizing:border-box"></textarea>
+    </p>
+
+    <p>
+      <label for="contentPurport">
+        <strong>Significado</strong>
+      </label>
+      <textarea id="contentPurport"
+                class="field"
+                style="width:100%;min-height:320px;box-sizing:border-box"></textarea>
+    </p>
+
+    <div class="book-actions">
+      <button id="previousContentRecord"
+              class="button secondary"
+              type="button">
+        ← Texto Anterior
+      </button>
+
+      <button id="saveContentRecord"
+              class="button"
+              type="button">
+        Guardar Cambios
+      </button>
+
+      <button id="nextContentRecord"
+              class="button secondary"
+              type="button">
+        Texto Siguiente →
+      </button>
+
+      <a id="openEditedRecord"
+         class="button secondary"
+         href="#"
+         target="_blank">
+        Ver en el Lector
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="sandarbhaEditor"
+         class="card"
+         style="margin-top:1.5rem">
+
+  <div style="display:flex;justify-content:space-between;gap:1rem;align-items:start;flex-wrap:wrap">
+    <div>
+      <div class="eyebrow">Editor de Ṣaṭ Sandarbhas</div>
+      <h2>Editar Traducción Española</h2>
+      <p class="small">
+        La fuente inglesa es de referencia y no puede modificarse aquí.
+      </p>
+    </div>
+
+    <button id="closeSandarbhaEditor"
+            class="button secondary"
+            type="button">
+      Cerrar Editor
+    </button>
+  </div>
+
+  <div class="book-toolbar">
+    <div>
+      <label for="sandarbhaWork">
+        <strong>Sandarbha</strong>
+      </label>
+
+      <select id="sandarbhaWork" class="field">
+        <option value="tattva">Tattva Sandarbha</option>
+        <option value="bhagavat">Bhagavat Sandarbha</option>
+        <option value="paramatma">Paramātma Sandarbha</option>
+        <option value="krsna">Kṛṣṇa Sandarbha</option>
+        <option value="bhakti">Bhakti Sandarbha</option>
+        <option value="priti">Prīti Sandarbha</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="sandarbhaRecord">
+        <strong>Anuccheda</strong>
+      </label>
+
+      <select id="sandarbhaRecord" class="field"></select>
+    </div>
+
+    <button id="loadSandarbhaRecord"
+            class="button secondary"
+            type="button">
+      Cargar Anuccheda
+    </button>
+  </div>
+
+  <p id="sandarbhaEditorStatus"
+     class="small"></p>
+
+  <div id="sandarbhaEditorFields" hidden>
+
+    <div class="notice" style="margin-bottom:1rem">
+      <strong id="sandarbhaCanonicalId"></strong>
+      <span> · </span>
+      <span id="sandarbhaSourceLabel"></span>
+    </div>
+
+    <p>
+      <label for="sandarbhaEnglish">
+        <strong>Fuente Inglesa — Solo Lectura</strong>
+      </label>
+
+      <textarea id="sandarbhaEnglish"
+                class="field"
+                readonly
+                style="width:100%;min-height:320px;box-sizing:border-box"></textarea>
+    </p>
+
+    <p>
+      <label for="sandarbhaSpanish">
+        <strong>Traducción Española</strong>
+      </label>
+
+      <textarea id="sandarbhaSpanish"
+                class="field"
+                style="width:100%;min-height:420px;box-sizing:border-box"></textarea>
+    </p>
+
+    <div class="book-actions">
+      <button id="previousSandarbhaRecord"
+              class="button secondary"
+              type="button">
+        ← Anuccheda Anterior
+      </button>
+
+      <button id="saveSandarbhaRecord"
+              class="button"
+              type="button">
+        Guardar Traducción
+      </button>
+
+      <button id="nextSandarbhaRecord"
+              class="button secondary"
+              type="button">
+        Anuccheda Siguiente →
+      </button>
+    </div>
+
+  </div>
+</section>
+
 
 </main>
 </div>
@@ -211,17 +439,17 @@ function render(){
   });
 
   $('summary').textContent=
-    `${books.length} registered book${books.length===1?'':'s'} · `+
-    `${visible.length} shown`;
+    `${books.length} libro${books.length===1?'':'s'} registrado${books.length===1?'':'s'} · `+
+    `${visible.length} mostrado${visible.length===1?'':'s'}`;
 
   $('bookList').innerHTML=visible.length
     ? visible.map(book=>`
       <article class="card">
         <div class="eyebrow">
-          ${esc(book.canonicalId||book.id||'Canonical Book')}
+          ${esc(book.canonicalId||book.id||'Libro Canónico')}
         </div>
 
-        <h2>${esc(book.title||book.id||'Untitled Book')}</h2>
+        <h2>${esc(book.title||book.id||'Libro sin Título')}</h2>
 
         ${book.author
           ? `<p>${esc(book.author)}</p>`
@@ -229,54 +457,60 @@ function render(){
 
         <div class="book-meta small">
           <span>
-            <strong>Status:</strong>
+            <strong>Estado:</strong>
             ${esc(book.status||'registered')}
           </span>
 
           ${book.sourceFormat
-            ? `<span><strong>Source:</strong>
+            ? `<span><strong>Fuente:</strong>
                ${esc(book.sourceFormat.toUpperCase())}</span>`
             : ''}
 
           ${Number.isFinite(Number(book.sections))
-            ? `<span><strong>Sections:</strong>
+            ? `<span><strong>Secciones:</strong>
                ${esc(book.sections)}</span>`
             : ''}
 
           ${Number.isFinite(Number(book.records))
-            ? `<span><strong>Records:</strong>
+            ? `<span><strong>Registros:</strong>
                ${esc(book.records)}</span>`
             : ''}
         </div>
 
         ${book.publisher
-          ? `<p class="small"><strong>Publisher:</strong>
+          ? `<p class="small"><strong>Editorial:</strong>
              ${esc(book.publisher)}</p>`
           : ''}
 
         <div class="book-actions">
           <a class="button secondary"
              href="${openPath(book)}">
-             Open Book
+             Abrir Libro
           </a>
 
           <button class="button secondary book-status-button"
                   type="button"
                   data-book-id="${esc(book.id||'')}"
                   data-next-status="${book.status==='disabled'?'imported':'disabled'}">
-            ${book.status==='disabled'?'Enable':'Disable'}
+            ${book.status==='disabled'?'Activar':'Desactivar'}
           </button>
 
           <button class="button secondary edit-book-button"
                   type="button"
                   data-book-id="${esc(book.id||'')}">
-            Edit Metadata
+            Editar Metadatos
+          </button>
+
+          <button class="button secondary edit-content-button"
+                  type="button"
+                  data-book-id="${esc(book.id||'')}">
+            Editar Contenido
           </button>
 
           <button class="button secondary replace-source-button"
                   type="button"
                   data-book-id="${esc(book.id||'')}">
-            Replace Source
+            Reemplazar Fuente
           </button>
 
           <input class="replace-source-file"
@@ -287,7 +521,7 @@ function render(){
         </div>
       </article>
     `).join('')
-    : '<p class="muted">No books match this view.</p>';
+    : '<p class="muted">Ningún libro coincide con esta vista.</p>';
 }
 
 async function loadBooks(){
@@ -302,7 +536,7 @@ async function loadBooks(){
     const data=await response.json();
 
     if(!data.ok||!Array.isArray(data.books))
-      throw new Error('Invalid registry response');
+      throw new Error('Respuesta no válida del registro');
 
     books=data.books;
     $('serviceWarning').hidden=true;
@@ -312,7 +546,7 @@ async function loadBooks(){
     console.error(error);
 
     $('summary').textContent=
-      'Could not load the canonical book registry.';
+      'No se pudo cargar el registro canónico de libros.';
 
     $('bookList').innerHTML='';
     $('serviceWarning').hidden=false;
@@ -322,7 +556,158 @@ async function loadBooks(){
 $('search').addEventListener('input',render);
 $('status').addEventListener('change',render);
 
+let contentBookId=null;
+let contentRecord=null;
+let contentBookData=null;
+let contentFlatRecords=[];
+
+async function loadContentBookNavigation(book){
+  contentBookData=null;
+  contentFlatRecords=[];
+
+  $('contentChapter').innerHTML=
+    '<option value="">Cargando capítulos…</option>';
+
+  $('contentVerse').innerHTML=
+    '<option value="">Selecciona un texto</option>';
+
+  $('contentVerse').disabled=true;
+
+  if(!book?.dataPath){
+    $('contentChapter').innerHTML=
+      '<option value="">No hay contenido disponible</option>';
+    return;
+  }
+
+  try{
+    const response=await fetch('../'+book.dataPath,{
+      cache:'no-store'
+    });
+
+    if(!response.ok)
+      throw new Error('HTTP '+response.status);
+
+    contentBookData=await response.json();
+
+    const sections=contentBookData.sections||[];
+
+    contentFlatRecords=sections.flatMap((section,sectionIndex)=>
+      (section.verses||[]).map((record,verseIndex)=>({
+        sectionIndex,
+        verseIndex,
+        reference:String(record.reference||'')
+      }))
+    );
+
+    $('contentChapter').innerHTML=
+      '<option value="">Selecciona un capítulo</option>'+
+      sections.map((section,index)=>
+        '<option value="'+index+'">'+
+        esc(section.title||('Capítulo '+(index+1)))+
+        '</option>'
+      ).join('');
+
+  }catch(error){
+    console.error(error);
+
+    $('contentChapter').innerHTML=
+      '<option value="">No se pudieron cargar los capítulos</option>';
+  }
+}
+
+function loadContentVerseOptions(sectionIndex){
+  const section=contentBookData?.sections?.[sectionIndex];
+
+  if(!section){
+    $('contentVerse').innerHTML=
+      '<option value="">Selecciona un texto</option>';
+    $('contentVerse').disabled=true;
+    return;
+  }
+
+  const verses=section.verses||[];
+
+  $('contentVerse').innerHTML=
+    '<option value="">Selecciona un texto</option>'+
+    verses.map((record,index)=>
+      '<option value="'+index+'">'+
+      esc(record.reference||record.id||('Texto '+(index+1)))+
+      '</option>'
+    ).join('');
+
+  $('contentVerse').disabled=!verses.length;
+}
+
+function selectContentReference(reference){
+  if(!contentBookData||!reference)return false;
+
+  const sections=contentBookData.sections||[];
+
+  for(let si=0;si<sections.length;si++){
+    const verses=sections[si].verses||[];
+
+    for(let vi=0;vi<verses.length;vi++){
+      if(String(verses[vi].reference||'')===String(reference)){
+        $('contentChapter').value=String(si);
+        loadContentVerseOptions(si);
+        $('contentVerse').value=String(vi);
+        return true;
+      }
+    }
+  }
+
+  return false;
+}
+
+function navigateContentRecord(delta){
+  if(!contentRecord)return;
+
+  const current=contentFlatRecords.findIndex(
+    item=>item.reference===String(contentRecord.reference||'')
+  );
+
+  if(current<0)return;
+
+  const target=contentFlatRecords[current+delta];
+
+  if(!target)return;
+
+  $('contentReference').value=target.reference;
+  selectContentReference(target.reference);
+  $('loadContentRecord').click();
+}
+
 $('bookList').addEventListener('click',async event=>{
+  const contentButton=event.target.closest('.edit-content-button');
+
+  if(contentButton){
+    const bookId=contentButton.dataset.bookId;
+    const book=books.find(item=>item.id===bookId);
+
+    if(!book)return;
+
+    contentBookId=bookId;
+    contentRecord=null;
+
+    $('contentEditorBook').textContent=
+      (book.title||book.id)+' · '+(book.canonicalId||book.id);
+
+    $('contentReference').value='';
+    $('contentEditorStatus').textContent='';
+    $('contentEditorFields').hidden=true;
+    $('contentEditor').hidden=false;
+
+    await loadContentBookNavigation(book);
+
+    $('contentEditor').scrollIntoView({
+      behavior:'smooth',
+      block:'start'
+    });
+
+    $('contentReference').focus();
+    return;
+  }
+
   const editButton=event.target.closest('.edit-book-button');
 
   if(editButton){
@@ -331,21 +716,21 @@ $('bookList').addEventListener('click',async event=>{
 
     if(!book)return;
 
-    const title=prompt('Book title:',book.title||'');
+    const title=prompt('Título del libro:',book.title||'');
     if(title===null)return;
 
     if(!title.trim()){
-      alert('Book title cannot be empty.');
+      alert('El título del libro no puede estar vacío.');
       return;
     }
 
-    const author=prompt('Author:',book.author||'');
+    const author=prompt('Autor:',book.author||'');
     if(author===null)return;
 
-    const publisher=prompt('Publisher:',book.publisher||'');
+    const publisher=prompt('Editorial:',book.publisher||'');
     if(publisher===null)return;
 
-    const source=prompt('Source:',book.source||'');
+    const source=prompt('Fuente:',book.source||'');
     if(source===null)return;
 
     editButton.disabled=true;
@@ -377,7 +762,7 @@ $('bookList').addEventListener('click',async event=>{
     }catch(error){
       console.error(error);
       alert(
-        'The book metadata could not be changed.\n\n'+
+        'No se pudieron modificar los metadatos del libro.\n\n'+
         error.message
       );
       editButton.disabled=false;
@@ -435,7 +820,7 @@ $('bookList').addEventListener('click',async event=>{
   }catch(error){
     console.error(error);
     alert(
-      'The book status could not be changed.\n\n'+
+      'No se pudo cambiar el estado del libro.\n\n'+
       error.message
     );
     button.disabled=false;
@@ -452,7 +837,7 @@ $('bookList').addEventListener('change',async event=>{
   if(!file||!bookId)return;
 
   if(!file.name.toLowerCase().endsWith('.epub')){
-    alert('Choose an EPUB file.');
+    alert('Elige un archivo EPUB.');
     input.value='';
     return;
   }
@@ -474,18 +859,194 @@ $('bookList').addEventListener('change',async event=>{
         data.detail||data.error||`HTTP ${response.status}`
       );
 
-    alert('Book source replaced successfully.');
+    alert('La fuente del libro fue reemplazada correctamente.');
     await loadBooks();
 
   }catch(error){
     console.error(error);
 
     alert(
-      'The book source could not be replaced.\n\n'+
+      'No se pudo reemplazar la fuente del libro.\n\n'+
       error.message
     );
   }finally{
     input.value='';
+  }
+});
+
+$('closeContentEditor').addEventListener('click',()=>{
+  $('contentEditor').hidden=true;
+  $('contentEditorFields').hidden=true;
+  $('contentEditorStatus').textContent='';
+  contentBookId=null;
+  contentRecord=null;
+});
+
+$('loadContentRecord').addEventListener('click',async ()=>{
+  const reference=$('contentReference').value.trim();
+
+  if(!contentBookId||!reference){
+    $('contentEditorStatus').textContent=
+      'Selecciona un libro e introduce una referencia.';
+    return;
+  }
+
+  $('contentEditorStatus').textContent='Cargando texto…';
+  $('contentEditorFields').hidden=true;
+
+  try{
+    const response=await fetch('/__academy/books/content',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json'
+      },
+      body:JSON.stringify({
+        book_id:contentBookId,
+        reference
+      })
+    });
+
+    const data=await response.json();
+
+    if(!response.ok||!data.ok){
+      throw new Error(
+        data.detail||data.error||`HTTP ${response.status}`
+      );
+    }
+
+    contentRecord=data.record;
+
+    selectContentReference(contentRecord.reference||reference);
+
+    $('contentRecordReference').textContent=
+      contentRecord.reference||reference;
+
+    $('contentRecordId').textContent=
+      contentRecord.id||'';
+
+    $('contentSynonyms').value=
+      contentRecord.synonyms||'';
+
+    $('contentTranslation').value=
+      contentRecord.translation||'';
+
+    $('contentPurport').value=
+      contentRecord.purport||'';
+
+    let readerRef=contentRecord.reference||reference;
+
+    const currentBook=books.find(
+      item=>item.id===contentBookId
+    );
+
+    if(currentBook?.canonicalId?.startsWith('SB.')){
+      readerRef='SB.'+readerRef.replace(/^SB\./i,'');
+    }
+
+    $('openEditedRecord').href=
+      '../library/reader.html?book='+
+      encodeURIComponent(contentBookId)+
+      '&ref='+
+      encodeURIComponent(readerRef);
+
+    $('contentEditorFields').hidden=false;
+    $('contentEditorStatus').textContent='Texto cargado.';
+
+  }catch(error){
+    console.error(error);
+    $('contentEditorStatus').textContent=
+      'No se pudo cargar el texto: '+error.message;
+  }
+});
+
+$('saveContentRecord').addEventListener('click',async ()=>{
+  if(!contentBookId||!contentRecord)return;
+
+  if(!confirm(
+    '¿Guardar estos cambios directamente en el libro canónico?'
+  ))return;
+
+  const button=$('saveContentRecord');
+
+  button.disabled=true;
+  $('contentEditorStatus').textContent='Guardando cambios…';
+
+  try{
+    const response=await fetch('/__academy/books/content/save',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json'
+      },
+      body:JSON.stringify({
+        book_id:contentBookId,
+        reference:contentRecord.reference,
+        synonyms:$('contentSynonyms').value,
+        translation:$('contentTranslation').value,
+        purport:$('contentPurport').value
+      })
+    });
+
+    const data=await response.json();
+
+    if(!response.ok||!data.ok){
+      throw new Error(
+        data.detail||data.error||`HTTP ${response.status}`
+      );
+    }
+
+    contentRecord=data.record;
+    $('contentEditorStatus').textContent='Guardado ✓';
+
+  }catch(error){
+    console.error(error);
+    $('contentEditorStatus').textContent=
+      'No se pudieron guardar los cambios: '+error.message;
+  }finally{
+    button.disabled=false;
+  }
+});
+
+$('contentChapter').addEventListener('change',()=>{
+  const value=$('contentChapter').value;
+
+  if(value===''){
+    loadContentVerseOptions(-1);
+    return;
+  }
+
+  loadContentVerseOptions(Number(value));
+});
+
+$('contentVerse').addEventListener('change',()=>{
+  const sectionIndex=Number($('contentChapter').value);
+  const verseIndex=Number($('contentVerse').value);
+
+  if(
+    $('contentChapter').value==='' ||
+    $('contentVerse').value===''
+  )return;
+
+  const record=
+    contentBookData?.sections?.[sectionIndex]?.verses?.[verseIndex];
+
+  if(!record?.reference)return;
+
+  $('contentReference').value=record.reference;
+  $('loadContentRecord').click();
+});
+
+$('previousContentRecord').addEventListener('click',()=>{
+  navigateContentRecord(-1);
+});
+
+$('nextContentRecord').addEventListener('click',()=>{
+  navigateContentRecord(1);
+});
+
+$('contentReference').addEventListener('keydown',event=>{
+  if(event.key==='Enter'){
+    event.preventDefault();
+    $('loadContentRecord').click();
   }
 });
 
@@ -496,13 +1057,13 @@ $('importForm').addEventListener('submit',async event=>{
 
   if(!file){
     $('importResult').innerHTML=
-      '<div class="notice">Choose an EPUB file first.</div>';
+      '<div class="notice">Primero elige un archivo EPUB.</div>';
     return;
   }
 
   if(!file.name.toLowerCase().endsWith('.epub')){
     $('importResult').innerHTML=
-      '<div class="notice">Please choose an EPUB file.</div>';
+      '<div class="notice">Por favor, selecciona un archivo EPUB.</div>';
     return;
   }
 
@@ -514,7 +1075,7 @@ $('importForm').addEventListener('submit',async event=>{
     formData.append('canonical_id',canonicalId);
 
   $('importButton').disabled=true;
-  $('importStatus').textContent=' Importing…';
+  $('importStatus').textContent=' Importando…';
   $('importResult').innerHTML='';
 
   try{
@@ -535,9 +1096,9 @@ $('importForm').addEventListener('submit',async event=>{
 
     $('importResult').innerHTML=`
       <div class="notice">
-        <strong>Book added successfully.</strong><br>
-        ${esc(book.title||book.id||'Imported book')}
-        is now registered in the Academy Library.
+        <strong>Libro añadido correctamente.</strong><br>
+        ${esc(book.title||book.id||'Libro importado')}
+        ahora está registrado en la Biblioteca de la Academia.
       </div>
     `;
 
@@ -550,7 +1111,7 @@ $('importForm').addEventListener('submit',async event=>{
 
     $('importResult').innerHTML=`
       <div class="notice">
-        <strong>Book was not added.</strong><br>
+        <strong>El libro no fue añadido.</strong><br>
         ${esc(error.message)}
       </div>
     `;
@@ -561,6 +1122,270 @@ $('importForm').addEventListener('submit',async event=>{
 });
 
 loadBooks();
+</script>
+
+
+<script>
+(function(){
+
+  const works={
+    tattva:{
+      prefix:'TS',
+      count:63
+    },
+    bhagavat:{
+      prefix:'BGS',
+      count:106
+    },
+    paramatma:{
+      prefix:'PAS',
+      count:109
+    },
+    krsna:{
+      prefix:'KS',
+      count:190
+    },
+    bhakti:{
+      prefix:'BHS',
+      count:340
+    },
+    priti:{
+      prefix:'PS',
+      count:429
+    }
+  };
+
+  const byId=id=>document.getElementById(id);
+
+  let currentRecord=null;
+
+  function currentWork(){
+    return byId('sandarbhaWork').value;
+  }
+
+  function populateRecords(numberToSelect=1){
+    const work=currentWork();
+    const meta=works[work];
+
+    byId('sandarbhaRecord').innerHTML=
+      Array.from(
+        {length:meta.count},
+        (_,index)=>{
+          const number=index+1;
+          const id=meta.prefix+'.'+number;
+
+          return '<option value="'+number+'">'+
+            id+' · Anuccheda '+number+
+            '</option>';
+        }
+      ).join('');
+
+    const safe=Math.max(
+      1,
+      Math.min(meta.count,Number(numberToSelect)||1)
+    );
+
+    byId('sandarbhaRecord').value=String(safe);
+  }
+
+  async function loadRecord(){
+    const work=currentWork();
+    const meta=works[work];
+    const number=Number(byId('sandarbhaRecord').value);
+
+    if(!meta||!number)return;
+
+    const canonicalId=meta.prefix+'.'+number;
+
+    byId('sandarbhaEditorStatus').textContent=
+      'Cargando anuccheda…';
+
+    byId('sandarbhaEditorFields').hidden=true;
+
+    try{
+      const response=await fetch(
+        '/__academy/sandarbhas/content',
+        {
+          method:'POST',
+          headers:{
+            'Content-Type':'application/json'
+          },
+          body:JSON.stringify({
+            work_id:work,
+            canonical_id:canonicalId
+          })
+        }
+      );
+
+      const data=await response.json();
+
+      if(!response.ok||!data.ok){
+        throw new Error(
+          data.detail||
+          data.error||
+          ('HTTP '+response.status)
+        );
+      }
+
+      currentRecord=data.record;
+
+      byId('sandarbhaCanonicalId').textContent=
+        currentRecord.canonicalId||canonicalId;
+
+      byId('sandarbhaSourceLabel').textContent=
+        currentRecord.sourceLabel||('Anuccheda '+number);
+
+      byId('sandarbhaEnglish').value=
+        currentRecord.sourceEnglish||'';
+
+      byId('sandarbhaSpanish').value=
+        currentRecord.content||'';
+
+      byId('sandarbhaEditorFields').hidden=false;
+
+      byId('sandarbhaEditorStatus').textContent=
+        currentRecord.content?.trim()
+          ? 'Traducción española cargada.'
+          : 'Pendiente de traducción.';
+
+      byId('previousSandarbhaRecord').disabled=
+        number<=1;
+
+      byId('nextSandarbhaRecord').disabled=
+        number>=meta.count;
+
+    }catch(error){
+      console.error(error);
+
+      currentRecord=null;
+
+      byId('sandarbhaEditorStatus').textContent=
+        'No se pudo cargar el anuccheda: '+
+        error.message;
+    }
+  }
+
+  async function saveRecord(){
+    if(!currentRecord)return;
+
+    const work=currentWork();
+
+    if(!confirm(
+      '¿Guardar esta traducción española?'
+    ))return;
+
+    const button=byId('saveSandarbhaRecord');
+    button.disabled=true;
+
+    byId('sandarbhaEditorStatus').textContent=
+      'Guardando traducción…';
+
+    try{
+      const response=await fetch(
+        '/__academy/sandarbhas/content/save',
+        {
+          method:'POST',
+          headers:{
+            'Content-Type':'application/json'
+          },
+          body:JSON.stringify({
+            work_id:work,
+            canonical_id:currentRecord.canonicalId,
+            content:byId('sandarbhaSpanish').value
+          })
+        }
+      );
+
+      const data=await response.json();
+
+      if(!response.ok||!data.ok){
+        throw new Error(
+          data.detail||
+          data.error||
+          ('HTTP '+response.status)
+        );
+      }
+
+      currentRecord.content=
+        byId('sandarbhaSpanish').value;
+
+      byId('sandarbhaEditorStatus').textContent=
+        'Traducción guardada ✓';
+
+    }catch(error){
+      console.error(error);
+
+      byId('sandarbhaEditorStatus').textContent=
+        'No se pudo guardar la traducción: '+
+        error.message;
+
+    }finally{
+      button.disabled=false;
+    }
+  }
+
+  function navigate(delta){
+    const work=currentWork();
+    const meta=works[work];
+
+    const current=
+      Number(byId('sandarbhaRecord').value)||1;
+
+    const next=current+delta;
+
+    if(next<1||next>meta.count)return;
+
+    byId('sandarbhaRecord').value=String(next);
+    loadRecord();
+  }
+
+  byId('sandarbhaWork').addEventListener(
+    'change',
+    ()=>{
+      currentRecord=null;
+      populateRecords(1);
+      loadRecord();
+    }
+  );
+
+  byId('sandarbhaRecord').addEventListener(
+    'change',
+    loadRecord
+  );
+
+  byId('loadSandarbhaRecord').addEventListener(
+    'click',
+    loadRecord
+  );
+
+  byId('saveSandarbhaRecord').addEventListener(
+    'click',
+    saveRecord
+  );
+
+  byId('previousSandarbhaRecord').addEventListener(
+    'click',
+    ()=>navigate(-1)
+  );
+
+  byId('nextSandarbhaRecord').addEventListener(
+    'click',
+    ()=>navigate(1)
+  );
+
+  byId('closeSandarbhaEditor').addEventListener(
+    'click',
+    ()=>{
+      byId('sandarbhaEditorFields').hidden=true;
+      byId('sandarbhaEditorStatus').textContent=
+        'Editor cerrado.';
+      currentRecord=null;
+    }
+  );
+
+  populateRecords(1);
+
+})();
 </script>
 
 </body>

@@ -51,7 +51,7 @@
 
   async function loadRegistry(){
     const response=await fetch('../data/question-sheet-registry.json');
-    if(!response.ok)throw new Error(`Question sheet registry: HTTP ${response.status}`);
+    if(!response.ok)throw new Error(`Registro de hojas de preguntas: HTTP ${response.status}`);
     return response.json();
   }
 
@@ -117,7 +117,7 @@
           books:importedBooks(program.id,batch)
         },
         data:{
-          title:batch.title||'Imported question sheet',
+          title:batch.title||'Hoja de preguntas importada',
           provider:batch.author||'Imported',
           source_file:batch.source_file||'',
           questions:batch.questions||[]
@@ -153,7 +153,7 @@
             </p>
           `).join('')}
          </div>`
-      : '<p class="small">No question sheets registered yet.</p>';
+      : '<p class="small">Aún no hay hojas de preguntas registradas.</p>';
 
     return `
       <details class="card" data-question-book="${esc(book.id)}"${selected?' open':''}>
@@ -205,7 +205,7 @@
               )
             ).join('')}
             ${renderBook(
-              {id:'general',label:'Imported / General'},
+              {id:'general',label:'Importado / General'},
               programSheets.filter(x=>
                 x.record.imported && !(x.record.books||[]).length
               ),
@@ -226,7 +226,7 @@
 
     }catch(error){
       host.innerHTML=
-        `<div class="card missing">Could not load Question Bank: ${esc(error.message)}</div>`;
+        `<div class="card missing">No se pudo cargar el Banco de Preguntas: ${esc(error.message)}</div>`;
     }
   }
 

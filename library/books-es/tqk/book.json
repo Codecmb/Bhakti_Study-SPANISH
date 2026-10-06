@@ -1,0 +1,471 @@
+{
+  "schema": "bhakti-study.book.v1",
+  "id": "tqk-es",
+  "title": "Las Enseñanzas de la Reina Kuntī",
+  "creator": "A.C. Bhaktivedanta Swami Prabhupāda",
+  "publisher": "Bhaktivedanta Book Trust",
+  "language": "es",
+  "source_format": "EPUB",
+  "source_file": "tqk-es.epub",
+  "sections": [
+    {
+      "id": "introducci-n",
+      "kind": "front-back-matter",
+      "title": "Introducción",
+      "source_href": "v_tqk_0a.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.Introducción",
+          "reference": "Introducción",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-1",
+      "kind": "front-back-matter",
+      "title": "Texto 1",
+      "source_href": "v_tqk_1.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.1. La Persona Original",
+          "reference": "1. La Persona Original",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-2",
+      "kind": "front-back-matter",
+      "title": "Texto 2",
+      "source_href": "v_tqk_2.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.2. Más allá de los sentidos",
+          "reference": "2. Más allá de los sentidos",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-3",
+      "kind": "front-back-matter",
+      "title": "Texto 3",
+      "source_href": "v_tqk_3.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.3. La mujer más inteligente",
+          "reference": "3. La mujer más inteligente",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-4",
+      "kind": "front-back-matter",
+      "title": "Texto 4",
+      "source_href": "v_tqk_4.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.4. Acercándose a Kṛṣṇa, la Verdad omnipresente",
+          "reference": "4. Acercándose a Kṛṣṇa, la Verdad omnipresente",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-5",
+      "kind": "front-back-matter",
+      "title": "Texto 5",
+      "source_href": "v_tqk_5.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.5. La visión de los lotos",
+          "reference": "5. La visión de los lotos",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-6",
+      "kind": "front-back-matter",
+      "title": "Texto 6",
+      "source_href": "v_tqk_6.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.6. El amo de los sentidos",
+          "reference": "6. El amo de los sentidos",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-7",
+      "kind": "front-back-matter",
+      "title": "Texto 7",
+      "source_href": "v_tqk_7.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.7. Encuentros peligrosos",
+          "reference": "7. Encuentros peligrosos",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-8",
+      "kind": "front-back-matter",
+      "title": "Texto 8",
+      "source_href": "v_tqk_8.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.8. Que vengan las calamidades",
+          "reference": "8. Que vengan las calamidades",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-9",
+      "kind": "front-back-matter",
+      "title": "Texto 9",
+      "source_href": "v_tqk_9.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.9. Disminuir la fiebre de la ilusión",
+          "reference": "9. Disminuir la fiebre de la ilusión",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-10",
+      "kind": "front-back-matter",
+      "title": "Texto 10",
+      "source_href": "v_tqk_10.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.10. La propiedad de los desposeídos",
+          "reference": "10. La propiedad de los desposeídos",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-11",
+      "kind": "front-back-matter",
+      "title": "Texto 11",
+      "source_href": "v_tqk_11.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.11. El toque de la energía superior",
+          "reference": "11. El toque de la energía superior",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-12",
+      "kind": "front-back-matter",
+      "title": "Texto 12",
+      "source_href": "v_tqk_12.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.12. Pasatiempos desconcertantes",
+          "reference": "12. Pasatiempos desconcertantes",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-13",
+      "kind": "front-back-matter",
+      "title": "Texto 13",
+      "source_href": "v_tqk_13.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.13. La fuerza vital del universo",
+          "reference": "13. La fuerza vital del universo",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-14",
+      "kind": "front-back-matter",
+      "title": "Texto 14",
+      "source_href": "v_tqk_14.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.14. Las maravillosas actividades del Señor Kṛṣṇa",
+          "reference": "14. Las maravillosas actividades del Señor Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-15",
+      "kind": "front-back-matter",
+      "title": "Texto 15",
+      "source_href": "v_tqk_15.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.15. Más allá del nacimiento y la muerte",
+          "reference": "15. Más allá del nacimiento y la muerte",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-16",
+      "kind": "front-back-matter",
+      "title": "Texto 16",
+      "source_href": "v_tqk_16.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.16. Regresando a nuestra conciencia natural",
+          "reference": "16. Regresando a nuestra conciencia natural",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-17",
+      "kind": "front-back-matter",
+      "title": "Texto 17",
+      "source_href": "v_tqk_17.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.17. Aligerando la carga del mundo",
+          "reference": "17. Aligerando la carga del mundo",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-18",
+      "kind": "front-back-matter",
+      "title": "Texto 18",
+      "source_href": "v_tqk_18.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.18. Liberación de la ignorancia y el sufrimiento",
+          "reference": "18. Liberación de la ignorancia y el sufrimiento",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-19",
+      "kind": "front-back-matter",
+      "title": "Texto 19",
+      "source_href": "v_tqk_19.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.19. Cruzando más allá de las corrientes de la ilusión",
+          "reference": "19. Cruzando más allá de las corrientes de la ilusión",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-20",
+      "kind": "front-back-matter",
+      "title": "Texto 20",
+      "source_href": "v_tqk_20.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.20. Rendición plena",
+          "reference": "20. Rendición plena",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-21",
+      "kind": "front-back-matter",
+      "title": "Texto 21",
+      "source_href": "v_tqk_21.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.21. ¿Cuál es nuestro valor real?",
+          "reference": "21. ¿Cuál es nuestro valor real?",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-22",
+      "kind": "front-back-matter",
+      "title": "Texto 22",
+      "source_href": "v_tqk_22.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.22. Belleza en la presencia de Kṛṣṇa",
+          "reference": "22. Belleza en la presencia de Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-23",
+      "kind": "front-back-matter",
+      "title": "Texto 23",
+      "source_href": "v_tqk_23.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.23. Prosperidad natural",
+          "reference": "23. Prosperidad natural",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-24",
+      "kind": "front-back-matter",
+      "title": "Texto 24",
+      "source_href": "v_tqk_24.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.24. Cortando los lazos de afecto",
+          "reference": "24. Cortando los lazos de afecto",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-25",
+      "kind": "front-back-matter",
+      "title": "Texto 25",
+      "source_href": "v_tqk_25.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.25. Devoción pura",
+          "reference": "25. Devoción pura",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-26",
+      "kind": "front-back-matter",
+      "title": "Texto 26",
+      "source_href": "v_tqk_26.xhtml",
+      "verses": [
+        {
+          "id": "tqk-es.26. Fascinación por las glorias de Kṛṣṇa",
+          "reference": "26. Fascinación por las glorias de Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    }
+  ]
+}

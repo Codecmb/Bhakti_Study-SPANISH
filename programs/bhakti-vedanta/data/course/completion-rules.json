@@ -2,6 +2,6 @@
   "academyUnitCompletion": {
     "enabled": false,
     "requirements": [],
-    "policy": "Academy unit-completion rules are not configured for this program yet. Official framework data remains separate and is not converted into Academy completion rules automatically."
+    "policy": "Las reglas de finalización de unidades de la Academia aún no están configuradas para esta área de estudio. Los datos del marco oficial permanecen separados y no se convierten automáticamente en reglas de finalización de la Academia."
   }
 }

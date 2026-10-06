@@ -1,0 +1,845 @@
+{
+  "schema": "bhakti-study.book.v1",
+  "id": "lob-es",
+  "title": "La Luz del Bhāgavata",
+  "creator": "A.C. Bhaktivedanta Swami Prabhupāda",
+  "publisher": "Bhaktivedanta Book Trust",
+  "language": "es",
+  "source_format": "EPUB",
+  "source_file": "lob-es.epub",
+  "sections": [
+    {
+      "id": "prefacio",
+      "kind": "front-back-matter",
+      "title": "Prefacio",
+      "source_href": "chapter-0a.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Prefacio",
+          "reference": "Prefacio",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "la-llegada-de-las-nubes-acompa-ada-de-truenos-y-rel-mpagos-por-todo-el-cielo-brinda-una-imagen-de-esperanza-vivificante-cubierto-por-densas-nubes-azuladas-el-cielo-parece-artificialmente-ataviado-los-truenos-y-rel-mpagos-dentro-de-las-nubes-son-signos-de-esperanza-para-un-nuevo-modo-de-vida",
+      "kind": "front-back-matter",
+      "title": "**La llegada de las nubes, acompañada de truenos y relámpagos por todo el cielo, brinda una imagen de esperanza vivificante. Cubierto por densas nubes azuladas, el cielo parece artificialmente ataviado. Los truenos y relámpagos dentro de las nubes son signos de esperanza para un nuevo modo de vida.**",
+      "source_href": "chapter-1.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.La llegada de las nubes, acompañada de truenos y relámpagos por todo el cielo, brinda una imagen de esperanza vivificante. Cubierto por densas nubes azuladas, el cielo parece artificialmente ataviado. Los truenos y relámpagos dentro de las nubes son signos de esperanza para un nuevo modo de vida.",
+          "reference": "La llegada de las nubes, acompañada de truenos y relámpagos por todo el cielo, brinda una imagen de esperanza vivificante. Cubierto por densas nubes azuladas, el cielo parece artificialmente ataviado. Los truenos y relámpagos dentro de las nubes son signos de esperanza para un nuevo modo de vida.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "el-abrasador-calor-del-sol-evapora-el-agua-de-los-mares-r-os-lagos-y-embalses-y-apenas-queda-agua-en-parte-alguna-la-gente-tiene-sed-y-siempre-mira-al-cielo-en-busca-de-lluvia-pero-con-desesperaci-n-sin-embargo-justo-en-el-momento-adecuado-torrentes-de-lluvia-comienzan-a-caer-por-doquier-en-la-tierra-incluso-sobre-las-duras-piedras-y-la-tierra-queda-inundada",
+      "kind": "front-back-matter",
+      "title": "**El abrasador calor del sol evapora el agua de los mares, ríos, lagos y embalses, y apenas queda agua en parte alguna. La gente tiene sed y siempre mira al cielo en busca de lluvia, pero con desesperación. Sin embargo, justo en el momento adecuado, torrentes de lluvia comienzan a caer por doquier en la tierra, incluso sobre las duras piedras, y la tierra queda inundada.**",
+      "source_href": "chapter-2.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.El abrasador calor del sol evapora el agua de los mares, ríos, lagos y embalses, y apenas queda agua en parte alguna. La gente tiene sed y siempre mira al cielo en busca de lluvia, pero con desesperación. Sin embargo, justo en el momento adecuado, torrentes de lluvia comienzan a caer por doquier en la tierra, incluso sobre las duras piedras, y la tierra queda inundada.",
+          "reference": "El abrasador calor del sol evapora el agua de los mares, ríos, lagos y embalses, y apenas queda agua en parte alguna. La gente tiene sed y siempre mira al cielo en busca de lluvia, pero con desesperación. Sin embargo, justo en el momento adecuado, torrentes de lluvia comienzan a caer por doquier en la tierra, incluso sobre las duras piedras, y la tierra queda inundada.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "atra-das-por-la-electricidad-del-cielo-y-empujadas-por-vientos-impetuosos-las-nubes-cubren-gradualmente-la-superficie-de-la-tierra-para-satisfacer-al-pueblo-necesitado-suministr-ndole-agua-que-es-la-sustancia-de-su-vida-las-nubes-derraman-lluvias-sobre-el-hombre-como-la-misericordia-del-se-or-quien-siempre-es-bondadoso-con-el-necesitado-ser-viviente",
+      "kind": "front-back-matter",
+      "title": "**Atraídas por la electricidad del cielo y empujadas por vientos impetuosos, las nubes cubren gradualmente la superficie de la tierra para satisfacer al pueblo necesitado suministrándole agua, que es la sustancia de su vida. Las nubes derraman lluvias sobre el hombre como la misericordia del Señor, quien siempre es bondadoso con el necesitado ser viviente.**",
+      "source_href": "chapter-3.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Atraídas por la electricidad del cielo y empujadas por vientos impetuosos, las nubes cubren gradualmente la superficie de la tierra para satisfacer al pueblo necesitado suministrándole agua, que es la sustancia de su vida. Las nubes derraman lluvias sobre el hombre como la misericordia del Señor, quien siempre es bondadoso con el necesitado ser viviente.",
+          "reference": "Atraídas por la electricidad del cielo y empujadas por vientos impetuosos, las nubes cubren gradualmente la superficie de la tierra para satisfacer al pueblo necesitado suministrándole agua, que es la sustancia de su vida. Las nubes derraman lluvias sobre el hombre como la misericordia del Señor, quien siempre es bondadoso con el necesitado ser viviente.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "tras-intensos-aguaceros-los-campos-y-bosques-en-todas-las-direcciones-aparecen-verdes-y-saludables-as-se-asemejan-a-un-hombre-que-ha-pasado-por-severas-austeridades-en-busca-de-alg-n-beneficio-material-y-ha-logrado-su-objetivo-pues-tal-hombre-se-muestra-fuerte-vigoroso-y-de-buen-aspecto",
+      "kind": "front-back-matter",
+      "title": "**Tras intensos aguaceros, los campos y bosques en todas las direcciones aparecen verdes y saludables. Así se asemejan a un hombre que ha pasado por severas austeridades en busca de algún beneficio material y ha logrado su objetivo, pues tal hombre se muestra fuerte, vigoroso y de buen aspecto.**",
+      "source_href": "chapter-4.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Tras intensos aguaceros, los campos y bosques en todas las direcciones aparecen verdes y saludables. Así se asemejan a un hombre que ha pasado por severas austeridades en busca de algún beneficio material y ha logrado su objetivo, pues tal hombre se muestra fuerte, vigoroso y de buen aspecto.",
+          "reference": "Tras intensos aguaceros, los campos y bosques en todas las direcciones aparecen verdes y saludables. Así se asemejan a un hombre que ha pasado por severas austeridades en busca de algún beneficio material y ha logrado su objetivo, pues tal hombre se muestra fuerte, vigoroso y de buen aspecto.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "la-tarde-en-la-estaci-n-lluviosa-es-oscura-por-doquier-no-se-avistan-las-estrellas-centelleantes-en-el-horizonte-ni-la-agradable-luna-est-n-cubiertas-por-las-nubes-y-las-insignificantes-luci-rnagas-se-vuelven-prominentes-en-ausencia-de-los-luminares-en-el-cielo-abierto",
+      "kind": "front-back-matter",
+      "title": "**La tarde en la estación lluviosa es oscura por doquier. No se avistan las estrellas centelleantes en el horizonte ni la agradable luna. Están cubiertas por las nubes. Y las insignificantes luciérnagas se vuelven prominentes en ausencia de los luminares en el cielo abierto.**",
+      "source_href": "chapter-5.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.La tarde en la estación lluviosa es oscura por doquier. No se avistan las estrellas centelleantes en el horizonte ni la agradable luna. Están cubiertas por las nubes. Y las insignificantes luciérnagas se vuelven prominentes en ausencia de los luminares en el cielo abierto.",
+          "reference": "La tarde en la estación lluviosa es oscura por doquier. No se avistan las estrellas centelleantes en el horizonte ni la agradable luna. Están cubiertas por las nubes. Y las insignificantes luciérnagas se vuelven prominentes en ausencia de los luminares en el cielo abierto.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "al-o-r-el-sonido-de-las-lluvias-torrenciales-las-ranas-salen-de-las-cuevas-de-las-monta-as-y-comienzan-a-cantar-como-brahmac-r-s-que-entonan-los-himnos-v-dicos-por-orden-del-maestro-espiritual",
+      "kind": "front-back-matter",
+      "title": "**Al oír el sonido de las lluvias torrenciales, las ranas salen de las cuevas de las montañas y comienzan a cantar, como *brahmacārīs* que entonan los himnos Védicos por orden del maestro espiritual.**",
+      "source_href": "chapter-6.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Al oír el sonido de las lluvias torrenciales, las ranas salen de las cuevas de las montañas y comienzan a cantar, como *brahmacārīs* que entonan los himnos Védicos por orden del maestro espiritual.",
+          "reference": "Al oír el sonido de las lluvias torrenciales, las ranas salen de las cuevas de las montañas y comienzan a cantar, como *brahmacārīs* que entonan los himnos Védicos por orden del maestro espiritual.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "los-peque-os-arroyos-que-casi-se-secaron-durante-los-meses-de-mayo-y-junio-ahora-comienzan-a-desbordar-sus-riberas-como-los-advenedizos-que-de-repente-sobrepasan-los-l-mites-del-gasto",
+      "kind": "front-back-matter",
+      "title": "**Los pequeños arroyos que casi se secaron durante los meses de mayo y junio ahora comienzan a desbordar sus riberas, como los advenedizos que de repente sobrepasan los límites del gasto.**",
+      "source_href": "chapter-7.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Los pequeños arroyos que casi se secaron durante los meses de mayo y junio ahora comienzan a desbordar sus riberas, como los advenedizos que de repente sobrepasan los límites del gasto.",
+          "reference": "Los pequeños arroyos que casi se secaron durante los meses de mayo y junio ahora comienzan a desbordar sus riberas, como los advenedizos que de repente sobrepasan los límites del gasto.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "el-colorido-verdor-de-la-hierba-reci-n-crecida-las-flores-de-temporada-los-paraguas-de-las-ranas-las-mariposas-y-la-dem-s-variedades-de-la-estaci-n-lluviosa-representan-perfectamente-a-una-familia-acomodada-absorta-en-la-vanidad-por-sus-posesiones-personales",
+      "kind": "front-back-matter",
+      "title": "**El colorido verdor de la hierba recién crecida, las flores de temporada, los paraguas de las ranas, las mariposas y la demás variedades de la estación lluviosa representan perfectamente a una familia acomodada absorta en la vanidad por sus posesiones personales.**",
+      "source_href": "chapter-8.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.El colorido verdor de la hierba recién crecida, las flores de temporada, los paraguas de las ranas, las mariposas y la demás variedades de la estación lluviosa representan perfectamente a una familia acomodada absorta en la vanidad por sus posesiones personales.",
+          "reference": "El colorido verdor de la hierba recién crecida, las flores de temporada, los paraguas de las ranas, las mariposas y la demás variedades de la estación lluviosa representan perfectamente a una familia acomodada absorta en la vanidad por sus posesiones personales.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "una-escena-pintoresca-de-verdes-arrozales-aviva-el-coraz-n-del-pobre-agricultor-pero-ensombrece-el-rostro-del-capitalista-que-vive-explotando-a-los-pobres-campesinos",
+      "kind": "front-back-matter",
+      "title": "**Una escena pintoresca de verdes arrozales aviva el corazón del pobre agricultor, pero ensombrece el rostro del capitalista que vive explotando a los pobres campesinos.**",
+      "source_href": "chapter-9.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Una escena pintoresca de verdes arrozales aviva el corazón del pobre agricultor, pero ensombrece el rostro del capitalista que vive explotando a los pobres campesinos.",
+          "reference": "Una escena pintoresca de verdes arrozales aviva el corazón del pobre agricultor, pero ensombrece el rostro del capitalista que vive explotando a los pobres campesinos.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "as-como-un-ser-viviente-alcanza-una-forma-trascendentalmente-atractiva-al-prestar-servicio-al-se-or-hari-del-mismo-modo-todos-los-habitantes-de-la-tierra-y-del-agua-asumen-formas-hermosas-al-aprovechar-el-agua-reci-n-ca-da",
+      "kind": "front-back-matter",
+      "title": "**Así como un ser viviente alcanza una forma trascendentalmente atractiva al prestar servicio al Señor Hari, del mismo modo, todos los habitantes de la tierra y del agua asumen formas hermosas al aprovechar el agua recién caída.**",
+      "source_href": "chapter-10.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Así como un ser viviente alcanza una forma trascendentalmente atractiva al prestar servicio al Señor Hari, del mismo modo, todos los habitantes de la tierra y del agua asumen formas hermosas al aprovechar el agua recién caída.",
+          "reference": "Así como un ser viviente alcanza una forma trascendentalmente atractiva al prestar servicio al Señor Hari, del mismo modo, todos los habitantes de la tierra y del agua asumen formas hermosas al aprovechar el agua recién caída.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "en-la-estaci-n-lluviosa-cuando-los-r-os-se-hinchan-y-se-precipitan-hacia-el-oc-ano-y-mientras-el-viento-agita-las-olas-el-oc-ano-parece-estar-agitado-de-forma-similar-si-una-persona-dedicada-al-proceso-del-yoga-m-stico-no-se-encuentra-muy-avanzada-en-la-vida-espiritual-puede-verse-afectada-por-las-modalidades-de-la-naturaleza-y-as-ser-agitada-por-el-impulso-sexual",
+      "kind": "front-back-matter",
+      "title": "**En la estación lluviosa, cuando los ríos se hinchan y se precipitan hacia el océano, y mientras el viento agita las olas, el océano parece estar agitado. De forma similar, si una persona dedicada al proceso del *yoga* místico no se encuentra muy avanzada en la vida espiritual, puede verse afectada por las modalidades de la naturaleza y así será agitada por el impulso sexual.**",
+      "source_href": "chapter-11.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.En la estación lluviosa, cuando los ríos se hinchan y se precipitan hacia el océano, y mientras el viento agita las olas, el océano parece estar agitado. De forma similar, si una persona dedicada al proceso del *yoga* místico no se encuentra muy avanzada en la vida espiritual, puede verse afectada por las modalidades de la naturaleza y así será agitada por el impulso sexual.",
+          "reference": "En la estación lluviosa, cuando los ríos se hinchan y se precipitan hacia el océano, y mientras el viento agita las olas, el océano parece estar agitado. De forma similar, si una persona dedicada al proceso del *yoga* místico no se encuentra muy avanzada en la vida espiritual, puede verse afectada por las modalidades de la naturaleza y así será agitada por el impulso sexual.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "las-monta-as-aunque-son-golpeadas-por-torrentes-de-lluvia-durante-la-estaci-n-lluviosa-no-se-sacuden-al-igual-que-aquellos-cuyos-corazones-est-n-dedicados-a-la-trascendental-personalidad-de-dios-nunca-se-perturban-ni-siquiera-cuando-son-acosados-por-grandes-infortunios",
+      "kind": "front-back-matter",
+      "title": "**Las montañas, aunque son golpeadas por torrentes de lluvia durante la estación lluviosa, no se sacuden, al igual que aquellos cuyos corazones están dedicados a la trascendental Personalidad de Dios nunca se perturban, ni siquiera cuando son acosados por grandes infortunios.**",
+      "source_href": "chapter-12.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Las montañas, aunque son golpeadas por torrentes de lluvia durante la estación lluviosa, no se sacuden, al igual que aquellos cuyos corazones están dedicados a la trascendental Personalidad de Dios nunca se perturban, ni siquiera cuando son acosados por grandes infortunios.",
+          "reference": "Las montañas, aunque son golpeadas por torrentes de lluvia durante la estación lluviosa, no se sacuden, al igual que aquellos cuyos corazones están dedicados a la trascendental Personalidad de Dios nunca se perturban, ni siquiera cuando son acosados por grandes infortunios.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "en-la-estaci-n-lluviosa-algunos-de-los-caminos-no-se-transitan-con-frecuencia-y-quedan-cubiertos-de-hierbas-largas-por-lo-que-resulta-muy-dif-cil-ver-el-camino-de-forma-similar-en-esta-era-las-escrituras-trascendentales-no-son-debidamente-estudiadas-por-los-br-hma-as-al-quedar-cubiertas-por-los-efectos-del-tiempo-las-escrituras-est-n-pr-cticamente-perdidas-y-se-vuelve-muy-dif-cil-comprenderlas-o-seguirlas",
+      "kind": "front-back-matter",
+      "title": "**En la estación lluviosa algunos de los caminos no se transitan con frecuencia y quedan cubiertos de hierbas largas, por lo que resulta muy difícil ver el camino. De forma similar, en esta era las escrituras trascendentales no son debidamente estudiadas por los *brāhmaṇas*. Al quedar cubiertas por los efectos del tiempo, las escrituras están prácticamente perdidas, y se vuelve muy difícil comprenderlas o seguirlas.**",
+      "source_href": "chapter-13.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.En la estación lluviosa algunos de los caminos no se transitan con frecuencia y quedan cubiertos de hierbas largas, por lo que resulta muy difícil ver el camino. De forma similar, en esta era las escrituras trascendentales no son debidamente estudiadas por los *brāhmaṇas*. Al quedar cubiertas por los efectos del tiempo, las escrituras están prácticamente perdidas, y se vuelve muy difícil comprenderlas o seguirlas.",
+          "reference": "En la estación lluviosa algunos de los caminos no se transitan con frecuencia y quedan cubiertos de hierbas largas, por lo que resulta muy difícil ver el camino. De forma similar, en esta era las escrituras trascendentales no son debidamente estudiadas por los *brāhmaṇas*. Al quedar cubiertas por los efectos del tiempo, las escrituras están prácticamente perdidas, y se vuelve muy difícil comprenderlas o seguirlas.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "el-rel-mpago-se-vuelve-inconstante-en-su-amistad-al-no-permanecer-fielmente-en-ninguna-de-las-nubes-aunque-estas-son-las-amigas-del-mundo-entero-al-igual-que-las-mujeres-lujuriosas-no-permanecen-firmes-ni-siquiera-en-la-compa-a-de-hombres-que-poseen-excelentes-cualidades",
+      "kind": "front-back-matter",
+      "title": "**El relámpago se vuelve inconstante en su amistad, al no permanecer fielmente en ninguna de las nubes, aunque estas son las amigas del mundo entero, al igual que las mujeres lujuriosas no permanecen firmes ni siquiera en la compañía de hombres que poseen excelentes cualidades.**",
+      "source_href": "chapter-14.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.El relámpago se vuelve inconstante en su amistad, al no permanecer fielmente en ninguna de las nubes, aunque estas son las amigas del mundo entero, al igual que las mujeres lujuriosas no permanecen firmes ni siquiera en la compañía de hombres que poseen excelentes cualidades.",
+          "reference": "El relámpago se vuelve inconstante en su amistad, al no permanecer fielmente en ninguna de las nubes, aunque estas son las amigas del mundo entero, al igual que las mujeres lujuriosas no permanecen firmes ni siquiera en la compañía de hombres que poseen excelentes cualidades.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "en-medio-de-los-truenos-en-el-cielo-nublado-aparece-un-arco-ris-que-no-tiene-cuerda-su-aparici-n-se-compara-con-la-aparici-n-de-la-suprema-personalidad-de-dios-o-de-sus-siervos-en-medio-de-la-atm-sfera-material",
+      "kind": "front-back-matter",
+      "title": "**En medio de los truenos en el cielo nublado aparece un arcoíris que no tiene cuerda. Su aparición se compara con la aparición de la Suprema Personalidad de Dios o de Sus siervos en medio de la atmósfera material.**",
+      "source_href": "chapter-15.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.En medio de los truenos en el cielo nublado aparece un arcoíris que no tiene cuerda. Su aparición se compara con la aparición de la Suprema Personalidad de Dios o de Sus siervos en medio de la atmósfera material.",
+          "reference": "En medio de los truenos en el cielo nublado aparece un arcoíris que no tiene cuerda. Su aparición se compara con la aparición de la Suprema Personalidad de Dios o de Sus siervos en medio de la atmósfera material.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "de-noche-por-la-gracia-de-la-luz-lunar-puede-verse-a-las-nubes-desplazarse-por-el-cielo-sin-embargo-la-luna-misma-tambi-n-parece-estar-movi-ndose-al-igual-que-un-ser-viviente-parece-estar-movi-ndose-a-causa-de-su-falsa-identificaci-n-con-la-materia",
+      "kind": "front-back-matter",
+      "title": "**De noche, por la gracia de la luz lunar, puede verse a las nubes desplazarse por el cielo. Sin embargo, la luna misma también parece estar moviéndose, al igual que un ser viviente parece estar moviéndose a causa de su falsa identificación con la materia.**",
+      "source_href": "chapter-16.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.De noche, por la gracia de la luz lunar, puede verse a las nubes desplazarse por el cielo. Sin embargo, la luna misma también parece estar moviéndose, al igual que un ser viviente parece estar moviéndose a causa de su falsa identificación con la materia.",
+          "reference": "De noche, por la gracia de la luz lunar, puede verse a las nubes desplazarse por el cielo. Sin embargo, la luna misma también parece estar moviéndose, al igual que un ser viviente parece estar moviéndose a causa de su falsa identificación con la materia.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "cuando-las-nubes-aparecen-en-el-cielo-el-pavo-real-comienza-a-bailar-en-xtasis-as-como-un-alma-sincera-se-llena-de-j-bilo-ante-la-aparici-n-de-un-santo-en-su-hogar",
+      "kind": "front-back-matter",
+      "title": "**Cuando las nubes aparecen en el cielo, el pavo real comienza a bailar en éxtasis, así como un alma sincera se llena de júbilo ante la aparición de un santo en su hogar.**",
+      "source_href": "chapter-17.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Cuando las nubes aparecen en el cielo, el pavo real comienza a bailar en éxtasis, así como un alma sincera se llena de júbilo ante la aparición de un santo en su hogar.",
+          "reference": "Cuando las nubes aparecen en el cielo, el pavo real comienza a bailar en éxtasis, así como un alma sincera se llena de júbilo ante la aparición de un santo en su hogar.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "muchas-plantas-y-enredaderas-que-estaban-casi-muertas-durante-los-meses-de-abril-y-mayo-son-ahora-visibles-de-nuevo-en-diversas-formas-pues-est-n-nutridas-por-sus-ra-ces-en-la-tierra-h-meda-estas-innumerables-plantas-y-enredaderas-se-asemejan-a-personas-que-se-consumen-en-severas-penitencias-por-alg-n-beneficio-material-pero-que-luego-alcanzan-sus-objetivos-y-engordan-lujosamente-nutridas-por-el-disfrute-sensual",
+      "kind": "front-back-matter",
+      "title": "**Muchas plantas y enredaderas que estaban casi muertas durante los meses de abril y mayo son ahora visibles de nuevo en diversas formas, pues están nutridas por sus raíces en la tierra húmeda. Estas innumerables plantas y enredaderas se asemejan a personas que se consumen en severas penitencias por algún beneficio material, pero que luego alcanzan sus objetivos y engordan lujosamente, nutridas por el disfrute sensual.**",
+      "source_href": "chapter-18.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Muchas plantas y enredaderas que estaban casi muertas durante los meses de abril y mayo son ahora visibles de nuevo en diversas formas, pues están nutridas por sus raíces en la tierra húmeda. Estas innumerables plantas y enredaderas se asemejan a personas que se consumen en severas penitencias por algún beneficio material, pero que luego alcanzan sus objetivos y engordan lujosamente, nutridas por el disfrute sensual.",
+          "reference": "Muchas plantas y enredaderas que estaban casi muertas durante los meses de abril y mayo son ahora visibles de nuevo en diversas formas, pues están nutridas por sus raíces en la tierra húmeda. Estas innumerables plantas y enredaderas se asemejan a personas que se consumen en severas penitencias por algún beneficio material, pero que luego alcanzan sus objetivos y engordan lujosamente, nutridas por el disfrute sensual.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "una-garza-se-posa-al-borde-de-un-estanque-que-siempre-est-perturbado-por-el-agua-que-fluye-el-lodo-y-las-piedras-la-garza-se-asemeja-a-un-cabeza-de-familia-que-est-perturbado-en-el-refugio-de-su-hogar-pero-que-a-causa-de-un-apego-excesivo-no-quiere-cambiar-de-posici-n",
+      "kind": "front-back-matter",
+      "title": "**Una garza se posa al borde de un estanque que siempre está perturbado por el agua que fluye, el lodo y las piedras. La garza se asemeja a un cabeza de familia que está perturbado en el refugio de su hogar pero que, a causa de un apego excesivo, no quiere cambiar de posición.**",
+      "source_href": "chapter-19.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Una garza se posa al borde de un estanque que siempre está perturbado por el agua que fluye, el lodo y las piedras. La garza se asemeja a un cabeza de familia que está perturbado en el refugio de su hogar pero que, a causa de un apego excesivo, no quiere cambiar de posición.",
+          "reference": "Una garza se posa al borde de un estanque que siempre está perturbado por el agua que fluye, el lodo y las piedras. La garza se asemeja a un cabeza de familia que está perturbado en el refugio de su hogar pero que, a causa de un apego excesivo, no quiere cambiar de posición.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "fieros-torrentes-de-lluvia-se-abaten-sobre-las-riberas-y-los-muros-divisorios-de-los-arrozales-estas-perturbaciones-se-asemejan-a-las-creadas-por-los-opositores-estacionales-de-los-principios-normativos-de-los-vedas-quienes-est-n-influenciados-por-la-era-de-kali",
+      "kind": "front-back-matter",
+      "title": "**Fieros torrentes de lluvia se abaten sobre las riberas y los muros divisorios de los arrozales. Estas perturbaciones se asemejan a las creadas por los opositores estacionales de los principios normativos de los *Vedas*, quienes están influenciados por la era de Kali.**",
+      "source_href": "chapter-20.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Fieros torrentes de lluvia se abaten sobre las riberas y los muros divisorios de los arrozales. Estas perturbaciones se asemejan a las creadas por los opositores estacionales de los principios normativos de los *Vedas*, quienes están influenciados por la era de Kali.",
+          "reference": "Fieros torrentes de lluvia se abaten sobre las riberas y los muros divisorios de los arrozales. Estas perturbaciones se asemejan a las creadas por los opositores estacionales de los principios normativos de los *Vedas*, quienes están influenciados por la era de Kali.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "el-viento-lleva-las-nubes-a-diferentes-partes-del-globo-y-las-nubes-distribuyen-lluvias-para-la-satisfacci-n-del-pueblo-en-general-as-como-los-reyes-y-mercaderes-ricos-distribuyen-su-riqueza-acumulada-inspirados-por-los-sacerdotes-religiosos",
+      "kind": "front-back-matter",
+      "title": "**El viento lleva las nubes a diferentes partes del globo, y las nubes distribuyen lluvias para la satisfacción del pueblo en general, así como los reyes y mercaderes ricos distribuyen su riqueza acumulada, inspirados por los sacerdotes religiosos.**",
+      "source_href": "chapter-21.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.El viento lleva las nubes a diferentes partes del globo, y las nubes distribuyen lluvias para la satisfacción del pueblo en general, así como los reyes y mercaderes ricos distribuyen su riqueza acumulada, inspirados por los sacerdotes religiosos.",
+          "reference": "El viento lleva las nubes a diferentes partes del globo, y las nubes distribuyen lluvias para la satisfacción del pueblo en general, así como los reyes y mercaderes ricos distribuyen su riqueza acumulada, inspirados por los sacerdotes religiosos.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "tras-la-estaci-n-lluviosa-completa-el-bosque-de-v-nd-vana-estaba-lleno-de-frutos-como-d-tiles-y-moras-que-maduraban-en-los-rboles-y-arbustos-el-se-or-r-k-a-junto-con-su-hermano-mayor-r-baladeva-y-otros-pastorcillos-de-vaqueros-de-las-cercan-as-entr-en-el-hermoso-bosque-acompa-ado-de-las-vacas-para-manifestar-pasatiempos-trascendentales-con-sus-amigos-eternos",
+      "kind": "front-back-matter",
+      "title": "**Tras la estación lluviosa completa, el bosque de Vṛndāvana estaba lleno de frutos como dátiles y moras que maduraban en los árboles y arbustos. El Señor Śrī Kṛṣṇa, junto con Su hermano mayor, Śrī Baladeva, y otros pastorcillos de vaqueros de las cercanías, entró en el hermoso bosque, acompañado de las vacas, para manifestar pasatiempos trascendentales con Sus amigos eternos.**",
+      "source_href": "chapter-22.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Tras la estación lluviosa completa, el bosque de Vṛndāvana estaba lleno de frutos como dátiles y moras que maduraban en los árboles y arbustos. El Señor Śrī Kṛṣṇa, junto con Su hermano mayor, Śrī Baladeva, y otros pastorcillos de vaqueros de las cercanías, entró en el hermoso bosque, acompañado de las vacas, para manifestar pasatiempos trascendentales con Sus amigos eternos.",
+          "reference": "Tras la estación lluviosa completa, el bosque de Vṛndāvana estaba lleno de frutos como dátiles y moras que maduraban en los árboles y arbustos. El Señor Śrī Kṛṣṇa, junto con Su hermano mayor, Śrī Baladeva, y otros pastorcillos de vaqueros de las cercanías, entró en el hermoso bosque, acompañado de las vacas, para manifestar pasatiempos trascendentales con Sus amigos eternos.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "las-vacas-que-segu-an-al-se-or-dentro-del-bosque-se-mov-an-lentamente-a-causa-de-sus-ubres-pesadas-y-cargadas-de-leche-pero-cuando-el-se-or-las-llamaba-por-sus-nombres-espec-ficos-de-inmediato-se-pon-an-alertas-y-al-apresurarse-hacia-l-sus-bolsas-de-leche-se-desbordaban-y-derramaban-leche-en-el-suelo-a-causa-del-afecto-por-el-se-or",
+      "kind": "front-back-matter",
+      "title": "**Las vacas que seguían al Señor dentro del bosque se movían lentamente a causa de sus ubres pesadas y cargadas de leche. Pero cuando el Señor las llamaba por sus nombres específicos, de inmediato se ponían alertas, y al apresurarse hacia Él sus bolsas de leche se desbordaban y derramaban leche en el suelo a causa del afecto por el Señor.**",
+      "source_href": "chapter-23.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Las vacas que seguían al Señor dentro del bosque se movían lentamente a causa de sus ubres pesadas y cargadas de leche. Pero cuando el Señor las llamaba por sus nombres específicos, de inmediato se ponían alertas, y al apresurarse hacia Él sus bolsas de leche se desbordaban y derramaban leche en el suelo a causa del afecto por el Señor.",
+          "reference": "Las vacas que seguían al Señor dentro del bosque se movían lentamente a causa de sus ubres pesadas y cargadas de leche. Pero cuando el Señor las llamaba por sus nombres específicos, de inmediato se ponían alertas, y al apresurarse hacia Él sus bolsas de leche se desbordaban y derramaban leche en el suelo a causa del afecto por el Señor.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "cuando-el-se-or-entr-en-el-bosque-de-v-nd-vana-todos-los-habitantes-del-bosque-tanto-los-animados-como-los-inanimados-estaban-ansiosos-por-recibirlo-l-vio-que-las-flores-del-bosque-todas-en-pleno-florecimiento-lloraban-en-xtasis-mientras-la-miel-flu-a-por-sus-p-talos-las-cascadas-sobre-las-rocas-de-las-colinas-flu-an-con-alegr-a-y-se-pod-an-o-r-dulces-sonidos-procedentes-de-las-cuevas-cercanas",
+      "kind": "front-back-matter",
+      "title": "**Cuando el Señor entró en el bosque de Vṛndāvana, todos los habitantes del bosque, tanto los animados como los inanimados, estaban ansiosos por recibirlo. Él vio que las flores del bosque, todas en pleno florecimiento, lloraban en éxtasis mientras la miel fluía por sus pétalos. Las cascadas sobre las rocas de las colinas fluían con alegría, y se podían oír dulces sonidos procedentes de las cuevas cercanas.**",
+      "source_href": "chapter-24.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Cuando el Señor entró en el bosque de Vṛndāvana, todos los habitantes del bosque, tanto los animados como los inanimados, estaban ansiosos por recibirlo. Él vio que las flores del bosque, todas en pleno florecimiento, lloraban en éxtasis mientras la miel fluía por sus pétalos. Las cascadas sobre las rocas de las colinas fluían con alegría, y se podían oír dulces sonidos procedentes de las cuevas cercanas.",
+          "reference": "Cuando el Señor entró en el bosque de Vṛndāvana, todos los habitantes del bosque, tanto los animados como los inanimados, estaban ansiosos por recibirlo. Él vio que las flores del bosque, todas en pleno florecimiento, lloraban en éxtasis mientras la miel fluía por sus pétalos. Las cascadas sobre las rocas de las colinas fluían con alegría, y se podían oír dulces sonidos procedentes de las cuevas cercanas.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "el-se-or-correspondi-a-los-sentimientos-de-los-habitantes-del-bosque-de-v-nd-vana-cuando-llov-a-el-se-or-se-refugiaba-al-pie-de-los-rboles-o-en-las-cuevas-y-disfrutaba-del-sabor-de-diferentes-frutos-con-sus-asociados-eternos-los-pastorcillos-de-vaqueros-jugaba-con-ellos-se-sentaba-con-ellos-y-com-a-frutos-con-ellos",
+      "kind": "front-back-matter",
+      "title": "**El Señor correspondió a los sentimientos de los habitantes del bosque de Vṛndāvana. Cuando llovía, el Señor Se refugiaba al pie de los árboles o en las cuevas y disfrutaba del sabor de diferentes frutos con Sus asociados eternos, los pastorcillos de vaqueros. Jugaba con ellos, Se sentaba con ellos y comía frutos con ellos.**",
+      "source_href": "chapter-25.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.El Señor correspondió a los sentimientos de los habitantes del bosque de Vṛndāvana. Cuando llovía, el Señor Se refugiaba al pie de los árboles o en las cuevas y disfrutaba del sabor de diferentes frutos con Sus asociados eternos, los pastorcillos de vaqueros. Jugaba con ellos, Se sentaba con ellos y comía frutos con ellos.",
+          "reference": "El Señor correspondió a los sentimientos de los habitantes del bosque de Vṛndāvana. Cuando llovía, el Señor Se refugiaba al pie de los árboles o en las cuevas y disfrutaba del sabor de diferentes frutos con Sus asociados eternos, los pastorcillos de vaqueros. Jugaba con ellos, Se sentaba con ellos y comía frutos con ellos.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "el-se-or-disfrut-en-la-compa-a-del-se-or-baladeva-y-los-dem-s-pastorcillos-de-vaqueros-y-a-veces-se-sentaba-con-ellos-en-la-misma-losa-de-piedra-mientras-estaban-sentados-com-an-alimentos-sencillos-como-arroz-dal-verduras-pan-y-cuajada-que-hab-an-tra-do-de-sus-hogares-y-que-compart-an-en-amistosos-intercambios",
+      "kind": "front-back-matter",
+      "title": "**El Señor disfrutó en la compañía del Señor Baladeva y los demás pastorcillos de vaqueros, y a veces Se sentaba con ellos en la misma losa de piedra. Mientras estaban sentados comían alimentos sencillos como arroz, *dal*, verduras, pan y cuajada, que habían traído de sus hogares y que compartían en amistosos intercambios.**",
+      "source_href": "chapter-26.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.El Señor disfrutó en la compañía del Señor Baladeva y los demás pastorcillos de vaqueros, y a veces Se sentaba con ellos en la misma losa de piedra. Mientras estaban sentados comían alimentos sencillos como arroz, *dal*, verduras, pan y cuajada, que habían traído de sus hogares y que compartían en amistosos intercambios.",
+          "reference": "El Señor disfrutó en la compañía del Señor Baladeva y los demás pastorcillos de vaqueros, y a veces Se sentaba con ellos en la misma losa de piedra. Mientras estaban sentados comían alimentos sencillos como arroz, *dal*, verduras, pan y cuajada, que habían traído de sus hogares y que compartían en amistosos intercambios.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "tras-buenas-lluvias-el-terreno-de-pastoreo-para-los-animales-estaba-lleno-de-verde-pasto-y-tanto-los-toros-como-las-vacas-se-sentaron-en-la-hierba-completamente-satisfechos-las-vacas-seguidas-por-sus-terneros-parec-an-cansadas-de-pacer-debido-a-sus-bolsas-de-leche-llenas-tranquila-y-sosegadamente-las-vacas-y-los-terneros-descansaron-y-rumiaron-masticando-su-bolo",
+      "kind": "front-back-matter",
+      "title": "**Tras buenas lluvias, el terreno de pastoreo para los animales estaba lleno de verde pasto, y tanto los toros como las vacas se sentaron en la hierba completamente satisfechos. Las vacas, seguidas por sus terneros, parecían cansadas de pacer debido a sus bolsas de leche llenas. Tranquila y sosegadamente, las vacas y los terneros descansaron y rumiaron, masticando su bolo.**",
+      "source_href": "chapter-27.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Tras buenas lluvias, el terreno de pastoreo para los animales estaba lleno de verde pasto, y tanto los toros como las vacas se sentaron en la hierba completamente satisfechos. Las vacas, seguidas por sus terneros, parecían cansadas de pacer debido a sus bolsas de leche llenas. Tranquila y sosegadamente, las vacas y los terneros descansaron y rumiaron, masticando su bolo.",
+          "reference": "Tras buenas lluvias, el terreno de pastoreo para los animales estaba lleno de verde pasto, y tanto los toros como las vacas se sentaron en la hierba completamente satisfechos. Las vacas, seguidas por sus terneros, parecían cansadas de pacer debido a sus bolsas de leche llenas. Tranquila y sosegadamente, las vacas y los terneros descansaron y rumiaron, masticando su bolo.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "el-paisaje-plenamente-hermoso-despu-s-de-la-estaci-n-lluviosa-resultaba-atractivo-a-los-ojos-de-todos-incluido-r-k-a-la-causa-de-todas-las-causas",
+      "kind": "front-back-matter",
+      "title": "**El paisaje plenamente hermoso después de la estación lluviosa resultaba atractivo a los ojos de todos, incluido Śrī Kṛṣṇa, la causa de todas las causas.**",
+      "source_href": "chapter-28.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.El paisaje plenamente hermoso después de la estación lluviosa resultaba atractivo a los ojos de todos, incluido Śrī Kṛṣṇa, la causa de todas las causas.",
+          "reference": "El paisaje plenamente hermoso después de la estación lluviosa resultaba atractivo a los ojos de todos, incluido Śrī Kṛṣṇa, la causa de todas las causas.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "as-termin-la-estaci-n-lluviosa-comenz-el-oto-o-y-ya-no-hab-a-m-s-nubes-en-el-cielo-todos-los-dep-sitos-de-agua-se-volvieron-cristalinos-y-el-viento-ya-no-era-impetuoso-el-se-or-k-a-junto-con-su-hermano-mayor-el-se-or-baladeva-viv-a-en-v-nd-vana-en-esta-auspiciosa-estaci-n",
+      "kind": "front-back-matter",
+      "title": "**Así terminó la estación lluviosa. Comenzó el otoño, y ya no había más nubes en el cielo. Todos los depósitos de agua se volvieron cristalinos, y el viento ya no era impetuoso. El Señor Kṛṣṇa, junto con Su hermano mayor, el Señor Baladeva, vivía en Vṛndāvana en esta auspiciosa estación.**",
+      "source_href": "chapter-29.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Así terminó la estación lluviosa. Comenzó el otoño, y ya no había más nubes en el cielo. Todos los depósitos de agua se volvieron cristalinos, y el viento ya no era impetuoso. El Señor Kṛṣṇa, junto con Su hermano mayor, el Señor Baladeva, vivía en Vṛndāvana en esta auspiciosa estación.",
+          "reference": "Así terminó la estación lluviosa. Comenzó el otoño, y ya no había más nubes en el cielo. Todos los depósitos de agua se volvieron cristalinos, y el viento ya no era impetuoso. El Señor Kṛṣṇa, junto con Su hermano mayor, el Señor Baladeva, vivía en Vṛndāvana en esta auspiciosa estación.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "en-el-oto-o-todos-los-dep-sitos-de-agua-se-enriquecen-con-lotos-que-crecen-el-agua-fangosa-se-vuelve-nuevamente-clara-y-decorada-de-manera-normal-as-como-las-almas-condicionadas-y-ca-das-se-enriquecen-espiritualmente-una-vez-m-s-en-el-servicio-devocional",
+      "kind": "front-back-matter",
+      "title": "**En el otoño todos los depósitos de agua se enriquecen con lotos que crecen. El agua fangosa se vuelve nuevamente clara y decorada de manera normal, así como las almas condicionadas y caídas se enriquecen espiritualmente una vez más en el servicio devocional.**",
+      "source_href": "chapter-30.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.En el otoño todos los depósitos de agua se enriquecen con lotos que crecen. El agua fangosa se vuelve nuevamente clara y decorada de manera normal, así como las almas condicionadas y caídas se enriquecen espiritualmente una vez más en el servicio devocional.",
+          "reference": "En el otoño todos los depósitos de agua se enriquecen con lotos que crecen. El agua fangosa se vuelve nuevamente clara y decorada de manera normal, así como las almas condicionadas y caídas se enriquecen espiritualmente una vez más en el servicio devocional.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "los-cuatro-rasgos-prominentes-del-oto-o-son-que-no-hay-agua-en-el-cielo-las-hierbas-que-crecieron-aqu-y-all-en-la-estaci-n-lluviosa-se-marchitan-por-completo-los-caminos-y-campos-fangosos-se-secan-y-los-estanques-de-agua-se-vuelven-cristalinos-estos-cuatro-rasgos-de-la-atm-sfera-oto-al-se-comparan-con-las-cuatro-rdenes-de-vida",
+      "kind": "front-back-matter",
+      "title": "**Los cuatro rasgos prominentes del otoño son que no hay agua en el cielo, las hierbas que crecieron aquí y allá en la estación lluviosa se marchitan por completo, los caminos y campos fangosos se secan, y los estanques de agua se vuelven cristalinos. Estos cuatro rasgos de la atmósfera otoñal se comparan con las cuatro órdenes de vida.**",
+      "source_href": "chapter-31.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Los cuatro rasgos prominentes del otoño son que no hay agua en el cielo, las hierbas que crecieron aquí y allá en la estación lluviosa se marchitan por completo, los caminos y campos fangosos se secan, y los estanques de agua se vuelven cristalinos. Estos cuatro rasgos de la atmósfera otoñal se comparan con las cuatro órdenes de vida.",
+          "reference": "Los cuatro rasgos prominentes del otoño son que no hay agua en el cielo, las hierbas que crecieron aquí y allá en la estación lluviosa se marchitan por completo, los caminos y campos fangosos se secan, y los estanques de agua se vuelven cristalinos. Estos cuatro rasgos de la atmósfera otoñal se comparan con las cuatro órdenes de vida.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "las-hermosas-nubes-blancas-liberadas-de-toda-carga-de-distribuci-n-de-agua-flotan-en-el-aire-como-mendicantes-liberados-de-todas-las-responsabilidades-familiares",
+      "kind": "front-back-matter",
+      "title": "**Las hermosas nubes blancas, liberadas de toda carga de distribución de agua, flotan en el aire, como mendicantes liberados de todas las responsabilidades familiares.**",
+      "source_href": "chapter-32.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Las hermosas nubes blancas, liberadas de toda carga de distribución de agua, flotan en el aire, como mendicantes liberados de todas las responsabilidades familiares.",
+          "reference": "Las hermosas nubes blancas, liberadas de toda carga de distribución de agua, flotan en el aire, como mendicantes liberados de todas las responsabilidades familiares.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "hay-cascadas-que-fluyen-de-las-colinas-del-bosque-pero-a-veces-el-agua-no-fluye-de-ellas-as-las-cascadas-no-son-como-la-lluvia-ordinaria-se-comparan-con-los-grandes-reformadores-que-hablan-o-no-hablan-seg-n-lo-requiere-la-ocasi-n",
+      "kind": "front-back-matter",
+      "title": "**Hay cascadas que fluyen de las colinas del bosque, pero a veces el agua no fluye de ellas. Así, las cascadas no son como la lluvia ordinaria. Se comparan con los grandes reformadores, que hablan o no hablan, según lo requiere la ocasión.**",
+      "source_href": "chapter-33.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Hay cascadas que fluyen de las colinas del bosque, pero a veces el agua no fluye de ellas. Así, las cascadas no son como la lluvia ordinaria. Se comparan con los grandes reformadores, que hablan o no hablan, según lo requiere la ocasión.",
+          "reference": "Hay cascadas que fluyen de las colinas del bosque, pero a veces el agua no fluye de ellas. Así, las cascadas no son como la lluvia ordinaria. Se comparan con los grandes reformadores, que hablan o no hablan, según lo requiere la ocasión.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "peque-os-charcos-de-agua-se-acumulan-durante-la-estaci-n-lluviosa-y-en-el-oto-o-gradualmente-se-secan-las-peque-as-criaturas-que-juegan-en-esos-charcos-no-comprenden-que-sus-d-as-est-n-contados-y-terminar-n-muy-pronto-as-son-como-los-hombres-necios-que-sin-preocuparse-por-el-d-a-cercano-de-su-muerte-se-absorben-en-el-supuesto-disfrute-de-la-vida-familiar",
+      "kind": "front-back-matter",
+      "title": "**Pequeños charcos de agua se acumulan durante la estación lluviosa, y en el otoño gradualmente se secan. Las pequeñas criaturas que juegan en esos charcos no comprenden que sus días están contados y terminarán muy pronto. Así son como los hombres necios que, sin preocuparse por el día cercano de su muerte, se absorben en el supuesto disfrute de la vida familiar.**",
+      "source_href": "chapter-34.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Pequeños charcos de agua se acumulan durante la estación lluviosa, y en el otoño gradualmente se secan. Las pequeñas criaturas que juegan en esos charcos no comprenden que sus días están contados y terminarán muy pronto. Así son como los hombres necios que, sin preocuparse por el día cercano de su muerte, se absorben en el supuesto disfrute de la vida familiar.",
+          "reference": "Pequeños charcos de agua se acumulan durante la estación lluviosa, y en el otoño gradualmente se secan. Las pequeñas criaturas que juegan en esos charcos no comprenden que sus días están contados y terminarán muy pronto. Así son como los hombres necios que, sin preocuparse por el día cercano de su muerte, se absorben en el supuesto disfrute de la vida familiar.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "cuando-los-peque-os-charcos-de-agua-se-calientan-demasiado-a-causa-del-abrasador-calor-del-sol-oto-al-las-pobres-y-peque-as-criaturas-con-sus-muchos-familiares-sufren-terriblemente-as-como-los-cabezas-de-familia-pobres-con-demasiados-familiares-sufren-aprietos-econ-micos-y-sin-embargo-contin-an-engendrando-hijos-a-causa-de-sus-sentidos-descontrolados",
+      "kind": "front-back-matter",
+      "title": "**Cuando los pequeños charcos de agua se calientan demasiado a causa del abrasador calor del sol otoñal, las pobres y pequeñas criaturas, con sus muchos familiares, sufren terriblemente, así como los cabezas de familia pobres con demasiados familiares sufren aprietos económicos y sin embargo continúan engendrando hijos a causa de sus sentidos descontrolados.**",
+      "source_href": "chapter-35.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Cuando los pequeños charcos de agua se calientan demasiado a causa del abrasador calor del sol otoñal, las pobres y pequeñas criaturas, con sus muchos familiares, sufren terriblemente, así como los cabezas de familia pobres con demasiados familiares sufren aprietos económicos y sin embargo continúan engendrando hijos a causa de sus sentidos descontrolados.",
+          "reference": "Cuando los pequeños charcos de agua se calientan demasiado a causa del abrasador calor del sol otoñal, las pobres y pequeñas criaturas, con sus muchos familiares, sufren terriblemente, así como los cabezas de familia pobres con demasiados familiares sufren aprietos económicos y sin embargo continúan engendrando hijos a causa de sus sentidos descontrolados.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "con-el-avance-de-la-estaci-n-oto-al-la-tierra-h-meda-y-los-lugares-fangosos-comienzan-a-secarse-y-la-verde-vegetaci-n-comienza-a-marchitarse-este-secarse-y-marchitarse-se-asemeja-a-la-gradual-desaparici-n-del-falso-sentido-de-afinidad-y-del-ego",
+      "kind": "front-back-matter",
+      "title": "**Con el avance de la estación otoñal, la tierra húmeda y los lugares fangosos comienzan a secarse, y la verde vegetación comienza a marchitarse. Este secarse y marchitarse se asemeja a la gradual desaparición del falso sentido de afinidad y del ego.**",
+      "source_href": "chapter-36.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Con el avance de la estación otoñal, la tierra húmeda y los lugares fangosos comienzan a secarse, y la verde vegetación comienza a marchitarse. Este secarse y marchitarse se asemeja a la gradual desaparición del falso sentido de afinidad y del ego.",
+          "reference": "Con el avance de la estación otoñal, la tierra húmeda y los lugares fangosos comienzan a secarse, y la verde vegetación comienza a marchitarse. Este secarse y marchitarse se asemeja a la gradual desaparición del falso sentido de afinidad y del ego.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "con-la-inauguraci-n-de-la-estaci-n-oto-al-el-mar-embravecido-se-vuelve-calmo-y-tranquilo-tal-como-un-fil-sofo-despu-s-de-la-autorrealizaci-n-que-ya-no-est-perturbado-por-las-modalidades-de-la-naturaleza",
+      "kind": "front-back-matter",
+      "title": "**Con la inauguración de la estación otoñal, el mar embravecido se vuelve calmo y tranquilo, tal como un filósofo después de la autorrealización, que ya no está perturbado por las modalidades de la naturaleza.**",
+      "source_href": "chapter-37.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Con la inauguración de la estación otoñal, el mar embravecido se vuelve calmo y tranquilo, tal como un filósofo después de la autorrealización, que ya no está perturbado por las modalidades de la naturaleza.",
+          "reference": "Con la inauguración de la estación otoñal, el mar embravecido se vuelve calmo y tranquilo, tal como un filósofo después de la autorrealización, que ya no está perturbado por las modalidades de la naturaleza.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "despu-s-de-la-estaci-n-lluviosa-los-campesinos-comienzan-a-reconstruir-los-muros-divisorios-de-los-arrozales-para-que-el-agua-se-conserve-as-como-los-yog-s-tratan-de-emplear-su-energ-a-conservada-para-la-autorrealizaci-n",
+      "kind": "front-back-matter",
+      "title": "**Después de la estación lluviosa, los campesinos comienzan a reconstruir los muros divisorios de los arrozales para que el agua se conserve, así como los *yogīs* tratan de emplear su energía conservada para la autorrealización.**",
+      "source_href": "chapter-38.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Después de la estación lluviosa, los campesinos comienzan a reconstruir los muros divisorios de los arrozales para que el agua se conserve, así como los *yogīs* tratan de emplear su energía conservada para la autorrealización.",
+          "reference": "Después de la estación lluviosa, los campesinos comienzan a reconstruir los muros divisorios de los arrozales para que el agua se conserve, así como los *yogīs* tratan de emplear su energía conservada para la autorrealización.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "en-el-oto-o-hay-un-abismo-de-diferencia-entre-el-d-a-y-la-noche-durante-el-d-a-el-calor-extremo-del-sol-es-insoportable-pero-por-la-noche-la-luz-de-la-luna-es-sumamente-reconfortante-y-refrescante-de-forma-similar-el-se-or-r-k-a-es-reconfortante-tanto-para-las-gop-s-como-para-el-hombre-mundano-sumido-en-la-ilusi-n-que-acepta-el-cuerpo-como-el-alma",
+      "kind": "front-back-matter",
+      "title": "**En el otoño hay un abismo de diferencia entre el día y la noche. Durante el día, el calor extremo del sol es insoportable, pero por la noche la luz de la luna es sumamente reconfortante y refrescante. De forma similar, el Señor Śrī Kṛṣṇa es reconfortante tanto para las *gopīs* como para el hombre mundano sumido en la ilusión, que acepta el cuerpo como el alma.**",
+      "source_href": "chapter-39.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.En el otoño hay un abismo de diferencia entre el día y la noche. Durante el día, el calor extremo del sol es insoportable, pero por la noche la luz de la luna es sumamente reconfortante y refrescante. De forma similar, el Señor Śrī Kṛṣṇa es reconfortante tanto para las *gopīs* como para el hombre mundano sumido en la ilusión, que acepta el cuerpo como el alma.",
+          "reference": "En el otoño hay un abismo de diferencia entre el día y la noche. Durante el día, el calor extremo del sol es insoportable, pero por la noche la luz de la luna es sumamente reconfortante y refrescante. De forma similar, el Señor Śrī Kṛṣṇa es reconfortante tanto para las *gopīs* como para el hombre mundano sumido en la ilusión, que acepta el cuerpo como el alma.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "en-el-cielo-despejado-del-oto-o-las-estrellas-centelleantes-aparecen-cada-vez-m-s-brillantes-as-como-la-clara-visi-n-de-un-trascendentalista-respecto-al-prop-sito-de-los-vedas",
+      "kind": "front-back-matter",
+      "title": "**En el cielo despejado del otoño, las estrellas centelleantes aparecen cada vez más brillantes, así como la clara visión de un trascendentalista respecto al propósito de los *Vedas*.**",
+      "source_href": "chapter-40.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.En el cielo despejado del otoño, las estrellas centelleantes aparecen cada vez más brillantes, así como la clara visión de un trascendentalista respecto al propósito de los *Vedas*.",
+          "reference": "En el cielo despejado del otoño, las estrellas centelleantes aparecen cada vez más brillantes, así como la clara visión de un trascendentalista respecto al propósito de los *Vedas*.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "en-el-cielo-despejado-del-oto-o-la-hermosa-luna-entre-las-hermosas-estrellas-se-convierte-en-el-centro-de-atenci-n-de-todas-las-miradas-as-como-el-se-or-r-k-a-es-la-atracci-n-central-en-la-dinast-a-v-i-o-en-la-familia-de-yadu",
+      "kind": "front-back-matter",
+      "title": "**En el cielo despejado del otoño, la hermosa luna entre las hermosas estrellas se convierte en el centro de atención de todas las miradas, así como el Señor Śrī Kṛṣṇa es la atracción central en la dinastía Vṛṣṇi o en la familia de Yadu.**",
+      "source_href": "chapter-41.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.En el cielo despejado del otoño, la hermosa luna entre las hermosas estrellas se convierte en el centro de atención de todas las miradas, así como el Señor Śrī Kṛṣṇa es la atracción central en la dinastía Vṛṣṇi o en la familia de Yadu.",
+          "reference": "En el cielo despejado del otoño, la hermosa luna entre las hermosas estrellas se convierte en el centro de atención de todas las miradas, así como el Señor Śrī Kṛṣṇa es la atracción central en la dinastía Vṛṣṇi o en la familia de Yadu.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "por-la-noche-en-oto-o-la-atm-sfera-es-agradable-porque-no-hace-ni-mucho-calor-ni-mucho-fr-o-la-suave-brisa-que-soplaba-por-los-jardines-de-frutas-y-flores-de-v-nd-vana-resultaba-muy-placentera-para-todos-excepto-para-las-gop-s-que-siempre-estaban-embargadas-por-una-sentida-aflicci-n-en-ausencia-de-k-a",
+      "kind": "front-back-matter",
+      "title": "**Por la noche, en otoño, la atmósfera es agradable porque no hace ni mucho calor ni mucho frío. La suave brisa que soplaba por los jardines de frutas y flores de Vṛndāvana resultaba muy placentera para todos, excepto para las *gopīs*, que siempre estaban embargadas por una sentida aflicción en ausencia de Kṛṣṇa.**",
+      "source_href": "chapter-42.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Por la noche, en otoño, la atmósfera es agradable porque no hace ni mucho calor ni mucho frío. La suave brisa que soplaba por los jardines de frutas y flores de Vṛndāvana resultaba muy placentera para todos, excepto para las *gopīs*, que siempre estaban embargadas por una sentida aflicción en ausencia de Kṛṣṇa.",
+          "reference": "Por la noche, en otoño, la atmósfera es agradable porque no hace ni mucho calor ni mucho frío. La suave brisa que soplaba por los jardines de frutas y flores de Vṛndāvana resultaba muy placentera para todos, excepto para las *gopīs*, que siempre estaban embargadas por una sentida aflicción en ausencia de Kṛṣṇa.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "en-la-estaci-n-oto-al-todas-las-aves-bestias-y-hombres-se-disponen-sexualmente-y-el-toro-el-ciervo-el-p-jaro-macho-el-hombre-y-otras-criaturas-masculinas-impregnan-a-la-fuerza-al-bello-sexo-una-impregnaci-n-similar-tiene-lugar-como-resultado-del-servicio-devocional-al-se-or",
+      "kind": "front-back-matter",
+      "title": "**En la estación otoñal todas las aves, bestias y hombres se disponen sexualmente, y el toro, el ciervo, el pájaro macho, el hombre y otras criaturas masculinas impregnan a la fuerza al bello sexo. Una impregnación similar tiene lugar como resultado del servicio devocional al Señor.**",
+      "source_href": "chapter-43.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.En la estación otoñal todas las aves, bestias y hombres se disponen sexualmente, y el toro, el ciervo, el pájaro macho, el hombre y otras criaturas masculinas impregnan a la fuerza al bello sexo. Una impregnación similar tiene lugar como resultado del servicio devocional al Señor.",
+          "reference": "En la estación otoñal todas las aves, bestias y hombres se disponen sexualmente, y el toro, el ciervo, el pájaro macho, el hombre y otras criaturas masculinas impregnan a la fuerza al bello sexo. Una impregnación similar tiene lugar como resultado del servicio devocional al Señor.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "en-la-estaci-n-oto-al-todos-los-dep-sitos-de-agua-est-n-llenos-de-flores-de-loto-tambi-n-hay-flores-que-se-asemejan-al-loto-pero-que-son-de-una-clase-diferente-entre-ellas-hay-una-flor-llamada-kumuda-cuando-el-sol-sale-todas-las-flores-excepto-la-kumuda-florecen-hermosamente-de-forma-similar-los-hombres-semejantes-al-loto-se-complacen-con-el-advenimiento-de-un-rey-responsable-pero-los-hombres-que-son-como-la-kumuda-no-gustan-de-la-existencia-de-un-rey",
+      "kind": "front-back-matter",
+      "title": "**En la estación otoñal todos los depósitos de agua están llenos de flores de loto. También hay flores que se asemejan al loto pero que son de una clase diferente. Entre ellas hay una flor llamada *kumuda*. Cuando el sol sale, todas las flores excepto la *kumuda* florecen hermosamente. De forma similar, los hombres semejantes al loto se complacen con el advenimiento de un rey responsable, pero los hombres que son como la *kumuda* no gustan de la existencia de un rey.**",
+      "source_href": "chapter-44.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.En la estación otoñal todos los depósitos de agua están llenos de flores de loto. También hay flores que se asemejan al loto pero que son de una clase diferente. Entre ellas hay una flor llamada *kumuda*. Cuando el sol sale, todas las flores excepto la *kumuda* florecen hermosamente. De forma similar, los hombres semejantes al loto se complacen con el advenimiento de un rey responsable, pero los hombres que son como la *kumuda* no gustan de la existencia de un rey.",
+          "reference": "En la estación otoñal todos los depósitos de agua están llenos de flores de loto. También hay flores que se asemejan al loto pero que son de una clase diferente. Entre ellas hay una flor llamada *kumuda*. Cuando el sol sale, todas las flores excepto la *kumuda* florecen hermosamente. De forma similar, los hombres semejantes al loto se complacen con el advenimiento de un rey responsable, pero los hombres que son como la *kumuda* no gustan de la existencia de un rey.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "despu-s-de-que-los-nuevos-granos-fueron-cortados-y-tra-dos-a-casa-de-los-arrozales-la-gente-comenz-a-observar-la-ceremonia-del-nav-nna-por-todas-partes-en-presencia-del-se-or-como-r-k-a-y-baladeva",
+      "kind": "front-back-matter",
+      "title": "**Después de que los nuevos granos fueron cortados y traídos a casa de los arrozales, la gente comenzó a observar la ceremonia del *navānna* por todas partes, en presencia del Señor como Śrī Kṛṣṇa y Baladeva.**",
+      "source_href": "chapter-45.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Después de que los nuevos granos fueron cortados y traídos a casa de los arrozales, la gente comenzó a observar la ceremonia del *navānna* por todas partes, en presencia del Señor como Śrī Kṛṣṇa y Baladeva.",
+          "reference": "Después de que los nuevos granos fueron cortados y traídos a casa de los arrozales, la gente comenzó a observar la ceremonia del *navānna* por todas partes, en presencia del Señor como Śrī Kṛṣṇa y Baladeva.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "los-mercaderes-predicadores-reyes-y-estudiantes-que-estuvieron-confinados-en-casa-durante-los-cuatro-meses-de-junio-julio-agosto-y-septiembre-comenzaron-a-salir-y-a-alcanzar-el-xito-en-la-vida-as-como-las-almas-perfeccionadas-alcanzan-el-cuerpo-requerido-tan-pronto-como-abandonan-el-presente",
+      "kind": "front-back-matter",
+      "title": "**Los mercaderes, predicadores, reyes y estudiantes que estuvieron confinados en casa durante los cuatro meses de junio, julio, agosto y septiembre comenzaron a salir y a alcanzar el éxito en la vida, así como las almas perfeccionadas alcanzan el cuerpo requerido tan pronto como abandonan el presente.**",
+      "source_href": "chapter-46.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.Los mercaderes, predicadores, reyes y estudiantes que estuvieron confinados en casa durante los cuatro meses de junio, julio, agosto y septiembre comenzaron a salir y a alcanzar el éxito en la vida, así como las almas perfeccionadas alcanzan el cuerpo requerido tan pronto como abandonan el presente.",
+          "reference": "Los mercaderes, predicadores, reyes y estudiantes que estuvieron confinados en casa durante los cuatro meses de junio, julio, agosto y septiembre comenzaron a salir y a alcanzar el éxito en la vida, así como las almas perfeccionadas alcanzan el cuerpo requerido tan pronto como abandonan el presente.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "de-la-trascendencia-que-se-denomina-k-aloka-emana-una-efulgencia-resplandeciente-que-se-asemeja-a-la-cola-de-un-cometa-esta-efulgencia-resplandeciente-es-ilimitada-inmensurable-e-insondable-dentro-de-esta-efulgencia-hay-innumerables-planetas-resplandecientes-cada-uno-de-ellos-autoluminoso-en-alg-n-lugar-una-parte-limitada-de-esa-efulgencia-resplandeciente-est-cubierta-por-la-energ-a-material-as-como-una-parte-del-cielo-queda-cubierta-por-una-nube-dentro-de-esta-energ-a-material-hay-innumerables-universos-en-cada-universo-hay-innumerables-planetas-materiales-y-la-tierra-es-uno-de-estos-planetas-as-podemos-comprender-qu-parte-tan-insignificante-del-cosmos-entero-es-este-globo-en-el-que-vivimos",
+      "kind": "front-back-matter",
+      "title": "**De la Trascendencia, que se denomina Kṛṣṇaloka, emana una efulgencia resplandeciente que se asemeja a la cola de un cometa. Esta efulgencia resplandeciente es ilimitada, inmensurable e insondable. Dentro de esta efulgencia hay innumerables planetas resplandecientes, cada uno de ellos autoluminoso. En algún lugar, una parte limitada de esa efulgencia resplandeciente está cubierta por la energía material, así como una parte del cielo queda cubierta por una nube. Dentro de esta energía material hay innumerables universos, en cada universo hay innumerables planetas materiales, y la Tierra es uno de estos planetas. Así podemos comprender qué parte tan insignificante del cosmos entero es este globo en el que vivimos.**",
+      "source_href": "chapter-47.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.De la Trascendencia, que se denomina Kṛṣṇaloka, emana una efulgencia resplandeciente que se asemeja a la cola de un cometa. Esta efulgencia resplandeciente es ilimitada, inmensurable e insondable. Dentro de esta efulgencia hay innumerables planetas resplandecientes, cada uno de ellos autoluminoso. En algún lugar, una parte limitada de esa efulgencia resplandeciente está cubierta por la energía material, así como una parte del cielo queda cubierta por una nube. Dentro de esta energía material hay innumerables universos, en cada universo hay innumerables planetas materiales, y la Tierra es uno de estos planetas. Así podemos comprender qué parte tan insignificante del cosmos entero es este globo en el que vivimos.",
+          "reference": "De la Trascendencia, que se denomina Kṛṣṇaloka, emana una efulgencia resplandeciente que se asemeja a la cola de un cometa. Esta efulgencia resplandeciente es ilimitada, inmensurable e insondable. Dentro de esta efulgencia hay innumerables planetas resplandecientes, cada uno de ellos autoluminoso. En algún lugar, una parte limitada de esa efulgencia resplandeciente está cubierta por la energía material, así como una parte del cielo queda cubierta por una nube. Dentro de esta energía material hay innumerables universos, en cada universo hay innumerables planetas materiales, y la Tierra es uno de estos planetas. Así podemos comprender qué parte tan insignificante del cosmos entero es este globo en el que vivimos.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "la-luna-o-candraloka-es-uno-de-los-cuatro-lugares-importantes-de-residencia-de-los-semidioses-m-s-all-del-lago-m-nasa-se-encuentra-la-monta-a-sumeru-en-el-lado-oriental-de-esta-monta-a-est-el-planeta-devadh-n-donde-reside-indra-en-el-lado-sur-est-el-planeta-conocido-como-sa-yaman-donde-reside-yamar-ja-en-el-lado-occidental-est-el-planeta-conocido-como-nimlocan-la-residencia-de-v-yu-el-semidi-s-que-controla-el-viento-y-en-el-lado-norte-de-la-monta-a-est-la-luna-que-tambi-n-se-conoce-como-vibh-var",
+      "kind": "front-back-matter",
+      "title": "**La luna, o Candraloka, es uno de los cuatro lugares importantes de residencia de los semidioses. Más allá del lago Mānasa se encuentra la montaña Sumeru. En el lado oriental de esta montaña está el planeta Devadhānī, donde reside Indra. En el lado sur está el planeta conocido como Saṁyamanī, donde reside Yamarāja. En el lado occidental está el planeta conocido como Nimlocanī, la residencia de Vāyu, el semidiós que controla el viento. Y en el lado norte de la montaña está la luna, que también se conoce como Vibhāvarī.**",
+      "source_href": "chapter-48.xhtml",
+      "verses": [
+        {
+          "id": "lob-es.La luna, o Candraloka, es uno de los cuatro lugares importantes de residencia de los semidioses. Más allá del lago Mānasa se encuentra la montaña Sumeru. En el lado oriental de esta montaña está el planeta Devadhānī, donde reside Indra. En el lado sur está el planeta conocido como Saṁyamanī, donde reside Yamarāja. En el lado occidental está el planeta conocido como Nimlocanī, la residencia de Vāyu, el semidiós que controla el viento. Y en el lado norte de la montaña está la luna, que también se conoce como Vibhāvarī.",
+          "reference": "La luna, o Candraloka, es uno de los cuatro lugares importantes de residencia de los semidioses. Más allá del lago Mānasa se encuentra la montaña Sumeru. En el lado oriental de esta montaña está el planeta Devadhānī, donde reside Indra. En el lado sur está el planeta conocido como Saṁyamanī, donde reside Yamarāja. En el lado occidental está el planeta conocido como Nimlocanī, la residencia de Vāyu, el semidiós que controla el viento. Y en el lado norte de la montaña está la luna, que también se conoce como Vibhāvarī.",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    }
+  ]
+}

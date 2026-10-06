@@ -69,6 +69,277 @@ class AcademyHandler(SimpleHTTPRequestHandler):
         self.wfile.write(body)
 
     def do_POST(self):
+        if self.path in {
+            "/__academy/sandarbhas/content",
+            "/__academy/sandarbhas/content/save"
+        }:
+            try:
+                length = int(self.headers.get("Content-Length", "0"))
+                payload = json.loads(
+                    self.rfile.read(length).decode("utf-8")
+                )
+
+                work_id = str(payload.get("work_id", "")).strip()
+                canonical_id = str(
+                    payload.get("canonical_id", "")
+                ).strip()
+
+                allowed = {
+                    "tattva",
+                    "bhagavat",
+                    "paramatma",
+                    "krsna",
+                    "bhakti",
+                    "priti"
+                }
+
+                if work_id not in allowed:
+                    self.send_json({
+                        "ok": False,
+                        "error": "Sandarbha no válido."
+                    }, 400)
+                    return
+
+                if not canonical_id:
+                    self.send_json({
+                        "ok": False,
+                        "error": "Se requiere el ID canónico."
+                    }, 400)
+                    return
+
+                english_path = (
+                    ROOT / "sandarbhas" / "sources" /
+                    "english-reader" / f"{work_id}.json"
+                ).resolve()
+
+                spanish_path = (
+                    ROOT / "sandarbhas" / "sources" /
+                    "spanish-reader" / f"{work_id}.json"
+                ).resolve()
+
+                source_root = (
+                    ROOT / "sandarbhas" / "sources"
+                ).resolve()
+
+                if source_root not in english_path.parents:
+                    raise ValueError("Ruta inglesa no válida.")
+
+                if source_root not in spanish_path.parents:
+                    raise ValueError("Ruta española no válida.")
+
+                if not english_path.exists():
+                    self.send_json({
+                        "ok": False,
+                        "error": "No se encontró la fuente inglesa."
+                    }, 404)
+                    return
+
+                if not spanish_path.exists():
+                    self.send_json({
+                        "ok": False,
+                        "error": "No se encontró la capa española."
+                    }, 404)
+                    return
+
+                english = json.loads(
+                    english_path.read_text(encoding="utf-8")
+                )
+
+                spanish = json.loads(
+                    spanish_path.read_text(encoding="utf-8")
+                )
+
+                english_record = next(
+                    (
+                        record
+                        for record in english.get("records", [])
+                        if str(record.get("canonicalId", "")) ==
+                        canonical_id
+                    ),
+                    None
+                )
+
+                spanish_record = next(
+                    (
+                        record
+                        for record in spanish.get("records", [])
+                        if str(record.get("canonicalId", "")) ==
+                        canonical_id
+                    ),
+                    None
+                )
+
+                if english_record is None or spanish_record is None:
+                    self.send_json({
+                        "ok": False,
+                        "error": "No se encontró el anuccheda."
+                    }, 404)
+                    return
+
+                if self.path == "/__academy/sandarbhas/content":
+                    self.send_json({
+                        "ok": True,
+                        "work_id": work_id,
+                        "canonical_id": canonical_id,
+                        "record": {
+                            "canonicalId": canonical_id,
+                            "number": spanish_record.get("number"),
+                            "sourceLabel": spanish_record.get(
+                                "sourceLabel"
+                            ),
+                            "sourceHeadingVerified":
+                                spanish_record.get(
+                                    "sourceHeadingVerified",
+                                    False
+                                ),
+                            "sourceEnglish": english_record.get(
+                                "content",
+                                ""
+                            ),
+                            "content": spanish_record.get(
+                                "content",
+                                ""
+                            )
+                        }
+                    })
+                    return
+
+                # Guardar solamente la traducción española.
+                spanish_record["content"] = str(
+                    payload.get("content", "")
+                )
+
+                write_json_atomic(spanish_path, spanish)
+
+                self.send_json({
+                    "ok": True,
+                    "message": "Traducción del Sandarbha guardada.",
+                    "work_id": work_id,
+                    "canonical_id": canonical_id,
+                    "record": {
+                        "canonicalId": canonical_id,
+                        "content": spanish_record["content"]
+                    }
+                })
+                return
+
+            except Exception as exc:
+                self.send_json({
+                    "ok": False,
+                    "error": "No se pudo editar el Sandarbha.",
+                    "detail": str(exc)
+                }, 500)
+                return
+
+        if self.path in {
+            "/__academy/books/content",
+            "/__academy/books/content/save"
+        }:
+            try:
+                length = int(self.headers.get("Content-Length", "0"))
+                payload = json.loads(
+                    self.rfile.read(length).decode("utf-8")
+                )
+
+                book_id = str(payload.get("book_id", "")).strip()
+                reference = str(payload.get("reference", "")).strip()
+
+                if not book_id or not reference:
+                    self.send_json({
+                        "ok": False,
+                        "error": "Book ID and reference are required."
+                    }, 400)
+                    return
+
+                registry_path = ROOT / "data" / "books.json"
+                registry = json.loads(
+                    registry_path.read_text(encoding="utf-8")
+                )
+
+                if not isinstance(registry, list):
+                    raise ValueError(
+                        "Canonical book registry is not a list."
+                    )
+
+                meta = next(
+                    (
+                        book for book in registry
+                        if isinstance(book, dict)
+                        and str(book.get("id", "")) == book_id
+                    ),
+                    None
+                )
+
+                if meta is None:
+                    self.send_json({
+                        "ok": False,
+                        "error": "Book not found."
+                    }, 404)
+                    return
+
+                data_path = str(meta.get("dataPath", "")).strip()
+                if not data_path:
+                    raise ValueError("Book has no dataPath.")
+
+                book_path = (ROOT / data_path).resolve()
+
+                if ROOT.resolve() not in book_path.parents:
+                    raise ValueError("Invalid book data path.")
+
+                book = json.loads(
+                    book_path.read_text(encoding="utf-8")
+                )
+
+                found = None
+                for section in book.get("sections", []):
+                    for verse in section.get("verses", []):
+                        if str(verse.get("reference", "")) == reference:
+                            found = verse
+                            break
+                    if found is not None:
+                        break
+
+                if found is None:
+                    self.send_json({
+                        "ok": False,
+                        "error": "Reference not found."
+                    }, 404)
+                    return
+
+                if self.path == "/__academy/books/content":
+                    self.send_json({
+                        "ok": True,
+                        "book": {
+                            "id": meta.get("id"),
+                            "title": meta.get("title"),
+                            "canonicalId": meta.get("canonicalId")
+                        },
+                        "record": found
+                    })
+                    return
+
+                for field in ("synonyms", "translation", "purport"):
+                    if field in payload:
+                        found[field] = str(payload.get(field, ""))
+
+                write_json_atomic(book_path, book)
+
+                self.send_json({
+                    "ok": True,
+                    "message": "Book content updated.",
+                    "reference": reference,
+                    "record": found
+                })
+                return
+
+            except Exception as exc:
+                self.send_json({
+                    "ok": False,
+                    "error": "Could not edit book content.",
+                    "detail": str(exc)
+                }, 500)
+                return
+
         if self.path == "/__academy/books/metadata":
             try:
                 length = int(self.headers.get("Content-Length", "0"))

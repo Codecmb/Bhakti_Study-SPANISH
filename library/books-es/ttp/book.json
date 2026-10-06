@@ -1,0 +1,165 @@
+{
+  "schema": "bhakti-study.book.v1",
+  "id": "ttp-es",
+  "title": "El sistema de yoga supremo",
+  "creator": "A.C. Bhaktivedanta Swami Prabhupāda",
+  "publisher": "Bhaktivedanta Book Trust",
+  "language": "es",
+  "source_format": "EPUB",
+  "source_file": "ttp-es.epub",
+  "sections": [
+    {
+      "id": "la-perfecci-n-del-yoga",
+      "kind": "front-back-matter",
+      "title": "La perfección del yoga",
+      "source_href": "chapter-1.xhtml",
+      "verses": [
+        {
+          "id": "ttp-es.La perfección del yoga",
+          "reference": "La perfección del yoga",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "el-yoga-y-el-maestro-del-yoga",
+      "kind": "front-back-matter",
+      "title": "El yoga y el maestro del yoga",
+      "source_href": "chapter-2.xhtml",
+      "verses": [
+        {
+          "id": "ttp-es.El yoga y el maestro del yoga",
+          "reference": "El yoga y el maestro del yoga",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "m-s-all-de-las-leyes-de-la-naturaleza",
+      "kind": "front-back-matter",
+      "title": "Más allá de las leyes de la naturaleza",
+      "source_href": "chapter-3.xhtml",
+      "verses": [
+        {
+          "id": "ttp-es.Más allá de las leyes de la naturaleza",
+          "reference": "Más allá de las leyes de la naturaleza",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "la-meta-del-yoga",
+      "kind": "front-back-matter",
+      "title": "La meta del yoga",
+      "source_href": "chapter-4.xhtml",
+      "verses": [
+        {
+          "id": "ttp-es.La meta del yoga",
+          "reference": "La meta del yoga",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "nuestra-verdadera-vida",
+      "kind": "front-back-matter",
+      "title": "Nuestra verdadera vida",
+      "source_href": "chapter-5.xhtml",
+      "verses": [
+        {
+          "id": "ttp-es.Nuestra verdadera vida",
+          "reference": "Nuestra verdadera vida",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "el-mantra-hare-k-a",
+      "kind": "front-back-matter",
+      "title": "El mantra Hare Kṛṣṇa",
+      "source_href": "chapter-6.xhtml",
+      "verses": [
+        {
+          "id": "ttp-es.El mantra Hare Kṛṣṇa",
+          "reference": "El mantra Hare Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "c-mo-funciona-el-bhakti-yoga",
+      "kind": "front-back-matter",
+      "title": "Cómo funciona el bhakti-yoga",
+      "source_href": "chapter-7.xhtml",
+      "verses": [
+        {
+          "id": "ttp-es.Cómo funciona el bhakti-yoga",
+          "reference": "Cómo funciona el bhakti-yoga",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "fuentes-del-conocimiento-absoluto",
+      "kind": "front-back-matter",
+      "title": "Fuentes del conocimiento absoluto",
+      "source_href": "chapter-8.xhtml",
+      "verses": [
+        {
+          "id": "ttp-es.Fuentes del conocimiento absoluto",
+          "reference": "Fuentes del conocimiento absoluto",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "la-verdadera-f-rmula-de-la-paz",
+      "kind": "front-back-matter",
+      "title": "La verdadera fórmula de la paz",
+      "source_href": "chapter-9.xhtml",
+      "verses": [
+        {
+          "id": "ttp-es.La verdadera fórmula de la paz",
+          "reference": "La verdadera fórmula de la paz",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    }
+  ]
+}

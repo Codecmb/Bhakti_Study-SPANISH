@@ -1,30 +1,30 @@
 {
   "academyUnitCompletion": {
     "enabled": true,
-    "label": "Academy unit completion",
+    "label": "Finalización de la unidad de la Academia",
     "requirements": [
       {
         "id": "reading",
-        "label": "I completed the assigned primary reading.",
+        "label": "He completado la lectura primaria asignada.",
         "source": "student-check"
       },
       {
         "id": "questions",
-        "label": "I answered the study questions from the source.",
+        "label": "He respondido las preguntas de estudio basándome en la fuente.",
         "source": "student-check"
       },
       {
         "id": "slokas",
-        "label": "I reviewed the required ślokas.",
+        "label": "He repasado los ślokas requeridos.",
         "source": "student-check"
       },
       {
         "id": "understanding",
-        "label": "I revised My Understanding after rereading the source.",
+        "label": "He revisado Mi Comprensión después de volver a leer la fuente.",
         "source": "student-check"
       }
     ],
-    "policy": "All configured Academy requirements must be checked before a unit can be marked complete.",
+    "policy": "Todos los requisitos configurados por la Academia deben marcarse antes de que una unidad pueda considerarse completada.",
     "officialDegree": false
   }
 }

@@ -17,29 +17,29 @@ async function json(p){
 function sidebar(a='home',rootOverride=null){
  const R=rootOverride||ROOT;
  const link=i=>`<a class="${i[0]===a?'active':''}" href="${i[2]}">${i[1]}</a>`;
- const home=['home','Academy Home',R+'index.html'];
+ const home=['home','Inicio de la Academia',R+'index.html'];
  const groups=[
-   ['Study',[
+   ['Estudio',[
      ['bhakti-sastri','Bhakti Śāstrī',R+'programs/bhakti-sastri/index.html'],
      ['bhakti-vaibhava','Bhakti Vaibhava',R+'programs/bhakti-vaibhava/index.html'],
      ['bhakti-vedanta','Bhakti Vedānta',R+'programs/bhakti-vedanta/index.html'],
      ['bhakti-sarvabhauma','Bhakti Sārvabhauma',R+'programs/bhakti-sarvabhauma/index.html'],
      ['sat-sandarbhas','Ṣaṭ Sandarbhas',R+'programs/sat-sandarbhas/index.html']
    ]],
-   ['My Study',[
-     ['study','Study',R+'study/index.html'],
-     ['portfolio','My Work',R+'student/portfolio.html'],
-     ['question-bank','Question Bank',R+'question-bank/index.html'],
-     ['progress','My Progress',R+'student/progress.html'],
-     ['certificates','Certificates',R+'certificates/index.html']
+   ['Mi Estudio',[
+     ['study','Estudiar',R+'study/index.html'],
+     ['portfolio','Mi Trabajo',R+'student/portfolio.html'],
+     ['question-bank','Banco de Preguntas',R+'question-bank/index.html'],
+     ['progress','Mi Progreso',R+'student/progress.html'],
+     ['certificates','Certificados',R+'certificates/index.html']
    ]],
-   ['Resources',[
-     ['library','Books & Library',R+'library/index.html'],
-     ['references','References & Further Study',R+'references/index.html'],
+   ['Recursos',[
+     ['library','Libros y Biblioteca',R+'library/index.html'],
+     ['references','Referencias y Estudio Adicional',R+'references/index.html'],
      ['slokas','Śloka Lab',R+'slokas/index.html']
    ]],
-   ['Academy',[
-     ['manage','Manage Academy',R+'admin/index.html']
+   ['Academia',[
+     ['manage','Administrar Academia',R+'admin/index.html']
    ]]
  ];
  const grouped=groups.map(([label,items])=>`<div class="nav-group"><div class="nav-label">${label}</div>${items.map(link).join('')}</div>`).join('');
@@ -56,7 +56,7 @@ function sidebar(a='home',rootOverride=null){
 async function renderProgram(id){
  sidebar(id);let [ps,bs]=await Promise.all([json('../../data/programs.json'),json('../../data/books.json')]),p=ps.find(x=>x.id===id),m=Object.fromEntries(bs.map(b=>[b.id,b]));
  title.textContent=p.title;subtitle.textContent=p.subtitle;
- books.innerHTML=p.books.map(id=>{let b=m[id]||{id,title:id.toUpperCase(),status:'not registered'};let ready=b.status==='imported';return `<article class="card"><span class="tag">${b.status}</span><h3>${b.title}</h3><p class="small">${b.source||'Ready for plug-and-play registration.'}</p>${ready?`<a class="button secondary" href="../../library/reader.html?book=${encodeURIComponent(b.id)}">Open Book</a>`:'<button class="button secondary" disabled>Source Needed</button>'}</article>`}).join('')
+ books.innerHTML=p.books.map(id=>{let b=m[id]||{id,title:id.toUpperCase(),status:'no registrado'};let ready=b.status==='imported';return `<article class="card"><span class="tag">${b.status}</span><h3>${b.title}</h3><p class="small">${b.source||'Listo para registro modular.'}</p>${ready?`<a class="button secondary" href="../../library/reader.html?book=${encodeURIComponent(b.id)}">Abrir Libro</a>`:'<button class="button secondary" disabled>Fuente Necesaria</button>'}</article>`}).join('')
 }
 
 // Universal escape navigation: additive only; does not replace page-specific navigation.
@@ -75,14 +75,14 @@ async function renderProgram(id){
       const program=document.createElement('a');
       program.className='button secondary';
       program.href=ROOT+'programs/'+encodeURIComponent(match[1])+'/index.html';
-      program.textContent='↑ Program Home';
+      program.textContent='↑ Inicio del Área';
       box.appendChild(program);
     }
 
     const home=document.createElement('a');
     home.className='button secondary';
     home.href=ROOT+'index.html';
-    home.textContent='🏠 Academy Home';
+    home.textContent='🏠 Inicio de la Academia';
     box.appendChild(home);
 
     document.body.appendChild(box);

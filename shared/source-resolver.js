@@ -25,7 +25,7 @@
     for(const n of nodes){
       if(n.parentElement?.closest('a,button,textarea,script,style'))continue;
       const t=n.nodeValue||'';let last=0,m,frag=document.createDocumentFragment(),changed=false;re.lastIndex=0;
-      while((m=re.exec(t))){const c=canon(m[0]);if(!c)continue;const hit=resolved.get(c),href=hit?internalHref(c,hit):external(c);if(!href)continue;frag.append(t.slice(last,m.index));const a=document.createElement('a');a.href=href;a.textContent=m[0];a.className='scripture-ref';if(!hit){a.target='_blank';a.rel='noopener';a.title='External Vedabase fallback'}else a.title='Open internal Academy source';frag.append(a);last=m.index+m[0].length;changed=true}
+      while((m=re.exec(t))){const c=canon(m[0]);if(!c)continue;const hit=resolved.get(c),href=hit?internalHref(c,hit):external(c);if(!href)continue;frag.append(t.slice(last,m.index));const a=document.createElement('a');a.href=href;a.textContent=m[0];a.className='scripture-ref';if(!hit){a.target='_blank';a.rel='noopener';a.title='Alternativa externa en Vedabase'}else a.title='Abrir fuente interna de la Academia';frag.append(a);last=m.index+m[0].length;changed=true}
       if(changed){frag.append(t.slice(last));n.replaceWith(frag)}
     }
   }

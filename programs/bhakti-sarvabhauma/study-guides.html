@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Bhakti Sārvabhauma — Academy Study Guides</title>
+<title>Bhakti Sārvabhauma — Guías de Estudio de la Academia</title>
 <link rel="stylesheet" href="../../shared/styles.css">
 </head>
 <body>
@@ -11,16 +11,16 @@
   <aside class="sidebar"></aside>
   <main class="main">
     <div class="study-nav">
-      <a class="button secondary" href="javascript:history.back()">← Back</a>
+      <a class="button secondary" href="javascript:history.back()">← Volver</a>
       <a class="button secondary" href="index.html">↑ Bhakti Sārvabhauma</a>
-      <a class="button secondary" href="../../index.html">🏠 Academy Home</a>
+      <a class="button secondary" href="../../index.html">🏠 Inicio de la Academia</a>
     </div>
 
     <div class="eyebrow">Bhakti Sārvabhauma</div>
-    <h1>Academy Study Guides</h1>
+    <h1>Guías de Estudio de la Academia</h1>
     <p class="lead">
-      Supplementary guides and questions added by the Academy.
-      These remain separate from canonical scripture and official Ministry/BOEX question banks.
+      Guías y preguntas suplementarias añadidas por la Academia.
+      Estas permanecen separadas de las escrituras canónicas y de los bancos oficiales de preguntas del Ministerio/BOEX.
     </p>
 
     <div id="guides"></div>
@@ -42,30 +42,30 @@ const guides=AcademyGuides.forProgram(PROGRAM);
 const host=document.getElementById('guides');
 
 if(!guides.length){
-  host.innerHTML='<div class="notice">No Academy Study Guides have been published for this program yet.</div>';
+  host.innerHTML='<div class="notice">Todavía no se han publicado Guías de Estudio de la Academia para esta área de estudio.</div>';
 }else{
   host.innerHTML=guides.map(g=>`
     <article class="card">
-      <span class="tag">${esc(g.provenance||'Academy Study Guide')}</span>
+      <span class="tag">${esc(g.provenance||'Guía de Estudio de la Academia')}</span>
       <h2>${esc(g.title)}</h2>
       ${g.scope?`<p class="small">${esc(g.scope)}</p>`:''}
 
       ${g.body?`
         <details>
-          <summary><b>Read Study Guide</b></summary>
+          <summary><b>Leer Guía de Estudio</b></summary>
           <div style="white-space:pre-wrap;line-height:1.65;margin-top:12px">${esc(g.body)}</div>
         </details>
       `:''}
 
       ${g.questions?.length?`
-        <h3>Questions</h3>
+        <h3>Preguntas</h3>
         ${g.questions.map(q=>`
           <div class="question-card">
             <b>${esc(q.text)}</b>
-            <textarea class="field" placeholder="Your answer..."></textarea>
+            <textarea class="field" placeholder="Tu respuesta..."></textarea>
             <div class="action-grid">
               ${(q.refs||[]).map(r=>
-                `<a class="button secondary" href="${AcademyGuides.internalHref(r,PROGRAM)}">Study ${esc(r)}</a>`
+                `<a class="button secondary" href="${AcademyGuides.internalHref(r,PROGRAM)}">Estudiar ${esc(r)}</a>`
               ).join('')}
             </div>
           </div>

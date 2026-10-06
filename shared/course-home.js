@@ -29,7 +29,7 @@
       ref:l.firstRef,
       unit:l.unitId
     });
-    return `<article class="lesson-card"><div class="lesson-number">Lesson ${l.order}</div><h4>${esc(l.title)}</h4><p class="small"><strong>${esc(l.firstRef)}</strong>${l.lastRef&&l.lastRef!==l.firstRef?' → '+esc(l.lastRef):''} · ${l.recordCount} passage${l.recordCount===1?'':'s'}</p><div class="lesson-actions"><a class="button" href="${read}">Open Lesson</a></div></article>`;
+    return `<article class="lesson-card"><div class="lesson-number">Lección ${l.order}</div><h4>${esc(l.title)}</h4><p class="small"><strong>${esc(l.firstRef)}</strong>${l.lastRef&&l.lastRef!==l.firstRef?' → '+esc(l.lastRef):''} · ${l.recordCount} pasaje${l.recordCount===1?'':'s'}</p><div class="lesson-actions"><a class="button" href="${read}">Abrir Lección</a></div></article>`;
   }
   async function init({programId,dataBase='data/'}){
     sidebar(programId);
@@ -38,7 +38,7 @@
 
 
     const meta=document.querySelector('#courseMeta');
-    meta.textContent=`${units.length} study units · ${lessons.length} lessons`;
+    meta.textContent=`${units.length} unidades de estudio · ${lessons.length} lecciones`;
     const host=document.querySelector('#lessonOutline');
     host.innerHTML=units.map((u,ui)=>{
       const ls=lessons.filter(l=>l.unitId===u.id);
@@ -50,7 +50,7 @@
       const multiBook=Array.isArray(u.books) && u.books.length>1;
       const bookLabels={
         iso:'Śrī Īśopaniṣad',
-        noi:'Nectar of Instruction'
+        noi:'El Néctar de la Instrucción'
       };
       ls.forEach(l=>{
         const ref=String(l.firstRef||'');
@@ -58,10 +58,10 @@
         const sb=ref.match(/^SB[. ]\d+[. ](\d+)/i);
         const cc=ref.match(/^CC[. ](?:ADI|MADHYA|ANTYA)[. ](\d+)/i);
         const nod=ref.match(/^NOD[. ](\d+)/i);
-        const chapter=bg?bg[1]:sb?sb[1]:cc?cc[1]:nod?nod[1]:'Other';
+        const chapter=bg?bg[1]:sb?sb[1]:cc?cc[1]:nod?nod[1]:'Otro';
         const book=String(l.book||'').toLowerCase();
         const key=multiBook?book:chapter;
-        const label=multiBook?(bookLabels[book]||book.toUpperCase()):`Chapter ${chapter}`;
+        const label=multiBook?(bookLabels[book]||book.toUpperCase()):`Capítulo ${chapter}`;
         let g=groups.find(x=>x.key===key);
         if(!g){g={key,label,lessons:[]};groups.push(g)}
         g.lessons.push(l);
@@ -74,16 +74,16 @@
         ? `<div class="chapter-groups">${groups.map(g=>`
             <section class="chapter-group">
               <button class="chapter-toggle" type="button" aria-expanded="false">
-                <span><strong>${esc(g.label)}</strong><small>${g.lessons.length} lesson${g.lessons.length===1?'':'s'}</small></span>
+                <span><strong>${esc(g.label)}</strong><small>${g.lessons.length} lección${g.lessons.length===1?'':'es'}</small></span>
                 <span class="chapter-chevron">⌄</span>
               </button>
               <div class="chapter-lessons" hidden>
                 <div class="lesson-grid">${g.lessons.map(l=>lessonCard(programId,course,l)).join('')}</div>
               </div>
             </section>`).join('')}</div>`
-        : `<div class="lesson-grid">${ls.map(l=>lessonCard(programId,course,l)).join('')||'<div class="notice">Lesson outline is not configured for this unit yet.</div>'}</div>`;
+        : `<div class="lesson-grid">${ls.map(l=>lessonCard(programId,course,l)).join('')||'<div class="notice">El esquema de lecciones aún no está configurado para esta unidad.</div>'}</div>`;
 
-      return `<section class="course-unit" id="${esc(u.id)}"><button class="unit-toggle" type="button" aria-expanded="false"><span><span class="eyebrow">${esc(u.id)}</span><strong>${esc(u.title)}</strong><small>${esc(u.range||'')} · ${ls.length} lessons</small></span><span class="unit-chevron">⌄</span></button><div class="unit-lessons" hidden><div class="unit-intro"><p>Follow the lessons in order, or open any lesson directly. Each lesson connects you to its assigned primary reading.</p><a class="button saffron" href="${continueHref}">Start Unit</a> ${StudyWorkflow.buttons(course,{program:programId,unit:u.id})}</div>${chapterContent}</div></section>`;
+      return `<section class="course-unit" id="${esc(u.id)}"><button class="unit-toggle" type="button" aria-expanded="false"><span><span class="eyebrow">${esc(u.id)}</span><strong>${esc(u.title)}</strong><small>${esc(u.range||'')} · ${ls.length} lecciones</small></span><span class="unit-chevron">⌄</span></button><div class="unit-lessons" hidden><div class="unit-intro"><p>Sigue las lecciones en orden o abre cualquier lección directamente. Cada lección te conecta con su lectura primaria asignada.</p><a class="button saffron" href="${continueHref}">Comenzar Unidad</a> ${StudyWorkflow.buttons(course,{program:programId,unit:u.id})}</div>${chapterContent}</div></section>`;
     }).join('');
     host.addEventListener('click',e=>{
       const chapter=e.target.closest('.chapter-toggle');
@@ -121,7 +121,7 @@
       const resources=await global.ReferenceRegistry.official(programId);
 
       if(resources.length){
-        referencesHost.innerHTML=`<div class="card"><div class="eyebrow">Official Resources</div><h2>References & Resources</h2><p class="small">Supplementary and official resources remain separate from canonical Academy scripture, study questions, progress, and Academy completion requirements.</p>${resources.map(r=>`<p><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer"><strong>${esc(r.title)}</strong></a>${r.purpose?`<br><span class="small">${esc(r.purpose)}</span>`:''}${r.provenance?`<br><span class="small">Source: ${esc(r.provenance)}</span>`:''}</p>`).join('')}</div>`;
+        referencesHost.innerHTML=`<div class="card"><div class="eyebrow">Recursos Oficiales</div><h2>Referencias y Recursos</h2><p class="small">Los recursos suplementarios y oficiales permanecen separados de las escrituras canónicas de la Academia, las preguntas de estudio, el progreso y los requisitos de finalización de la Academia.</p>${resources.map(r=>`<p><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer"><strong>${esc(r.title)}</strong></a>${r.purpose?`<br><span class="small">${esc(r.purpose)}</span>`:''}${r.provenance?`<br><span class="small">Fuente: ${esc(r.provenance)}</span>`:''}</p>`).join('')}</div>`;
       }else{
         referencesHost.innerHTML='';
       }
@@ -135,7 +135,7 @@
     link.id='studyGuidesLink';
     link.className='button secondary';
     link.href='study-guides.html';
-    link.textContent='Study Guides';
+    link.textContent='Guías de Estudio';
     continueStudy.parentElement.appendChild(link);
   }
 

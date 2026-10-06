@@ -3,7 +3,7 @@
   function fetchJson(url){
     if(global.DataRegistry)return global.DataRegistry.getJSON(url);
     if(fallbackCache.has(url))return fallbackCache.get(url);
-    const p=fetch(url).then(r=>{if(!r.ok)throw new Error(`Unable to load ${url}: ${r.status}`);return r.json()}).catch(e=>{fallbackCache.delete(url);throw e});
+    const p=fetch(url).then(r=>{if(!r.ok)throw new Error(`No se pudo cargar ${url}: ${r.status}`);return r.json()}).catch(e=>{fallbackCache.delete(url);throw e});
     fallbackCache.set(url,p);return p;
   }
   async function loadProviders(base='data/'){

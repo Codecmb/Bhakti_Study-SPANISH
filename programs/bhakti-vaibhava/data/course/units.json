@@ -5,7 +5,7 @@
   "units": [
     {
       "id": "BV.U1",
-      "title": "Śrīmad-Bhāgavatam Canto 1, Chapters 1–9",
+      "title": "Śrīmad-Bhāgavatam Canto 1, Capítulos 1–9",
       "book": "sb1",
       "range": "SB.1.1–SB.1.9",
       "canto": 1,
@@ -16,7 +16,7 @@
     },
     {
       "id": "BV.U2",
-      "title": "Śrīmad-Bhāgavatam Canto 1, Chapters 10–19",
+      "title": "Śrīmad-Bhāgavatam Canto 1, Capítulos 10–19",
       "book": "sb1",
       "range": "SB.1.10–SB.1.19",
       "canto": 1,
@@ -38,7 +38,7 @@
     },
     {
       "id": "BV.U4",
-      "title": "Śrīmad-Bhāgavatam Canto 3, Chapters 1–19",
+      "title": "Śrīmad-Bhāgavatam Canto 3, Capítulos 1–19",
       "book": "sb3",
       "range": "SB.3.1–SB.3.19",
       "canto": 3,
@@ -49,7 +49,7 @@
     },
     {
       "id": "BV.U5",
-      "title": "Śrīmad-Bhāgavatam Canto 3, Chapters 20–33",
+      "title": "Śrīmad-Bhāgavatam Canto 3, Capítulos 20–33",
       "book": "sb3",
       "range": "SB.3.20–SB.3.33",
       "canto": 3,
@@ -60,7 +60,7 @@
     },
     {
       "id": "BV.U6",
-      "title": "Śrīmad-Bhāgavatam Canto 4, Chapters 1–11",
+      "title": "Śrīmad-Bhāgavatam Canto 4, Capítulos 1–11",
       "book": "sb4",
       "range": "SB.4.1–SB.4.11",
       "canto": 4,
@@ -71,7 +71,7 @@
     },
     {
       "id": "BV.U7",
-      "title": "Śrīmad-Bhāgavatam Canto 4, Chapters 12–31",
+      "title": "Śrīmad-Bhāgavatam Canto 4, Capítulos 12–31",
       "book": "sb4",
       "range": "SB.4.12–SB.4.31",
       "canto": 4,

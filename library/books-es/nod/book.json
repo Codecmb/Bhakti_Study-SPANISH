@@ -1,0 +1,913 @@
+{
+  "schema": "bhakti-study.book.v1",
+  "id": "nod-es",
+  "title": "El Néctar de la Devoción",
+  "creator": "A.C. Bhaktivedanta Swami Prabhupāda",
+  "publisher": "Bhaktivedanta Book Trust",
+  "language": "es",
+  "source_format": "EPUB",
+  "source_file": "nod-es.epub",
+  "sections": [
+    {
+      "id": "prefacio",
+      "kind": "front-back-matter",
+      "title": "Prefacio",
+      "source_href": "chapter-0a.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.Prefacio",
+          "reference": "Prefacio",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "introducci-n",
+      "kind": "front-back-matter",
+      "title": "Introducción",
+      "source_href": "chapter-0b.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.Introducción",
+          "reference": "Introducción",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "1-caracter-sticas-del-servicio-devocional-puro",
+      "kind": "front-back-matter",
+      "title": "1. Características del servicio devocional puro",
+      "source_href": "chapter-1.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.1. Características del servicio devocional puro",
+          "reference": "1. Características del servicio devocional puro",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "2-las-primeras-etapas-de-la-devoci-n",
+      "kind": "front-back-matter",
+      "title": "2. Las primeras etapas de la devoción",
+      "source_href": "chapter-2.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.2. Las primeras etapas de la devoción",
+          "reference": "2. Las primeras etapas de la devoción",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "3-elegibilidad-del-candidato-para-aceptar-el-servicio-devocional",
+      "kind": "front-back-matter",
+      "title": "3. Elegibilidad del candidato para aceptar el servicio devocional",
+      "source_href": "chapter-3.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.3. Elegibilidad del candidato para aceptar el servicio devocional",
+          "reference": "3. Elegibilidad del candidato para aceptar el servicio devocional",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "4-el-servicio-devocional-supera-toda-liberaci-n",
+      "kind": "front-back-matter",
+      "title": "4. El servicio devocional supera toda liberación",
+      "source_href": "chapter-4.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.4. El servicio devocional supera toda liberación",
+          "reference": "4. El servicio devocional supera toda liberación",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "5-pureza-del-servicio-devocional",
+      "kind": "front-back-matter",
+      "title": "5. Pureza del servicio devocional",
+      "source_href": "chapter-5.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.5. Pureza del servicio devocional",
+          "reference": "5. Pureza del servicio devocional",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "6-c-mo-desempe-ar-el-servicio-devocional",
+      "kind": "front-back-matter",
+      "title": "6. Cómo desempeñar el servicio devocional",
+      "source_href": "chapter-6.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.6. Cómo desempeñar el servicio devocional",
+          "reference": "6. Cómo desempeñar el servicio devocional",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "7-evidencia-relativa-a-los-principios-devocionales",
+      "kind": "front-back-matter",
+      "title": "7. Evidencia relativa a los principios devocionales",
+      "source_href": "chapter-7.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.7. Evidencia relativa a los principios devocionales",
+          "reference": "7. Evidencia relativa a los principios devocionales",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "8-ofensas-que-se-deben-evitar",
+      "kind": "front-back-matter",
+      "title": "8. Ofensas que se deben evitar",
+      "source_href": "chapter-8.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.8. Ofensas que se deben evitar",
+          "reference": "8. Ofensas que se deben evitar",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "9-consideraciones-adicionales-sobre-los-principios-devocionales",
+      "kind": "front-back-matter",
+      "title": "9. Consideraciones adicionales sobre los principios devocionales",
+      "source_href": "chapter-9.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.9. Consideraciones adicionales sobre los principios devocionales",
+          "reference": "9. Consideraciones adicionales sobre los principios devocionales",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "10-t-cnicas-de-escuchar-y-memorizar",
+      "kind": "front-back-matter",
+      "title": "10. Técnicas de escuchar y memorizar",
+      "source_href": "chapter-10.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.10. Técnicas de escuchar y memorizar",
+          "reference": "10. Técnicas de escuchar y memorizar",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "11-aspectos-del-servicio-trascendental",
+      "kind": "front-back-matter",
+      "title": "11. Aspectos del servicio trascendental",
+      "source_href": "chapter-11.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.11. Aspectos del servicio trascendental",
+          "reference": "11. Aspectos del servicio trascendental",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "12-escrituras-reveladas",
+      "kind": "front-back-matter",
+      "title": "12. Escrituras reveladas",
+      "source_href": "chapter-12.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.12. Escrituras reveladas",
+          "reference": "12. Escrituras reveladas",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "13-el-mah-mantra",
+      "kind": "front-back-matter",
+      "title": "13. El mahā-mantra",
+      "source_href": "chapter-13.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.13. El mahā-mantra",
+          "reference": "13. El mahā-mantra",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "14-cualificaciones-devocionales",
+      "kind": "front-back-matter",
+      "title": "14. Cualificaciones devocionales",
+      "source_href": "chapter-14.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.14. Cualificaciones devocionales",
+          "reference": "14. Cualificaciones devocionales",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "15-servicio-devocional-espont-neo",
+      "kind": "front-back-matter",
+      "title": "15. Servicio devocional espontáneo",
+      "source_href": "chapter-15.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.15. Servicio devocional espontáneo",
+          "reference": "15. Servicio devocional espontáneo",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "16-variedades-de-amor-por-k-a",
+      "kind": "front-back-matter",
+      "title": "16. Variedades de amor por Kṛṣṇa",
+      "source_href": "chapter-16.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.16. Variedades de amor por Kṛṣṇa",
+          "reference": "16. Variedades de amor por Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "17-amor-ext-tico",
+      "kind": "front-back-matter",
+      "title": "17. Amor extático",
+      "source_href": "chapter-17.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.17. Amor extático",
+          "reference": "17. Amor extático",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "18-el-car-cter-de-quien-est-en-amor-ext-tico",
+      "kind": "front-back-matter",
+      "title": "18. El carácter de quien está en amor extático",
+      "source_href": "chapter-18.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.18. El carácter de quien está en amor extático",
+          "reference": "18. El carácter de quien está en amor extático",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "19-servicio-devocional-en-amor-por-dios",
+      "kind": "front-back-matter",
+      "title": "19. Servicio devocional en amor por Dios",
+      "source_href": "chapter-19.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.19. Servicio devocional en amor por Dios",
+          "reference": "19. Servicio devocional en amor por Dios",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "20-melosidad-trascendental",
+      "kind": "front-back-matter",
+      "title": "20. Melosidad trascendental",
+      "source_href": "chapter-20.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.20. Melosidad trascendental",
+          "reference": "20. Melosidad trascendental",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "21-cualidades-de-r-k-a",
+      "kind": "front-back-matter",
+      "title": "21. Cualidades de Śrī Kṛṣṇa",
+      "source_href": "chapter-21.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.21. Cualidades de Śrī Kṛṣṇa",
+          "reference": "21. Cualidades de Śrī Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "22-cualidades-de-k-a-explicadas-en-mayor-detalle",
+      "kind": "front-back-matter",
+      "title": "22. Cualidades de Kṛṣṇa explicadas en mayor detalle",
+      "source_href": "chapter-22.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.22. Cualidades de Kṛṣṇa explicadas en mayor detalle",
+          "reference": "22. Cualidades de Kṛṣṇa explicadas en mayor detalle",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "23-la-personalidad-de-k-a",
+      "kind": "front-back-matter",
+      "title": "23. La personalidad de Kṛṣṇa",
+      "source_href": "chapter-23.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.23. La personalidad de Kṛṣṇa",
+          "reference": "23. La personalidad de Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "24-rasgos-adicionales-de-r-k-a",
+      "kind": "front-back-matter",
+      "title": "24. Rasgos adicionales de Śrī Kṛṣṇa",
+      "source_href": "chapter-24.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.24. Rasgos adicionales de Śrī Kṛṣṇa",
+          "reference": "24. Rasgos adicionales de Śrī Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "25-devotos-de-k-a",
+      "kind": "front-back-matter",
+      "title": "25. Devotos de Kṛṣṇa",
+      "source_href": "chapter-25.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.25. Devotos de Kṛṣṇa",
+          "reference": "25. Devotos de Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "26-est-mulo-para-el-amor-ext-tico",
+      "kind": "front-back-matter",
+      "title": "26. Estímulo para el amor extático",
+      "source_href": "chapter-26.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.26. Estímulo para el amor extático",
+          "reference": "26. Estímulo para el amor extático",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "27-s-ntomas-de-amor-ext-tico",
+      "kind": "front-back-matter",
+      "title": "27. Síntomas de amor extático",
+      "source_href": "chapter-27.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.27. Síntomas de amor extático",
+          "reference": "27. Síntomas de amor extático",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "28-otros-s-ntomas-ext-ticos",
+      "kind": "front-back-matter",
+      "title": "28. Otros síntomas extáticos",
+      "source_href": "chapter-28.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.28. Otros síntomas extáticos",
+          "reference": "28. Otros síntomas extáticos",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "29-expresiones-de-amor-por-k-a",
+      "kind": "front-back-matter",
+      "title": "29. Expresiones de amor por Kṛṣṇa",
+      "source_href": "chapter-29.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.29. Expresiones de amor por Kṛṣṇa",
+          "reference": "29. Expresiones de amor por Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "30-m-s-rasgos-del-amor-ext-tico-por-k-a",
+      "kind": "front-back-matter",
+      "title": "30. Más rasgos del amor extático por Kṛṣṇa",
+      "source_href": "chapter-30.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.30. Más rasgos del amor extático por Kṛṣṇa",
+          "reference": "30. Más rasgos del amor extático por Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "31-s-ntomas-adicionales",
+      "kind": "front-back-matter",
+      "title": "31. Síntomas adicionales",
+      "source_href": "chapter-31.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.31. Síntomas adicionales",
+          "reference": "31. Síntomas adicionales",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "32-s-ntomas-de-xtasis-continuo",
+      "kind": "front-back-matter",
+      "title": "32. Síntomas de éxtasis continuo",
+      "source_href": "chapter-32.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.32. Síntomas de éxtasis continuo",
+          "reference": "32. Síntomas de éxtasis continuo",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "33-afecto-conyugal",
+      "kind": "front-back-matter",
+      "title": "33. Afecto conyugal",
+      "source_href": "chapter-33.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.33. Afecto conyugal",
+          "reference": "33. Afecto conyugal",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "34-el-n-ctar-de-la-devoci-n",
+      "kind": "front-back-matter",
+      "title": "34. El néctar de la devoción",
+      "source_href": "chapter-34.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.34. El néctar de la devoción",
+          "reference": "34. El néctar de la devoción",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "35-amor-neutral-por-dios",
+      "kind": "front-back-matter",
+      "title": "35. Amor neutral por Dios",
+      "source_href": "chapter-35.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.35. Amor neutral por Dios",
+          "reference": "35. Amor neutral por Dios",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "36-afecto-trascendental-servidumbre",
+      "kind": "front-back-matter",
+      "title": "36. Afecto trascendental (servidumbre)",
+      "source_href": "chapter-36.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.36. Afecto trascendental (servidumbre)",
+          "reference": "36. Afecto trascendental (servidumbre)",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "37-impulsos-para-el-servicio-de-k-a",
+      "kind": "front-back-matter",
+      "title": "37. Impulsos para el servicio de Kṛṣṇa",
+      "source_href": "chapter-37.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.37. Impulsos para el servicio de Kṛṣṇa",
+          "reference": "37. Impulsos para el servicio de Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "38-indiferencia-y-separaci-n",
+      "kind": "front-back-matter",
+      "title": "38. Indiferencia y separación",
+      "source_href": "chapter-38.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.38. Indiferencia y separación",
+          "reference": "38. Indiferencia y separación",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "39-formas-de-encontrarse-con-k-a",
+      "kind": "front-back-matter",
+      "title": "39. Formas de encontrarse con Kṛṣṇa",
+      "source_href": "chapter-39.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.39. Formas de encontrarse con Kṛṣṇa",
+          "reference": "39. Formas de encontrarse con Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "40-devoci-n-reverencial-de-los-hijos-y-otros-subordinados",
+      "kind": "front-back-matter",
+      "title": "40. Devoción reverencial de los hijos y otros subordinados",
+      "source_href": "chapter-40.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.40. Devoción reverencial de los hijos y otros subordinados",
+          "reference": "40. Devoción reverencial de los hijos y otros subordinados",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "41-devoci-n-fraternal",
+      "kind": "front-back-matter",
+      "title": "41. Devoción fraternal",
+      "source_href": "chapter-41.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.41. Devoción fraternal",
+          "reference": "41. Devoción fraternal",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "42-asuntos-amorosos-fraternales",
+      "kind": "front-back-matter",
+      "title": "42. Asuntos amorosos fraternales",
+      "source_href": "chapter-42.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.42. Asuntos amorosos fraternales",
+          "reference": "42. Asuntos amorosos fraternales",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "43-amor-paternal",
+      "kind": "front-back-matter",
+      "title": "43. Amor paternal",
+      "source_href": "chapter-43.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.43. Amor paternal",
+          "reference": "43. Amor paternal",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "44-servicio-devocional-en-amor-conyugal",
+      "kind": "front-back-matter",
+      "title": "44. Servicio devocional en amor conyugal",
+      "source_href": "chapter-44.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.44. Servicio devocional en amor conyugal",
+          "reference": "44. Servicio devocional en amor conyugal",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "45-xtasis-de-la-risa",
+      "kind": "front-back-matter",
+      "title": "45. Éxtasis de la risa",
+      "source_href": "chapter-45.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.45. Éxtasis de la risa",
+          "reference": "45. Éxtasis de la risa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "46-asombro-y-caballerosidad",
+      "kind": "front-back-matter",
+      "title": "46. Asombro y caballerosidad",
+      "source_href": "chapter-46.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.46. Asombro y caballerosidad",
+          "reference": "46. Asombro y caballerosidad",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "47-compasi-n-e-ira",
+      "kind": "front-back-matter",
+      "title": "47. Compasión e ira",
+      "source_href": "chapter-47.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.47. Compasión e ira",
+          "reference": "47. Compasión e ira",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "48-temor-y-repugnancia",
+      "kind": "front-back-matter",
+      "title": "48. Temor y repugnancia",
+      "source_href": "chapter-48.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.48. Temor y repugnancia",
+          "reference": "48. Temor y repugnancia",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "49-mezcla-de-rasas",
+      "kind": "front-back-matter",
+      "title": "49. Mezcla de rasas",
+      "source_href": "chapter-49.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.49. Mezcla de rasas",
+          "reference": "49. Mezcla de rasas",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "50-an-lisis-adicional-de-rasas-mezclados",
+      "kind": "front-back-matter",
+      "title": "50. Análisis adicional de rasas mezclados",
+      "source_href": "chapter-50.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.50. Análisis adicional de rasas mezclados",
+          "reference": "50. Análisis adicional de rasas mezclados",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "51-expresi-n-pervertida-de-melosidades",
+      "kind": "front-back-matter",
+      "title": "51. Expresión pervertida de melosidades",
+      "source_href": "chapter-51.xhtml",
+      "verses": [
+        {
+          "id": "nod-es.51. Expresión pervertida de melosidades",
+          "reference": "51. Expresión pervertida de melosidades",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    }
+  ]
+}

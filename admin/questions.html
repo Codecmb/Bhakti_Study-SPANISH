@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Manage Question Sheets · Bhakti Study</title>
+  <title>Administrar Hojas de Preguntas · Bhakti Study</title>
   <link rel="stylesheet" href="../shared/styles.css">
   <style>
     .admin-toolbar{
@@ -25,25 +25,25 @@
   <aside class="sidebar"></aside>
 
   <main class="main">
-    <div class="eyebrow">Manage Academy</div>
-    <h1>Question Sheets</h1>
+    <div class="eyebrow">Administrar Academia</div>
+    <h1>Hojas de Preguntas</h1>
 
     <p class="lead admin-help">
-      Add and manage question sheets used by the Academy.
-      Imported sheets automatically become available in the Question Bank.
+      Añade y administra las hojas de preguntas utilizadas por la Academia.
+      Las hojas importadas quedan disponibles automáticamente en el Banco de Preguntas.
     </p>
 
     <p>
-      <a class="button secondary" href="index.html">← Manage Academy</a>
-      <a class="button secondary" href="../question-bank/index.html">View Question Bank</a>
+      <a class="button secondary" href="index.html">← Administrar Academia</a>
+      <a class="button secondary" href="../question-bank/index.html">Ver Banco de Preguntas</a>
     </p>
 
     <section class="card">
-      <h2>Choose Program</h2>
+      <h2>Elegir Área de Estudio</h2>
 
       <div class="admin-toolbar">
         <div>
-          <label for="program">Program</label>
+          <label for="program">Área de Estudio</label>
           <select id="program" class="field">
             <option value="bhakti-sastri">Bhakti Śāstrī</option>
             <option value="bhakti-vaibhava">Bhakti Vaibhava</option>
@@ -58,28 +58,28 @@
     </section>
 
     <section class="card admin-section">
-      <h2>Add a Question Sheet</h2>
+      <h2>Añadir una Hoja de Preguntas</h2>
       <p class="small">
-        Import a prepared question sheet or paste its questions.
-        You can review the detected questions before anything is saved.
+        Importa una hoja de preguntas preparada o pega sus preguntas.
+        Puedes revisar las preguntas detectadas antes de que se guarde cualquier contenido.
       </p>
       <div id="importer"></div>
     </section>
 
     <section class="card admin-section">
-      <h2>Imported Question Sheets</h2>
+      <h2>Hojas de Preguntas Importadas</h2>
       <p class="small">
-        These are Academy-added sheets for the selected program.
-        Removing a sheet removes its imported questions from the Question Bank.
+        Estas son hojas añadidas por la Academia para el área de estudio seleccionada.
+        Eliminar una hoja elimina sus preguntas importadas del Banco de Preguntas.
       </p>
       <div id="sheets"></div>
       <p id="empty" class="muted"></p>
     </section>
 
     <div class="notice admin-section">
-      <strong>Source protection:</strong>
+      <strong>Protección de las fuentes:</strong>
       official and built-in question sources are not changed here.
-      This page manages only question sheets added to the Academy.
+      Esta página administra únicamente las hojas de preguntas añadidas a la Academia.
     </div>
   </main>
 </div>
@@ -103,11 +103,11 @@ function refreshManagement(){
 
   summary.textContent=batches.length
     ? `${batches.length} imported sheet${batches.length===1?'':'s'} · ${count} question${count===1?'':'s'}`
-    : 'No imported question sheets for this program yet.';
+    : 'Todavía no hay hojas de preguntas importadas para esta área de estudio.';
 
   empty.textContent=batches.length
     ? ''
-    : 'Nothing has been added yet. Use “Add a Question Sheet” above.';
+    : 'Todavía no se ha añadido nada. Usa «Añadir una Hoja de Preguntas» arriba.';
 
   QuestionSheetImporter.renderBatchManagement(sheets,{
     program:program.value,

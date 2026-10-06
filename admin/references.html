@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Manage References · Bhakti Study</title>
+<title>Administrar Referencias · Bhakti Study</title>
 <link rel="stylesheet" href="../shared/styles.css">
 <style>
 .admin-section{margin-top:1.5rem}
@@ -16,38 +16,38 @@
 <aside class="sidebar"></aside>
 
 <main class="main">
-<div class="eyebrow">Manage Academy</div>
-<h1>References & Resources</h1>
+<div class="eyebrow">Administrar Academia</div>
+<h1>Referencias y Recursos</h1>
 
 <p class="lead">
-Add supplementary resources for the entire Academy, a course,
+Añade recursos suplementarios para toda la Academia, un área de estudio,
 or an individual Sandarbha.
 </p>
 
 <p>
-<a class="button secondary" href="index.html">← Manage Academy</a>
-<a class="button secondary" href="../references/index.html">View References</a>
+<a class="button secondary" href="index.html">← Administrar Academia</a>
+<a class="button secondary" href="../references/index.html">Ver Referencias</a>
 </p>
 
 <section class="card">
-<h2 id="formTitle">Add a Resource</h2>
+<h2 id="formTitle">Añadir un Recurso</h2>
 
-<label for="title">Title</label>
-<input id="title" class="field" placeholder="Resource title">
+<label for="title">Título</label>
+<input id="title" class="field" placeholder="Título del recurso">
 
-<label for="author">Author / Scholar</label>
-<input id="author" class="field" placeholder="Optional">
+<label for="author">Autor / Erudito</label>
+<input id="author" class="field" placeholder="Opcional">
 
 <label for="url">URL</label>
 <input id="url" class="field" placeholder="https://...">
 
-<label for="purpose">Purpose / Description</label>
+<label for="purpose">Propósito / Descripción</label>
 <textarea id="purpose" class="field"
- placeholder="Why this resource is useful"></textarea>
+ placeholder="Por qué este recurso es útil"></textarea>
 
-<label for="scope">Where should it apply?</label>
+<label for="scope">¿Dónde debe aplicarse?</label>
 <select id="scope" class="field">
-<option value="academy">Entire Academy</option>
+<option value="academy">Toda la Academia</option>
 <option value="bhakti-sastri">Bhakti Śāstrī</option>
 <option value="bhakti-vaibhava">Bhakti Vaibhava</option>
 <option value="bhakti-vedanta">Bhakti Vedānta</option>
@@ -61,9 +61,9 @@ or an individual Sandarbha.
 </select>
 
 <div class="reference-actions">
-<button id="save" class="button" type="button">Add Resource</button>
+<button id="save" class="button" type="button">Añadir Recurso</button>
 <button id="cancel" class="button secondary" type="button" hidden>
-Cancel Edit
+Cancelar Edición
 </button>
 </div>
 
@@ -71,12 +71,12 @@ Cancel Edit
 </section>
 
 <section class="admin-section">
-<h2>Academy-Added Resources</h2>
+<h2>Recursos Añadidos por la Academia</h2>
 
-<label for="filterScope">Show</label>
+<label for="filterScope">Mostrar</label>
 <select id="filterScope" class="field">
-<option value="all">All Resources</option>
-<option value="academy">Entire Academy</option>
+<option value="all">Todos los Recursos</option>
+<option value="academy">Toda la Academia</option>
 <option value="bhakti-sastri">Bhakti Śāstrī</option>
 <option value="bhakti-vaibhava">Bhakti Vaibhava</option>
 <option value="bhakti-vedanta">Bhakti Vedānta</option>
@@ -93,7 +93,7 @@ Cancel Edit
 </section>
 
 <div class="notice admin-section">
-<strong>Source protection:</strong>
+<strong>Protección de las fuentes:</strong>
 resources added here remain separate from canonical scripture,
 registered scholars, and official course resources.
 </div>
@@ -114,7 +114,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({
 let editing=null;
 
 const scopeNames={
-  academy:'Entire Academy',
+  academy:'Toda la Academia',
   'bhakti-sastri':'Bhakti Śāstrī',
   'bhakti-vaibhava':'Bhakti Vaibhava',
   'bhakti-vedanta':'Bhakti Vedānta',
@@ -134,8 +134,8 @@ function clearForm(){
   $('url').value='';
   $('purpose').value='';
   $('scope').value='academy';
-  $('formTitle').textContent='Add a Resource';
-  $('save').textContent='Add Resource';
+  $('formTitle').textContent='Añadir un Recurso';
+  $('save').textContent='Añadir Recurso';
   $('cancel').hidden=true;
 }
 
@@ -150,8 +150,8 @@ function editResource(id){
   $('purpose').value=item.purpose||'';
   $('scope').value=item.scope||'academy';
 
-  $('formTitle').textContent='Edit Resource';
-  $('save').textContent='Save Changes';
+  $('formTitle').textContent='Editar Recurso';
+  $('save').textContent='Guardar Cambios';
   $('cancel').hidden=false;
   $('message').textContent='';
 
@@ -162,7 +162,7 @@ function removeResource(id){
   const item=AcademyReferences.get(id);
   if(!item)return;
 
-  if(!confirm('Remove "'+(item.title||'this resource')+'"?'))return;
+  if(!confirm('Remove "'+(item.title||'este recurso')+'"?'))return;
 
   AcademyReferences.remove(id);
 
@@ -175,7 +175,7 @@ $('save').onclick=()=>{
   const title=$('title').value.trim();
 
   if(!title){
-    $('message').textContent='Title is required.';
+    $('message').textContent='El título es obligatorio.';
     return;
   }
 
@@ -189,10 +189,10 @@ $('save').onclick=()=>{
 
   if(editing){
     AcademyReferences.update(editing,data);
-    $('message').textContent='Resource updated.';
+    $('message').textContent='Recurso actualizado.';
   }else{
     AcademyReferences.add(data);
-    $('message').textContent='Resource added.';
+    $('message').textContent='Recurso añadido.';
   }
 
   clearForm();
@@ -216,11 +216,11 @@ function render(){
   $('list').innerHTML=items.length
     ? items.map(item=>`
       <article class="card">
-        <div class="eyebrow">Academy Administrator</div>
+        <div class="eyebrow">Administrador de la Academia</div>
         <h3>${esc(item.title)}</h3>
 
         ${item.author
-          ? `<p><strong>Author / Scholar:</strong> ${esc(item.author)}</p>`
+          ? `<p><strong>Autor / Erudito:</strong> ${esc(item.author)}</p>`
           : ''}
 
         ${item.url
@@ -239,13 +239,13 @@ function render(){
 
         <div class="reference-actions">
           <button class="button secondary"
-            onclick="editResource('${esc(item.id)}')">Edit</button>
+            onclick="editResource('${esc(item.id)}')">Editar</button>
           <button class="button secondary"
-            onclick="removeResource('${esc(item.id)}')">Remove</button>
+            onclick="removeResource('${esc(item.id)}')">Eliminar</button>
         </div>
       </article>
     `).join('')
-    : '<p class="muted">No Academy-added resources in this view.</p>';
+    : '<p class="muted">No hay recursos añadidos por la Academia en esta vista.</p>';
 }
 
 render();

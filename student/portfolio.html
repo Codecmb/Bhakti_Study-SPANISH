@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>My Work — Bhakti Study</title>
+<title>Mi Trabajo — Bhakti Study</title>
 <link rel="stylesheet" href="../shared/styles.css">
 <style>
 .portfolio-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.portfolio-list{display:grid;gap:12px}
@@ -16,18 +16,18 @@
 <div class="layout">
   <aside class="sidebar"></aside>
   <main class="main">
-    <div class="eyebrow">Student Portfolio</div>
-    <h1>My Work</h1>
-    <p>Your writing across the Academy stays separate from the canonical library. Export an editable document for LibreOffice, FreeOffice, Word, or another word processor, or create a complete Bhakti Study backup.</p>
+    <div class="eyebrow">Portafolio del Estudiante</div>
+    <h1>Mi Trabajo</h1>
+    <p>Tus escritos en la Academia permanecen separados de la biblioteca canónica. Exporta un documento editable para LibreOffice, FreeOffice, Word u otro procesador de texto, o crea una copia de seguridad completa de Bhakti Study.</p>
     <div class="portfolio-toolbar">
-      <button class="button" id="exportRtf">Continue Writing / Export RTF</button>
-      <button class="button secondary" id="backupJson">Backup Student Data</button>
-      <button class="button secondary" id="restoreBtn">Restore Backup</button>
+      <button class="button" id="exportRtf">Continuar Escribiendo / Exportar RTF</button>
+      <button class="button secondary" id="backupJson">Crear Copia de Seguridad</button>
+      <button class="button secondary" id="restoreBtn">Restaurar Copia de Seguridad</button>
       <input id="importBackup" type="file" accept=".json,application/json">
       <span class="status muted" id="status"></span>
     </div>
     <div class="card">
-      <label><strong>Filter My Work</strong><input id="filter" type="search" placeholder="Reference, type, or text…" style="width:100%;margin-top:8px;padding:10px"></label>
+      <label><strong>Filtrar Mi Trabajo</strong><input id="filter" type="search" placeholder="Referencia, tipo o texto…" style="width:100%;margin-top:8px;padding:10px"></label>
     </div>
     <div id="work" class="portfolio-list" style="margin-top:16px"></div>
   </main>
@@ -40,14 +40,14 @@ sidebar('portfolio');
 const work=document.getElementById('work'),filter=document.getElementById('filter'),status=document.getElementById('status');
 async function render(){
  const q=filter.value.trim().toLowerCase(),rows=(await StudentPortfolio.resolveRecords()).filter(r=>!q||`${r.ref} ${r.label} ${r.value}`.toLowerCase().includes(q));
- work.innerHTML=rows.length?rows.map(r=>`<article class="work-card"><div class="meta">${StudentPortfolio.esc(r.label)}</div><h3>${StudentPortfolio.esc(r.ref)}</h3><pre>${StudentPortfolio.esc(r.value)}</pre>${r.context?`<div class="work-actions"><a class="button secondary" href="${StudentPortfolio.esc(r.context.href)}">${StudentPortfolio.esc(r.context.label)}</a></div>`:''}</article>`).join(''):`<div class="card portfolio-empty">No saved student writing matches this view yet.</div>`;
+ work.innerHTML=rows.length?rows.map(r=>`<article class="work-card"><div class="meta">${StudentPortfolio.esc(r.label)}</div><h3>${StudentPortfolio.esc(r.ref)}</h3><pre>${StudentPortfolio.esc(r.value)}</pre>${r.context?`<div class="work-actions"><a class="button secondary" href="${StudentPortfolio.esc(r.context.href)}">${StudentPortfolio.esc(r.context.label)}</a></div>`:''}</article>`).join(''):`<div class="card portfolio-empty">Aún no hay escritos guardados que coincidan con esta vista.</div>`;
 }
 filter.addEventListener('input',render);
 document.getElementById('exportRtf').onclick=()=>StudentPortfolio.exportRTF();
-document.getElementById('backupJson').onclick=()=>{StudentPortfolio.backup();status.textContent='Backup created.'};
+document.getElementById('backupJson').onclick=()=>{StudentPortfolio.backup();status.textContent='Copia de seguridad creada.'};
 const input=document.getElementById('importBackup');
 document.getElementById('restoreBtn').onclick=()=>input.click();
-input.onchange=async()=>{if(!input.files[0])return;if(!confirm('Restore this Bhakti Study student backup? Existing records with the same keys will be updated.'))return;try{const n=await StudentPortfolio.restore(input.files[0],false);status.textContent=`Restored ${n} records.`;render()}catch(e){status.textContent=e.message||'Restore failed.'}input.value=''};
+input.onchange=async()=>{if(!input.files[0])return;if(!confirm('¿Restaurar esta copia de seguridad del estudiante de Bhakti Study? Los registros existentes con las mismas claves serán actualizados.'))return;try{const n=await StudentPortfolio.restore(input.files[0],false);status.textContent=`Se restauraron ${n} registros.`;render()}catch(e){status.textContent=e.message||'La restauración falló.'}input.value=''};
 render();
 </script>
 </body></html>

@@ -1,25 +1,25 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Manage Academy</title><link rel="stylesheet" href="../shared/styles.css"></head><body><div class="layout"><aside class="sidebar"></aside><main class="main"><div class="eyebrow">Plug & Play</div><h1>Manage Academy</h1><p class="lead">Add source material without rewriting the application.</p><div id="drop" class="drop"><h2>Drag a book here</h2><p>EPUB · PDF · HTML/XHTML · DOCX · TXT</p><input id="file" type="file" accept=".epub,.pdf,.html,.htm,.xhtml,.docx,.txt"></div><div id="result"></div><div class="grid">
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Administrar Academia</title><link rel="stylesheet" href="../shared/styles.css"></head><body><div class="layout"><aside class="sidebar"></aside><main class="main"><div class="eyebrow">Plug & Play</div><h1>Administrar Academia</h1><p class="lead">Añade material fuente sin reescribir la aplicación.</p><div id="drop" class="drop"><h2>Arrastra un libro aquí</h2><p>EPUB · PDF · HTML/XHTML · DOCX · TXT</p><input id="file" type="file" accept=".epub,.pdf,.html,.htm,.xhtml,.docx,.txt"></div><div id="result"></div><div class="grid">
 <article class="card">
-<h3>Books</h3>
-<p>View and manage the canonical books installed in the Academy.</p>
-<a class="button" href="books.html">Manage Books</a>
+<h3>Libros</h3>
+<p>Consulta y administra los libros canónicos instalados en la Academia.</p>
+<a class="button" href="books.html">Administrar Libros</a>
 </article>
 
 <article class="card">
-<h3>Question Sheets</h3>
-<p>Add and manage question sheets for each Academy program.</p>
-<a class="button" href="questions.html">Manage Question Sheets</a>
+<h3>Hojas de Preguntas</h3>
+<p>Añade y administra hojas de preguntas para cada área de estudio de la Academia.</p>
+<a class="button" href="questions.html">Administrar Hojas de Preguntas</a>
 </article>
 
 <article class="card">
-<h3>Study Guides & Academy Questions</h3>
-<p>Add study guides and individual administrator-created questions.</p>
-<a class="button" href="study-guides.html">Manage Study Guides</a>
+<h3>Guías de Estudio y Preguntas de la Academia</h3>
+<p>Añade guías de estudio y preguntas individuales creadas por el administrador.</p>
+<a class="button" href="study-guides.html">Administrar Guías de Estudio</a>
 </article>
 
 <article class="card">
-<h3>References</h3>
-<p>Manage optional scholar and course resources.</p>
-<a class="button" href="references.html">Manage References</a>
+<h3>Referencias</h3>
+<p>Administra recursos opcionales de eruditos y de las áreas de estudio.</p>
+<a class="button" href="references.html">Administrar Referencias</a>
 </article>
-</div></main></div><script src="../shared/app.js"></script><script>sidebar('manage');let d=drop,f=file,o=result;function inspect(x){let e=(x.name.split('.').pop()||'').toLowerCase(),ok=['epub','pdf','html','htm','xhtml','docx','txt'].includes(e);o.innerHTML=`<div class="card" style="margin-top:18px"><div class="eyebrow">Import preview</div><h3>${x.name}</h3><p><b>Detected:</b> ${e.toUpperCase()}</p><p><b>Supported:</b> ${ok?'Yes':'Needs adapter'}</p><p><b>Preferred:</b> EPUB ${e==='epub'?'✓':'— this format can still be used'}</p><p class="small">Before registration, confirm title, edition, translator/commentator, source and canonical book ID.</p></div>`}f.onchange=()=>f.files[0]&&inspect(f.files[0]);d.ondragover=e=>e.preventDefault();d.ondrop=e=>{e.preventDefault();e.dataTransfer.files[0]&&inspect(e.dataTransfer.files[0])}</script></body></html>
+</div></main></div><script src="../shared/app.js"></script><script>sidebar('manage');let d=drop,f=file,o=result;function inspect(x){let e=(x.name.split('.').pop()||'').toLowerCase(),ok=['epub','pdf','html','htm','xhtml','docx','txt'].includes(e);o.innerHTML=`<div class="card" style="margin-top:18px"><div class="eyebrow">Vista Previa de Importación</div><h3>${x.name}</h3><p><b>Detectado:</b> ${e.toUpperCase()}</p><p><b>Compatible:</b> ${ok?'Sí':'Necesita adaptador'}</p><p><b>Preferido:</b> EPUB ${e==='epub'?'✓':'— este formato aún puede utilizarse'}</p><p class="small">Antes del registro, confirma el título, la edición, el traductor/comentarista, la fuente y el ID canónico del libro.</p></div>`}f.onchange=()=>f.files[0]&&inspect(f.files[0]);d.ondragover=e=>e.preventDefault();d.ondrop=e=>{e.preventDefault();e.dataTransfer.files[0]&&inspect(e.dataTransfer.files[0])}</script></body></html>

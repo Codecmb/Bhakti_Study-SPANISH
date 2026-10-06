@@ -37,7 +37,7 @@
       return registry.banks||[];
     }catch(err){
       const manifest=await getJSON(base+'data/questions/manifest.json');
-      return [{id:manifest.provider||'default',label:manifest.provider||'Study Questions',description:'Course question bank',manifest:'manifest.json',provider:manifest.provider||''}];
+      return [{id:manifest.provider||'default',label:manifest.provider||'Preguntas de Estudio',description:'Banco de preguntas del curso',manifest:'manifest.json',provider:manifest.provider||''}];
     }
   }
 

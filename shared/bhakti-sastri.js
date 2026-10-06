@@ -12,10 +12,10 @@
   host.innerHTML=course.units.map(u=>{
     const refs=reqMap[u.id]||[];
     return `<section class="card"><div class="eyebrow">${u.id}</div><h2>${u.title}</h2><p>${u.range||''}</p>
-      <button class="button saffron slokaToggle" data-id="${u.id}">Required Ślokas (${refs.length})</button>${u.id==='BS.U1'?` <a class="button secondary" href="../../question-bank/sheet.html?sheet=boex-bg-1-6">Official BOEX Questions</a> <a class="button secondary" href="bg-1-6-most-quoted.html">Most Quoted by Śrīla Prabhupāda</a> <a class="button secondary" href="../../admin/study-guides.html">Manage Academy</a>`:''}
+      <button class="button saffron slokaToggle" data-id="${u.id}">Ślokas Requeridos (${refs.length})</button>${u.id==='BS.U1'?` <a class="button secondary" href="../../question-bank/sheet.html?sheet=boex-bg-1-6">Preguntas Oficiales de BOEX</a> <a class="button secondary" href="bg-1-6-most-quoted.html">Más Citados por Śrīla Prabhupāda</a> <a class="button secondary" href="../../admin/study-guides.html">Administrar Academia</a>`:''}
       <div id="slokas-${u.id}" hidden class="sloka-list">${refs.map(r=>{const c=(window.SourceResolver?.canon?.(r)||r);const m=String(c).match(/^BG\.(\d+)\.(\d+)$/);const href=(u.id==='BS.U1'&&m&&+m[1]>=1&&+m[1]<=6)?`bg-1-6.html?ref=${encodeURIComponent(c)}`:`../../slokas/index.html?ref=${encodeURIComponent(r)}`;return `<a class="sloka-link" href="${href}">${r}</a>`}).join('')}</div>
       <div class="action-grid">${StudyWorkflow.buttons(course,{program:'bhakti-sastri',unit:u.id})}</div></section>`;
   }).join('');
   host.addEventListener('click',e=>{if(!e.target.matches('.slokaToggle'))return; const x=document.getElementById('slokas-'+e.target.dataset.id);x.hidden=!x.hidden;});
-  document.querySelector('#slokaProvider').textContent=`Required Ślokas open the Academy's internal primary-source verse first. Śloka Lab (${integ.provider}) is optional and used only for memorization practice.`;
+  document.querySelector('#slokaProvider').textContent=`Ślokas Requeridos open the Academy's internal primary-source verse first. Śloka Lab (${integ.provider}) is optional and used only for memorization practice.`;
 })();

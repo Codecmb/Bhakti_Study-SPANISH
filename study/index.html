@@ -1,9 +1,9 @@
 <!doctype html>
-<html>
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Study — Bhakti Study Academy</title>
+<title>Estudio — Bhakti Study Academy</title>
 <link rel="stylesheet" href="../shared/styles.css">
 </head>
 <body>
@@ -11,10 +11,10 @@
   <aside class="sidebar"></aside>
 
   <main class="main">
-    <div class="eyebrow">My Study</div>
-    <h1>Study</h1>
+    <div class="eyebrow">Mi Estudio</div>
+    <h1>Estudio</h1>
     <p class="lead">
-      Continue your studies or choose a study program.
+      Continúa tus estudios o elige un área de estudio.
     </p>
 
     <section id="studyPrograms" class="grid"></section>
@@ -30,7 +30,7 @@ const programs = [
   {
     id:'bhakti-sastri',
     title:'Bhakti Śāstrī',
-    subtitle:'Bhagavad-gītā · Śrī Īśopaniṣad · Nectar of Instruction · Nectar of Devotion'
+    subtitle:'Bhagavad-gītā · Śrī Īśopaniṣad · El Néctar de la Instrucción · El Néctar de la Devoción'
   },
   {
     id:'bhakti-vaibhava',
@@ -50,7 +50,7 @@ const programs = [
   {
     id:'sat-sandarbhas',
     title:'Ṣaṭ Sandarbhas',
-    subtitle:'Advanced siddhānta study'
+    subtitle:'Estudio avanzado de siddhānta'
   }
 ];
 
@@ -76,12 +76,12 @@ studyPrograms.innerHTML=programs.map(p=>{
 
   return `
     <article class="card">
-      <div class="eyebrow">Area of Study</div>
+      <div class="eyebrow">Área de Estudio</div>
       <h2>${p.title}</h2>
       <p>${p.subtitle}</p>
       <div style="display:flex;gap:.6rem;flex-wrap:wrap">
-        <a class="button" href="${continueHref}">Continue Study</a>
-        ${sandarbhas ? '' : `<a class="button secondary" href="${programHref}">Choose Unit</a>`}
+        <a class="button" href="${continueHref}">Continuar Estudio</a>
+        ${sandarbhas ? '' : `<a class="button secondary" href="${programHref}">Elegir Unidad</a>`}
       </div>
     </article>
   `;

@@ -32,11 +32,11 @@
   };
 
   const KIND_LABELS={
-    'closed-book-short':'Closed Book Short',
-    'closed-book':'Closed Book Questions',
-    'open-book-essay':'Open Book Essays',
-    'open-book':'Open Book Questions',
-    'study-question':'Study Questions'
+    'closed-book-short':'Libro Cerrado — Respuesta Corta',
+    'closed-book':'Preguntas a Libro Cerrado',
+    'open-book-essay':'Ensayos a Libro Abierto',
+    'open-book':'Preguntas a Libro Abierto',
+    'study-question':'Preguntas de Estudio'
   };
 
   function loadImported(){
@@ -57,7 +57,7 @@
         imported:true
       },
       data:{
-        title:batch.title||'Imported question sheet',
+        title:batch.title||'Hoja de preguntas importada',
         provider:batch.author||'Imported',
         source_file:batch.source_file||'',
         questions:batch.questions||[]
@@ -74,11 +74,11 @@
     const registry=await registryResponse.json();
     const record=(registry.sheets||[]).find(x=>x.id===sheetId);
 
-    if(!record)throw new Error('Question sheet not found.');
+    if(!record)throw new Error('No se encontró la hoja de preguntas.');
 
     const dataResponse=await fetch('../'+record.data);
     if(!dataResponse.ok){
-      throw new Error(`Question sheet HTTP ${dataResponse.status}`);
+      throw new Error(`Hoja de preguntas HTTP ${dataResponse.status}`);
     }
 
     return {record,data:await dataResponse.json()};
@@ -117,8 +117,8 @@
     });
 
     const groupLabel=groupId==='1-6'
-      ? 'Bhagavad-gītā 1–6 · Thematic Questions'
-      : `Bhagavad-gītā Chapter ${groupId}`;
+      ? 'Bhagavad-gītā 1–6 · Preguntas Temáticas'
+      : `Bhagavad-gītā · Capítulo ${groupId}`;
 
     return {
       scope,
@@ -146,7 +146,7 @@
           (q.canonical_ref ? [q.canonical_ref] : []),
         kind:q.kind || 'study-question',
         provenance:q.provenance || {
-          title:data.title || 'Imported question sheet',
+          title:data.title || 'Hoja de preguntas importada',
           author:data.provider || ''
         }
       })
@@ -157,8 +157,8 @@
     return {
       scope:`import.${record.id}`,
       questions,
-      heading:data.title || 'Imported question sheet',
-      type:'Imported Questions'
+      heading:data.title || 'Hoja de preguntas importada',
+      type:'Preguntas Importadas'
     };
   }
 
@@ -196,9 +196,9 @@
     const chapterMatch=String(ref).match(/^SB\.(\d+)\.(\d+)$/);
 
     const heading=chapterMatch
-      ? `Śrīmad-Bhāgavatam Canto ${chapterMatch[1]} · Chapter ${chapterMatch[2]}`
+      ? `Śrīmad-Bhāgavatam Canto ${chapterMatch[1]} · Capítulo ${chapterMatch[2]}`
       : ref===record.scope
-        ? 'Introduction / General'
+        ? 'Introducción / General'
         : ref;
 
     return {
@@ -211,7 +211,7 @@
 
   try{
     if(!sheetId && !(importId && importProgram)){
-      host.innerHTML='<div class="card missing">Question section not found.</div>';
+      host.innerHTML='<div class="card missing">No se encontró la sección de preguntas.</div>';
       return;
     }
 
@@ -225,14 +225,14 @@
         : structured(record,data);
 
     if(!section){
-      host.innerHTML='<div class="card missing">Question section not found.</div>';
+      host.innerHTML='<div class="card missing">No se encontró la sección de preguntas.</div>';
       return;
     }
 
     const title=data.title||data.source_title||record.id;
     const programLabel=PROGRAM_LABELS[record.program]||record.program;
-    const bookLabel=BOOK_LABELS[record.book]||record.book||'Imported / General';
-    const provenance=data.provider||'Question Bank';
+    const bookLabel=BOOK_LABELS[record.book]||record.book||'Importado / General';
+    const provenance=data.provider||'Banco de Preguntas';
 
     const sheetHref=record.imported
       ? 'index.html'
@@ -243,10 +243,10 @@
     host.innerHTML=`
       <div class="reader-actions" style="margin:0 0 18px">
         <a class="button secondary" href="${sheetHref}">
-          ← ${record.imported?'Question Bank':'Question Sheet'}
+          ← ${record.imported?'Banco de Preguntas':'Hoja de Preguntas'}
         </a>
-        ${record.imported?'':`<a class="button secondary" href="index.html">Question Bank</a>`}
-        <a class="button secondary" href="../index.html">Academy Home</a>
+        ${record.imported?'':`<a class="button secondary" href="index.html">Banco de Preguntas</a>`}
+        <a class="button secondary" href="../index.html">Inicio de la Academia</a>
       </div>
 
       <section class="card">
@@ -310,12 +310,12 @@
         );
 
         document.getElementById('msg').textContent=
-          'Answers saved in this browser.';
+          'Respuestas guardadas en este navegador.';
       };
     }
 
   }catch(error){
     host.innerHTML=
-      `<div class="card missing">Could not load questions: ${esc(error.message)}</div>`;
+      `<div class="card missing">No se pudieron cargar las preguntas: ${esc(error.message)}</div>`;
   }
 })();

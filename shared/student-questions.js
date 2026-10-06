@@ -7,7 +7,7 @@
   function save(q){
     const now=new Date().toISOString();
     const rec={id:q.id||uid(),question:String(q.question||'').trim(),program:q.program||'',unit:q.unit||'',canonical:q.canonical||'',scope:q.scope||'book',linkedSources:Array.isArray(q.linkedSources)?q.linkedSources:[],myAnswer:q.myAnswer||'',revisedAnswer:q.revisedAnswer||'',status:q.status||'studying',createdAt:q.createdAt||now,updatedAt:now};
-    if(!rec.question)throw new Error('Question is required.'); StudentStore.setJSON(TYPE,rec.id,rec);return rec;
+    if(!rec.question)throw new Error('La pregunta es obligatoria.'); StudentStore.setJSON(TYPE,rec.id,rec);return rec;
   }
   function get(id){return StudentStore.getJSON(TYPE,id,null)}
   function remove(id){StudentStore.remove(TYPE,id)}

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Study Guides & Academy Questions · Bhakti Study</title>
+<title>Guías de Estudio y Preguntas de la Academia · Bhakti Study</title>
 <link rel="stylesheet" href="../shared/styles.css">
 <style>
 .admin-toolbar{display:flex;gap:.75rem;align-items:end;flex-wrap:wrap;margin:1rem 0}
@@ -17,22 +17,22 @@
 <aside class="sidebar"></aside>
 
 <main class="main">
-<div class="eyebrow">Manage Academy</div>
-<h1>Study Guides & Academy Questions</h1>
+<div class="eyebrow">Administrar Academia</div>
+<h1>Guías de Estudio y Preguntas de la Academia</h1>
 <p class="lead">
-Add supplementary study material for each Academy program.
-Published material automatically appears in that program's Study Guides.
+Añade material de estudio suplementario para cada área de estudio de la Academia.
+El material publicado aparece automáticamente en las Guías de Estudio de esa área.
 </p>
 
 <p>
-<a class="button secondary" href="index.html">← Manage Academy</a>
+<a class="button secondary" href="index.html">← Administrar Academia</a>
 </p>
 
 <section class="card">
-<h2>Choose Program</h2>
+<h2>Elegir Área de Estudio</h2>
 <div class="admin-toolbar">
 <div>
-<label for="program"><strong>Program</strong></label>
+<label for="program"><strong>Área de Estudio</strong></label>
 <select id="program" class="field">
 <option value="bhakti-sastri">Bhakti Śāstrī</option>
 <option value="bhakti-vaibhava">Bhakti Vaibhava</option>
@@ -45,30 +45,30 @@ Published material automatically appears in that program's Study Guides.
 </section>
 
 <section class="card admin-section">
-<h2>Add a Study Guide</h2>
+<h2>Añadir una Guía de Estudio</h2>
 
-<label for="title">Guide title</label>
+<label for="title">Título de la guía</label>
 <input id="title" class="field"
- placeholder="Example: Bhagavad-gītā Chapter 2 — Nature of the Soul">
+ placeholder="Ejemplo: Bhagavad-gītā Capítulo 2 — Naturaleza del Alma">
 
-<label for="scope">Scope / section</label>
+<label for="scope">Alcance / sección</label>
 <input id="scope" class="field"
- placeholder="Example: BG Chapter 2">
+ placeholder="Ejemplo: BG Capítulo 2">
 
-<label for="body">Study guide</label>
+<label for="body">Guía de estudio</label>
 <textarea id="body" class="field" style="min-height:240px"
- placeholder="Paste the study guide here..."></textarea>
+ placeholder="Pega aquí la guía de estudio..."></textarea>
 
 <div class="action-grid">
 <label class="button secondary">
-Import TXT / MD
+Importar TXT / MD
 <input id="txt" type="file" accept=".txt,.md" hidden>
 </label>
 <button id="preview" class="button secondary" type="button">
-Preview Detected Questions
+Vista Previa de Preguntas Detectadas
 </button>
 <button id="publish" class="button" type="button">
-Publish Study Guide
+Publicar Guía de Estudio
 </button>
 </div>
 
@@ -76,31 +76,31 @@ Publish Study Guide
 </section>
 
 <section class="card admin-section">
-<h2>Add One Academy Question</h2>
+<h2>Añadir una Pregunta de la Academia</h2>
 <p class="small">
-Use this when you want to add a question without creating a complete study guide.
+Usa esta opción cuando quieras añadir una pregunta sin crear una guía de estudio completa.
 </p>
 
 <textarea id="singleQ" class="field"
- placeholder="Question for the student..."></textarea>
+ placeholder="Pregunta para el estudiante..."></textarea>
 
 <input id="singleRefs" class="field"
- placeholder="Internal references, e.g. BG.2.13, BG.2.20">
+ placeholder="Referencias internas, p. ej. BG.2.13, BG.2.20">
 
 <button id="addQ" class="button" type="button">
-Add Question
+Añadir Pregunta
 </button>
 </section>
 
 <section class="admin-section">
-<h2>Published for This Program</h2>
+<h2>Publicado para Esta Área de Estudio</h2>
 <div id="list"></div>
 </section>
 
 <div class="notice admin-section">
-<strong>Source protection:</strong>
-Academy study guides and administrator questions remain separate from
-canonical scripture and official Ministry/BOEX question banks.
+<strong>Protección de las fuentes:</strong>
+Las guías de estudio de la Academia y las preguntas del administrador permanecen separadas de
+las escrituras canónicas y los bancos oficiales de preguntas del Ministerio/BOEX.
 </div>
 </main>
 </div>
@@ -123,7 +123,7 @@ function renderDetected(){
     pending.slice(0,20).map(q=>
       '<div class="question-card"><b>'+q.text+
       '</b><div class="small">'+
-      (q.refs.join(', ')||'No canonical reference detected')+
+      (q.refs.join(', ')||'No se detectó ninguna referencia canónica')+
       '</div></div>'
     ).join('');
 }
@@ -147,7 +147,7 @@ $('publish').onclick=()=>{
   const body=$('body').value.trim();
 
   if(!title||!body)
-    return alert('Add a title and guide text first.');
+    return alert('Primero añade un título y el texto de la guía.');
 
   renderDetected();
 
@@ -157,7 +157,7 @@ $('publish').onclick=()=>{
     scope:$('scope').value.trim(),
     body:$('body').value,
     questions:pending,
-    provenance:'Academy Study Guide'
+    provenance:'Guía de Estudio de la Academia'
   };
 
   if(editing){
@@ -186,8 +186,8 @@ $('addQ').onclick=()=>{
   AcademyGuides.add({
     id:AcademyGuides.id(),
     program:$('program').value,
-    title:'Administrator Question',
-    scope:'Course study',
+    title:'Pregunta del Administrador',
+    scope:'Estudio del área',
     body:'',
     questions:[{
       id:AcademyGuides.id(),
@@ -196,7 +196,7 @@ $('addQ').onclick=()=>{
       required:true
     }],
     created:new Date().toISOString(),
-    provenance:'Academy Question'
+    provenance:'Pregunta de la Academia'
   });
 
   $('singleQ').value='';
@@ -211,7 +211,7 @@ function clearGuideForm(){
   $('body').value='';
   pending=[];
   $('detected').innerHTML='';
-  $('publish').textContent='Publish Study Guide';
+  $('publish').textContent='Publicar Guía de Estudio';
 }
 
 function editGuide(id){
@@ -223,7 +223,7 @@ function editGuide(id){
   $('title').value=g.title||'';
   $('scope').value=g.scope||'';
   $('body').value=g.body||'';
-  $('publish').textContent='Save Changes';
+  $('publish').textContent='Guardar Cambios';
 
   window.scrollTo({top:0,behavior:'smooth'});
 }
@@ -232,7 +232,7 @@ function removeGuide(id){
   const g=AcademyGuides.get(id);
   if(!g)return;
 
-  if(!confirm('Remove "'+(g.title||'this item')+'"?'))return;
+  if(!confirm('Remove "'+(g.title||'este elemento')+'"?'))return;
 
   AcademyGuides.remove(id);
 
@@ -246,23 +246,23 @@ function render(){
   $('summary').textContent=items.length
     ? items.length+' published item'+(items.length===1?'':'s')+
       ' for this program.'
-    : 'No Academy study guides or questions have been published for this program yet.';
+    : 'Todavía no se han publicado guías de estudio ni preguntas de la Academia para esta área.';
 
   $('list').innerHTML=items.length
     ? items.map(g=>{
         const isGuide=!!g.body;
 
         return '<article class="card">'+
-          '<span class="tag">'+(g.provenance||'Academy Material')+'</span>'+
+          '<span class="tag">'+(g.provenance||'Material de la Academia')+'</span>'+
           '<h3>'+g.title+'</h3>'+
           '<p class="small">'+
-            (g.scope||'Course study')+' · '+
+            (g.scope||'Estudio del área')+' · '+
             (g.questions?.length||0)+' question(s)</p>'+
           '<div class="guide-actions">'+
             (isGuide
-              ? '<button class="button secondary" onclick="editGuide(\''+g.id+'\')">Edit</button>'
+              ? '<button class="button secondary" onclick="editGuide(\''+g.id+'\')">Editar</button>'
               : '')+
-            '<button class="button secondary" onclick="removeGuide(\''+g.id+'\')">Remove</button>'+
+            '<button class="button secondary" onclick="removeGuide(\''+g.id+'\')">Eliminar</button>'+
           '</div>'+
         '</article>';
       }).join('')

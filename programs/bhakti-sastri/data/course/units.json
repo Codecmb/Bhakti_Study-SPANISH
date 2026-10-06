@@ -41,7 +41,7 @@
     },
     {
       "id": "BS.U4",
-      "title": "The Nectar of Devotion",
+      "title": "El Néctar de la Devoción",
       "book": "nod",
       "range": "Bhakti Śāstrī prescribed study",
       "slokas": 4,
@@ -54,7 +54,7 @@
     },
     {
       "id": "BS.U5",
-      "title": "Śrī Īśopaniṣad + Nectar of Instruction",
+      "title": "Śrī Īśopaniṣad + El Néctar de la Instrucción",
       "books": [
         "iso",
         "noi"

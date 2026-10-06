@@ -29,7 +29,7 @@
     {
       "id": "BV.S001",
       "order": 1,
-      "title": "SB Introduction to 1.1.3",
+      "title": "Introducción al SB hasta 1.1.3",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 1,
       "book": "sb1",
@@ -41,7 +41,7 @@
     {
       "id": "BV.S002",
       "order": 2,
-      "title": "SB 1.1.4 to 1.2.5",
+      "title": "SB 1.1.4 a 1.2.5",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 2,
       "book": "sb1",
@@ -53,7 +53,7 @@
     {
       "id": "BV.S003",
       "order": 3,
-      "title": "SB 1.2.6 to 1.2.20",
+      "title": "SB 1.2.6 a 1.2.20",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 3,
       "book": "sb1",
@@ -65,7 +65,7 @@
     {
       "id": "BV.S004",
       "order": 4,
-      "title": "SB 1.2.21 to 1.3.4",
+      "title": "SB 1.2.21 a 1.3.4",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 4,
       "book": "sb1",
@@ -77,7 +77,7 @@
     {
       "id": "BV.S005",
       "order": 5,
-      "title": "SB 1.3.5 to 1.3.34",
+      "title": "SB 1.3.5 a 1.3.34",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 5,
       "book": "sb1",
@@ -89,7 +89,7 @@
     {
       "id": "BV.S006",
       "order": 6,
-      "title": "SB 1.3.35 to 1.4.5",
+      "title": "SB 1.3.35 a 1.4.5",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 6,
       "book": "sb1",
@@ -101,7 +101,7 @@
     {
       "id": "BV.S007",
       "order": 7,
-      "title": "SB 1.4.6 to 1.4.31",
+      "title": "SB 1.4.6 a 1.4.31",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 7,
       "book": "sb1",
@@ -113,7 +113,7 @@
     {
       "id": "BV.S008",
       "order": 8,
-      "title": "SB 1.4.32 to 1.5.22",
+      "title": "SB 1.4.32 a 1.5.22",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 8,
       "book": "sb1",
@@ -125,7 +125,7 @@
     {
       "id": "BV.S009",
       "order": 9,
-      "title": "SB 1.5.23 to 1.6.4",
+      "title": "SB 1.5.23 a 1.6.4",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 9,
       "book": "sb1",
@@ -137,7 +137,7 @@
     {
       "id": "BV.S010",
       "order": 10,
-      "title": "SB 1.6.5 to 1.6.38",
+      "title": "SB 1.6.5 a 1.6.38",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 10,
       "book": "sb1",
@@ -149,7 +149,7 @@
     {
       "id": "BV.S011",
       "order": 11,
-      "title": "SB 1.7.1 to 1.7.34",
+      "title": "SB 1.7.1 a 1.7.34",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 11,
       "book": "sb1",
@@ -161,7 +161,7 @@
     {
       "id": "BV.S012",
       "order": 12,
-      "title": "SB 1.7.35 to 1.8.11",
+      "title": "SB 1.7.35 a 1.8.11",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 12,
       "book": "sb1",
@@ -173,7 +173,7 @@
     {
       "id": "BV.S013",
       "order": 13,
-      "title": "SB 1.8.12 to 1.8.26",
+      "title": "SB 1.8.12 a 1.8.26",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 13,
       "book": "sb1",
@@ -185,7 +185,7 @@
     {
       "id": "BV.S014",
       "order": 14,
-      "title": "SB 1.8.27 to 1.8.42",
+      "title": "SB 1.8.27 a 1.8.42",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 14,
       "book": "sb1",
@@ -197,7 +197,7 @@
     {
       "id": "BV.S015",
       "order": 15,
-      "title": "SB 1.8.43 to 1.9.17",
+      "title": "SB 1.8.43 a 1.9.17",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 15,
       "book": "sb1",
@@ -209,7 +209,7 @@
     {
       "id": "BV.S016",
       "order": 16,
-      "title": "SB 1.9.18 to 1.9.49",
+      "title": "SB 1.9.18 a 1.9.49",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 16,
       "book": "sb1",
@@ -221,7 +221,7 @@
     {
       "id": "BV.S017",
       "order": 17,
-      "title": "SB 1.10.1 to 1.10.23",
+      "title": "SB 1.10.1 a 1.10.23",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 17,
       "book": "sb1",
@@ -233,7 +233,7 @@
     {
       "id": "BV.S018",
       "order": 18,
-      "title": "SB 1.10.24 to 1.11.23",
+      "title": "SB 1.10.24 a 1.11.23",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 18,
       "book": "sb1",
@@ -245,7 +245,7 @@
     {
       "id": "BV.S019",
       "order": 19,
-      "title": "SB 1.11.24 to 1.12.6",
+      "title": "SB 1.11.24 a 1.12.6",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 19,
       "book": "sb1",
@@ -257,7 +257,7 @@
     {
       "id": "BV.S020",
       "order": 20,
-      "title": "SB 1.12.7 to 1.12.36",
+      "title": "SB 1.12.7 a 1.12.36",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 20,
       "book": "sb1",
@@ -269,7 +269,7 @@
     {
       "id": "BV.S021",
       "order": 21,
-      "title": "SB 1.13.1 to 1.13.21",
+      "title": "SB 1.13.1 a 1.13.21",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 21,
       "book": "sb1",
@@ -281,7 +281,7 @@
     {
       "id": "BV.S022",
       "order": 22,
-      "title": "SB 1.13.22 to 1.13.47",
+      "title": "SB 1.13.22 a 1.13.47",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 22,
       "book": "sb1",
@@ -293,7 +293,7 @@
     {
       "id": "BV.S023",
       "order": 23,
-      "title": "SB 1.13.48 to 1.14.38",
+      "title": "SB 1.13.48 a 1.14.38",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 23,
       "book": "sb1",
@@ -305,7 +305,7 @@
     {
       "id": "BV.S024",
       "order": 24,
-      "title": "SB 1.14.39 to 1.15.21",
+      "title": "SB 1.14.39 a 1.15.21",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 24,
       "book": "sb1",
@@ -317,7 +317,7 @@
     {
       "id": "BV.S025",
       "order": 25,
-      "title": "SB 1.15.22 to 1.16.6",
+      "title": "SB 1.15.22 a 1.16.6",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 25,
       "book": "sb1",
@@ -329,7 +329,7 @@
     {
       "id": "BV.S026",
       "order": 26,
-      "title": "SB 1.16.7 to 1.16.36",
+      "title": "SB 1.16.7 a 1.16.36",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 26,
       "book": "sb1",
@@ -341,7 +341,7 @@
     {
       "id": "BV.S027",
       "order": 27,
-      "title": "SB 1.17.1 to 1.17.20",
+      "title": "SB 1.17.1 a 1.17.20",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 27,
       "book": "sb1",
@@ -353,7 +353,7 @@
     {
       "id": "BV.S028",
       "order": 28,
-      "title": "SB 1.17.21 to 1.18.13",
+      "title": "SB 1.17.21 a 1.18.13",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 28,
       "book": "sb1",
@@ -365,7 +365,7 @@
     {
       "id": "BV.S029",
       "order": 29,
-      "title": "SB 1.18.14 to 1.18.50",
+      "title": "SB 1.18.14 a 1.18.50",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 29,
       "book": "sb1",
@@ -377,7 +377,7 @@
     {
       "id": "BV.S030",
       "order": 30,
-      "title": "SB 1.19.1 to 1.19.40",
+      "title": "SB 1.19.1 a 1.19.40",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 30,
       "book": "sb1",
@@ -389,7 +389,7 @@
     {
       "id": "BV.S032",
       "order": 32,
-      "title": "SB 2.1.1 to 2.1.24",
+      "title": "SB 2.1.1 a 2.1.24",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 32,
       "book": "sb2",
@@ -401,7 +401,7 @@
     {
       "id": "BV.S033",
       "order": 33,
-      "title": "SB 2.1.25 to 2.2.14",
+      "title": "SB 2.1.25 a 2.2.14",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 33,
       "book": "sb2",
@@ -413,7 +413,7 @@
     {
       "id": "BV.S034",
       "order": 34,
-      "title": "SB 2.2.15 to 2.2.37",
+      "title": "SB 2.2.15 a 2.2.37",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 34,
       "book": "sb2",
@@ -425,7 +425,7 @@
     {
       "id": "BV.S035",
       "order": 35,
-      "title": "SB 2.3.1 to 2.3.25",
+      "title": "SB 2.3.1 a 2.3.25",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 35,
       "book": "sb2",
@@ -437,7 +437,7 @@
     {
       "id": "BV.S036",
       "order": 36,
-      "title": "SB 2.4.1 to 2.4.18",
+      "title": "SB 2.4.1 a 2.4.18",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 36,
       "book": "sb2",
@@ -449,7 +449,7 @@
     {
       "id": "BV.S037",
       "order": 37,
-      "title": "SB 2.4.19 to 2.5.13",
+      "title": "SB 2.4.19 a 2.5.13",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 37,
       "book": "sb2",
@@ -461,7 +461,7 @@
     {
       "id": "BV.S038",
       "order": 38,
-      "title": "SB 2.5.14 to 2.5.20",
+      "title": "SB 2.5.14 a 2.5.20",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 38,
       "book": "sb2",
@@ -473,7 +473,7 @@
     {
       "id": "BV.S039",
       "order": 39,
-      "title": "SB 2.5.21 to 2.6.2",
+      "title": "SB 2.5.21 a 2.6.2",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 39,
       "book": "sb2",
@@ -485,7 +485,7 @@
     {
       "id": "BV.S040",
       "order": 40,
-      "title": "SB 2.6.3 to 2.6.29",
+      "title": "SB 2.6.3 a 2.6.29",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 40,
       "book": "sb2",
@@ -497,7 +497,7 @@
     {
       "id": "BV.S041",
       "order": 41,
-      "title": "SB 2.6.30 to 2.7.14",
+      "title": "SB 2.6.30 a 2.7.14",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 41,
       "book": "sb2",
@@ -509,7 +509,7 @@
     {
       "id": "BV.S042",
       "order": 42,
-      "title": "SB 2.7.15 to 2.7.53",
+      "title": "SB 2.7.15 a 2.7.53",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 42,
       "book": "sb2",
@@ -521,7 +521,7 @@
     {
       "id": "BV.S043",
       "order": 43,
-      "title": "SB 2.8.1 to 2.8.29",
+      "title": "SB 2.8.1 a 2.8.29",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 43,
       "book": "sb2",
@@ -533,7 +533,7 @@
     {
       "id": "BV.S044",
       "order": 44,
-      "title": "SB 2.9.1 to 2.9.24",
+      "title": "SB 2.9.1 a 2.9.24",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 44,
       "book": "sb2",
@@ -545,7 +545,7 @@
     {
       "id": "BV.S045",
       "order": 45,
-      "title": "SB 2.9.25 to 2.9.36",
+      "title": "SB 2.9.25 a 2.9.36",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 45,
       "book": "sb2",
@@ -557,7 +557,7 @@
     {
       "id": "BV.S046",
       "order": 46,
-      "title": "SB 2.9.37 to 2.10.35",
+      "title": "SB 2.9.37 a 2.10.35",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 46,
       "book": "sb2",
@@ -569,7 +569,7 @@
     {
       "id": "BV.S047",
       "order": 47,
-      "title": "SB 2.10.36 to 2.10.51 & SB Canto 2 Overview",
+      "title": "SB 2.10.36 a 2.10.51 y panorama general del Canto 2 del SB",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 47,
       "book": "sb2",
@@ -581,7 +581,7 @@
     {
       "id": "BV.S048",
       "order": 48,
-      "title": "SB 3.1.1 to 3.1.20",
+      "title": "SB 3.1.1 a 3.1.20",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 48,
       "book": "sb3",
@@ -593,7 +593,7 @@
     {
       "id": "BV.S049",
       "order": 49,
-      "title": "SB 3.1.21 to 3.2.6",
+      "title": "SB 3.1.21 a 3.2.6",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 49,
       "book": "sb3",
@@ -605,7 +605,7 @@
     {
       "id": "BV.S050",
       "order": 50,
-      "title": "SB 3.2.7 to 3.2.34",
+      "title": "SB 3.2.7 a 3.2.34",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 50,
       "book": "sb3",
@@ -617,7 +617,7 @@
     {
       "id": "BV.S051",
       "order": 51,
-      "title": "SB 3.3.1 to 3.3.28",
+      "title": "SB 3.3.1 a 3.3.28",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 51,
       "book": "sb3",
@@ -629,7 +629,7 @@
     {
       "id": "BV.S052",
       "order": 52,
-      "title": "SB 3.4.1 to 3.4.36",
+      "title": "SB 3.4.1 a 3.4.36",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 52,
       "book": "sb3",
@@ -641,7 +641,7 @@
     {
       "id": "BV.S053",
       "order": 53,
-      "title": "SB 3.5.1 to 3.5.39",
+      "title": "SB 3.5.1 a 3.5.39",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 53,
       "book": "sb3",
@@ -653,7 +653,7 @@
     {
       "id": "BV.S054",
       "order": 54,
-      "title": "SB 3.5.40 to 3.6.36",
+      "title": "SB 3.5.40 a 3.6.36",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 54,
       "book": "sb3",
@@ -665,7 +665,7 @@
     {
       "id": "BV.S055",
       "order": 55,
-      "title": "SB 3.6.37 to 3.7.20",
+      "title": "SB 3.6.37 a 3.7.20",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 55,
       "book": "sb3",
@@ -677,7 +677,7 @@
     {
       "id": "BV.S056",
       "order": 56,
-      "title": "SB 3.7.21 to 3.8.23",
+      "title": "SB 3.7.21 a 3.8.23",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 56,
       "book": "sb3",
@@ -689,7 +689,7 @@
     {
       "id": "BV.S057",
       "order": 57,
-      "title": "SB 3.8.24 to 3.9.21",
+      "title": "SB 3.8.24 a 3.9.21",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 57,
       "book": "sb3",
@@ -701,7 +701,7 @@
     {
       "id": "BV.S058",
       "order": 58,
-      "title": "SB 3.9.22 to 3.9.44",
+      "title": "SB 3.9.22 a 3.9.44",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 58,
       "book": "sb3",
@@ -713,7 +713,7 @@
     {
       "id": "BV.S059",
       "order": 59,
-      "title": "SB 3.10.1 to 3.12.15",
+      "title": "SB 3.10.1 a 3.12.15",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 59,
       "book": "sb3",
@@ -725,7 +725,7 @@
     {
       "id": "BV.S060",
       "order": 60,
-      "title": "SB 3.12.16 to 3.13.15",
+      "title": "SB 3.12.16 a 3.13.15",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 60,
       "book": "sb3",
@@ -737,7 +737,7 @@
     {
       "id": "BV.S061",
       "order": 61,
-      "title": "SB 3.13.16 to 3.14.31",
+      "title": "SB 3.13.16 a 3.14.31",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 61,
       "book": "sb3",
@@ -749,7 +749,7 @@
     {
       "id": "BV.S062",
       "order": 62,
-      "title": "SB 3.14.32 to 3.15.21",
+      "title": "SB 3.14.32 a 3.15.21",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 62,
       "book": "sb3",
@@ -761,7 +761,7 @@
     {
       "id": "BV.S063",
       "order": 63,
-      "title": "SB 3.15.22 to 3.16.12",
+      "title": "SB 3.15.22 a 3.16.12",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 63,
       "book": "sb3",
@@ -773,7 +773,7 @@
     {
       "id": "BV.S064",
       "order": 64,
-      "title": "SB 3.16.13 to 3.16.37",
+      "title": "SB 3.16.13 a 3.16.37",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 64,
       "book": "sb3",
@@ -785,7 +785,7 @@
     {
       "id": "BV.S065",
       "order": 65,
-      "title": "SB 3.17.1 to 3.20.53",
+      "title": "SB 3.17.1 a 3.20.53",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 65,
       "book": "sb3",
@@ -797,7 +797,7 @@
     {
       "id": "BV.S066",
       "order": 66,
-      "title": "SB 3.21.1 to 3.21.32",
+      "title": "SB 3.21.1 a 3.21.32",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 66,
       "book": "sb3",
@@ -809,7 +809,7 @@
     {
       "id": "BV.S067",
       "order": 67,
-      "title": "SB 3.21.33 to 3.22.27",
+      "title": "SB 3.21.33 a 3.22.27",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 67,
       "book": "sb3",
@@ -821,7 +821,7 @@
     {
       "id": "BV.S068",
       "order": 68,
-      "title": "SB 3.22.28 to 3.23.33",
+      "title": "SB 3.22.28 a 3.23.33",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 68,
       "book": "sb3",
@@ -833,7 +833,7 @@
     {
       "id": "BV.S069",
       "order": 69,
-      "title": "SB 3.23.34 to 3.24.23",
+      "title": "SB 3.23.34 a 3.24.23",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 69,
       "book": "sb3",
@@ -845,7 +845,7 @@
     {
       "id": "BV.S070",
       "order": 70,
-      "title": "SB 3.24.24 to 3.24.47",
+      "title": "SB 3.24.24 a 3.24.47",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 70,
       "book": "sb3",
@@ -857,7 +857,7 @@
     {
       "id": "BV.S071",
       "order": 71,
-      "title": "SB 3.25.1 to 3.25.22",
+      "title": "SB 3.25.1 a 3.25.22",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 71,
       "book": "sb3",
@@ -869,7 +869,7 @@
     {
       "id": "BV.S072",
       "order": 72,
-      "title": "SB 3.25.23 to 3.25.44",
+      "title": "SB 3.25.23 a 3.25.44",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 72,
       "book": "sb3",
@@ -881,7 +881,7 @@
     {
       "id": "BV.S073",
       "order": 73,
-      "title": "SB 3.26.1 to 3.26.49",
+      "title": "SB 3.26.1 a 3.26.49",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 73,
       "book": "sb3",
@@ -893,7 +893,7 @@
     {
       "id": "BV.S074",
       "order": 74,
-      "title": "SB 3.26.50 to 3.27.30",
+      "title": "SB 3.26.50 a 3.27.30",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 74,
       "book": "sb3",
@@ -905,7 +905,7 @@
     {
       "id": "BV.S075",
       "order": 75,
-      "title": "SB 3.28.1 to 3.28.25",
+      "title": "SB 3.28.1 a 3.28.25",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 75,
       "book": "sb3",
@@ -917,7 +917,7 @@
     {
       "id": "BV.S076",
       "order": 76,
-      "title": "SB 3.28.26 to 3.29.14",
+      "title": "SB 3.28.26 a 3.29.14",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 76,
       "book": "sb3",
@@ -929,7 +929,7 @@
     {
       "id": "BV.S077",
       "order": 77,
-      "title": "SB 3.29.15 to 3.29.36",
+      "title": "SB 3.29.15 a 3.29.36",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 77,
       "book": "sb3",
@@ -941,7 +941,7 @@
     {
       "id": "BV.S078",
       "order": 78,
-      "title": "SB 3.29.37 to 3.30.34",
+      "title": "SB 3.29.37 a 3.30.34",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 78,
       "book": "sb3",
@@ -953,7 +953,7 @@
     {
       "id": "BV.S079",
       "order": 79,
-      "title": "SB 3.31.1 to 3.31.42",
+      "title": "SB 3.31.1 a 3.31.42",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 79,
       "book": "sb3",
@@ -965,7 +965,7 @@
     {
       "id": "BV.S080",
       "order": 80,
-      "title": "SB 3.31.43 to 3.32.28",
+      "title": "SB 3.31.43 a 3.32.28",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 80,
       "book": "sb3",
@@ -977,7 +977,7 @@
     {
       "id": "BV.S081",
       "order": 81,
-      "title": "SB 3.32.29 to 3.33.37",
+      "title": "SB 3.32.29 a 3.33.37",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 81,
       "book": "sb3",
@@ -989,7 +989,7 @@
     {
       "id": "BV.S083",
       "order": 83,
-      "title": "SB 4.1.1 to 4.2.35",
+      "title": "SB 4.1.1 a 4.2.35",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 83,
       "book": "sb4",
@@ -1001,7 +1001,7 @@
     {
       "id": "BV.S084",
       "order": 84,
-      "title": "SB 4.3.1 to 4.4.12",
+      "title": "SB 4.3.1 a 4.4.12",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 84,
       "book": "sb4",
@@ -1013,7 +1013,7 @@
     {
       "id": "BV.S085",
       "order": 85,
-      "title": "SB 4.4.13 to 4.6.22",
+      "title": "SB 4.4.13 a 4.6.22",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 85,
       "book": "sb4",
@@ -1025,7 +1025,7 @@
     {
       "id": "BV.S086",
       "order": 86,
-      "title": "SB 4.6.23 to 4.7.19",
+      "title": "SB 4.6.23 a 4.7.19",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 86,
       "book": "sb4",
@@ -1037,7 +1037,7 @@
     {
       "id": "BV.S087",
       "order": 87,
-      "title": "SB 4.7.20 to 4.8.16",
+      "title": "SB 4.7.20 a 4.8.16",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 87,
       "book": "sb4",
@@ -1049,7 +1049,7 @@
     {
       "id": "BV.S088",
       "order": 88,
-      "title": "SB 4.8.17 to 4.8.56",
+      "title": "SB 4.8.17 a 4.8.56",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 88,
       "book": "sb4",
@@ -1061,7 +1061,7 @@
     {
       "id": "BV.S089",
       "order": 89,
-      "title": "SB 4.8.57 to 4.9.9",
+      "title": "SB 4.8.57 a 4.9.9",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 89,
       "book": "sb4",
@@ -1073,7 +1073,7 @@
     {
       "id": "BV.S090",
       "order": 90,
-      "title": "SB 4.9.10 to 4.9.53",
+      "title": "SB 4.9.10 a 4.9.53",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 90,
       "book": "sb4",
@@ -1085,7 +1085,7 @@
     {
       "id": "BV.S091",
       "order": 91,
-      "title": "SB 4.9.54 to 4.11.6",
+      "title": "SB 4.9.54 a 4.11.6",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 91,
       "book": "sb4",
@@ -1097,7 +1097,7 @@
     {
       "id": "BV.S092",
       "order": 92,
-      "title": "SB 4.11.7 to 4.11.35",
+      "title": "SB 4.11.7 a 4.11.35",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 92,
       "book": "sb4",
@@ -1109,7 +1109,7 @@
     {
       "id": "BV.S093",
       "order": 93,
-      "title": "SB 4.12.1 to 4.12.33",
+      "title": "SB 4.12.1 a 4.12.33",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 93,
       "book": "sb4",
@@ -1121,7 +1121,7 @@
     {
       "id": "BV.S094",
       "order": 94,
-      "title": "SB 4.12.34 to 4.13.49",
+      "title": "SB 4.12.34 a 4.13.49",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 94,
       "book": "sb4",
@@ -1133,7 +1133,7 @@
     {
       "id": "BV.S095",
       "order": 95,
-      "title": "SB 4.14.1 to 4.14.42",
+      "title": "SB 4.14.1 a 4.14.42",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 95,
       "book": "sb4",
@@ -1145,7 +1145,7 @@
     {
       "id": "BV.S096",
       "order": 96,
-      "title": "SB 4.14.43 to 4.16.14",
+      "title": "SB 4.14.43 a 4.16.14",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 96,
       "book": "sb4",
@@ -1157,7 +1157,7 @@
     {
       "id": "BV.S097",
       "order": 97,
-      "title": "SB 4.16.15 to 4.19.9",
+      "title": "SB 4.16.15 a 4.19.9",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 97,
       "book": "sb4",
@@ -1169,7 +1169,7 @@
     {
       "id": "BV.S098",
       "order": 98,
-      "title": "SB 4.19.10 to 4.19.42",
+      "title": "SB 4.19.10 a 4.19.42",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 98,
       "book": "sb4",
@@ -1181,7 +1181,7 @@
     {
       "id": "BV.S099",
       "order": 99,
-      "title": "SB 4.20.1 to 4.20.38",
+      "title": "SB 4.20.1 a 4.20.38",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 99,
       "book": "sb4",
@@ -1193,7 +1193,7 @@
     {
       "id": "BV.S100",
       "order": 100,
-      "title": "SB 4.21.1 to 4.21.52",
+      "title": "SB 4.21.1 a 4.21.52",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 100,
       "book": "sb4",
@@ -1205,7 +1205,7 @@
     {
       "id": "BV.S101",
       "order": 101,
-      "title": "SB 4.22.1 to 4.22.25",
+      "title": "SB 4.22.1 a 4.22.25",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 101,
       "book": "sb4",
@@ -1217,7 +1217,7 @@
     {
       "id": "BV.S102",
       "order": 102,
-      "title": "SB 4.22.26 to 4.22.63",
+      "title": "SB 4.22.26 a 4.22.63",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 102,
       "book": "sb4",
@@ -1229,7 +1229,7 @@
     {
       "id": "BV.S103",
       "order": 103,
-      "title": "SB 4.23.1 to 4.24.15",
+      "title": "SB 4.23.1 a 4.24.15",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 103,
       "book": "sb4",
@@ -1241,7 +1241,7 @@
     {
       "id": "BV.S104",
       "order": 104,
-      "title": "SB 4.24.16 to 4.24.53",
+      "title": "SB 4.24.16 a 4.24.53",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 104,
       "book": "sb4",
@@ -1253,7 +1253,7 @@
     {
       "id": "BV.S105",
       "order": 105,
-      "title": "SB 4.24.54 to 4.25.24",
+      "title": "SB 4.24.54 a 4.25.24",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 105,
       "book": "sb4",
@@ -1265,7 +1265,7 @@
     {
       "id": "BV.S106",
       "order": 106,
-      "title": "SB 4.25.25 to 4.26.3",
+      "title": "SB 4.25.25 a 4.26.3",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 106,
       "book": "sb4",
@@ -1277,7 +1277,7 @@
     {
       "id": "BV.S107",
       "order": 107,
-      "title": "SB 4.26.4 to 4.27.30",
+      "title": "SB 4.26.4 a 4.27.30",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 107,
       "book": "sb4",
@@ -1289,7 +1289,7 @@
     {
       "id": "BV.S108",
       "order": 108,
-      "title": "SB 4.28.1 to 4.28.27",
+      "title": "SB 4.28.1 a 4.28.27",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 108,
       "book": "sb4",
@@ -1301,7 +1301,7 @@
     {
       "id": "BV.S109",
       "order": 109,
-      "title": "SB 4.28.28 to 4.29.33",
+      "title": "SB 4.28.28 a 4.29.33",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 109,
       "book": "sb4",
@@ -1313,7 +1313,7 @@
     {
       "id": "BV.S110",
       "order": 110,
-      "title": "SB 4.29.34 to 4.29.70",
+      "title": "SB 4.29.34 a 4.29.70",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 110,
       "book": "sb4",
@@ -1325,7 +1325,7 @@
     {
       "id": "BV.S111",
       "order": 111,
-      "title": "SB 4.29.71 to 4.30.21",
+      "title": "SB 4.29.71 a 4.30.21",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 111,
       "book": "sb4",
@@ -1337,7 +1337,7 @@
     {
       "id": "BV.S112",
       "order": 112,
-      "title": "SB 4.30.22 to 4.30.43",
+      "title": "SB 4.30.22 a 4.30.43",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 112,
       "book": "sb4",
@@ -1349,7 +1349,7 @@
     {
       "id": "BV.S113",
       "order": 113,
-      "title": "SB 4.30.43 to 4.31.31",
+      "title": "SB 4.30.43 a 4.31.31",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 113,
       "book": "sb4",
@@ -1361,7 +1361,7 @@
     {
       "id": "BV.S114",
       "order": 114,
-      "title": "SB 5.1.1 to 5.1.22",
+      "title": "SB 5.1.1 a 5.1.22",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 114,
       "book": "sb5",
@@ -1373,7 +1373,7 @@
     {
       "id": "BV.S115",
       "order": 115,
-      "title": "SB 5.1.23 to 5.3.3",
+      "title": "SB 5.1.23 a 5.3.3",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 115,
       "book": "sb5",
@@ -1385,7 +1385,7 @@
     {
       "id": "BV.S116",
       "order": 116,
-      "title": "SB 5.3.4 to 5.5.1",
+      "title": "SB 5.3.4 a 5.5.1",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 116,
       "book": "sb5",
@@ -1397,7 +1397,7 @@
     {
       "id": "BV.S117",
       "order": 117,
-      "title": "SB 5.5.2 to 5.5.35",
+      "title": "SB 5.5.2 a 5.5.35",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 117,
       "book": "sb5",
@@ -1409,7 +1409,7 @@
     {
       "id": "BV.S118",
       "order": 118,
-      "title": "SB 5.6.1 to 5.7.14",
+      "title": "SB 5.6.1 a 5.7.14",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 118,
       "book": "sb5",
@@ -1421,7 +1421,7 @@
     {
       "id": "BV.S119",
       "order": 119,
-      "title": "SB 5.8.1 to 5.8.31",
+      "title": "SB 5.8.1 a 5.8.31",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 119,
       "book": "sb5",
@@ -1433,7 +1433,7 @@
     {
       "id": "BV.S120",
       "order": 120,
-      "title": "SB 5.9.1 to 5.10.6",
+      "title": "SB 5.9.1 a 5.10.6",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 120,
       "book": "sb5",
@@ -1445,7 +1445,7 @@
     {
       "id": "BV.S121",
       "order": 121,
-      "title": "SB 5.10.7 to 5.11.7",
+      "title": "SB 5.10.7 a 5.11.7",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 121,
       "book": "sb5",
@@ -1457,7 +1457,7 @@
     {
       "id": "BV.S122",
       "order": 122,
-      "title": "SB 5.11.8 to 5.12.16",
+      "title": "SB 5.11.8 a 5.12.16",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 122,
       "book": "sb5",
@@ -1469,7 +1469,7 @@
     {
       "id": "BV.S123",
       "order": 123,
-      "title": "SB 5.13.1 to 5.14.46",
+      "title": "SB 5.13.1 a 5.14.46",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 123,
       "book": "sb5",
@@ -1481,7 +1481,7 @@
     {
       "id": "BV.S124",
       "order": 124,
-      "title": "SB 5.15.1 to 5.17.20",
+      "title": "SB 5.15.1 a 5.17.20",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 124,
       "book": "sb5",
@@ -1493,7 +1493,7 @@
     {
       "id": "BV.S125",
       "order": 125,
-      "title": "SB 5.17.21 to 5.18.14",
+      "title": "SB 5.17.21 a 5.18.14",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 125,
       "book": "sb5",
@@ -1505,7 +1505,7 @@
     {
       "id": "BV.S126",
       "order": 126,
-      "title": "SB 5.18.15 to 5.18.39",
+      "title": "SB 5.18.15 a 5.18.39",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 126,
       "book": "sb5",
@@ -1517,7 +1517,7 @@
     {
       "id": "BV.S127",
       "order": 127,
-      "title": "SB 5.19.1 to 5.19.31",
+      "title": "SB 5.19.1 a 5.19.31",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 127,
       "book": "sb5",
@@ -1529,7 +1529,7 @@
     {
       "id": "BV.S134",
       "order": 134,
-      "title": "SB 6.1.1 to 6.1.32",
+      "title": "SB 6.1.1 a 6.1.32",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 134,
       "book": "sb6",
@@ -1541,7 +1541,7 @@
     {
       "id": "BV.S135",
       "order": 135,
-      "title": "SB 6.1.33 to 6.2.6",
+      "title": "SB 6.1.33 a 6.2.6",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 135,
       "book": "sb6",
@@ -1553,7 +1553,7 @@
     {
       "id": "BV.S136",
       "order": 136,
-      "title": "SB 6.2.7 to 6.2.49",
+      "title": "SB 6.2.7 a 6.2.49",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 136,
       "book": "sb6",
@@ -1565,7 +1565,7 @@
     {
       "id": "BV.S137",
       "order": 137,
-      "title": "SB 6.3.1 to 6.3.25",
+      "title": "SB 6.3.1 a 6.3.25",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 137,
       "book": "sb6",
@@ -1577,7 +1577,7 @@
     {
       "id": "BV.S138",
       "order": 138,
-      "title": "SB 6.3.26 to 6.4.25",
+      "title": "SB 6.3.26 a 6.4.25",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 138,
       "book": "sb6",
@@ -1589,7 +1589,7 @@
     {
       "id": "BV.S139",
       "order": 139,
-      "title": "SB 6.4.26 to 6.4.54",
+      "title": "SB 6.4.26 a 6.4.54",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 139,
       "book": "sb6",
@@ -1601,7 +1601,7 @@
     {
       "id": "BV.S140",
       "order": 140,
-      "title": "SB 6.5.1 to 6.6.45",
+      "title": "SB 6.5.1 a 6.6.45",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 140,
       "book": "sb6",
@@ -1613,7 +1613,7 @@
     {
       "id": "BV.S141",
       "order": 141,
-      "title": "SB 6.7.1 to 6.7.25",
+      "title": "SB 6.7.1 a 6.7.25",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 141,
       "book": "sb6",
@@ -1625,7 +1625,7 @@
     {
       "id": "BV.S142",
       "order": 142,
-      "title": "SB 6.7.26 to 6.9.23",
+      "title": "SB 6.7.26 a 6.9.23",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 142,
       "book": "sb6",
@@ -1637,7 +1637,7 @@
     {
       "id": "BV.S143",
       "order": 143,
-      "title": "SB 6.9.24 to 6.9.45",
+      "title": "SB 6.9.24 a 6.9.45",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 143,
       "book": "sb6",
@@ -1649,7 +1649,7 @@
     {
       "id": "BV.S144",
       "order": 144,
-      "title": "SB 6.9.46 to 6.10.12",
+      "title": "SB 6.9.46 a 6.10.12",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 144,
       "book": "sb6",
@@ -1661,7 +1661,7 @@
     {
       "id": "BV.S145",
       "order": 145,
-      "title": "SB 6.10.13 to 6.11.13",
+      "title": "SB 6.10.13 a 6.11.13",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 145,
       "book": "sb6",
@@ -1673,7 +1673,7 @@
     {
       "id": "BV.S146",
       "order": 146,
-      "title": "SB 6.11.14 to 6.11.27",
+      "title": "SB 6.11.14 a 6.11.27",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 146,
       "book": "sb6",
@@ -1685,7 +1685,7 @@
     {
       "id": "BV.S147",
       "order": 147,
-      "title": "SB 6.12.1 to 6.12.35",
+      "title": "SB 6.12.1 a 6.12.35",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 147,
       "book": "sb6",
@@ -1697,7 +1697,7 @@
     {
       "id": "BV.S148",
       "order": 148,
-      "title": "SB 6.13.1 to 6.14.13",
+      "title": "SB 6.13.1 a 6.14.13",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 148,
       "book": "sb6",
@@ -1709,7 +1709,7 @@
     {
       "id": "BV.S149",
       "order": 149,
-      "title": "SB 6.14.14 to 6.14.61",
+      "title": "SB 6.14.14 a 6.14.61",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 149,
       "book": "sb6",
@@ -1721,7 +1721,7 @@
     {
       "id": "BV.S150",
       "order": 150,
-      "title": "SB 6.15.1 to 6.16.1",
+      "title": "SB 6.15.1 a 6.16.1",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 150,
       "book": "sb6",
@@ -1733,7 +1733,7 @@
     {
       "id": "BV.S151",
       "order": 151,
-      "title": "SB 6.16.1 to 6.16.33",
+      "title": "SB 6.16.1 a 6.16.33",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 151,
       "book": "sb6",
@@ -1745,7 +1745,7 @@
     {
       "id": "BV.S152",
       "order": 152,
-      "title": "SB 6.16.34 to 6.16.65",
+      "title": "SB 6.16.34 a 6.16.65",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 152,
       "book": "sb6",
@@ -1757,7 +1757,7 @@
     {
       "id": "BV.S153",
       "order": 153,
-      "title": "SB 6.17.1 to 6.17.21",
+      "title": "SB 6.17.1 a 6.17.21",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 153,
       "book": "sb6",
@@ -1769,7 +1769,7 @@
     {
       "id": "BV.S154",
       "order": 154,
-      "title": "SB 6.17.22 to 6.19.28",
+      "title": "SB 6.17.22 a 6.19.28",
       "curriculumSource": "Bhaktivedanta Vidyapitha / Gauranga Darshan Das",
       "curriculumSession": 154,
       "book": "sb6",

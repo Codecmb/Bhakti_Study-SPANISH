@@ -1,0 +1,182 @@
+{
+  "schema": "bhakti-study.book.v1",
+  "id": "ssr-es",
+  "title": "La Ciencia de la Autorrealización",
+  "creator": "A.C. Bhaktivedanta Swami Prabhupāda",
+  "publisher": "Bhaktivedanta Book Trust",
+  "language": "es",
+  "source_format": "EPUB",
+  "source_file": "ssr-es.epub",
+  "sections": [
+    {
+      "id": "pr-logo",
+      "kind": "front-back-matter",
+      "title": "Prólogo",
+      "source_href": "v_ssr_0b.xhtml",
+      "verses": [
+        {
+          "id": "ssr-es.Prólogo",
+          "reference": "Prólogo",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "introducci-n",
+      "kind": "front-back-matter",
+      "title": "Introducción",
+      "source_href": "v_ssr_0c.xhtml",
+      "verses": [
+        {
+          "id": "ssr-es.Introducción",
+          "reference": "Introducción",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-1",
+      "kind": "front-back-matter",
+      "title": "Texto 1",
+      "source_href": "v_ssr_1.xhtml",
+      "verses": [
+        {
+          "id": "ssr-es.1. Aprendiendo la ciencia del ser",
+          "reference": "1. Aprendiendo la ciencia del ser",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-2",
+      "kind": "front-back-matter",
+      "title": "Texto 2",
+      "source_href": "v_ssr_2.xhtml",
+      "verses": [
+        {
+          "id": "ssr-es.2. Cómo escoger a un maestro espiritual",
+          "reference": "2. Cómo escoger a un maestro espiritual",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-3",
+      "kind": "front-back-matter",
+      "title": "Texto 3",
+      "source_href": "v_ssr_3.xhtml",
+      "verses": [
+        {
+          "id": "ssr-es.3. Descubriendo las raíces",
+          "reference": "3. Descubriendo las raíces",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-4",
+      "kind": "front-back-matter",
+      "title": "Texto 4",
+      "source_href": "v_ssr_4.xhtml",
+      "verses": [
+        {
+          "id": "ssr-es.4. Comprender a Kṛṣṇa y a Cristo",
+          "reference": "4. Comprender a Kṛṣṇa y a Cristo",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-5",
+      "kind": "front-back-matter",
+      "title": "Texto 5",
+      "source_href": "v_ssr_5.xhtml",
+      "verses": [
+        {
+          "id": "ssr-es.5. Practicar yoga en la era moderna",
+          "reference": "5. Practicar yoga en la era moderna",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-6",
+      "kind": "front-back-matter",
+      "title": "Texto 6",
+      "source_href": "v_ssr_6.xhtml",
+      "verses": [
+        {
+          "id": "ssr-es.6. Soluciones espirituales a los problemas materiales",
+          "reference": "6. Soluciones espirituales a los problemas materiales",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-7",
+      "kind": "front-back-matter",
+      "title": "Texto 7",
+      "source_href": "v_ssr_7.xhtml",
+      "verses": [
+        {
+          "id": "ssr-es.7. Explorando la frontera espiritual",
+          "reference": "7. Explorando la frontera espiritual",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "texto-8",
+      "kind": "front-back-matter",
+      "title": "Texto 8",
+      "source_href": "v_ssr_8.xhtml",
+      "verses": [
+        {
+          "id": "ssr-es.8. Alcanzando la perfección",
+          "reference": "8. Alcanzando la perfección",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "schema": "bhakti-study.book.v1",
+  "id": "rv-es",
+  "title": "Rāja-Vidyā: El Rey del Conocimiento",
+  "creator": "A.C. Bhaktivedanta Swami Prabhupāda",
+  "publisher": "Bhaktivedanta Book Trust",
+  "language": "es",
+  "source_format": "EPUB",
+  "source_file": "rv-es.epub",
+  "sections": [
+    {
+      "id": "el-rey-del-conocimiento",
+      "kind": "front-back-matter",
+      "title": "El rey del conocimiento",
+      "source_href": "chapter-1.xhtml",
+      "verses": [
+        {
+          "id": "rv-es.1. Rāja-Vidyā: El rey del conocimiento",
+          "reference": "1. Rāja-Vidyā: El rey del conocimiento",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "2-conocimiento-m-s-all-del-sa-s-ra",
+      "kind": "front-back-matter",
+      "title": "2. Conocimiento más allá del saṁsāra",
+      "source_href": "chapter-2.xhtml",
+      "verses": [
+        {
+          "id": "rv-es.2. Conocimiento más allá del saṁsāra",
+          "reference": "2. Conocimiento más allá del saṁsāra",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "3-conocimiento-de-las-energ-as-de-k-a",
+      "kind": "front-back-matter",
+      "title": "3. Conocimiento de las energías de Kṛṣṇa",
+      "source_href": "chapter-3.xhtml",
+      "verses": [
+        {
+          "id": "rv-es.3. Conocimiento de las energías de Kṛṣṇa",
+          "reference": "3. Conocimiento de las energías de Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "4-conocimiento-a-trav-s-de-los-mah-tm-s-las-grandes-almas",
+      "kind": "front-back-matter",
+      "title": "4. Conocimiento a través de los mahātmās, las grandes almas",
+      "source_href": "chapter-4.xhtml",
+      "verses": [
+        {
+          "id": "rv-es.4. Conocimiento a través de los mahātmās, las grandes almas",
+          "reference": "4. Conocimiento a través de los mahātmās, las grandes almas",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "el-conocimiento-a-trav-s-de-la-sucesi-n-discipular",
+      "kind": "front-back-matter",
+      "title": "el conocimiento a través de la sucesión discipular",
+      "source_href": "chapter-5.xhtml",
+      "verses": [
+        {
+          "id": "rv-es.5. Paramparā: el conocimiento a través de la sucesión discipular",
+          "reference": "5. Paramparā: el conocimiento a través de la sucesión discipular",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "6-conocimiento-de-las-apariciones-y-actividades-de-k-a",
+      "kind": "front-back-matter",
+      "title": "6. Conocimiento de las apariciones y actividades de Kṛṣṇa",
+      "source_href": "chapter-6.xhtml",
+      "verses": [
+        {
+          "id": "rv-es.6. Conocimiento de las apariciones y actividades de Kṛṣṇa",
+          "reference": "6. Conocimiento de las apariciones y actividades de Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "7-el-conocimiento-como-fe-en-el-guru-y-entrega-a-k-a",
+      "kind": "front-back-matter",
+      "title": "7. El conocimiento como fe en el guru y entrega a Kṛṣṇa",
+      "source_href": "chapter-7.xhtml",
+      "verses": [
+        {
+          "id": "rv-es.7. El conocimiento como fe en el guru y entrega a Kṛṣṇa",
+          "reference": "7. El conocimiento como fe en el guru y entrega a Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    },
+    {
+      "id": "8-la-acci-n-con-conocimiento-de-k-a",
+      "kind": "front-back-matter",
+      "title": "8. La acción con conocimiento de Kṛṣṇa",
+      "source_href": "chapter-8.xhtml",
+      "verses": [
+        {
+          "id": "rv-es.8. La acción con conocimiento de Kṛṣṇa",
+          "reference": "8. La acción con conocimiento de Kṛṣṇa",
+          "devanagari": "",
+          "transliteration": "",
+          "synonyms": "",
+          "translation": "",
+          "purport": ""
+        }
+      ]
+    }
+  ]
+}

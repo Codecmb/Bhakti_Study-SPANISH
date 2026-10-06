@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Certificates</title>
+  <title>Certificados</title>
   <link rel="stylesheet" href="../shared/styles.css">
 </head>
 <body>
@@ -11,47 +11,47 @@
   <aside class="sidebar"></aside>
 
   <main class="main">
-    <div class="eyebrow">Academy Completion</div>
-    <h1>Certificates</h1>
+    <div class="eyebrow">Finalización de la Academia</div>
+    <h1>Certificados</h1>
 
     <div class="notice">
-      <b>Important:</b> These are Academy completion certificates,
+      <b>Importante:</b> Estos son certificados de finalización de la Academia,
       not BOEX/ISKCON śāstric degrees.
     </div>
 
     <article class="card">
-      <label>Name for certificate</label>
-      <input id="name" class="field" autocomplete="off" placeholder="Student name">
+      <label>Nombre para el certificado</label>
+      <input id="name" class="field" autocomplete="off" placeholder="Nombre del estudiante">
 
-      <label>Program</label>
+      <label>Área de Estudio</label>
       <select id="program" class="field"></select>
 
       <div id="eligibility" class="notice" style="margin-top:16px">
-        Loading Academy completion status…
+        Cargando estado de finalización de la Academia…
       </div>
 
       <button id="preview" class="button" disabled>
-        Preview certificate
+        Vista Previa del Certificado
       </button>
 
       <p class="small">
-        The name is used only in this browser page to render/print the
-        certificate. This module does not write the name to localStorage,
-        course progress, analytics or a server.
+        El nombre se utiliza únicamente en esta página del navegador para generar o imprimir el
+        certificado. Este módulo no guarda el nombre en localStorage,
+        el progreso del curso, sistemas de análisis ni en ningún servidor.
       </p>
     </article>
 
     <div id="cert" class="card"
          style="display:none;margin-top:20px;text-align:center;padding:50px">
       <div class="eyebrow">Academia Master Siddhānta Gauḍīya</div>
-      <h1>Certificate of Completion</h1>
+      <h1>Certificado de Finalización</h1>
       <p>This certifies that</p>
       <h2 id="cname"></h2>
-      <p>has completed the Academy study program</p>
+      <p>ha completado el área de estudio de la Academia</p>
       <h2 id="cprogram"></h2>
       <p id="cdate" class="small"></p>
       <button class="button secondary" onclick="window.print()">
-        Print / Save PDF
+        Imprimir / Guardar PDF
       </button>
     </div>
   </main>
@@ -84,7 +84,7 @@ async function loadEligibility(){
   currentSummary=null;
 
   if(!p){
-    eligibility.textContent='Unable to determine Academy completion status.';
+    eligibility.textContent='No se pudo determinar el estado de finalización de la Academia.';
     return;
   }
 
@@ -99,40 +99,40 @@ async function loadEligibility(){
 
     if(!summary.completionEnabled){
       eligibility.innerHTML=
-        '<b>Certificate not yet available.</b> '+
-        'Academy completion requirements are not configured for this program yet.';
+        '<b>Certificado aún no disponible.</b> '+
+        'Los requisitos de finalización de la Academia aún no están configurados para esta área de estudio.';
       return;
     }
 
     if(summary.total===0){
       eligibility.innerHTML=
-        '<b>Certificate not yet available.</b> '+
-        'No trackable Academy completion units were found.';
+        '<b>Certificado aún no disponible.</b> '+
+        'No se encontraron unidades de finalización de la Academia que puedan registrarse.';
       return;
     }
 
     if(summary.complete!==summary.total){
       eligibility.innerHTML=
-        `<b>Academy completion:</b> ${summary.complete}/${summary.total} units `+
-        `complete (${summary.pct}%). Complete all Academy units before `+
-        `generating the certificate.`;
+        `<b>Finalización de la Academia:</b> ${summary.complete}/${summary.total} unidades `+
+        `completadas (${summary.pct}%). Completa todas las unidades de la Academia antes de `+
+        `generar el certificado.`;
       return;
     }
 
     eligibility.innerHTML=
-      `<b>Eligible for Academy completion certificate.</b> `+
-      `${summary.complete}/${summary.total} Academy units complete.`;
+      `<b>Elegible para el certificado de finalización de la Academia.</b> `+
+      `${summary.complete}/${summary.total} Academy unidades completadas.`;
 
     preview.disabled=false;
 
   }catch(e){
-    eligibility.textContent='Unable to load Academy completion status.';
+    eligibility.textContent='No se pudo cargar el estado de finalización de la Academia.';
   }
 }
 
 function makeCert(){
   if(!name.value.trim()){
-    alert('Enter a name for the certificate.');
+    alert('Introduce un nombre para el certificado.');
     return;
   }
 
@@ -140,7 +140,7 @@ function makeCert(){
      !currentSummary.completionEnabled ||
      currentSummary.total===0 ||
      currentSummary.complete!==currentSummary.total){
-    alert('This program is not yet eligible for an Academy completion certificate.');
+    alert('Esta área de estudio aún no es elegible para un certificado de finalización de la Academia.');
     return;
   }
 
