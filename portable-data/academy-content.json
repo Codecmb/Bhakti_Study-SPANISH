@@ -1,0 +1,198 @@
+{
+  "format": "bhakti-study-academy-content",
+  "version": 1,
+  "guides": [],
+  "references": [
+    {
+      "id": "reference-mur42qdm-f3q2z",
+      "title": "Plato",
+      "url": "https://plato.stanford.edu/entries/plato/",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "purpose": "Ancient Greek philosophy — Forms, knowledge, soul, ethics, and metaphysics.",
+      "scope": "academy",
+      "provenance": "Academy Administrator",
+      "created_at": "2026-10-02T15:21:52.906Z",
+      "category": "comparative-philosophy"
+    },
+    {
+      "id": "reference-mur42qdm-gs82p",
+      "title": "Aristotle",
+      "url": "https://plato.stanford.edu/entries/aristotle/",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "purpose": "Ancient Greek philosophy — metaphysics, causation, soul, ethics, and logic.",
+      "scope": "academy",
+      "provenance": "Academy Administrator",
+      "created_at": "2026-10-02T15:21:52.906Z",
+      "category": "comparative-philosophy"
+    },
+    {
+      "id": "reference-mur42qdm-5jx0i",
+      "title": "Thomas Aquinas",
+      "url": "https://plato.stanford.edu/entries/aquinas/",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "purpose": "Medieval philosophy — being, God, soul, natural theology, and Aristotelian philosophy.",
+      "scope": "academy",
+      "provenance": "Academy Administrator",
+      "created_at": "2026-10-02T15:21:52.906Z",
+      "category": "comparative-philosophy"
+    },
+    {
+      "id": "reference-mur42qdm-a1kun",
+      "title": "René Descartes",
+      "url": "https://plato.stanford.edu/entries/descartes/",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "purpose": "Early modern philosophy — mind and body, knowledge, doubt, and metaphysics.",
+      "scope": "academy",
+      "provenance": "Academy Administrator",
+      "created_at": "2026-10-02T15:21:52.906Z",
+      "category": "comparative-philosophy"
+    },
+    {
+      "id": "reference-mur42qdn-oe4ve",
+      "title": "David Hume",
+      "url": "https://plato.stanford.edu/entries/hume/",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "purpose": "Empiricism — knowledge, causation, self, skepticism, ethics, and religion.",
+      "scope": "academy",
+      "provenance": "Academy Administrator",
+      "created_at": "2026-10-02T15:21:52.907Z",
+      "category": "comparative-philosophy"
+    },
+    {
+      "id": "reference-mur42qdn-zre97",
+      "title": "Immanuel Kant",
+      "url": "https://plato.stanford.edu/entries/kant/",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "purpose": "Modern philosophy — knowledge, metaphysics, reason, ethics, and human experience.",
+      "scope": "academy",
+      "provenance": "Academy Administrator",
+      "created_at": "2026-10-02T15:21:52.907Z",
+      "category": "comparative-philosophy"
+    },
+    {
+      "id": "reference-mur42qdn-9uor7",
+      "title": "Friedrich Nietzsche",
+      "url": "https://plato.stanford.edu/entries/nietzsche/",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "purpose": "Modern philosophy — morality, values, religion, selfhood, and critique of traditional metaphysics.",
+      "scope": "academy",
+      "provenance": "Academy Administrator",
+      "created_at": "2026-10-02T15:21:52.907Z",
+      "category": "comparative-philosophy"
+    }
+  ],
+  "imported_questions": {
+    "bhakti-sastri": [],
+    "bhakti-vaibhava": [],
+    "bhakti-vedanta": [
+      {
+        "id": "IQ.muoa4d8k.2omzam",
+        "provider": "student-import",
+        "source_question_id": "1",
+        "question": "What is the purpose of studying Śrīmad-Bhāgavatam?",
+        "kind": "imported study question",
+        "canonical_ref": null,
+        "unit": "BVED.U1",
+        "canonical_sources": [],
+        "provenance": {
+          "provider": "student-import",
+          "title": "questions test",
+          "author": "",
+          "source_file": "questions test.odt",
+          "imported_at": "2026-09-30T15:47:48.356Z"
+        }
+      },
+      {
+        "id": "IQ.muoa4d8l.xdbtpt",
+        "provider": "student-import",
+        "source_question_id": "2",
+        "question": "What does devotional service mean?",
+        "kind": "imported study question",
+        "canonical_ref": null,
+        "unit": "BVED.U1",
+        "canonical_sources": [],
+        "provenance": {
+          "provider": "student-import",
+          "title": "questions test",
+          "author": "",
+          "source_file": "questions test.odt",
+          "imported_at": "2026-09-30T15:47:48.356Z"
+        }
+      },
+      {
+        "id": "IQ.muoa4d8l.1i4gua",
+        "provider": "student-import",
+        "source_question_id": "3",
+        "question": "Why is hearing important?",
+        "kind": "imported study question",
+        "canonical_ref": null,
+        "unit": "BVED.U1",
+        "canonical_sources": [],
+        "provenance": {
+          "provider": "student-import",
+          "title": "questions test",
+          "author": "",
+          "source_file": "questions test.odt",
+          "imported_at": "2026-09-30T15:47:48.356Z"
+        }
+      }
+    ],
+    "bhakti-sarvabhauma": [
+      {
+        "id": "IQ.muokcre6.pn2t9t",
+        "import_id": "IMPORT.muokcre6.r3hojy",
+        "provider": "student-import",
+        "source_question_id": "1",
+        "question": "What is the purpose of studying Śrīmad-Bhāgavatam?",
+        "kind": "imported study question",
+        "canonical_ref": null,
+        "unit": "BSARV.U1",
+        "canonical_sources": [],
+        "provenance": {
+          "provider": "student-import",
+          "title": "questions test",
+          "author": "",
+          "source_file": "questions test.odt",
+          "imported_at": "2026-09-30T20:34:16.110Z"
+        }
+      },
+      {
+        "id": "IQ.muokcre6.7hrfx1",
+        "import_id": "IMPORT.muokcre6.r3hojy",
+        "provider": "student-import",
+        "source_question_id": "2",
+        "question": "What does devotional service mean?",
+        "kind": "imported study question",
+        "canonical_ref": null,
+        "unit": "BSARV.U1",
+        "canonical_sources": [],
+        "provenance": {
+          "provider": "student-import",
+          "title": "questions test",
+          "author": "",
+          "source_file": "questions test.odt",
+          "imported_at": "2026-09-30T20:34:16.110Z"
+        }
+      },
+      {
+        "id": "IQ.muokcre6.64onlx",
+        "import_id": "IMPORT.muokcre6.r3hojy",
+        "provider": "student-import",
+        "source_question_id": "3",
+        "question": "Why is hearing important?",
+        "kind": "imported study question",
+        "canonical_ref": null,
+        "unit": "BSARV.U1",
+        "canonical_sources": [],
+        "provenance": {
+          "provider": "student-import",
+          "title": "questions test",
+          "author": "",
+          "source_file": "questions test.odt",
+          "imported_at": "2026-09-30T20:34:16.110Z"
+        }
+      }
+    ],
+    "sat-sandarbhas": []
+  }
+}

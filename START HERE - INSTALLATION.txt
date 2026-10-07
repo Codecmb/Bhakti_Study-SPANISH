@@ -1,0 +1,63 @@
+BHAKTI STUDY ACADEMY
+====================
+
+INSTALLATION
+
+
+WINDOWS
+-------
+
+Double-click:
+
+    Install-Bhakti-Study.bat
+
+The installer will prepare the required runtime if necessary and
+start Bhakti Study.
+
+To start Bhakti Study again later, double-click:
+
+    Start-Bhakti-Study.bat
+
+
+MAC
+---
+
+Double-click:
+
+    Install Bhakti Study on Mac.command
+
+macOS may ask you to allow the downloaded installer or approve
+administrator permission when preparing the required runtime.
+
+To start Bhakti Study again later, double-click:
+
+    Start Bhakti Study on Mac.command
+
+
+LINUX
+-----
+
+Run:
+
+    Install-Bhakti-Study.sh
+
+On supported x86-64 Linux systems, the required runtime is already
+included in the package.
+
+To start Bhakti Study again later, run:
+
+    Start-Bhakti-Study.sh
+
+
+IMPORTANT
+---------
+
+Keep the entire extracted Bhakti Study folder together.
+
+Bhakti Study runs locally on your computer. GitHub is not required
+while using the internal Academy after the required runtime is ready.
+
+External websites and online reference resources naturally require
+an internet connection.
+
+For complete Academy documentation, see README.md.

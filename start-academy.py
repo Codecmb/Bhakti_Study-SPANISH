@@ -6,10 +6,19 @@ import json
 import os
 import re
 import shutil
+import sys
 import tempfile
 import cgi
 
-ROOT = Path(__file__).resolve().parent
+# Resolve the Academy root in both source and frozen portable builds.
+if getattr(sys, "frozen", False):
+    executable = Path(sys.executable).resolve()
+
+    # Portable executable lives at:
+    # runtime/<platform>/bhakti-study-server
+    ROOT = executable.parent.parent.parent
+else:
+    ROOT = Path(__file__).resolve().parent
 HOST = "127.0.0.1"
 PORT = 8080
 

@@ -1,4 +1,4 @@
-const CACHE = 'bhakti-study-offline-v17';
+const CACHE = 'bhakti-study-spanish-offline-v1';
 const MANIFEST = './offline-files.json';
 
 async function cacheAcademy() {
@@ -48,7 +48,7 @@ self.addEventListener('activate', event => {
       .then(keys => Promise.all(
         keys
           .filter(key =>
-            key.startsWith('bhakti-study-') &&
+            key.startsWith('bhakti-study-spanish-') &&
             key !== CACHE
           )
           .map(key => caches.delete(key))
