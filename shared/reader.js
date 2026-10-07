@@ -30,6 +30,36 @@ function returnToQuestion(){
  return `<a class="button lotus" href="${esc(ctx.returnHref)}">← Volver al Banco de Preguntas</a>`;
 }
 
+function journalBookTitle(title){
+ const value=String(title||'').trim();
+
+ const titles={
+   'Bhagavad-gītā As It Is':'Bhagavad-gītā Tal Como Es'
+ };
+
+ return titles[value]||value;
+}
+
+function journalSectionTitle(title){
+ let value=String(title||'').trim();
+
+ value=value.replace(
+   /^(Chapter\s+\d+):\s+\1:\s*/i,
+   '$1: '
+ );
+
+ value=value.replace(/^Chapter\s+(\d+):/i,'Capítulo $1:');
+
+ const titles={
+   'Capítulo 1: Observing the Armies on the Battlefield of Kurukṣetra':
+     'Capítulo 1: Observando los Ejércitos en el Campo de Batalla de Kurukṣetra',
+   'Capítulo 2: Contents of the Gītā Summarized':
+     'Capítulo 2: Resumen del Contenido del Gītā'
+ };
+
+ return titles[value]||value;
+}
+
 function renderStudyContext(canonical){
  const host=document.querySelector('#studyContext');
  if(!host)return;
@@ -42,9 +72,41 @@ function renderStudyContext(canonical){
    ? `<button id="markPassageStudied" class="button secondary" type="button">Marcar pasaje como estudiado</button>`
    : '';
 
- host.innerHTML=(study||studied)
-   ? `<div class="reader-actions" style="margin:10px 0 18px">${study}${studied}<span id="studyProgressMessage" class="small"></span></div>`
-   : '';
+ const currentSection=journalSectionTitle(
+   book?.sections?.[sectionIndex]?.title||''
+ );
+
+ const journalParams=new URLSearchParams({
+   book:bookId||'',
+   bookTitle:journalBookTitle(book?.title||meta?.title||''),
+   section:currentSection,
+   ref:canonical
+ });
+
+ if(programId)journalParams.set('program',programId);
+ if(unitId)journalParams.set('unit',unitId);
+
+ const journal=`<button id="openStudyJournal" class="button secondary" type="button">Abrir Diario ↗</button>`;
+
+ host.innerHTML=`<div class="reader-actions" style="margin:10px 0 18px">${study}${journal}${studied}<span id="studyProgressMessage" class="small"></span></div>`;
+
+ const openJournal=document.getElementById('openStudyJournal');
+
+ if(openJournal){
+   openJournal.onclick=()=>{
+     const journalUrl='../student/journal.html?'+journalParams.toString();
+
+     const journalWindow=window.open(
+       journalUrl,
+       '_blank',
+       'popup=yes,width=760,height=900,left=20,top=20,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=no'
+     );
+
+     if(journalWindow){
+       journalWindow.focus();
+     }
+   };
+ }
 
  const mark=document.getElementById('markPassageStudied');
 
@@ -68,6 +130,20 @@ function renderStudyContext(canonical){
 async function openVerse(i){verseIndex=i;let s=book.sections[sectionIndex],v=s.verses[i];[...el.verses.children].forEach((b,j)=>b.classList.toggle('active',j===i));let prev=neighbor(-1),next=neighbor(1),canonical=canonicalOf(v);
  renderStudyContext(canonical);
  if(window.StudyContext)StudyContext.write({program:programId,unit:unitId,canonical,book:bookId});
+ // Comunicar al Diario de Estudio abierto el pasaje actual del lector.
+ try{
+   const journalChannel=new BroadcastChannel('academia-study-journal');
+   journalChannel.postMessage({
+     type:'reader-context',
+     program:programId||'',
+     unit:unitId||'',
+     book:bookId||'',
+     bookTitle:journalBookTitle(book?.title||meta?.title||''),
+     section:journalSectionTitle(s?.title||''),
+     canonical:canonical||''
+   });
+   journalChannel.close();
+ }catch(e){}
  el.passage.innerHTML=`<div class="study-nav">${returnToQuestion()}<span>${prev?'<button id="prevVerse" class="button secondary">← Verso Anterior</button>':'<button class="button secondary" disabled>← Verso Anterior</button>'}</span>${programId&&unitId?`<a class="button secondary" href="../programs/${encodeURIComponent(programId)}/index.html#${encodeURIComponent(unitId)}">Volver a la Unidad de Estudio</a>`:''}<a class="button secondary" href="../programs/${encodeURIComponent(programId||'bhakti-sastri')}/index.html">↑ Área de Estudio</a><a class="button secondary" href="../index.html">Inicio de la Academia</a>${SourceResolver.external(canonical)?`<a class="button secondary" href="${SourceResolver.external(canonical)}" target="_blank" rel="noopener">Vedabase ↗</a>`:''}${/^BG\.\d+\.\d+$/.test(canonical)?`<a class="button secondary" href="https://vanipedia.org/wiki/ES/${canonical.replaceAll('.', '_')}" target="_blank" rel="noopener">Vanipedia ↗</a>`:''}<span>${next?'<button id="nextVerse" class="button secondary">Verso Siguiente →</button>':'<button class="button secondary" disabled>Verso Siguiente →</button>'}</span></div><div class="eyebrow">Fuente Interna de la Academia</div><h2>${esc(canonical)}</h2>${v.source_text?`<h3>Texto Fuente</h3><div class="scripture source-linkable">${esc(v.source_text)}</div>`:''}${v.devanagari?`<h3>Texto</h3><div class="scripture">${esc(v.devanagari)}</div>`:''}${v.transliteration?`<h3>Transliteración</h3><div class="scripture">${esc(v.transliteration)}</div>`:''}${v.synonyms?`<h3>Palabra por Palabra</h3><div class="purport source-linkable">${esc(v.synonyms).replace(/\n/g,' ')}</div>`:''}${v.translation?`<h3>Traducción</h3><div class="purport source-linkable">${esc(v.translation)}</div>`:''}${v.purport?`<h3>${/Bhaktivedanta Swami Prabhup/i.test(book.creator||'')?"Significado de Śrīla Prabhupāda":'Significado'}</h3><div class="purport source-linkable">${esc(v.purport).replace(/\n/g,' ')}</div>`:''}${v.content?`<div class="purport source-linkable">${esc(v.content)}</div>`:''}`;
  document.querySelector('#prevVerse')?.addEventListener('click',()=>jump(prev));document.querySelector('#nextVerse')?.addEventListener('click',()=>jump(next));
  await SourceResolver.linkify(el.passage);

@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Diario de Estudio — Academia Master Siddhānta Gauḍīya</title>
+<link rel="stylesheet" href="../shared/styles.css">
+<style>
+body{margin:0}
+.journal-page{max-width:1100px;margin:0 auto;padding:24px}
+.journal-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:22px}
+.journal-context{margin:0 0 18px}
+.journal-toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+.journal-field{margin:0 0 18px}
+.journal-field label{display:block;font-weight:700;margin-bottom:7px}
+.journal-field input,.journal-field textarea{width:100%;box-sizing:border-box;padding:12px;border:1px solid #cfc7b7;border-radius:8px;font:inherit;background:#fff}
+.journal-field textarea{min-height:260px;resize:vertical}
+.journal-question{border:1px solid #ddd8cc;border-radius:10px;padding:14px;margin:0 0 12px;background:#fff}
+.journal-question textarea{width:100%;box-sizing:border-box;padding:10px;border:1px solid #cfc7b7;border-radius:8px;font:inherit;resize:vertical}
+.journal-question .question-text{min-height:80px}
+.journal-question .question-answer{min-height:120px}
+.journal-question-actions{display:flex;justify-content:flex-end;margin-top:8px}
+.journal-list{display:grid;gap:8px}
+.journal-entry-button{display:block;width:100%;text-align:left;padding:10px 12px;border:1px solid #ddd8cc;background:#fff;border-radius:8px;cursor:pointer}
+.journal-entry-button.active{font-weight:700;border-color:#8a7650}
+.journal-entry-ref{display:block;font-size:.82rem;opacity:.7;margin-top:3px}
+#saveStatus{margin-left:auto;align-self:center}
+@media(max-width:850px){.journal-layout{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<main class="main journal-page">
+  <div class="eyebrow">Mi Estudio</div>
+  <h1>Diario de Estudio</h1>
+  <p class="lead">Mantén tus notas, preguntas y respuestas de trabajo conectadas con los textos que estudias.</p>
+
+  <div class="journal-layout">
+    <section>
+      <div id="journalContext" class="notice journal-context"></div>
+
+      <div class="journal-toolbar">
+        <button id="newEntry" class="button secondary" type="button">Nueva Entrada</button>
+          <button id="followReader" class="button secondary" type="button">Seguir Lector: SÍ</button>
+        <button id="saveEntry" class="button lotus" type="button">Guardar</button>
+        <button id="addQuestion" class="button secondary" type="button">+ Añadir Pregunta</button>
+        <button id="exportEntry" class="button secondary" type="button">Exportar para Revisión con IA</button>
+        <button id="deleteEntry" class="button secondary" type="button">Eliminar</button>
+        <span id="saveStatus" class="small"></span>
+      </div>
+
+      <div class="journal-field">
+        <label for="entryTitle">Título de la Entrada</label>
+        <input id="entryTitle" type="text" placeholder="Título opcional">
+      </div>
+
+      <div class="journal-field">
+        <label for="entryTags">Etiquetas</label>
+      <input id="entryTags" class="field" type="text"
+        placeholder="alma, reencarnación, identidad">
+
+      <label for="entryNotes">Mis Notas</label>
+        <textarea id="entryNotes" placeholder="Escribe aquí tus notas de estudio..."></textarea>
+      </div>
+
+      <h2>Mis Preguntas</h2>
+      <p class="small muted">Desarrolla preguntas mientras estudias sin modificar tus notas originales.</p>
+
+      <div id="questions"></div>
+    </section>
+
+    <aside>
+      <div class="card">
+        <h2 id="journalEntriesHeading">Entradas del Diario</h2>
+        <input id="journalSearch" class="field" type="search"
+          placeholder="Buscar en el diario…" autocomplete="off">
+        <select id="journalBookFilter" class="field" aria-label="Filtrar el diario por libro">
+          <option value="">Todos los Libros</option>
+        </select>
+        <select id="journalTagFilter" class="field" aria-label="Filtrar el diario por etiqueta">
+          <option value="">Todas las Etiquetas</option>
+        </select>
+        <select id="journalSort" class="field" aria-label="Ordenar las entradas del diario">
+          <option value="newest">Más Recientes</option>
+          <option value="oldest">Más Antiguas</option>
+          <option value="reference">Referencia</option>
+        </select>
+        <div id="entryList" class="journal-list"></div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<script src="../shared/app.js"></script>
+<script src="../shared/student-store.js"></script>
+<script src="../shared/study-journal.js"></script>
+
+<script>
+const $=id=>document.getElementById(id);
+const params=new URLSearchParams(location.search);
+
+function contextFromUrl(){
+  return {
+    program:params.get('program')||'',
+    unit:params.get('unit')||'',
+    book:params.get('book')||'',
+    bookTitle:params.get('bookTitle')||'',
+    section:params.get('section')||'',
+    canonical:params.get('ref')||''
+  };
+}
+
+function freshEntry(){
+  return StudyJournal.normalize(contextFromUrl());
+}
+
+let current=null;
+
+function contextLine(label,value){
+  return value
+    ? `<div><strong>${StudyJournal.esc(label)}:</strong> ${StudyJournal.esc(value)}</div>`
+    : '';
+}
+
+function renderContext(){
+  const e=current||freshEntry();
+
+  $('journalContext').innerHTML=
+    contextLine('Área de Estudio',e.program)+
+    contextLine('Libro',e.bookTitle||e.book)+
+    contextLine('Sección',e.section)+
+    contextLine('Referencia',e.canonical) ||
+    '<div>Entrada general del diario</div>';
+}
+
+function pullForm(){
+  if(!current)return;
+
+  current.title=$('entryTitle').value.trim();
+  current.tags=$('entryTags').value
+    .split(',')
+    .map(tag=>tag.trim())
+    .filter(Boolean);
+  current.notes=$('entryNotes').value;
+
+  document.querySelectorAll('.journal-question').forEach(card=>{
+    const q=current.questions.find(x=>x.id===card.dataset.id);
+    if(!q)return;
+
+    q.text=card.querySelector('.question-text').value;
+    q.answer=card.querySelector('.question-answer').value;
+  });
+}
+
+function renderQuestions(){
+  $('questions').innerHTML=current.questions.map((q,i)=>`
+    <div class="journal-question" data-id="${StudyJournal.esc(q.id)}">
+      <div class="journal-field">
+        <label>Pregunta ${i+1}</label>
+        <textarea class="question-text" placeholder="¿Qué pregunta surgió de tu estudio?">${StudyJournal.esc(q.text)}</textarea>
+      </div>
+
+      <div class="journal-field">
+        <label>Mi Respuesta / Notas de Trabajo</label>
+        <textarea class="question-answer" placeholder="Desarrolla aquí tu respuesta o notas de trabajo...">${StudyJournal.esc(q.answer)}</textarea>
+      </div>
+
+      <div class="journal-question-actions">
+        <button class="button secondary remove-question" type="button">Eliminar Pregunta</button>
+      </div>
+    </div>
+  `).join('');
+
+  document.querySelectorAll('.remove-question').forEach(button=>{
+    button.onclick=()=>{
+      pullForm();
+      const card=button.closest('.journal-question');
+      current.questions=current.questions.filter(q=>q.id!==card.dataset.id);
+      renderQuestions();
+    };
+  });
+}
+
+function journalMatchesSearch(entry,query){
+  const q=String(query||'').trim().toLowerCase();
+  if(!q)return true;
+
+  const questionText=(entry.questions||[])
+    .map(item=>`${item.text||''} ${item.answer||''}`)
+    .join(' ');
+
+  const searchable=[
+    entry.title,
+    entry.canonical,
+    entry.book,
+    entry.bookTitle,
+    entry.section,
+    entry.notes,
+    (entry.tags||[]).join(' '),
+    questionText
+  ].join(' ').toLowerCase();
+
+  return searchable.includes(q);
+}
+
+function renderBookFilter(entries){
+  const select=$('journalBookFilter');
+  if(!select)return;
+
+  const selected=select.value;
+
+  const books=[...new Map(
+    entries
+      .filter(e=>e.book||e.bookTitle)
+      .map(e=>[
+        e.book||e.bookTitle,
+        e.bookTitle||e.book
+      ])
+  ).entries()]
+    .sort((a,b)=>String(a[1]).localeCompare(String(b[1])));
+
+  select.innerHTML=
+    '<option value="">Todos los Libros</option>'+
+    books.map(([value,label])=>
+      `<option value="${StudyJournal.esc(value)}">${StudyJournal.esc(label)}</option>`
+    ).join('');
+
+  if(books.some(([value])=>value===selected))
+    select.value=selected;
+}
+
+function renderTagFilter(entries){
+  const select=$('journalTagFilter');
+  if(!select)return;
+
+  const selected=select.value;
+
+  const tags=[...new Set(
+    entries.flatMap(e=>Array.isArray(e.tags)?e.tags:[])
+      .map(tag=>String(tag).trim())
+      .filter(Boolean)
+  )].sort((a,b)=>a.localeCompare(b,undefined,{sensitivity:'base'}));
+
+  select.innerHTML=
+    '<option value="">Todas las Etiquetas</option>'+
+    tags.map(tag=>
+      `<option value="${StudyJournal.esc(tag)}">${StudyJournal.esc(tag)}</option>`
+    ).join('');
+
+  if(tags.includes(selected))
+    select.value=selected;
+}
+
+function renderList(){
+  const allEntries=StudyJournal.list();
+
+  renderBookFilter(allEntries);
+  renderTagFilter(allEntries);
+  const searchQuery=$('journalSearch')?.value||'';
+  const bookFilter=$('journalBookFilter')?.value||'';
+  const tagFilter=$('journalTagFilter')?.value||'';
+
+  const entries=allEntries.filter(entry=>
+    (!bookFilter || (entry.book||entry.bookTitle)===bookFilter) &&
+    (!tagFilter || (entry.tags||[]).includes(tagFilter)) &&
+    journalMatchesSearch(entry,searchQuery)
+  );
+
+  const sortMode=$('journalSort')?.value||'newest';
+
+  if(sortMode==='oldest'){
+    entries.sort((a,b)=>
+      String(a.createdAt||'').localeCompare(String(b.createdAt||''))
+    );
+  }else if(sortMode==='reference'){
+    entries.sort((a,b)=>
+      String(a.canonical||'').localeCompare(
+        String(b.canonical||''),
+        undefined,
+        {numeric:true,sensitivity:'base'}
+      )
+    );
+  }
+
+  const filtering=Boolean(
+    searchQuery.trim() ||
+    bookFilter ||
+    tagFilter
+  );
+
+  $('journalEntriesHeading').textContent=filtering
+    ? `Entradas del Diario (${entries.length} de ${allEntries.length})`
+    : `Entradas del Diario (${allEntries.length})`;
+
+  $('entryList').innerHTML=entries.length
+    ? entries.map(e=>`
+        <button class="journal-entry-button ${current&&e.id===current.id?'active':''}"
+                data-id="${StudyJournal.esc(e.id)}"
+                type="button">
+          <strong>${StudyJournal.esc(e.title||e.canonical||e.section||e.bookTitle||'Entrada del Diario')}</strong>
+          <span class="journal-entry-ref">
+            ${StudyJournal.esc(
+              [e.bookTitle||e.book,e.canonical]
+                .filter(Boolean)
+                .join(' · ') || 'General'
+            )}
+          </span>
+          ${(e.tags||[]).length
+            ? `<span class="journal-entry-ref">${StudyJournal.esc(e.tags.join(' · '))}</span>`
+            : ''
+          }
+        </button>
+      `).join('')
+    : `<p class="small muted">${
+        filtering
+          ? 'No hay entradas del diario que coincidan.'
+          : 'Aún no hay entradas guardadas en el diario.'
+      }</p>`;
+
+  document.querySelectorAll('.journal-entry-button').forEach(button=>{
+    button.onclick=()=>{
+      pullForm();
+      const next=StudyJournal.get(button.dataset.id);
+      if(next){
+        current=next;
+        renderEntry();
+      }
+    };
+  });
+}
+
+function renderEntry(){
+  if(!current)current=freshEntry();
+
+  $('entryTitle').value=current.title||'';
+  $('entryTags').value=(current.tags||[]).join(', ');
+  $('entryNotes').value=current.notes||'';
+
+  renderContext();
+  renderQuestions();
+  renderList();
+
+  $('saveStatus').textContent='';
+}
+
+function saveCurrent(){
+  pullForm();
+  current=StudyJournal.save(current);
+  $('saveStatus').textContent='Guardado.';
+  renderList();
+}
+
+/* Quiet autosave while writing. */
+let autosaveTimer=null;
+
+function scheduleAutosave(){
+  $('saveStatus').textContent='Guardando…';
+
+  clearTimeout(autosaveTimer);
+
+  autosaveTimer=setTimeout(()=>{
+    pullForm();
+
+    const hasContent=
+      current &&
+      (
+        current.title ||
+        current.notes ||
+        current.questions.some(q=>q.text||q.answer)
+      );
+
+    if(!hasContent){
+      $('saveStatus').textContent='';
+      return;
+    }
+
+    current=StudyJournal.save(current);
+    $('saveStatus').textContent='Guardado.';
+    renderList();
+  },800);
+}
+
+$('entryTitle').addEventListener('input',scheduleAutosave);
+$('entryTags').addEventListener('input',scheduleAutosave);
+$('entryNotes').addEventListener('input',scheduleAutosave);
+
+$('questions').addEventListener('input',event=>{
+  if(
+    event.target.classList.contains('question-text') ||
+    event.target.classList.contains('question-answer')
+  ){
+    scheduleAutosave();
+  }
+});
+
+$('newEntry').onclick=()=>{
+  pullForm();
+  current=freshEntry();
+  renderEntry();
+};
+
+$('saveEntry').onclick=saveCurrent;
+
+$('addQuestion').onclick=()=>{
+  pullForm();
+  current=StudyJournal.addQuestion(current);
+  renderQuestions();
+
+  const cards=document.querySelectorAll('.journal-question');
+  const last=cards[cards.length-1];
+  last?.querySelector('.question-text')?.focus();
+};
+
+$('exportEntry').onclick=()=>{
+  saveCurrent();
+  StudyJournal.exportRTF(current);
+};
+
+$('deleteEntry').onclick=()=>{
+  if(!current)return;
+  if(!confirm('¿Eliminar esta entrada del diario?'))return;
+
+  StudyJournal.remove(current.id);
+  current=freshEntry();
+
+  $('saveStatus').textContent='Entrada del diario eliminada.';
+  renderEntry();
+};
+
+const requested=params.get('entry');
+current=requested?StudyJournal.get(requested):null;
+
+if(!current){
+  const ctx=contextFromUrl();
+
+  const matching=StudyJournal.list().find(e=>
+    ctx.canonical &&
+    e.canonical===ctx.canonical &&
+    e.book===ctx.book
+  );
+
+  current=matching||freshEntry();
+}
+
+$('journalSearch')?.addEventListener('input',renderList);
+$('journalBookFilter')?.addEventListener('change',renderList);
+$('journalTagFilter')?.addEventListener('change',renderList);
+$('journalSort')?.addEventListener('change',renderList);
+
+renderEntry();
+
+/* Follow the open reader while this Journal stays beside it. */
+let followReader=true;
+
+function renderFollowReader(){
+  const button=$('followReader');
+  if(!button)return;
+
+  button.textContent=`Seguir Lector: ${followReader?'SÍ':'NO'}`;
+  button.setAttribute('aria-pressed',followReader?'true':'false');
+}
+
+$('followReader').onclick=()=>{
+  followReader=!followReader;
+  renderFollowReader();
+};
+
+renderFollowReader();
+
+try{
+  const journalChannel=new BroadcastChannel('academia-study-journal');
+
+  journalChannel.onmessage=event=>{
+    const msg=event.data||{};
+    if(msg.type!=='reader-context'||!msg.canonical)return;
+    if(!followReader)return;
+
+    const samePassage=
+      current &&
+      current.canonical===msg.canonical &&
+      current.book===msg.book;
+
+    if(samePassage){
+      // Keep student-authored content, but refresh passage metadata.
+      pullForm();
+
+      current=StudyJournal.normalize({
+        ...current,
+        program:msg.program||current.program||'',
+        unit:msg.unit||current.unit||'',
+        book:msg.book||current.book||'',
+        bookTitle:msg.bookTitle||current.bookTitle||'',
+        section:msg.section||current.section||'',
+        canonical:msg.canonical||current.canonical||''
+      });
+
+      current=StudyJournal.save(current);
+      renderEntry();
+      return;
+    }
+
+    // Preserve anything already written before following the reader.
+    if(current && (
+      current.title ||
+      current.notes ||
+      current.questions.some(q=>q.text||q.answer)
+    )){
+      pullForm();
+      current=StudyJournal.save(current);
+    }
+
+    const existing=StudyJournal.list().find(e=>
+      e.canonical===msg.canonical &&
+      e.book===msg.book
+    );
+
+    if(existing){
+      // Preserve the student's work while refreshing canonical reader context.
+      current=StudyJournal.normalize({
+        ...existing,
+        program:msg.program||existing.program||'',
+        unit:msg.unit||existing.unit||'',
+        book:msg.book||existing.book||'',
+        bookTitle:msg.bookTitle||existing.bookTitle||'',
+        section:msg.section||existing.section||'',
+        canonical:msg.canonical||existing.canonical||''
+      });
+
+      current=StudyJournal.save(current);
+    }else{
+      current=StudyJournal.normalize({
+        program:msg.program||'',
+        unit:msg.unit||'',
+        book:msg.book||'',
+        bookTitle:msg.bookTitle||'',
+        section:msg.section||'',
+        canonical:msg.canonical||''
+      });
+    }
+
+    renderEntry();
+  };
+}catch(e){
+  console.warn('Study Journal follow-reader unavailable:',e);
+}
+
+</script>
+
+</body>
+</html>
