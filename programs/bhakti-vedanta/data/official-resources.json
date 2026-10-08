@@ -1,20 +1,20 @@
 {
   "official": [
     {
-      "title": "Bhakti Vedanta Degree Standards V3",
+      "title": "Normas académicas de Bhakti Vedānta, versión 3",
       "url": "https://iskconeducation.org/wp-content/uploads/2023/07/Bhakti-Vedanta-Degree-Standards-V3.pdf",
-      "purpose": "Official learning outcomes and teaching standards"
+      "purpose": "Resultados de aprendizaje y criterios oficiales de enseñanza"
     },
     {
-      "title": "BOEX Question Banks",
+      "title": "Bancos de preguntas de BOEX",
       "url": "https://iskconeducation.org/question-banks/",
-      "purpose": "Official public question-bank index; currently exposes Bhakti Vedanta Cantos 8–9"
+      "purpose": "Índice público oficial de bancos de preguntas; actualmente presenta los cantos 8 y 9 de Bhakti Vedānta"
     },
     {
-      "title": "Summative Exam",
+      "title": "Examen final",
       "url": "https://iskconeducation.org/summative-exam/",
-      "purpose": "Official summative-exam resources; page lists Bhakti Vedanta Cantos 7–9 and Canto 10 banks"
+      "purpose": "Recursos oficiales para el examen final; la página enumera materiales de los cantos 7 al 9 y bancos de preguntas del canto 10 de Bhakti Vedānta"
     }
   ],
-  "academyPolicy": "Official resources are linked and labeled. Academy study questions, progress, and certificates remain separate."
+  "academyPolicy": "Los recursos oficiales se presentan mediante enlaces y etiquetas. Las preguntas de estudio, el progreso y los certificados de la Academia permanecen separados."
 }

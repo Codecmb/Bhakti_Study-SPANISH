@@ -1,9 +1,18 @@
 {
-  "schema":"external-resources-v1",
-  "label":"Official BOEX / ISKCON Ministry of Education",
-  "resources":[
-    {"type":"question-bank","title":"Bhakti Śāstrī Question Banks","url":"https://iskconeducation.org/question-banks/","contentPolicy":"link-only-unless-material-is-imported and provenance-preserved"},
-    {"type":"standards","title":"Bhakti Śāstrī Assessment","url":"https://iskconeducation.org/assessment/"}
+  "schema": "external-resources-v1",
+  "label": "Recursos oficiales de BOEX / Ministerio de Educación de ISKCON",
+  "resources": [
+    {
+      "type": "question-bank",
+      "title": "Bancos de preguntas de Bhakti Śāstrī",
+      "url": "https://iskconeducation.org/question-banks/",
+      "contentPolicy": "link-only-unless-material-is-imported and provenance-preserved"
+    },
+    {
+      "type": "standards",
+      "title": "Evaluación de Bhakti Śāstrī",
+      "url": "https://iskconeducation.org/assessment/"
+    }
   ],
-  "separationPolicy":"Official resources remain distinct from Academy-authored study questions and Academy completion requirements."
+  "separationPolicy": "Los recursos oficiales permanecen separados de las preguntas de estudio elaboradas por la Academia y de sus requisitos de finalización."
 }

@@ -1,15 +1,15 @@
 {
   "official": [
     {
-      "title": "Bhakti Vaibhava Assessment",
+      "title": "Evaluación de Bhakti Vaibhava",
       "url": "https://iskconeducation.org/assessment/",
-      "purpose": "Assessment standards and publicly listed memorization verses"
+      "purpose": "Criterios de evaluación y versos para memorizar publicados oficialmente"
     },
     {
-      "title": "BOEX Question Banks",
+      "title": "Bancos de preguntas de BOEX",
       "url": "https://iskconeducation.org/question-banks/",
-      "purpose": "Official question banks by canto/chapter blocks"
+      "purpose": "Bancos oficiales de preguntas organizados por cantos y grupos de capítulos"
     }
   ],
-  "academyPolicy": "Official resources are linked/labeled; Academy questions and certificates remain separate."
+  "academyPolicy": "Los recursos oficiales se presentan mediante enlaces y etiquetas. Las preguntas y los certificados de la Academia permanecen separados."
 }
