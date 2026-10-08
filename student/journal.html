@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -26,9 +26,65 @@ body{margin:0}
 .journal-entry-ref{display:block;font-size:.82rem;opacity:.7;margin-top:3px}
 #saveStatus{margin-left:auto;align-self:center}
 @media(max-width:850px){.journal-layout{grid-template-columns:1fr}}
+
+/* Presentación del Diario de Estudio */
+body .layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    min-height: 100vh;
+}
+body .layout > .sidebar {
+    width: 220px;
+    min-width: 0;
+}
+body .layout > .main {
+    min-width: 0;
+    width: 100%;
+    max-width: none;
+}
+@media (max-width: 650px) {
+    body .layout {
+        grid-template-columns: 1fr;
+    }
+    body .layout > .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
+
+
+/* Presentación del Diario de Estudio */
+body .layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    min-height: 100vh;
+}
+body .layout > .sidebar {
+    width: 220px;
+    min-width: 0;
+}
+body .layout > .main {
+    min-width: 0;
+    width: 100%;
+    max-width: none;
+}
+@media (max-width: 650px) {
+    body .layout {
+        grid-template-columns: 1fr;
+    }
+    body .layout > .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
+
 </style>
 </head>
 <body>
+<div class="layout">
+<aside class="sidebar"></aside>
 
 <main class="main journal-page">
   <div class="eyebrow">Mi Estudio</div>
@@ -90,8 +146,10 @@ body{margin:0}
     </aside>
   </div>
 </main>
+</div>
 
 <script src="../shared/app.js"></script>
+<script>sidebar("journal");</script>
 <script src="../shared/student-store.js"></script>
 <script src="../shared/study-journal.js"></script>
 
