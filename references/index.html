@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -16,7 +16,7 @@
 
     <p class="lead">
       Recursos suplementarios para un estudio académico y comparativo más amplio.
-      These materials remain separate from canonical Academy scripture,
+      Estos materiales se mantienen separados de las escrituras canónicas de la Academia,
       autoridades de siddhānta, evaluaciones, progreso y requisitos de finalización.
     </p>
 
@@ -93,8 +93,7 @@
           <div class="eyebrow">Estudio Gauḍīya Adicional</div>
           <h2>Eruditos y Comentarios</h2>
           <p class="small">
-            Optional scholarly resources for deeper study. Attribution remains
-            visible and these resources do not replace canonical Academy source material.
+            Recursos académicos opcionales para profundizar en el estudio. Las atribuciones permanecen visibles y estos recursos no sustituyen las fuentes canónicas de la Academia.
           </p>
           <div class="grid">
             ${scholars.map(s=>`<article class="card">
@@ -115,7 +114,7 @@
           : esc(r.title)
       }</h3>
       ${r.author
-        ? `<p class="small"><strong>Reference:</strong> ${esc(r.author)}</p>`
+        ? `<p class="small"><strong>Referencia:</strong> ${esc(r.author)}</p>`
         : ''}
       ${r.purpose
         ? `<p>${esc(r.purpose)}</p>`
@@ -129,8 +128,7 @@
         <div class="eyebrow">Estudio Adicional</div>
         <h2>Filosofía Comparada — Filosofía Occidental</h2>
         <p class="small">
-          Optional resources for comparative philosophical study.
-          These materials are not Gauḍīya siddhānta authorities.
+          Recursos opcionales para el estudio filosófico comparativo. Estos materiales no constituyen autoridades del siddhānta gauḍīya.
         </p>
         <div class="grid">
           ${philosophy.map(resource).join('')}

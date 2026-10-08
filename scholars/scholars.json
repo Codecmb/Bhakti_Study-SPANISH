@@ -2,11 +2,11 @@
   {
     "id": "bhanu-swami",
     "name": "Bhānu Swami",
-    "role": "Further Study — Optional",
+    "role": "Estudio complementario — Opcional",
     "enabled": true,
     "links": [
       {
-        "label": "Bhānu Swami Archives",
+        "label": "Archivos de Bhānu Swami",
         "url": "https://bhanuswamiarchives.net/"
       }
     ]
@@ -14,11 +14,11 @@
   {
     "id": "hridayananda-dasa-goswami",
     "name": "Hridayananda Dasa Goswami",
-    "role": "Further Study — Optional",
+    "role": "Estudio complementario — Opcional",
     "enabled": true,
     "links": [
       {
-        "label": "Hridayananda Dasa Goswami — Official Website",
+        "label": "Hridayananda Dasa Goswami — Sitio web oficial",
         "url": "https://www.hdgoswami.com/"
       }
     ]
