@@ -277,5 +277,15 @@
     "status": "imported",
     "dataPath": "library/books-es/ttp/book.json",
     "sourceFile": "ttp-es.epub"
+  },
+  {
+    "id": "bg-es",
+    "canonicalId": "BG",
+    "title": "Bhagavad-gītā Tal Como Es",
+    "author": "A. C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/bg/book.json",
+    "sourceFile": "bg-es.epub"
   }
 ]
