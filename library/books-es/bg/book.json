@@ -1,8 +1,12 @@
 {
+  "schema": "bhakti-study-book-v1",
   "id": "bg-es",
   "title": "Bhagavad-gītā Tal Como Es",
-  "author": "A. C. Bhaktivedanta Swami Prabhupāda",
+  "creator": "A. C. Bhaktivedanta Swami Prabhupāda",
+  "publisher": "",
   "language": "es",
+  "source_format": "reference-index",
+  "source_file": "bg-es.epub (índice de referencias)",
   "sections": [
     {
       "id": "chapter-1",
