@@ -42,14 +42,14 @@ function sidebar(a='home',rootOverride=null){
    ['Recursos',[
      ['library','Libros y Biblioteca',R+'library/index.html'],
      ['references','Referencias y Estudio Adicional',R+'references/index.html'],
-     ['slokas','Śloka Lab',R+'slokas/index.html']
+     ['slokas','Memorizar Versos',R+'slokas/index.html']
    ]],
    ['Academia',[
      ['manage','Administrar Academia',R+'admin/index.html']
    ]]
  ];
  const grouped=groups.map(([label,items])=>`<div class="nav-group"><div class="nav-label">${label}</div>${items.map(link).join('')}</div>`).join('');
- document.querySelector('.sidebar').innerHTML=`<div class="brand"><img src="${R}assets/bhakti-study-logo.png" alt="Bhakti Study Academy" style="display:block;width:118px;height:118px;object-fit:contain;margin:0 auto 10px"><div>Bhakti Study</div></div><nav class="nav">${link(home)}${grouped}</nav>`;
+ document.querySelector('.sidebar').innerHTML=`<div class="brand"><img src="${R}assets/bhakti-study-logo.png" alt="Estudio del Bhakti En Español" style="display:block;width:118px;height:118px;object-fit:contain;margin:0 auto 10px"><div>Estudio del Bhakti En Español</div></div><nav class="nav">${link(home)}${grouped}</nav>`;
 
  const main=document.querySelector('.main');
  if(main && !main.querySelector('.academy-creator-credit')){
