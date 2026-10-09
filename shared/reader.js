@@ -10,7 +10,41 @@ async function load(){
  try{
   const catalog=await json('../data/books.json'); meta=catalog.find(b=>b.id===bookId);
   if(!meta||meta.status!=='imported'){el.status.textContent='La fuente de este libro aún no ha sido registrada.';return}
-  book=await json('../'+meta.dataPath); el.bookTitle.textContent=book.title; el.bookMeta.textContent=[book.creator,book.publisher,`Fuente interna: ${meta.source}`,`Formato: ${book.source_format}`].filter(Boolean).join(' · ');
+  book=await json('../'+meta.dataPath);
+  if(bookId==='bg-es' && ['localhost','127.0.0.1'].includes(location.hostname)){
+    try{
+      book=await json('../local-private/bg-es/book.json');
+    }catch(e){
+      console.warn('Texto privado de Bhagavad-gītā no disponible:',e);
+    }
+
+  }
+  if(bookId==='bg-es' && ['localhost','127.0.0.1'].includes(location.hostname)){
+    try{
+      const corrections=JSON.parse(localStorage.getItem('bg-es-manual-v1')||'{}');
+      const fieldMap={
+        transliteracion:'transliteration',
+        sinonimos:'synonyms',
+        traduccion:'translation',
+        significado:'purport'
+      };
+      for(const chapter of (book.sections||[])){
+        for(const verse of (chapter.verses||[])){
+          const id='BG.'+verse.reference;
+          const changes=corrections[id];
+          if(!changes)continue;
+          for(const [source,target] of Object.entries(fieldMap)){
+            if(Object.prototype.hasOwnProperty.call(changes,source)){
+              verse[target]=changes[source];
+            }
+          }
+        }
+      }
+    }catch(e){
+      console.warn('No se pudieron aplicar las correcciones:',e);
+    }
+  }
+  el.bookTitle.textContent=book.title; el.bookMeta.textContent=[book.creator,book.publisher,`Fuente interna: ${meta.source}`,`Formato: ${book.source_format}`].filter(Boolean).join(' · ');
   el.status.hidden=true;el.reader.hidden=false;renderSections(); if(!openTarget()) openSection(0);
  }catch(e){el.status.textContent='No se pudo cargar este libro. '+e.message}
 }
