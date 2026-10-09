@@ -8,42 +8,42 @@
       "canonical_ref": "BS.U3",
       "provider": "academy",
       "source_question_id": "A1",
-      "question": "What is the central teaching or argument in this unit?",
+      "question": "¿Cuál es la enseñanza o el argumento central de esta unidad?",
       "kind": "reflection"
     },
     {
       "canonical_ref": "BS.U3",
       "provider": "academy",
       "source_question_id": "A2",
-      "question": "Which passages from the primary text support that understanding?",
+      "question": "¿Qué pasajes del texto principal respaldan esta comprensión?",
       "kind": "reflection"
     },
     {
       "canonical_ref": "BS.U3",
       "provider": "academy",
       "source_question_id": "A3",
-      "question": "What misconception or opposing understanding does the text correct?",
+      "question": "¿Qué idea errónea o interpretación opuesta corrige el texto?",
       "kind": "reflection"
     },
     {
       "canonical_ref": "BS.U3",
       "provider": "academy",
       "source_question_id": "A4",
-      "question": "Which Sanskrit terms are essential to the argument?",
+      "question": "¿Qué términos sánscritos son esenciales para el argumento?",
       "kind": "reflection"
     },
     {
       "canonical_ref": "BS.U3",
       "provider": "academy",
       "source_question_id": "A5",
-      "question": "How would you explain the teaching in your own words without changing its conclusion?",
+      "question": "¿Cómo explicarías la enseñanza con tus propias palabras sin modificar su conclusión?",
       "kind": "reflection"
     },
     {
       "canonical_ref": "BS.U3",
       "provider": "academy",
       "source_question_id": "A6",
-      "question": "What practical application follows from the teaching?",
+      "question": "¿Qué aplicación práctica se deriva de esta enseñanza?",
       "kind": "reflection"
     }
   ]
