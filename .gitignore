@@ -15,3 +15,5 @@ tools/folio-import/backups/
 
 # Local pre-change safety backups
 *.before-*
+
+/student/bg-es-editor.html
