@@ -1,1 +1,281 @@
-[]
+[
+  {
+    "id": "bbd-es",
+    "title": "Más Allá del Nacimiento y la Muerte",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/bbd/book.json",
+    "sourceFile": "bbd-es.epub"
+  },
+  {
+    "id": "cc-adi-es",
+    "title": "Śrī Caitanya-caritāmṛta — Ādi-līlā",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/cc-adi/book.json",
+    "sourceFile": "cc-adi-es.epub"
+  },
+  {
+    "id": "cc-antya-es",
+    "title": "Śrī Caitanya-caritāmṛta — Antya-līlā",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/cc-antya/book.json",
+    "sourceFile": "cc-antya-es.epub"
+  },
+  {
+    "id": "cc-madhya-es",
+    "title": "Śrī Caitanya-caritāmṛta — Madhya-līlā",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/cc-madhya/book.json",
+    "sourceFile": "cc-madhya-es.epub"
+  },
+  {
+    "id": "ej-es",
+    "title": "Viaje Fácil a Otros Planetas",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/ej/book.json",
+    "sourceFile": "ej-es.epub"
+  },
+  {
+    "id": "ekc-es",
+    "title": "Elevación a la Conciencia de Kṛṣṇa",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/ekc/book.json",
+    "sourceFile": "ekc-es.epub"
+  },
+  {
+    "id": "iso-es",
+    "title": "Śrī Īśopaniṣad",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/iso/book.json",
+    "sourceFile": "iso-es.epub"
+  },
+  {
+    "id": "kb-es",
+    "title": "Kṛṣṇa, la Suprema Personalidad de Dios",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/kb/book.json",
+    "sourceFile": "kb-es.epub"
+  },
+  {
+    "id": "krp-es",
+    "title": "Kṛṣṇa, el Depósito de Placer",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/krp/book.json",
+    "sourceFile": "krp-es.epub"
+  },
+  {
+    "id": "lob-es",
+    "title": "La Luz del Bhāgavata",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/lob/book.json",
+    "sourceFile": "lob-es.epub"
+  },
+  {
+    "id": "nod-es",
+    "title": "El Néctar de la Devoción",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/nod/book.json",
+    "sourceFile": "nod-es.epub"
+  },
+  {
+    "id": "noi-es",
+    "title": "El Néctar de la Instrucción",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/noi/book.json",
+    "sourceFile": "noi-es.epub"
+  },
+  {
+    "id": "owk-es",
+    "title": "En el Camino a Kṛṣṇa",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/owk/book.json",
+    "sourceFile": "owk-es.epub"
+  },
+  {
+    "id": "pop-es",
+    "title": "El sendero de la perfección",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/pop/book.json",
+    "sourceFile": "pop-es.epub"
+  },
+  {
+    "id": "poy-es",
+    "title": "La Perfección del Yoga",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/poy/book.json",
+    "sourceFile": "poy-es.epub"
+  },
+  {
+    "id": "pqpa-es",
+    "title": "Preguntas Perfectas, Respuestas Perfectas",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/pqpa/book.json",
+    "sourceFile": "pqpa-es.epub"
+  },
+  {
+    "id": "rv-es",
+    "title": "Rāja-Vidyā: El Rey del Conocimiento",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/rv/book.json",
+    "sourceFile": "rv-es.epub"
+  },
+  {
+    "id": "sb-canto-1-es",
+    "title": "Śrīmad-Bhāgavatam — Canto 1",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/sb-canto-1/book.json",
+    "sourceFile": "sb-canto-1-es.epub"
+  },
+  {
+    "id": "sb-canto-10-es",
+    "title": "Śrīmad-Bhāgavatam — Canto 10",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/sb-canto-10/book.json",
+    "sourceFile": "sb-canto-10-es.epub"
+  },
+  {
+    "id": "sb-canto-2-es",
+    "title": "Śrīmad-Bhāgavatam — Canto 2",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/sb-canto-2/book.json",
+    "sourceFile": "sb-canto-2-es.epub"
+  },
+  {
+    "id": "sb-canto-3-es",
+    "title": "Śrīmad-Bhāgavatam — Canto 3",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/sb-canto-3/book.json",
+    "sourceFile": "sb-canto-3-es.epub"
+  },
+  {
+    "id": "sb-canto-4-es",
+    "title": "Śrīmad-Bhāgavatam — Canto 4",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/sb-canto-4/book.json",
+    "sourceFile": "sb-canto-4-es.epub"
+  },
+  {
+    "id": "sb-canto-5-es",
+    "title": "Śrīmad-Bhāgavatam — Canto 5",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/sb-canto-5/book.json",
+    "sourceFile": "sb-canto-5-es.epub"
+  },
+  {
+    "id": "sb-canto-6-es",
+    "title": "Śrīmad-Bhāgavatam — Canto 6",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/sb-canto-6/book.json",
+    "sourceFile": "sb-canto-6-es.epub"
+  },
+  {
+    "id": "sb-canto-7-es",
+    "title": "Śrīmad-Bhāgavatam — Canto 7",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/sb-canto-7/book.json",
+    "sourceFile": "sb-canto-7-es.epub"
+  },
+  {
+    "id": "sb-canto-8-es",
+    "title": "Śrīmad-Bhāgavatam — Canto 8",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/sb-canto-8/book.json",
+    "sourceFile": "sb-canto-8-es.epub"
+  },
+  {
+    "id": "sb-canto-9-es",
+    "title": "Śrīmad-Bhāgavatam — Canto 9",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/sb-canto-9/book.json",
+    "sourceFile": "sb-canto-9-es.epub"
+  },
+  {
+    "id": "ssr-es",
+    "title": "La Ciencia de la Autorrealización",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/ssr/book.json",
+    "sourceFile": "ssr-es.epub"
+  },
+  {
+    "id": "tlc-es",
+    "title": "Las Enseñanzas del Señor Caitanya",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/tlc/book.json",
+    "sourceFile": "tlc-es.epub"
+  },
+  {
+    "id": "tqk-es",
+    "title": "Las Enseñanzas de la Reina Kuntī",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/tqk/book.json",
+    "sourceFile": "tqk-es.epub"
+  },
+  {
+    "id": "ttp-es",
+    "title": "El sistema de yoga supremo",
+    "author": "A.C. Bhaktivedanta Swami Prabhupāda",
+    "language": "es",
+    "status": "imported",
+    "dataPath": "library/books-es/ttp/book.json",
+    "sourceFile": "ttp-es.epub"
+  }
+]
