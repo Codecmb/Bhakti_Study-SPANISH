@@ -2,17 +2,6 @@
   "schema": "bhakti-study.question-sheet-registry.v1",
   "sheets": [
     {
-      "id": "boex-bg-1-6",
-      "program": "bhakti-sastri",
-      "book": "bg",
-      "coverage": {
-        "type": "chapter-range",
-        "start": 1,
-        "end": 6
-      },
-      "data": "programs/bhakti-sastri/data/questions/boex-bg-1-6.json"
-    },
-    {
       "id": "boex-bv-u1",
       "program": "bhakti-vaibhava",
       "book": "sb1",
@@ -90,7 +79,8 @@
       "book": "sb8",
       "scope": "BVED.U2",
       "adapter": "flat-canonical",
-      "data": "programs/bhakti-vedanta/data/questions/collected-sources/bved-u2.json"
+      "data": "programs/bhakti-vedanta/data/questions/collected-sources/bved-u2.json",
+      "lessonMap": "programs/bhakti-vedanta/data/questions/collected-sources/bved-u2-lesson-map.json"
     },
     {
       "id": "collected-bved-u3",
@@ -99,6 +89,62 @@
       "scope": "BVED.U3",
       "adapter": "flat-canonical",
       "data": "programs/bhakti-vedanta/data/questions/collected-sources/bved-u3.json"
+    },
+    {
+      "id": "academia-bved-u1",
+      "program": "bhakti-vedanta",
+      "book": "sb7",
+      "scope": "BVED.U1",
+      "adapter": "academy-lessons",
+      "data": "programs/bhakti-vedanta/data/questions/academy/bved-u1.json"
+    },
+    {
+      "id": "academia-bs-u1",
+      "program": "bhakti-sastri",
+      "book": "general",
+      "scope": "BS.U1",
+      "adapter": "flat-canonical",
+      "data": "programs/bhakti-sastri/data/questions/academy/bs-u1.json"
+    },
+    {
+      "id": "academia-bs-u2",
+      "program": "bhakti-sastri",
+      "book": "general",
+      "scope": "BS.U2",
+      "adapter": "flat-canonical",
+      "data": "programs/bhakti-sastri/data/questions/academy/bs-u2.json"
+    },
+    {
+      "id": "academia-bs-u3",
+      "program": "bhakti-sastri",
+      "book": "general",
+      "scope": "BS.U3",
+      "adapter": "flat-canonical",
+      "data": "programs/bhakti-sastri/data/questions/academy/bs-u3.json"
+    },
+    {
+      "id": "academia-bs-u4",
+      "program": "bhakti-sastri",
+      "book": "general",
+      "scope": "BS.U4",
+      "adapter": "flat-canonical",
+      "data": "programs/bhakti-sastri/data/questions/academy/bs-u4.json"
+    },
+    {
+      "id": "academia-bs-u5",
+      "program": "bhakti-sastri",
+      "book": "general",
+      "scope": "BS.U5",
+      "adapter": "flat-canonical",
+      "data": "programs/bhakti-sastri/data/questions/academy/bs-u5.json"
+    },
+    {
+      "id": "boex-bg-1-6-es",
+      "program": "bhakti-sastri",
+      "book": "bg",
+      "scope": "BS.BG1-6",
+      "adapter": "boex-bg-structured",
+      "data": "programs/bhakti-sastri/data/questions/boex-bg-1-6-es.json"
     }
   ]
 }

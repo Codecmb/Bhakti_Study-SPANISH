@@ -10,6 +10,15 @@
       "manifest": "manifest.json",
       "default": true,
       "provenance_label": "Fuentes recopiladas; verificar procedencia individual"
+    },
+    {
+      "id": "academia",
+      "label": "Academia — Preguntas originales",
+      "description": "Banco académico en español; borrador sujeto a revisión docente. No son preguntas BOEX.",
+      "provider": "academia",
+      "manifest": "academy/manifest.json",
+      "default": false,
+      "provenance_label": "Academia (elaboración propia)"
     }
   ]
 }

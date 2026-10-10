@@ -124,7 +124,13 @@
       scope,
       questions,
       heading:groupLabel,
-      type:section.type
+      type:({
+        'Closed Book Questions':'Preguntas a libro cerrado',
+        'Closed Book Short':'Respuestas cortas a libro cerrado',
+        'Closed Book Thematic Questions':'Preguntas temáticas a libro cerrado',
+        'Open Book Essays':'Ensayos a libro abierto',
+        'Open Book Thematic Questions':'Preguntas temáticas a libro abierto'
+      })[section.type]||section.type
     };
   }
 
@@ -162,6 +168,93 @@
     };
   }
 
+  function academyLessons(record,data){
+    const lessonId=String(ref||'').trim();
+    if(!lessonId)return null;
+
+    const selected=(data.questions||[]).filter(
+      q=>String(q.lesson_id||'').trim()===lessonId
+    );
+    if(!selected.length)return null;
+
+    const questions=selected.map((q,i)=>
+      QuestionEngine.normalizeRecord({
+        id:q.source_question_id || `${record.id}.${ref}.${i+1}`,
+        provider:q.provider || 'academia',
+        source_question_id:q.source_question_id || `${i+1}`,
+        question:q.question,
+        canonical_ref:q.source_reference_review || '',
+        canonical_sources:q.source_reference_review
+          ? [q.source_reference_review] : [],
+        kind:q.question_type || 'study-question',
+        provenance:{
+          title:'Academia — Preguntas originales',
+          author:'Academia'
+        }
+      })
+    );
+
+    return {
+      scope:`${record.id}.${ref}`,
+      questions,
+      heading:`Lección ${ref}`,
+      type:'Preguntas de estudio · Academia'
+    };
+  }
+
+
+  async function canto8LessonSection(record,data){
+    if(!record.lessonMap || !ref)return null;
+
+    const response=await fetch('../'+record.lessonMap);
+    if(!response.ok){
+      throw new Error('No se pudo cargar el mapa de lecciones.');
+    }
+
+    const mapping=await response.json();
+    const assignments=mapping.assignments||{};
+    const pending=mapping.pending||[];
+
+    const selected=(data.questions||[]).filter(q=>{
+      const id=q.source_question_id;
+      return ref==='pending'
+        ? pending.includes(id)
+        : assignments[id]===ref;
+    });
+
+    if(!selected.length)return null;
+
+    const originalScope=
+      `${record.id}.${record.scope}.study-question`;
+
+    const questions=selected.map((q,i)=>
+      QuestionEngine.normalizeRecord({
+        id:q.source_question_id ||
+          `${record.id}.${i+1}`,
+        provider:q.provider||data.provider||'boex',
+        source_question_id:q.source_question_id||`${i+1}`,
+        question:q.question,
+        canonical_ref:q.canonical_ref||'',
+        canonical_sources:q.canonical_sources||
+          (q.canonical_ref?[q.canonical_ref]:[]),
+        kind:q.kind||'study-question',
+        provenance:{
+          title:data.source_title||record.id,
+          author:data.provider||'BOEX'
+        }
+      })
+    );
+
+    return {
+      scope:originalScope,
+      questions,
+      heading:ref==='pending'
+        ? 'Actividades pendientes de clasificación'
+        : `Lección ${ref}`,
+      type:'Actividades académicas BOEX'
+    };
+  }
+
   function flatCanonical(record,data){
     if(!ref || !kind)return null;
 
@@ -176,7 +269,9 @@
 
     const questions=selected.map((q,i)=>
       QuestionEngine.normalizeRecord({
-        id:q.source_question_id || `${sheetId}.${ref}.${kind}.${i+1}`,
+        id:record.id.startsWith('academia-bs-u')
+          ? `${record.id}.${q.source_question_id||i+1}`
+          : q.source_question_id || `${sheetId}.${ref}.${kind}.${i+1}`,
         provider:q.provider || data.provider || 'boex',
         source_question_id:q.source_question_id || `${i+1}`,
         question:q.question,
@@ -218,11 +313,15 @@
     const imported=loadImported();
     const {record,data}=imported || await loadSheet();
 
-    const section=record.imported
+    const section=record.id==='collected-bved-u2' && ref
+      ? await canto8LessonSection(record,data)
+      : record.imported
       ? importedBatch(record,data)
-      : record.adapter==='flat-canonical'
-        ? flatCanonical(record,data)
-        : structured(record,data);
+      : record.adapter==='academy-lessons'
+        ? academyLessons(record,data)
+        : record.adapter==='flat-canonical'
+          ? flatCanonical(record,data)
+          : structured(record,data);
 
     if(!section){
       host.innerHTML='<div class="card missing">No se encontró la sección de preguntas.</div>';

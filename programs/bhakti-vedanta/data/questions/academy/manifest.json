@@ -1,0 +1,12 @@
+{
+  "schema": "bhakti-study.question-manifest.v1",
+  "program": "bhakti-vedanta",
+  "provider": "academia",
+  "shards": [
+    {
+      "scope": "BVED.U1",
+      "path": "bved-u1.json",
+      "count": 220
+    }
+  ]
+}

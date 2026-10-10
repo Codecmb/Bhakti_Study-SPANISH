@@ -134,9 +134,271 @@
     return '';
   }
 
+  function renderAcademiaCanto7(){
+    return "<div style=\"padding-top:.75rem\"><p class=\"small\">15 capítulos · 22 lecciones · 220 preguntas · Academia</p><details class=\"card\"><summary><strong>Capítulo 1: El Señor Supremo es igual con todos</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S001\">Lección 1 — 10 preguntas</a></p></details><details class=\"card\"><summary><strong>Capítulo 2: Hiraṇyakaśipu, rey de los demonios</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S002\">Lección 2 · Parte 1 — 10 preguntas</a></p><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S003\">Lección 3 · Parte 2 — 10 preguntas</a></p></details><details class=\"card\"><summary><strong>Capítulo 3: El plan de Hiraṇyakaśipu para volverse inmortal</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S004\">Lección 4 — 10 preguntas</a></p></details><details class=\"card\"><summary><strong>Capítulo 4: Hiraṇyakaśipu aterroriza al universo</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S005\">Lección 5 — 10 preguntas</a></p></details><details class=\"card\"><summary><strong>Capítulo 5: Prahlāda Mahārāja, el santo hijo de Hiraṇyakaśipu</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S006\">Lección 6 · Parte 1 — 10 preguntas</a></p><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S007\">Lección 7 · Parte 2 — 10 preguntas</a></p></details><details class=\"card\"><summary><strong>Capítulo 6: Prahlāda instruye a sus compañeros de escuela demoníacos</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S008\">Lección 8 — 10 preguntas</a></p></details><details class=\"card\"><summary><strong>Capítulo 7: Lo que Prahlāda aprendió en el vientre materno</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S009\">Lección 9 · Parte 1 — 10 preguntas</a></p><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S010\">Lección 10 · Parte 2 — 10 preguntas</a></p></details><details class=\"card\"><summary><strong>Capítulo 8: El Señor Nṛsiṁhadeva mata al rey de los demonios</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S011\">Lección 11 — 10 preguntas</a></p></details><details class=\"card\"><summary><strong>Capítulo 9: Prahlāda apacigua al Señor Nṛsiṁhadeva con oraciones</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S012\">Lección 12 · Parte 1 — 10 preguntas</a></p><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S013\">Lección 13 · Parte 2 — 10 preguntas</a></p></details><details class=\"card\"><summary><strong>Capítulo 10: Prahlāda, el mejor entre los devotos excelsos</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S014\">Lección 14 · Parte 1 — 10 preguntas</a></p><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S015\">Lección 15 · Parte 2 — 10 preguntas</a></p></details><details class=\"card\"><summary><strong>Capítulo 11: La sociedad perfecta: cuatro clases sociales</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S016\">Lección 16 — 10 preguntas</a></p></details><details class=\"card\"><summary><strong>Capítulo 12: La sociedad perfecta: cuatro órdenes espirituales</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S017\">Lección 17 — 10 preguntas</a></p></details><details class=\"card\"><summary><strong>Capítulo 13: El comportamiento de una persona perfecta</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S018\">Lección 18 · Parte 1 — 10 preguntas</a></p><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S019\">Lección 19 · Parte 2 — 10 preguntas</a></p></details><details class=\"card\"><summary><strong>Capítulo 14: La vida familiar ideal</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S020\">Lección 20 — 10 preguntas</a></p></details><details class=\"card\"><summary><strong>Capítulo 15: Instrucciones para los seres humanos civilizados</strong></summary><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S021\">Lección 21 · Parte 1 — 10 preguntas</a></p><p><a class=\"button secondary\" href=\"questions.html?sheet=academia-bved-u1&amp;ref=BVED.S022\">Lección 22 · Parte 2 — 10 preguntas</a></p></details></div>";
+  }
+
+
+  function renderCanto8(lessons,mapping){
+    const selected=lessons.filter(x=>x.unitId==='BVED.U2');
+    const assignments=mapping.assignments||{};
+    const pending=mapping.pending||[];
+    const counts={};
+
+    Object.values(assignments).forEach(id=>{
+      counts[id]=(counts[id]||0)+1;
+    });
+
+    const chapters=new Map();
+
+    selected.forEach(lesson=>{
+      const chapter=lesson.chapter;
+      if(!chapters.has(chapter))chapters.set(chapter,[]);
+      chapters.get(chapter).push(lesson);
+    });
+
+    return `
+      <div style="padding-top:.75rem">
+        <p class="small">
+          ${chapters.size} capítulos ·
+          ${selected.length} lecciones ·
+          ${Object.keys(assignments).length} actividades clasificadas ·
+          ${pending.length} pendientes
+        </p>
+
+        ${[...chapters.entries()].map(([chapter,items])=>`
+          <details class="card">
+            <summary><strong>Capítulo ${chapter}</strong></summary>
+            ${items.map(lesson=>`
+              <p>
+                ${counts[lesson.id]
+                  ? `<a class="button secondary"
+                       href="questions.html?sheet=collected-bved-u2&amp;ref=${encodeURIComponent(lesson.id)}">
+                       ${esc(lesson.title)} — ${counts[lesson.id]} actividades
+                     </a>`
+                  : `<strong>${esc(lesson.title)}</strong>
+                     <span class="small"> · Sin actividades asignadas</span>`}
+                <span class="small">
+                  · ${esc(lesson.firstRef)}–${esc(lesson.lastRef)}
+                </span>
+              </p>
+            `).join('')}
+          </details>
+        `).join('')}
+
+        <details class="card">
+          <summary>
+            <strong>Actividades pendientes de clasificación (${pending.length})</strong>
+          </summary>
+          <p class="small">
+            Estas actividades conservan sus identificadores originales.
+            Todavía no tienen una referencia verificada para asignarlas
+            a una lección.
+          </p>
+          <p>
+            <a class="button secondary"
+               href="questions.html?sheet=collected-bved-u2&amp;ref=pending">
+              Ver ${pending.length} actividades pendientes
+            </a>
+          </p>
+        </details>
+      </div>
+    `;
+  }
+
+
+  function renderVaibhavaChapters(sheets){
+    const chapters=new Map();
+
+    sheets.forEach(({record,data})=>{
+      (data.questions||[]).forEach(q=>{
+        const match=String(q.canonical_ref||'').match(/^SB\.(\d+)\.(\d+)$/);
+        if(!match)return;
+
+        const ref=q.canonical_ref;
+        const kind=q.kind||'study-question';
+        const key=`${record.id}|${ref}|${kind}`;
+
+        if(!chapters.has(ref))chapters.set(ref,new Map());
+        const groups=chapters.get(ref);
+        const existing=groups.get(key);
+
+        if(existing){
+          existing.count++;
+        }else{
+          groups.set(key,{
+            sheet:record.id,
+            ref,
+            kind,
+            count:1
+          });
+        }
+      });
+    });
+
+    const ordered=[...chapters.entries()].sort((a,b)=>{
+      const x=a[0].split('.').map(Number);
+      const y=b[0].split('.').map(Number);
+      return x[1]-y[1]||x[2]-y[2];
+    });
+
+    const general=sheets.flatMap(({record,data})=>
+      (data.questions||[])
+        .filter(q=>q.canonical_ref===record.scope)
+        .reduce((groups,q)=>{
+          const kind=q.kind||'study-question';
+          let group=groups.find(g=>g.kind===kind);
+          if(!group){
+            group={sheet:record.id,ref:record.scope,kind,count:0};
+            groups.push(group);
+          }
+          group.count++;
+          return groups;
+        },[])
+    );
+
+    return `<div>
+      ${general.length ? `
+        <details class="card">
+          <summary><strong>Introducción / Preguntas generales</strong></summary>
+          ${general.map(g=>`
+            <p>
+              <a class="button secondary"
+                 href="questions.html?sheet=${encodeURIComponent(g.sheet)}&amp;ref=${encodeURIComponent(g.ref)}&amp;kind=${encodeURIComponent(g.kind)}">
+                ${esc(g.kind)} — ${g.count} preguntas
+              </a>
+            </p>
+          `).join('')}
+        </details>
+      ` : ''}
+      ${ordered.map(([ref,groups])=>`
+        <details class="card">
+          <summary>
+            <strong>Capítulo ${esc(ref.replace(/^SB\.\d+\./,''))}</strong>
+            <span class="small"> · ${[...groups.values()].reduce((n,g)=>n+g.count,0)} preguntas</span>
+          </summary>
+          ${[...groups.values()].map(g=>`
+            <p>
+              <a class="button secondary"
+                 href="questions.html?sheet=${encodeURIComponent(g.sheet)}&amp;ref=${encodeURIComponent(g.ref)}&amp;kind=${encodeURIComponent(g.kind)}">
+                ${esc(g.kind)} — ${g.count} preguntas
+              </a>
+            </p>
+          `).join('')}
+        </details>
+      `).join('')}
+    </div>`;
+  }
+
+
+  function renderSastriAcademy(sheets){
+    const units=sheets
+      .filter(x=>/^academia-bs-u[1-5]$/.test(x.record.id))
+      .sort((a,b)=>a.record.scope.localeCompare(b.record.scope));
+
+    return `<div style="padding-top:.75rem">
+      ${units.map(({record,data})=>{
+        const questions=data.questions||[];
+        const kinds=[...new Set(questions.map(q=>q.kind||'study-question'))];
+
+        return `<details class="card">
+          <summary>
+            <strong>Unidad ${esc(record.scope.replace('BS.U',''))}</strong>
+            <span class="small"> · ${questions.length} preguntas</span>
+          </summary>
+          ${kinds.map(kind=>`
+            <p>
+              <a class="button secondary"
+                 href="questions.html?sheet=${encodeURIComponent(record.id)}&amp;ref=${encodeURIComponent(record.scope)}&amp;kind=${encodeURIComponent(kind)}">
+                Preguntas de reflexión — ${questions.filter(q=>(q.kind||'study-question')===kind).length}
+              </a>
+            </p>
+          `).join('')}
+        </details>`;
+      }).join('')}
+    </div>`;
+  }
+
+  function boexTypeLabel(type){
+    const labels={
+      'Closed Book Questions':'Preguntas a libro cerrado',
+      'Closed Book Short':'Respuestas cortas a libro cerrado',
+      'Closed Book Thematic Questions':'Preguntas temáticas a libro cerrado',
+      'Open Book Essays':'Ensayos a libro abierto',
+      'Open Book Thematic Questions':'Preguntas temáticas a libro abierto'
+    };
+    return labels[type]||type;
+  }
+
+  function renderSastriBoex(sheets){
+    const source=sheets.find(x=>x.record.id==='boex-bg-1-6-es');
+    if(!source)return '';
+
+    const {record,data}=source;
+    const groups=data.groups||[];
+
+    return `<div style="padding-top:.75rem">
+      ${groups.map(group=>{
+        const chapter=String(group.chapter);
+        const label=chapter==='1-6'
+          ? 'Evaluación general · Capítulos 1–6'
+          : `Capítulo ${chapter}`;
+
+        const total=(group.sections||[]).reduce(
+          (n,section)=>n+(section.questions||[]).length,0
+        );
+
+        return `<details class="card">
+          <summary>
+            <strong>${esc(label)}</strong>
+            <span class="small"> · ${total} preguntas</span>
+          </summary>
+          ${(group.sections||[]).map((section,index)=>`
+            <p>
+              <a class="button secondary"
+                 href="questions.html?sheet=${encodeURIComponent(record.id)}&amp;group=${encodeURIComponent(chapter)}&amp;section=${index}">
+                ${esc(boexTypeLabel(section.type||'Preguntas BOEX'))}
+                — ${(section.questions||[]).length} preguntas
+              </a>
+            </p>
+          `).join('')}
+        </details>`;
+      }).join('')}
+    </div>`;
+  }
+
   function renderBook(book,sheets,context={}){
     const selected=context.program===context.programId && context.book===book.id;
-    const content=sheets.length
+    const academia=book.id==='sb7' &&
+      sheets.some(x=>x.record.id==='academia-bved-u1');
+
+    const canto8=book.id==='sb8' &&
+      context.programId==='bhakti-vedanta' &&
+      context.canto8;
+
+    const vaibhava=context.programId==='bhakti-vaibhava' &&
+      /^sb[1-6]$/.test(book.id) &&
+      sheets.some(x=>x.record.id.startsWith('boex-bv-u'));
+
+    const sastriAcademy=context.programId==='bhakti-sastri' &&
+      book.id==='general' &&
+      sheets.some(x=>/^academia-bs-u[1-5]$/.test(x.record.id));
+
+    const sastriBoex=context.programId==='bhakti-sastri' &&
+      book.id==='bg' &&
+      sheets.some(x=>x.record.id==='boex-bg-1-6-es');
+
+    const content=sastriBoex
+      ? renderSastriBoex(sheets)
+      : sastriAcademy
+      ? renderSastriAcademy(sheets)
+      : vaibhava
+      ? renderVaibhavaChapters(sheets)
+      : academia
+      ? renderAcademiaCanto7()
+      : canto8
+      ? renderCanto8(context.canto8.lessons,context.canto8.mapping)
+      : sheets.length
       ? `<div style="padding-top:.75rem">
           ${sheets.map(x=>`
             <p>
@@ -186,6 +448,31 @@
       const imported=importedSheets();
       const loaded=[...staticSheets,...imported];
 
+      const canto8Record=registry.sheets.find(
+        x=>x.id==='collected-bved-u2'
+      );
+
+      let canto8=null;
+
+      if(canto8Record?.lessonMap){
+        const [lessonsResponse,mapResponse]=await Promise.all([
+          fetch('../programs/bhakti-vedanta/data/course/lessons.json'),
+          fetch('../'+canto8Record.lessonMap)
+        ]);
+
+        if(!lessonsResponse.ok || !mapResponse.ok){
+          throw new Error('No se pudieron cargar las lecciones del Canto 8.');
+        }
+
+        const lessonsData=await lessonsResponse.json();
+        const mapping=await mapResponse.json();
+
+        canto8={
+          lessons:lessonsData.lessons||[],
+          mapping
+        };
+      }
+
       host.innerHTML=PROGRAMS.map(program=>{
         const programSheets=loaded.filter(
           x=>x.record.program===program.id
@@ -201,15 +488,17 @@
                   x.record.book===book.id ||
                   (x.record.imported && x.record.books?.includes(book.id))
                 ),
-                {...context,programId:program.id}
+                {...context,programId:program.id,canto8}
               )
             ).join('')}
             ${renderBook(
               {id:'general',label:'Importado / General'},
               programSheets.filter(x=>
-                x.record.imported && !(x.record.books||[]).length
+                (x.record.imported && !(x.record.books||[]).length) ||
+                (program.id==='bhakti-sastri' &&
+                 /^academia-bs-u[1-5]$/.test(x.record.id))
               ),
-              {...context,programId:program.id}
+              {...context,programId:program.id,canto8}
             )}
           </section>
         `;

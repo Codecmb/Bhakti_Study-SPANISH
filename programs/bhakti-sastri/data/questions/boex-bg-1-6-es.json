@@ -1,0 +1,1039 @@
+{
+  "schema": "bhakti-study.official-question-bank.v1",
+  "program": "bhakti-sastri",
+  "scope": "BS.U1",
+  "provider": "ISKCON Ministry of Education / Board of Examinations",
+  "title": "Official BOEX Question Bank — Bhagavad-gītā 1–6",
+  "source": "https://iskconeducation.org/wp-content/uploads/2025/01/Bhagavad-Gita-1-6.pdf",
+  "note": "Questions below are transcribed from the official Ministry/BOEX BG 1–6 bank. Wording is preserved except for minor whitespace normalization.",
+  "groups": [
+    {
+      "chapter": 1,
+      "sections": [
+        {
+          "type": "Closed Book Short",
+          "questions": [
+            {
+              "q": "¿Por qué Duryodhana estaba seguro de contar con el pleno apoyo de Bhīṣmadeva y Droṇācārya en la batalla?",
+              "refs": [
+                "BG.1.11"
+              ],
+              "source_english": "Why was Duryodhana confident of full support of Bhismadeva and Dronacarya in the battle?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera y explica el significado de las cuatro señales de victoria de los Pāṇḍavas.",
+              "refs": [
+                "BG.1.14",
+                "BG.1.20"
+              ],
+              "source_english": "List and explain the significance of the four signs of victory for the Pandavas.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la palabra guḍākeśa?",
+              "refs": [
+                "BG.1.24"
+              ],
+              "source_english": "What is the meaning of the word gudakesa?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las seis clases de agresores.",
+              "refs": [
+                "BG.1.36"
+              ],
+              "source_english": "List the six kinds of aggressors.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las diversas consecuencias de la destrucción de una dinastía.",
+              "refs": [
+                "BG.1.39",
+                "BG.1.42"
+              ],
+              "source_english": "List the various consequences due to the destruction of the dynasty.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Según el último significado del capítulo 1, ¿qué cualidad de Arjuna lo hace apto para recibir el conocimiento de la Bhagavad-gītā?",
+              "refs": [
+                "BG.1.46"
+              ],
+              "source_english": "Which quality of Arjuna makes him fit to receive the knowledge of Bhagavad-Gita, according to the last purport of Chapter 1?",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Closed Book Questions",
+          "questions": [
+            {
+              "q": "Explica el significado de las palabras dharma-kṣetre en relación con el resultado de la batalla y el temor de Dhṛtarāṣṭra.",
+              "refs": [
+                "BG.1.1"
+              ],
+              "source_english": "Explain the significance of the words dharma-ksetre in relation to the outcome of the battle and the fear of Dhrtarastra.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica el significado del uso de la palabra māmakāḥ por parte de Dhṛtarāṣṭra.",
+              "refs": [
+                "BG.1.1"
+              ],
+              "source_english": "Explain the significance of Dhrtarastra's usage of mamakah.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica el significado de los siguientes nombres de Kṛṣṇa utilizados en este capítulo: Acyuta, Govinda, Mādhava y Hṛṣīkeśa.",
+              "refs": [
+                "BG.1.15",
+                "BG.1.21",
+                "BG.1.24",
+                "BG.1.32",
+                "BG.1.36"
+              ],
+              "source_english": "Explain the significance of the following names of Krishna used in this chapter: Acyuta, Govinda, Madhava, Hrsikesa.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Open Book Essays",
+          "questions": [
+            {
+              "q": "Analiza el significado de que Arjuna diera órdenes a Kṛṣṇa y de que Kṛṣṇa aceptara la posición de auriga, como se observa en BG 1.21–22. Fundamenta tu explicación con las declaraciones de Śrīla Prabhupāda en el significado.",
+              "refs": [
+                "BG.1.21",
+                "BG.1.22"
+              ],
+              "source_english": "Discuss the significance of Arjuna’s ordering Krishna and Krishna’s accepting the position of a charioteer as seen in BG 1.21-22. Give reference to Śrīla Prabhupāda’s statements in the purport.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la relevancia de los argumentos de Arjuna sobre la destrucción de la dinastía en relación con la sociedad moderna.",
+              "refs": [
+                "BG.1.39",
+                "BG.1.43"
+              ],
+              "source_english": "Discuss the relevance of Arjuna’s arguments regarding destruction of the dynasty in relation to modern society.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera y explica al menos cuatro razones de Arjuna para no luchar, citando los versos correspondientes de los capítulos 1 y 2 de la Bhagavad-gītā.",
+              "refs": [
+                "BG.1.28",
+                "BG.2.9"
+              ],
+              "source_english": "List and explain at least four of Arjuna’s reasons for not fighting with reference to the appropriate verses from BG chapters 1 and 2.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "sections": [
+        {
+          "type": "Closed Book Short",
+          "questions": [
+            {
+              "q": "Enumera las seis características de Bhagavān, en español o sánscrito.",
+              "refs": [
+                "BG.2.2"
+              ],
+              "source_english": "List six symptoms of Bhagavan in English or Sanskrit.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica la analogía de las tres características del Sol.",
+              "refs": [
+                "BG.2.2"
+              ],
+              "source_english": "Explain the analogy of the sun’s three features.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la expresión kṣudraṁ hṛdaya-daurbalyam?",
+              "refs": [
+                "BG.2.3"
+              ],
+              "source_english": "What is the meaning of the phrase ksudram hrdaya-daurbalyam?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la expresión dharma-sammūḍha-cetāḥ?",
+              "refs": [
+                "BG.2.7"
+              ],
+              "source_english": "What is the meaning of the phrase dharma-sammudha-cetah?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el tamaño del alma y cuál es el síntoma de su existencia?",
+              "refs": [
+                "BG.2.17"
+              ],
+              "source_english": "What is the size of soul and what is the symptom of its existence?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las seis transformaciones a las que está sujeto el cuerpo.",
+              "refs": [
+                "BG.2.20"
+              ],
+              "source_english": "List the six kinds of transformations the body is subject to.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica en español el significado de anu-ātmā y vibhu-ātmā.",
+              "refs": [
+                "BG.2.20"
+              ],
+              "source_english": "Give the English meaning of anu-atma and vibhu-atma.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Qué significa sva-dharma y cuáles son sus dos clases?",
+              "refs": [
+                "BG.2.31"
+              ],
+              "source_english": "What is meant by sva-dharma and what are the two types of sva-dharma?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica en español el significado de las expresiones pratyavāyo na vidyate y vyavasāyātmikā buddhir.",
+              "refs": [
+                "BG.2.40",
+                "BG.2.41"
+              ],
+              "source_english": "Give the English meaning of the phrases pratyavayo na vidyate and vyavasayatmika buddhir.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la palabra prajñā?",
+              "refs": [
+                "BG.2.54"
+              ],
+              "source_english": "What is the meaning of the word prajna?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la expresión paraṁ dṛṣṭvā nivartate?",
+              "refs": [
+                "BG.2.59"
+              ],
+              "source_english": "What is the meaning of the phrase param drstva nivartate?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las ocho etapas de la caída espiritual, en español o sánscrito.",
+              "refs": [
+                "BG.2.62",
+                "BG.2.63"
+              ],
+              "source_english": "List the eight stages of spiritual fall down in English or Sanskrit.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Closed Book Questions",
+          "questions": [
+            {
+              "q": "Presenta argumentos para refutar la teoría māyāvāda, haciendo referencia a los versos y significados de BG 2.12–13.",
+              "refs": [
+                "BG.2.12",
+                "BG.2.13"
+              ],
+              "source_english": "Present arguments to refute Mayavadi theory with reference to BG 2.12-13 verses and purports.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica cómo la aplicación de los principios expuestos en BG 2.14 puede mejorar tu actitud de servicio.",
+              "refs": [
+                "BG.2.14"
+              ],
+              "source_english": "Explain how application of the principles conveyed in BG 2.14 can improve your service attitude.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Resume los principales puntos filosóficos del ātma-tattva expuestos en BG 2.11–30, citando versos fundamentales y analogías de los significados de Śrīla Prabhupāda.",
+              "refs": [
+                "BG.2.11",
+                "BG.2.30"
+              ],
+              "source_english": "Summarize main philosophical points on atma-tattva from BG 2.11-30 with reference to key verses and analogies cited in Śrīla Prabhupāda’s purports.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la importancia de pratyavāyaḥ na vidyate y vyavasāyātmikā buddhi para tu práctica personal de conciencia de Kṛṣṇa.",
+              "refs": [
+                "BG.2.40",
+                "BG.2.41"
+              ],
+              "source_english": "Discuss the relevance of pratyavayah na vidyate and vyavasayatmika buddhi for your personal practice of Krishna consciousness.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera al menos cuatro cualidades de una persona sthita-prajña mencionadas en BG 2.55–71 y explica cómo desarrollarlas te ayudaría a mejorar tus relaciones con los demás.",
+              "refs": [
+                "BG.2.55",
+                "BG.2.71"
+              ],
+              "source_english": "List at least four qualities of a sthita-prajna, as mentioned in BG 2.55-71, and explain how developing them would help you improve your relationships.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica la analogía de los ríos que desembocan en el océano.",
+              "refs": [
+                "BG.2.70"
+              ],
+              "source_english": "Explain the analogy of the rivers entering into the ocean.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Open Book Essays",
+          "questions": [
+            {
+              "q": "Describe la importancia de entregarse al maestro espiritual para resolver las perplejidades de la vida, haciendo referencia a BG 2.6–11.",
+              "refs": [
+                "BG.2.6",
+                "BG.2.11"
+              ],
+              "source_english": "Describe the significance of surrender to guru in order to solve the perplexities of life, with reference to Bhagavad-Gita 2.6-11.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica el proceso de transmigración del alma, haciendo referencia a BG 2.13 y 2.22 y a las analogías de sus significados.",
+              "refs": [
+                "BG.2.13",
+                "BG.2.22"
+              ],
+              "source_english": "Explain the process of transmigration with reference to BG 2.13 and 2.22 and analogies from these purports.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica los principios del ātma-tattva citando al menos cuatro versos de Bhagavad-gītā 2.11–30.",
+              "refs": [
+                "BG.2.11",
+                "BG.2.30"
+              ],
+              "source_english": "Explain the principles of atma-tattva with reference to at least four verses from Bhagavad Gita 2.11-30.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica brevemente los principios del karma-yoga y del buddhi-yoga, haciendo referencia a BG 2.38–53.",
+              "refs": [
+                "BG.2.38",
+                "BG.2.53"
+              ],
+              "source_english": "Briefly explain the principles of karma-yoga/buddhi-yoga with reference to Bhagavad-Gita 2.38-53.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica el proceso de controlar los sentidos mediante la conciencia de Kṛṣṇa, haciendo referencia a BG 2.54–68.",
+              "refs": [
+                "BG.2.54",
+                "BG.2.68"
+              ],
+              "source_english": "Explain the process of sense control by Krishna consciousness with reference to Bhagavad-Gita 2.54-68.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica las etapas de la caída espiritual presentadas en BG 2.62–63.",
+              "refs": [
+                "BG.2.62",
+                "BG.2.63"
+              ],
+              "source_english": "Explain the stages of fall down as presented in Bhagavad-Gita 2.62-63.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "sections": [
+        {
+          "type": "Closed Book Short",
+          "questions": [
+            {
+              "q": "¿Con qué se confunde a veces la conciencia de Kṛṣṇa?",
+              "refs": [
+                "BG.3.1"
+              ],
+              "source_english": "What is Krishna consciousness sometimes misunderstood as?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica la analogía de una vacuna antiséptica.",
+              "refs": [
+                "BG.3.14"
+              ],
+              "source_english": "Explain the analogy of an antiseptic vaccine.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Por qué una persona plenamente consciente de Kṛṣṇa no está obligada a seguir los mandamientos védicos?",
+              "refs": [
+                "BG.3.17"
+              ],
+              "source_english": "Why is a fully Krishna conscious person not obliged to follow the Vedic injunctions?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la palabra ācārya?",
+              "refs": [
+                "BG.3.21"
+              ],
+              "source_english": "Give the English meaning of acarya.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la expresión nirāśīr nirmamaḥ?",
+              "refs": [
+                "BG.3.30"
+              ],
+              "source_english": "Give the English meaning of the phrase nirasir nirmamo.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera los tres lugares donde reside la lujuria.",
+              "refs": [
+                "BG.3.40"
+              ],
+              "source_english": "List the three sitting places of lust.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Closed Book Questions",
+          "questions": [
+            {
+              "q": "Presenta un resumen del capítulo 3 de la Bhagavad-gītā, identificando los principales conceptos filosóficos, las secciones de versos y la relación entre ellas.",
+              "refs": [
+                "BG.3.1",
+                "BG.3.43"
+              ],
+              "source_english": "Present a summary of Bhagavad-Gita Chapter 3, identifying the main philosophical concepts and sections of verses, and how they connect.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica cómo, mediante la ejecución del saṅkīrtana-yajña, los semidioses quedan automáticamente satisfechos.",
+              "refs": [
+                "BG.3.10",
+                "BG.3.16"
+              ],
+              "source_english": "Explain how by performance of sankirtan-yajna the demigods are automatically satisfied.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica el principio del ācārya mencionado en el significado de BG 3.21 y analiza su importancia.",
+              "refs": [
+                "BG.3.21"
+              ],
+              "source_english": "Explain the Acarya principle as mentioned in the purport to 3.21 and discuss its relevance.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Basándote en BG 3.20–24, identifica los principios del liderazgo espiritual y analiza su importancia para tu vida.",
+              "refs": [
+                "BG.3.20",
+                "BG.3.24"
+              ],
+              "source_english": "Based in BG 3.20-24, identify principles of spiritual leadership and discuss their relevance for you.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Open Book Essays",
+          "questions": [
+            {
+              "q": "Presenta argumentos que demuestren la superioridad del karma-yoga sobre el karma-sannyāsa, haciendo referencia a BG 3.4–9.",
+              "refs": [
+                "BG.3.4",
+                "BG.3.9"
+              ],
+              "source_english": "Give arguments supporting the superiority of karma-yoga over karma-sannyasa with reference to Bhagavad-Gita 3.4-9.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica cómo una persona se purifica gradualmente mediante la ejecución de los yajñas védicos, haciendo referencia a BG 3.10–16.",
+              "refs": [
+                "BG.3.10",
+                "BG.3.16"
+              ],
+              "source_english": "Explain how one gradually becomes purified by the performance of Vedic yajnas with reference to BG 3.10-16.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica la diferencia entre seguir e imitar, utilizando ejemplos del significado de BG 3.24.",
+              "refs": [
+                "BG.3.24"
+              ],
+              "source_english": "Explain the difference between following and imitating with reference to examples from the purport to 3.24.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Extrae principios generales del análisis que Kṛṣṇa hace de la lujuria en BG 3.36–43 y analiza cómo aplicarlos en tu práctica espiritual.",
+              "refs": [
+                "BG.3.36",
+                "BG.3.43"
+              ],
+              "source_english": "Draw general principles from Krishna’s analysis of lust in 3.36-43 and discuss their application in your practice.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza cómo las declaraciones de BG 3.30, tanto del verso como de su significado, influyen en tu actitud hacia el servicio a Kṛṣṇa.",
+              "refs": [
+                "BG.3.30"
+              ],
+              "source_english": "Discuss ways the statements in BG 3.30, verse and purport, impact your attitude toward serving Krishna.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "sections": [
+        {
+          "type": "Closed Book Short",
+          "questions": [
+            {
+              "q": "¿Hace cuántos años el Señor habló la Bhagavad-gītā a Vivasvān?",
+              "refs": [
+                "BG.4.1"
+              ],
+              "source_english": "The Gita was spoken by the Lord to Vivasvan, how many years ago?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las seis clases de avatāras.",
+              "refs": [
+                "BG.4.8"
+              ],
+              "source_english": "List the six kinds of avataras.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las ocho etapas desde śraddhā hasta prema, en español o sánscrito.",
+              "refs": [
+                "BG.4.10"
+              ],
+              "source_english": "List the eight steps from sraddha to prema, in English or Sanskrit.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Qué es un pāṣaṇḍī?",
+              "refs": [
+                "BG.4.12"
+              ],
+              "source_english": "What is a pasandi?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las modalidades de la naturaleza material que predominan en las cuatro divisiones de la sociedad humana.",
+              "refs": [
+                "BG.4.13"
+              ],
+              "source_english": "List the modes predominantly influencing the four divisions of human society.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera los doce mahājanas.",
+              "refs": [
+                "BG.4.16"
+              ],
+              "source_english": "List the 12 mahajanas.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Closed Book Questions",
+          "questions": [
+            {
+              "q": "Presenta un resumen del capítulo 4 de la Bhagavad-gītā, identificando los principales conceptos filosóficos, las secciones de versos y la relación entre ellas.",
+              "refs": [
+                "BG.4.1",
+                "BG.4.42"
+              ],
+              "source_english": "Present a summary of Bhagavad-Gita Chapter 4, identifying the main philosophical concepts, sections of verses, and how they connect.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica cómo BG 4.2 y su significado reflejan la actitud y la misión de Śrīla Prabhupāda con respecto a la Bhagavad-gītā.",
+              "refs": [
+                "BG.4.2"
+              ],
+              "source_english": "Explain how verse 4.2 and Śrīla Prabhupāda’s purport reflect Śrīla Prabhupāda’s mood and mission regarding Bhagavad-Gita.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica el significado de la expresión yogaḥ proktaḥ purātanaḥ.",
+              "refs": [
+                "BG.4.3"
+              ],
+              "source_english": "Explain the significance of the statement yogah proktah puratanah.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica el término ātma-māyayā.",
+              "refs": [
+                "BG.4.6"
+              ],
+              "source_english": "Explain the term atma-mayaya.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica, dando ejemplos, la diferencia entre karma, akarma y vikarma.",
+              "refs": [
+                "BG.4.17",
+                "BG.4.18"
+              ],
+              "source_english": "Explain, giving examples, the distinction between karma, akarma and vikarma.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera algunos de los sacrificios mencionados por Śrī Kṛṣṇa en BG 4.24–33 y explica su propósito último.",
+              "refs": [
+                "BG.4.24",
+                "BG.4.33"
+              ],
+              "source_english": "List some of the sacrifices enumerated by Sri Krishna in Bhagavad-Gita 4.24-33, and explain their ultimate purpose.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Open Book Essays",
+          "questions": [
+            {
+              "q": "Presenta la historia de la transmisión de la Bhagavad-gītā, haciendo referencia a los versos y significados de BG 4.1–3.",
+              "refs": [
+                "BG.4.1",
+                "BG.4.3"
+              ],
+              "source_english": "Present the history of the dissemination of Bhagavad-Gita with reference to BG 4.1-3 verses and purports.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica con tus propias palabras la naturaleza y el propósito de la aparición y las actividades de Kṛṣṇa, haciendo referencia a BG 4.5–9.",
+              "refs": [
+                "BG.4.5",
+                "BG.4.9"
+              ],
+              "source_english": "Explain in your own words the nature and purpose of Krishna’s appearance and activities with reference to BG 4.5-9.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la importancia de los principios expuestos en BG 4.34 y su relevancia para la sociedad, ISKCON y tu vida personal.",
+              "refs": [
+                "BG.4.34"
+              ],
+              "source_english": "Discuss the significance of the principles found in BG 4.34 and their relevance for society, ISKCON and you personally.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "sections": [
+        {
+          "type": "Closed Book Short",
+          "questions": [
+            {
+              "q": "¿Cuál es el significado de la palabra pradhāna?",
+              "refs": [
+                "BG.5.10"
+              ],
+              "source_english": "Give the English meaning of the word pradhana.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la expresión phalaṁ tyaktvā śāntim āpnoti naiṣṭhikīm?",
+              "refs": [
+                "BG.5.12"
+              ],
+              "source_english": "Give the English meaning of the phrase phalam tyaktva santim apnoti naisthikim.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las nueve puertas del cuerpo.",
+              "refs": [
+                "BG.5.13"
+              ],
+              "source_english": "List the nine gates of the body.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de las palabras vibhu y aṇu?",
+              "refs": [
+                "BG.5.15"
+              ],
+              "source_english": "Give the English meaning of the words vibhu and anu.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la expresión paṇḍitāḥ sama-darśinaḥ?",
+              "refs": [
+                "BG.5.18"
+              ],
+              "source_english": "Give the English meaning of the phrase panditah sama-darsinah.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las ocho partes del aṣṭāṅga-yoga.",
+              "refs": [
+                "BG.5.27"
+              ],
+              "source_english": "List the eight limbs of astanga-yoga.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Closed Book Questions",
+          "questions": [
+            {
+              "q": "Presenta un resumen del capítulo 5 de la Bhagavad-gītā, identificando los principales conceptos filosóficos, las secciones de versos y la relación entre ellas.",
+              "refs": [
+                "BG.5.1",
+                "BG.5.29"
+              ],
+              "source_english": "Present a summary of Bhagavad-Gita Chapter 5, identifying main philosophical concepts and sections of verses, and how they connect.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica la analogía de la hoja de loto.",
+              "refs": [
+                "BG.5.10"
+              ],
+              "source_english": "Explain the analogy of lotus leaf.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Qué enseñanzas sobre karma-yoga y karma-sannyāsa presenta Kṛṣṇa en BG 5.2–6?",
+              "refs": [
+                "BG.5.2",
+                "BG.5.6"
+              ],
+              "source_english": "What lessons regarding karma-yoga and karma-sannyasa does Krishna present in BG 5.2-6?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cómo puede una persona llegar a ser querida por todos, según BG 5.7?",
+              "refs": [
+                "BG.5.7"
+              ],
+              "source_english": "How can one become dear to everyone according to BG 5.7?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Kṛṣṇa es el supremo bienqueriente de todos. ¿Qué principios puedes extraer de BG 5.29 para orientar tu relación con los demás?",
+              "refs": [
+                "BG.5.29"
+              ],
+              "source_english": "Krishna is the supreme well-wisher of all. What guidelines can you derive from this verse for your dealings with others?",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Open Book Essays",
+          "questions": [
+            {
+              "q": "Analiza la renunciación artificial (phalgu-vairāgya) y la renunciación apropiada (yukta-vairāgya), haciendo referencia a BG 5.1–2.",
+              "refs": [
+                "BG.5.1",
+                "BG.5.2"
+              ],
+              "source_english": "Discuss phalgu (artificial renunciation) and yukta-vairagya with reference to BG 5.1-2.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica quién es responsable del sufrimiento de las entidades vivientes condicionadas, haciendo referencia a BG 4.14 y 5.14–15.",
+              "refs": [
+                "BG.4.14",
+                "BG.5.14",
+                "BG.5.15"
+              ],
+              "source_english": "Explain who is responsible for the suffering of conditioned living entities with reference to BG 4.14 and 5.14-15.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la aplicación práctica del principio paṇḍitāḥ sama-darśinaḥ, haciendo referencia a BG 5.18.",
+              "refs": [
+                "BG.5.18"
+              ],
+              "source_english": "Discuss practical application of panditah sama-darsinah with reference to Bhagavad-Gita 5.18.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica cómo la aplicación de los principios de BG 5.29 puede contribuir a la paz mundial.",
+              "refs": [
+                "BG.5.29"
+              ],
+              "source_english": "Explain how application of the principles of BG 5.29 can contribute to world peace.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "sections": [
+        {
+          "type": "Closed Book Short",
+          "questions": [
+            {
+              "q": "¿Cuándo es la mente el mejor amigo y cuándo es el peor enemigo?",
+              "refs": [
+                "BG.6.6"
+              ],
+              "source_english": "When is the mind the best of friends and when is the mind greatest enemy?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de las palabras ekākī y śucau deśe?",
+              "refs": [
+                "BG.6.10",
+                "BG.6.11"
+              ],
+              "source_english": "Give the English meaning of the words ekaki and sucau dese.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el resultado de los excesos en comer, dormir, defenderse y aparearse?",
+              "refs": [
+                "BG.6.17"
+              ],
+              "source_english": "What is the result of extravagance in eating, sleeping, defending, and mating?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado del término yukta?",
+              "refs": [
+                "BG.6.18"
+              ],
+              "source_english": "Give the English meaning of the term yukta.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica mediante una analogía por qué la mente es fuerte y obstinada.",
+              "refs": [
+                "BG.6.34"
+              ],
+              "source_english": "Explain with an analogy that the mind is strong and obstinate.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Describe qué sucede con un yogī que no alcanza el éxito en su práctica.",
+              "refs": [
+                "BG.6.41",
+                "BG.6.42"
+              ],
+              "source_english": "Describe what happens to an unsuccessful yogi.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Closed Book Questions",
+          "questions": [
+            {
+              "q": "Presenta un resumen del capítulo 6 de la Bhagavad-gītā, identificando los principales conceptos filosóficos, las secciones de versos y la relación entre ellas.",
+              "refs": [
+                "BG.6.1",
+                "BG.6.47"
+              ],
+              "source_english": "Present a summary of Bhagavad-Gita Chapter 6, identifying main philosophical concepts and sections of verses, and how they connect.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza cómo BG 6.9 te inspira a cultivar relaciones amistosas y respetuosas con los vaiṣṇavas.",
+              "refs": [
+                "BG.6.9"
+              ],
+              "source_english": "Discuss how BG 6.9 inspires you to cultivate friendly Vaishnava dealings.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica el significado de la historia del gorrión.",
+              "refs": [
+                "BG.6.24"
+              ],
+              "source_english": "Explain the significance of the story of the sparrow.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza el significado de la palabra bhajate y su diferencia con la palabra «adoración», según la explicación de Śrīla Prabhupāda en el significado de BG 6.47.",
+              "refs": [
+                "BG.6.47"
+              ],
+              "source_english": "Discuss the significance of the word bhajate and its distinction from the word worship as explained in Bhagavad-Gita 6.47 purport.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica cómo los principios del aṣṭāṅga-yoga están incluidos en la conciencia de Kṛṣṇa.",
+              "refs": [
+                "BG.6.1",
+                "BG.6.47"
+              ],
+              "source_english": "Explain how the principles of astanga-yoga are included in Krishna consciousness.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Open Book Essays",
+          "questions": [
+            {
+              "q": "Explica las etapas del aṣṭāṅga-yoga, incluyendo yogārurukṣu y yogārūḍha, y cómo el aṣṭāṅga-yoga se relaciona finalmente con el bhakti-yoga.",
+              "refs": [
+                "BG.6.3"
+              ],
+              "source_english": "Explain the stages of astanga-yoga, including yogaruruksu and yogarudha, and how astanga-yoga ultimately relates to bhakti-yoga.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la importancia de la regulación en todos los aspectos de la vida, haciendo referencia a BG 6.16–17.",
+              "refs": [
+                "BG.6.16",
+                "BG.6.17"
+              ],
+              "source_english": "Discuss the importance of regulation in all spheres of life with reference to BG 6.16-17.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Resume por qué la práctica del aṣṭāṅga-yoga resulta poco práctica para la era moderna, haciendo referencia a BG 6.10–14 y 6.33–35.",
+              "refs": [
+                "BG.6.10",
+                "BG.6.14",
+                "BG.6.33",
+                "BG.6.35"
+              ],
+              "source_english": "Summarize the impracticality of astanga-yoga for the modern age with reference to BG 6.10-14 and 6.33-35.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Expón la preocupación de Arjuna y la respuesta de Kṛṣṇa acerca del destino del yogī que no alcanza el éxito.",
+              "refs": [
+                "BG.6.37",
+                "BG.6.45"
+              ],
+              "source_english": "State Arjuna’s concern and Krishna’s response in relation to the destination of the unsuccessful yogi.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": "1-6",
+      "sections": [
+        {
+          "type": "Closed Book Thematic Questions",
+          "questions": [
+            {
+              "q": "Haciendo referencia a los versos y significados del capítulo 2 de la Bhagavad-gītā, explica la afirmación del significado de BG 2.25 según la cual no existe otra fuente para comprender el alma que el estudio de los Vedas.",
+              "refs": [
+                "BG.2.25"
+              ],
+              "source_english": "With reference to Bhagavad-gita Chapter 2 verses and purports, explain the statement from BG 2.25 purport that there is no source of understanding the soul except by studying the Vedas.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la relevancia de la afirmación del significado de BG 5.7 según la cual una persona que controla sus sentidos no puede ofender a nadie.",
+              "refs": [
+                "BG.5.7"
+              ],
+              "source_english": "Discuss the relevance of the statement from BG 5.7 purport that a man of controlled senses cannot be offensive to anyone.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la relevancia de la afirmación del significado de BG 5.12 acerca de comprender que no existe nada aparte de Kṛṣṇa como fundamento de la paz y la ausencia de temor.",
+              "refs": [
+                "BG.5.12"
+              ],
+              "source_english": "Discuss the relevance of the statement from BG 5.12 purport concerning realization that there is no existence besides Krishna as the platform of peace and fearlessness.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Escoge tres versos de los capítulos 1–6 de la Bhagavad-gītā que, si los aplicaras, fortalecerían tu propia conciencia de Kṛṣṇa. Escribe un plan para ponerlos en práctica.",
+              "refs": [],
+              "source_english": "Choose three verses from Bhagavad-gita Chapters 1-6 which, if applied, would enhance your own Krishna consciousness. Write down a plan for doing this.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Escoge cuatro versos de los capítulos 1–6 de la Bhagavad-gītā que consideres especialmente útiles para la prédica. Explica tus razones y analízalos.",
+              "refs": [],
+              "source_english": "Choose four verses from Bhagavad-gita Chapters 1-6 which you consider most useful in preaching. Explain why and discuss.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Open Book Thematic Questions",
+          "questions": [
+            {
+              "q": "Analiza la relevancia de los argumentos de Arjuna sobre la destrucción de las tradiciones familiares para la sociedad moderna y las comunidades conscientes de Kṛṣṇa, haciendo referencia a los capítulos 1 y 2.",
+              "refs": [
+                "BG.1.39",
+                "BG.2.1"
+              ],
+              "source_english": "Discuss the relevance for modern society and Krishna conscious communities of Arjuna’s arguments about destruction of family traditions, with reference to Chapters 1 and 2.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la importancia del principio expuesto en el significado de BG 1.41 acerca del servicio devocional y los antepasados, haciendo referencia a los capítulos 1–3.",
+              "refs": [
+                "BG.1.41"
+              ],
+              "source_english": "Discuss the significance of the principle in BG 1.41 purport concerning devotional service and forefathers, with reference to Chapters 1-3.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Demuestra con tus propias palabras la superioridad del bhakti sobre los demás sistemas de yoga, haciendo referencia a los capítulos 2–6.",
+              "refs": [
+                "BG.2.1",
+                "BG.6.47"
+              ],
+              "source_english": "Establish in your own words the superiority of bhakti over the other yoga systems with reference to Chapters 2-6.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica, con referencias a los capítulos 1–6, la relevancia de la afirmación del significado de BG 3.29 según la cual los devotos son más bondadosos que el Señor porque comprenden el propósito del Señor.",
+              "refs": [
+                "BG.3.29"
+              ],
+              "source_english": "Explain, with references to Chapters 1-6, the relevance of the statement in BG 3.29 purport that devotees are more kind than the Lord because they understand the purpose of the Lord.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica cómo la Bhagavad-gītā parte de una situación real de la vida, la examina filosóficamente y ofrece una solución universal, haciendo referencia a los capítulos 1–6.",
+              "refs": [],
+              "source_english": "Explain how Bhagavad-gita takes a real-life situation, examines it philosophically, and offers a universal solution, with reference to Chapters 1-6.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "translation_language": "es",
+  "translation_status": "borrador_pendiente_revision",
+  "translation_note": "Traducción española de las 106 preguntas BOEX BG 1–6. Textos originales ingleses y referencias conservados. Pendiente de revisión académica antes de publicación."
+}

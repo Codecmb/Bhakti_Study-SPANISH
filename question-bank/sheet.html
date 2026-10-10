@@ -115,6 +115,36 @@ function structured(record,data){
   `;
 }
 
+function academyLessons(record,data){
+  const groups=new Map();
+
+  for(const q of data.questions||[]){
+    const lesson=q.lesson_id;
+    if(!groups.has(lesson))groups.set(lesson,[]);
+    groups.get(lesson).push(q);
+  }
+
+  return `
+    <section class="card">
+      <div class="eyebrow">Bhakti Vedānta · Śrīmad-Bhāgavatam · Canto 7</div>
+      <h1>Academia — Preguntas originales</h1>
+      <p>22 lecciones · ${data.questions.length} preguntas</p>
+    </section>
+
+    ${[...groups.entries()].map(([lesson,questions],i)=>`
+      <section class="card" data-question-ref="${esc(lesson)}">
+        <h2>Lección ${i+1}</h2>
+        <p>
+          <a class="button secondary"
+             href="questions.html?sheet=${encodeURIComponent(id)}&ref=${encodeURIComponent(lesson)}">
+            Abrir las ${questions.length} preguntas
+          </a>
+        </p>
+      </section>
+    `).join('')}
+  `;
+}
+
 function flatCanonical(record,data){
   const groups=new Map();
 
@@ -172,9 +202,11 @@ async function init(){
   try{
     const {record,data}=await loadRecord();
 
-    host.innerHTML=record.adapter==='flat-canonical'
-      ? flatCanonical(record,data)
-      : structured(record,data);
+    host.innerHTML=record.adapter==='academy-lessons'
+      ? academyLessons(record,data)
+      : record.adapter==='flat-canonical'
+        ? flatCanonical(record,data)
+        : structured(record,data);
 
     if(targetRef){
       const target=[...host.querySelectorAll('[data-question-ref]')]
