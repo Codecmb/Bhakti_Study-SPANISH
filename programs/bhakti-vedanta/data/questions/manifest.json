@@ -1,0 +1,17 @@
+{
+  "schema": "bhakti-study.question-manifest.v1",
+  "program": "bhakti-vedanta",
+  "provider": "boex",
+  "shards": [
+    {
+      "scope": "BVED.U2",
+      "path": "collected-sources/bved-u2.json",
+      "count": 50
+    },
+    {
+      "scope": "BVED.U3",
+      "path": "collected-sources/bved-u3.json",
+      "count": 10
+    }
+  ]
+}

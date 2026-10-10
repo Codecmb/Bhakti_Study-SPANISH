@@ -1,0 +1,90 @@
+{
+  "schema": "bhakti-study.question-shard.v1",
+  "program": "bhakti-vedanta",
+  "provider": "source-file",
+  "scope": "BVED.U3",
+  "source_file": "bhakti-vedanta/bved-u3.json",
+  "note": "Traducción inicial; requiere revisión editorial. Texto inglés y referencias conservados cuando están presentes en la fuente.",
+  "questions": [
+    {
+      "source_question_id": "BVED.U3-Q001",
+      "question": "¿Qué está formando el movimiento para la conciencia de Kṛṣṇa?",
+      "answer": "Brāhmaṇas para orientar a la sociedad",
+      "source_english": "What is Krishna consciousness movement training?",
+      "source_answer_english": "Brahmanas to guide society",
+      "source_url": "bhakti-vedanta/bved-u3.json"
+    },
+    {
+      "source_question_id": "BVED.U3-Q002",
+      "question": "¿Por qué la actitud de entrega de una esposa no equivale a una mentalidad de esclavitud?",
+      "answer": "Conquista el corazón de su esposo",
+      "source_english": "How is wife's submission not slave mentality?",
+      "source_answer_english": "It conquers husband's heart",
+      "source_url": "bhakti-vedanta/bved-u3.json"
+    },
+    {
+      "source_question_id": "BVED.U3-Q003",
+      "question": "¿Qué ventaja tienen las monarquías conscientes de Kṛṣṇa?",
+      "answer": "Los ciudadanos se vuelven devotos",
+      "source_english": "What advantage do Krishna conscious monarchies have?",
+      "source_answer_english": "Citizens become devotees",
+      "source_url": "bhakti-vedanta/bved-u3.json"
+    },
+    {
+      "source_question_id": "BVED.U3-Q004",
+      "question": "¿Cómo llega un devoto a controlar al Señor?",
+      "answer": "Indirectamente, al satisfacer al Señor",
+      "source_english": "How does devotee become controller of Lord?",
+      "source_answer_english": "Indirectly by satisfying Lord",
+      "source_url": "bhakti-vedanta/bved-u3.json"
+    },
+    {
+      "source_question_id": "BVED.U3-Q005",
+      "question": "¿Qué debe aceptar un devoto para predicar?",
+      "answer": "Cosas materiales sin apego",
+      "source_english": "What should devotee accept for preaching?",
+      "source_answer_english": "Material things without attachment",
+      "source_url": "bhakti-vedanta/bved-u3.json"
+    },
+    {
+      "source_question_id": "BVED.U3-Q006",
+      "question": "¿Cómo debe reaccionar un devoto ante la tortura infligida por los no devotos?",
+      "answer": "Tolerarla sin perturbarse",
+      "source_english": "How should devotee react to torture by nondevotees?",
+      "source_answer_english": "Tolerate without disturbance",
+      "source_url": "bhakti-vedanta/bved-u3.json"
+    },
+    {
+      "source_question_id": "BVED.U3-Q007",
+      "question": "¿Cuál es la causa original de la creación material?",
+      "answer": "La mirada del Señor",
+      "source_english": "What is original cause of material creation?",
+      "source_answer_english": "Lord's glance",
+      "source_url": "bhakti-vedanta/bved-u3.json"
+    },
+    {
+      "source_question_id": "BVED.U3-Q008",
+      "question": "¿A quién se denomina demonio?",
+      "answer": "Quien se opone a Dios y a Sus devotos",
+      "source_english": "Who is called a demon?",
+      "source_answer_english": "Against God and devotees",
+      "source_url": "bhakti-vedanta/bved-u3.json"
+    },
+    {
+      "source_question_id": "BVED.U3-Q009",
+      "question": "¿Cómo se puede reconocer a un vaiṣṇava?",
+      "answer": "Por el favor del Señor manifestado en sus actividades",
+      "source_english": "How can Vaishnava be understood?",
+      "source_answer_english": "By Lord's favor in activities",
+      "source_url": "bhakti-vedanta/bved-u3.json"
+    },
+    {
+      "source_question_id": "BVED.U3-Q010",
+      "question": "¿Qué se desarrolla cuando Durvāsā Muni es perseguido?",
+      "answer": "Inteligencia",
+      "source_english": "What develops when Durvasa Muni was persecuted?",
+      "source_answer_english": "Intelligence",
+      "source_url": "bhakti-vedanta/bved-u3.json"
+    }
+  ]
+}

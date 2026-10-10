@@ -1,0 +1,15 @@
+{
+  "schema": "bhakti-study.question-bank-registry.v1",
+  "program": "bhakti-vedanta",
+  "banks": [
+    {
+      "id": "boex",
+      "label": "Preguntas Bhakti Vedānta",
+      "description": "Preguntas recopiladas y traducidas al español.",
+      "provider": "boex",
+      "manifest": "manifest.json",
+      "default": true,
+      "provenance_label": "Fuentes recopiladas; verificar procedencia individual"
+    }
+  ]
+}
