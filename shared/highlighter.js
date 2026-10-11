@@ -74,7 +74,7 @@
 
       const mark=document.createElement('mark');
       mark.dataset.studentHighlight=item.id;
-      mark.title='Student highlight — click to remove';
+      mark.title='Texto resaltado — haz clic para eliminar';
       mark.className='student-highlight';
 
       range.surroundContents(mark);
@@ -115,7 +115,7 @@
     popup=document.createElement('button');
     popup.type='button';
     popup.className='button student-highlight-action';
-    popup.textContent='Highlight';
+    popup.textContent='Resaltar';
 
     const box=range.getBoundingClientRect();
     popup.style.position='absolute';
@@ -196,7 +196,7 @@
       const mark=e.target.closest?.('mark[data-student-highlight]');
       if(mark&&root.contains(mark)){
         e.preventDefault();
-        if(confirm('Remove this highlight?'))removeHighlight(mark);
+        if(confirm('¿Deseas eliminar este resaltado?'))removeHighlight(mark);
       }
     };
   }

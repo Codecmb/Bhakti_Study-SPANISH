@@ -129,7 +129,7 @@
   function coverageLabel(record){
     const c=record.coverage||{};
     if(c.type==='chapter-range' && c.start && c.end){
-      return `Chapters ${c.start}–${c.end}`;
+      return `Capítulos ${c.start}–${c.end}`;
     }
     return '';
   }

@@ -13,7 +13,7 @@
     const q=new URLSearchParams(location.search),mode=q.get('mode')||'understanding',ref=q.get('ref')||'';
     const course=await BhaktiProgramData.loadCourse(dataBase),units=course.units||[];
     const uid=q.get('unit')||units[0]?.id||'',unit=units.find(x=>x.id===uid)||units[0];
-    if(!unit)throw new Error('This program has no configured study units.');
+    if(!unit)throw new Error('Este programa no tiene unidades de estudio configuradas.');
     const lesson=(course.lessons?.lessons||course.lessons||[]).find(x=>x.unitId===unit.id);
     const canonical=ref&&(SourceResolver?.canon?.(ref)||ref);
     if(!StudyWorkflow.hasMode(course,mode)){

@@ -145,7 +145,7 @@
 
   async function fileText(file){
     const ext=(file.name.split('.').pop()||'').toLowerCase();
-    if(ext==='csv'){const raw=await file.text(),questions=csvQuestions(raw);return {text:questions.map((q,i)=>`${i+1}. ${q}`).join('\n'),automatic:true,questions,note:`Read ${questions.length} question${questions.length===1?'':'s'} from CSV.`}}
+    if(ext==='csv'){const raw=await file.text(),questions=csvQuestions(raw);return {text:questions.map((q,i)=>`${i+1}. ${q}`).join('\n'),automatic:true,questions,note:`Se leyeron ${questions.length} preguntas del archivo CSV.`}}
     if(['txt','md','rtf'].includes(ext)){const raw=await file.text();return {text:ext==='rtf'?rtfToText(raw):raw,automatic:true}}
     if(ext==='pdf'){try{const text=await pdfText(file);return {text,automatic:true,note:'PDF text extracted locally in your browser.'}}catch(e){return {text:'',automatic:false,reason:e.message+' The file was not uploaded. Install the bundled PDF.js files, then drop it again.'}}}
     if(ext==='odt'){try{const text=await odtText(file);return {text,automatic:true,note:'El texto del ODT de LibreOffice se extrajo localmente en tu navegador.'}}catch(e){return {text:'',automatic:false,reason:'No se pudo leer este archivo ODT: '+e.message}}}
@@ -167,7 +167,7 @@
       ${items.map(batch=>`
         <div class="notice" style="margin:.5rem 0">
           <strong>${esc(batch.title)}</strong>
-          <div class="small">${batch.questions.length} question${batch.questions.length===1?'':'s'}${batch.source_file?` · ${esc(batch.source_file)}`:''}</div>
+          <div class="small">${batch.questions.length} pregunta${batch.questions.length===1?'':'s'}${batch.source_file?` · ${esc(batch.source_file)}`:''}</div>
           <p><button class="button secondary qsiRemoveManagedBatch" type="button" data-import-id="${esc(batch.id)}">Remove Imported Sheet</button></p>
         </div>
       `).join('')}
@@ -200,7 +200,7 @@
       batchBox.innerHTML=`<hr><h4>Imported Sheets</h4>${items.map(batch=>`
         <div class="notice" style="margin:.5rem 0">
           <strong>${esc(batch.title)}</strong>
-          <div class="small">${batch.questions.length} question${batch.questions.length===1?'':'s'}${batch.source_file?` · ${esc(batch.source_file)}`:''}</div>
+          <div class="small">${batch.questions.length} pregunta${batch.questions.length===1?'':'s'}${batch.source_file?` · ${esc(batch.source_file)}`:''}</div>
           <p><button class="button secondary qsiRemoveBatch" type="button" data-import-id="${esc(batch.id)}">Remove Imported Sheet</button></p>
         </div>
       `).join('')}`;

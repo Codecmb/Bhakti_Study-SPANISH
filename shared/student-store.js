@@ -31,7 +31,7 @@
     return {format:'bhakti-study-student-backup',version:1,exported_at:new Date().toISOString(),records:allEntries()};
   }
   function importBackup(data,{replace=false}={}){
-    if(!data||data.format!=='bhakti-study-student-backup'||data.version!==1||!Array.isArray(data.records))throw Error('Unsupported Bhakti Study backup.');
+    if(!data||data.format!=='bhakti-study-student-backup'||data.version!==1||!Array.isArray(data.records))throw Error('El archivo de respaldo de Bhakti Study no tiene un formato compatible.');
     if(replace) allEntries().forEach(r=>remove(r.type,r.id));
     let imported=0;
     data.records.forEach(r=>{if(r&&typeof r.type==='string'&&typeof r.id==='string'){set(r.type,r.id,r.value??'');imported++;}});

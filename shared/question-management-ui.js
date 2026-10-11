@@ -31,7 +31,7 @@
       </p>`:'')+
       '<p><button id="saveQuestions" class="button">Guardar Respuestas</button></p>'+
       (deleted.length?`<details>
-        <summary><strong>Deleted Questions (${deleted.length})</strong></summary>
+        <summary><strong>Preguntas eliminadas (${deleted.length})</strong></summary>
         ${deleted.map(x=>`<article class="question-card">
           <p>${x.question}</p>
           <button class="button secondary restoreQuestion" data-qid="${x.id}">Restaurar</button>

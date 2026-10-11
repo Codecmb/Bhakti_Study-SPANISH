@@ -7,7 +7,7 @@
   ]);
   const reqMap=Object.fromEntries(reqs.units.map(x=>[x.id,x.references]));
   document.querySelector('#title').textContent=course.title;
-  document.querySelector('#subtitle').textContent='Four books · five study units · 45 mapped memorization ślokas';
+  document.querySelector('#subtitle').textContent='Cuatro libros · cinco unidades de estudio · 45 ślokas de memorización registrados';
   const host=document.querySelector('#courseUnits');
   host.innerHTML=course.units.map(u=>{
     const refs=reqMap[u.id]||[];
@@ -17,5 +17,5 @@
       <div class="action-grid">${StudyWorkflow.buttons(course,{program:'bhakti-sastri',unit:u.id})}</div></section>`;
   }).join('');
   host.addEventListener('click',e=>{if(!e.target.matches('.slokaToggle'))return; const x=document.getElementById('slokas-'+e.target.dataset.id);x.hidden=!x.hidden;});
-  document.querySelector('#slokaProvider').textContent=`Ślokas Requeridos open the Academy's internal primary-source verse first. Śloka Lab (${integ.provider}) is optional and used only for memorization practice.`;
+  document.querySelector('#slokaProvider').textContent=`Los ślokas requeridos se abren primero en la fuente primaria interna de la Academia. Śloka Lab (${integ.provider}) es opcional y se utiliza únicamente para practicar la memorización.`;
 })();
