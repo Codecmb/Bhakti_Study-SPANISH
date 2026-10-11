@@ -1,0 +1,90 @@
+{
+  "schema": "bhakti-study.search-manifest.v1",
+  "books": [
+    {
+      "book": "bg-es",
+      "file": "books/bg-es.json",
+      "count": 653
+    },
+    {
+      "book": "cc-adi-es",
+      "file": "books/cc-adi-es.json",
+      "count": 2253
+    },
+    {
+      "book": "cc-antya-es",
+      "file": "books/cc-antya-es.json",
+      "count": 3176
+    },
+    {
+      "book": "cc-madhya-es",
+      "file": "books/cc-madhya-es.json",
+      "count": 5930
+    },
+    {
+      "book": "iso-es",
+      "file": "books/iso-es.json",
+      "count": 19
+    },
+    {
+      "book": "nod-es",
+      "file": "books/nod-es.json",
+      "count": 53
+    },
+    {
+      "book": "noi-es",
+      "file": "books/noi-es.json",
+      "count": 11
+    },
+    {
+      "book": "sb-canto-1-es",
+      "file": "books/sb-canto-1-es.json",
+      "count": 779
+    },
+    {
+      "book": "sb-canto-10-es",
+      "file": "books/sb-canto-10-es.json",
+      "count": 3572
+    },
+    {
+      "book": "sb-canto-2-es",
+      "file": "books/sb-canto-2-es.json",
+      "count": 371
+    },
+    {
+      "book": "sb-canto-3-es",
+      "file": "books/sb-canto-3-es.json",
+      "count": 1388
+    },
+    {
+      "book": "sb-canto-4-es",
+      "file": "books/sb-canto-4-es.json",
+      "count": 1390
+    },
+    {
+      "book": "sb-canto-5-es",
+      "file": "books/sb-canto-5-es.json",
+      "count": 650
+    },
+    {
+      "book": "sb-canto-6-es",
+      "file": "books/sb-canto-6-es.json",
+      "count": 773
+    },
+    {
+      "book": "sb-canto-7-es",
+      "file": "books/sb-canto-7-es.json",
+      "count": 676
+    },
+    {
+      "book": "sb-canto-8-es",
+      "file": "books/sb-canto-8-es.json",
+      "count": 848
+    },
+    {
+      "book": "sb-canto-9-es",
+      "file": "books/sb-canto-9-es.json",
+      "count": 846
+    }
+  ]
+}

@@ -49,7 +49,7 @@ function sidebar(a='home',rootOverride=null){
    ]]
  ];
  const grouped=groups.map(([label,items])=>`<div class="nav-group"><div class="nav-label">${label}</div>${items.map(link).join('')}</div>`).join('');
- document.querySelector('.sidebar').innerHTML=`<div class="brand"><img src="${R}assets/bhakti-study-logo.png" alt="Estudio del Bhakti En Español" style="display:block;width:118px;height:118px;object-fit:contain;margin:0 auto 10px"><div>Estudio del Bhakti En Español</div></div><nav class="nav">${link(home)}${grouped}</nav>`;
+ document.querySelector('.sidebar').innerHTML=`<div class="brand"><img src="${R}assets/bhakti-study-logo.png" alt="Estudio del Bhakti En Español" style="display:block;width:118px;height:118px;object-fit:contain;margin:0 auto 10px"><div>Estudio del Bhakti En Español</div></div><nav class="nav">${link(home)}<a class="nav-link" href="${R}student/search.html">🔎 Búsqueda Global</a>${grouped}</nav>`;
 
  const journalSidebarLink=document.querySelector('.sidebar a[href*="student/journal.html"]');
  if(journalSidebarLink){

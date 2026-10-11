@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Búsqueda Global — Bhakti Study</title>
+<link rel="stylesheet" href="../shared/styles.css">
+<style>
+.search-controls{display:flex;flex-wrap:wrap;gap:.7rem;margin:1rem 0}
+.search-controls input{flex:1;min-width:220px}
+.search-controls select{min-width:150px}
+.search-result{padding:1rem 0;border-bottom:1px solid #8884}
+.search-result h3{margin:.2rem 0}
+.search-meta{font-size:.85rem;opacity:.75}
+.search-snippet{white-space:pre-wrap;overflow-wrap:anywhere}
+#searchStatus{margin:1rem 0}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar"></aside>
+<main class="main">
+<div class="eyebrow">Academia Bhakti Study</div>
+<h1>Búsqueda Global</h1>
+<p>Busca palabras, referencias y conceptos en la biblioteca académica.</p>
+
+<section class="card">
+<div class="search-controls">
+<input id="searchQuery" class="field" type="search"
+placeholder="Ej.: alma, bhakti, BG 2.13">
+<select id="searchMode" class="field">
+<option value="both">Literal y conceptual</option>
+<option value="literal">Solo literal</option>
+<option value="conceptual">Solo conceptual</option>
+</select>
+<select id="searchCategory" class="field">
+<option value="all">Todo el contenido</option>
+<option value="book">Libros</option>
+<option value="question">Preguntas</option>
+<option value="lesson">Lecciones</option>
+<option value="sandarbha">Sandarbhas</option>
+</select>
+<button id="searchButton" class="button" type="button">Buscar</button>
+</div>
+<p id="searchStatus" class="small" role="status"></p>
+<div id="searchResults"></div>
+</section>
+</main>
+</div>
+
+<script src="../shared/app.js"></script>
+<script src="../shared/global-search.js"></script>
+<script>sidebar("global-search", "../");</script>
+<script>
+(async function(){
+  const $=id=>document.getElementById(id);
+  const cache=new Map();
+  const labels={
+    book:'Libro',question:'Pregunta',
+    lesson:'Lección',sandarbha:'Sandarbha'
+  };
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({
+    '&':'&amp;','<':'&lt;','>':'&gt;',
+    '"':'&quot;',"'":'&#39;'
+  }[c]));
+
+  async function loadCategory(category){
+    if(cache.has(category))return cache.get(category);
+    if(category==='book'){
+      const response=await fetch(
+        '../data/search-index/books-manifest.json'
+      );
+
+      if(!response.ok){
+        throw new Error('No se pudo cargar el catálogo de libros');
+      }
+
+      const manifest=await response.json();
+      const records=[];
+
+      for(const entry of manifest.books){
+        const key='book:'+entry.book;
+
+        if(!cache.has(key)){
+          const r=await fetch(
+            '../data/search-index/'+entry.file
+          );
+
+          if(!r.ok){
+            throw new Error(
+              'No se pudo cargar el libro '+entry.book
+            );
+          }
+
+          const data=await r.json();
+          cache.set(key,data.records||[]);
+        }
+
+        records.push(...cache.get(key));
+      }
+
+      cache.set(category,records);
+      return records;
+    }
+
+    const response=await fetch(
+      '../data/search-index/'+category+'.json'
+    );
+
+    if(!response.ok){
+      throw new Error(
+        'No se pudo cargar '+category+
+        ': HTTP '+response.status
+      );
+    }
+
+    const data=await response.json();
+    cache.set(category,data.records||[]);
+    return cache.get(category);
+  }
+
+  function sourceHref(item){
+    if(item.type==='book'){
+      const book=String(item.source||'').trim();
+      const ref=String(item.reference||'').trim();
+
+      if(!book || !ref)return '';
+
+      let canonical=ref;
+
+      if(book.startsWith('cc-')){
+        const match=ref.match(
+          /^(adi|madhya|antya)\.(\d+)\.(\d+(?:-\d+)?)$/i
+        );
+
+        if(match){
+          canonical=
+            'CC.'+
+            match[1].toUpperCase()+'.'+
+            match[2]+'.'+match[3];
+        }
+      }
+
+      const params=new URLSearchParams({
+        book,
+        ref:canonical
+      });
+
+      return '../library/reader.html?'+params.toString();
+    }
+
+    if(item.type==='sandarbha'){
+      const work=String(item.source||'').trim();
+      const allowed=[
+        'tattva','bhagavat','paramatma',
+        'krsna','bhakti','priti'
+      ];
+
+      if(!allowed.includes(work))return '';
+
+      const reference=String(item.reference||item.id||'');
+      const match=reference.match(/\.(\d+)$/);
+
+      if(!match)return '';
+
+      const n=Number(match[1]);
+      if(!Number.isSafeInteger(n)||n<1)return '';
+
+      return '../programs/sat-sandarbhas/'+
+        encodeURIComponent(work)+
+        '/index.html?n='+encodeURIComponent(n);
+    }
+
+    if(item.type==='lesson'){
+      const program=String(item.program||'').trim();
+
+      if(![
+        'bhakti-sastri',
+        'bhakti-vaibhava',
+        'bhakti-vedanta',
+        'bhakti-sarvabhauma'
+      ].includes(program))return '';
+
+      return '../programs/'+encodeURIComponent(program)+'/index.html';
+    }
+
+    return '';
+  }
+
+  function renderSnippet(element,record,query){
+    const body=String(record.text||'')
+      .replace(/\\n/g,' ')
+      .replace(/\\r/g,' ')
+      .replace(/\\t/g,' ')
+      .replace(/\s+/g,' ')
+      .trim();
+    const normalized=GlobalSearch.normalize(query);
+    const words=normalized.split(' ').filter(Boolean);
+
+    if(!body){
+      element.textContent='Sin fragmento disponible.';
+      return;
+    }
+
+    // Buscar la coincidencia sin distinguir mayúsculas ni acentos.
+    const fold=value=>String(value)
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g,'')
+      .toLowerCase();
+
+    const folded=fold(body);
+    const candidates=[
+      normalized,
+      ...words
+    ].filter(Boolean);
+
+    let position=-1;
+    let length=0;
+
+    for(const candidate of candidates){
+      const index=folded.indexOf(candidate);
+      if(index>=0 && (position<0 || index<position)){
+        position=index;
+        length=candidate.length;
+      }
+    }
+
+    // En coincidencias conceptuales, buscar términos relacionados.
+    if(position<0 && typeof GlobalSearch.expand==='function'){
+      for(const candidate of GlobalSearch.expand(query)){
+        const index=folded.indexOf(candidate);
+        if(index>=0){
+          position=index;
+          length=candidate.length;
+          break;
+        }
+      }
+    }
+
+    const start=position<0?0:Math.max(0,position-110);
+    const end=Math.min(body.length,(position<0?0:position)+240);
+
+    element.replaceChildren();
+
+    if(start>0)element.append('…');
+
+    const fragment=body.slice(start,Math.max(end,Math.min(320,body.length)));
+
+    if(position>=0 && position>=start && position<start+fragment.length){
+      const relative=position-start;
+      element.append(fragment.slice(0,relative));
+
+      const mark=document.createElement('mark');
+      mark.textContent=fragment.slice(relative,relative+length);
+      element.append(mark);
+
+      element.append(fragment.slice(relative+length));
+    }else{
+      element.append(fragment);
+    }
+
+    if(start+fragment.length<body.length)element.append('…');
+  }
+
+  async function run(){
+    const query=$('searchQuery').value.trim();
+    if(!query)return;
+
+    const button=$('searchButton');
+    const status=$('searchStatus');
+    const results=$('searchResults');
+    const category=$('searchCategory').value;
+    const mode=$('searchMode').value;
+
+    button.disabled=true;
+    results.replaceChildren();
+    status.textContent='Cargando índices y buscando…';
+
+    try{
+      const categories=category==='all'
+        ? ['book','question','lesson','sandarbha']
+        : [category];
+
+      const collections=await Promise.all(
+        categories.map(loadCategory)
+      );
+
+      const records=collections.flat();
+      let matches=GlobalSearch.search(query,records,{
+        mode:mode==='conceptual'?'both':mode,
+        limit:100
+      });
+
+      if(mode==='conceptual'){
+        matches=matches.filter(x=>x.matchType==='conceptual');
+      }
+
+      status.textContent=
+        matches.length+' resultados mostrados (máximo 100).';
+
+      if(!matches.length){
+        results.textContent='No se encontraron coincidencias.';
+        return;
+      }
+
+      const fragment=document.createDocumentFragment();
+
+      for(const item of matches){
+        const article=document.createElement('article');
+        article.className='search-result';
+
+        const heading=document.createElement('h3');
+        heading.textContent=item.title||item.reference||item.id;
+
+        const meta=document.createElement('p');
+        meta.className='search-meta';
+        meta.textContent=[
+          labels[item.type]||item.type,
+          item.program,
+          item.reference,
+          item.language==='en'?'Texto inglés':'',
+          item.matchType==='literal'
+            ? 'Coincidencia literal':'Coincidencia conceptual'
+        ].filter(Boolean).join(' · ');
+
+        const paragraph=document.createElement('p');
+        paragraph.className='search-snippet';
+        renderSnippet(paragraph,item,query);
+
+        article.append(heading,meta,paragraph);
+
+        const href=sourceHref(item);
+
+        if(href){
+          const link=document.createElement('a');
+          link.className='button';
+          link.href=href;
+          link.textContent=item.type==='sandarbha'
+            ? 'Abrir anuccheda →'
+            : item.type==='lesson'
+              ? 'Abrir programa →'
+              : 'Abrir fuente →';
+
+          article.append(link);
+        }
+        fragment.append(article);
+      }
+
+      results.append(fragment);
+    }catch(error){
+      status.textContent='Error: '+error.message;
+    }finally{
+      button.disabled=false;
+    }
+  }
+
+  $('searchButton').addEventListener('click',run);
+  $('searchQuery').addEventListener('keydown',event=>{
+    if(event.key==='Enter')run();
+  });
+})();
+</script>
+</body>
+</html>

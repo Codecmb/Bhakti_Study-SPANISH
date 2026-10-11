@@ -48,7 +48,16 @@ async function load(){
   el.status.hidden=true;el.reader.hidden=false;renderSections(); if(!openTarget()) openSection(0);
  }catch(e){el.status.textContent='No se pudo cargar este libro. '+e.message}
 }
-function openTarget(){if(!targetRef)return false;let want=targetRef.toUpperCase().replace(/Ā/g,'A');for(let si=0;si<book.sections.length;si++){const vs=book.sections[si].verses||[];for(let vi=0;vi<vs.length;vi++){if(canonicalOf(vs[vi]).toUpperCase().replace(/Ā/g,'A')===want){openSection(si,false);openVerse(vi);return true}}}return false}
+function openTarget(){if(!targetRef)return false;let want=targetRef.toUpperCase().replace(/Ā/g,'A');for(let si=0;si<book.sections.length;si++){const vs=book.sections[si].verses||[];for(let vi=0;vi<vs.length;vi++){if([
+  canonicalOf(vs[vi]),
+  vs[vi].id,
+  vs[vi].reference,
+  /^cc-(adi|madhya|antya)-es$/i.test(bookId)
+    ? 'CC.' + String(vs[vi].reference || '')
+        .replace(/^(adi|madhya|antya)\./i,
+          (_, division) => division.toUpperCase() + '.')
+    : ''
+].some(ref => String(ref || '').toUpperCase().replace(/Ā/g,'A') === want)){openSection(si,false);openVerse(vi);return true}}}return false}
 function renderSections(){el.chapters.innerHTML=book.sections.map((s,i)=>`<button class="chapter-btn" data-i="${i}">${esc(s.title||`Sección ${i+1}`)}</button>`).join('');el.chapters.onclick=e=>{let b=e.target.closest('.chapter-btn');if(b)openSection(+b.dataset.i)}}
 function openSection(i,first=true){sectionIndex=i;verseIndex=0;[...el.chapters.children].forEach((b,j)=>b.classList.toggle('active',j===i));let s=book.sections[i];el.sectionHeader.innerHTML=`<h2>${esc(s.title)}</h2><p class="small muted">${esc(s.kind||'sección')} · ${s.verses?.length||0} registro(s) de estudio</p>`;el.verses.innerHTML=(s.verses||[]).map((v,j)=>`<button class="verse-btn" data-i="${j}">${esc(v.reference||v.id||`Texto ${j+1}`)}</button>`).join('');el.verses.onclick=e=>{let b=e.target.closest('.verse-btn');if(b)openVerse(+b.dataset.i)};if(first){if(s.verses?.length)openVerse(0);else el.passage.innerHTML='<p>No hay registros a nivel de verso en esta sección.</p>'}}
 function neighbor(delta){let si=sectionIndex,vi=verseIndex+delta;while(si>=0&&si<book.sections.length){let vs=book.sections[si].verses||[];if(vi>=0&&vi<vs.length)return {si,vi,v:vs[vi]};if(delta>0){si++;vi=0}else{si--;if(si>=0)vi=(book.sections[si].verses||[]).length-1}}return null}
