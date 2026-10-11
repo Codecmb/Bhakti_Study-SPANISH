@@ -560,14 +560,21 @@ try{
       return;
     }
 
-    // Preserve anything already written before following the reader.
-    if(current && (
-      current.title ||
-      current.notes ||
-      current.questions.some(q=>q.text||q.answer)
-    )){
+    // Save the visible form before changing passage.
+    clearTimeout(autosaveTimer);
+    autosaveTimer=null;
+
+    if(current){
       pullForm();
-      current=StudyJournal.save(current);
+
+      const hasContent=
+        current.title ||
+        current.notes ||
+        current.questions.some(q=>q.text||q.answer);
+
+      if(hasContent){
+        current=StudyJournal.save(current);
+      }
     }
 
     const existing=StudyJournal.list().find(e=>
