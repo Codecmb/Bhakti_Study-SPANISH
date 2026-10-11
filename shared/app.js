@@ -18,7 +18,7 @@ function sidebar(a='home',rootOverride=null){
  const R=rootOverride||ROOT;
  const link=i=>{
   if(i[0]==='journal'){
-    return `<a class="${i[0]===a?'active':''}" href="${i[2]}" onclick="window.open(this.href,'_blank','popup=yes,width=760,height=900,left=20,top=20,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=no')?.focus();return false;">${i[1]} ↗</a>`;
+    return `<a class="${i[0]===a?'active':''}" href="${i[2]}">${i[1]} ↗</a>`;
   }
   return `<a class="${i[0]===a?'active':''}" href="${i[2]}">${i[1]}</a>`;
  };
@@ -50,6 +50,72 @@ function sidebar(a='home',rootOverride=null){
  ];
  const grouped=groups.map(([label,items])=>`<div class="nav-group"><div class="nav-label">${label}</div>${items.map(link).join('')}</div>`).join('');
  document.querySelector('.sidebar').innerHTML=`<div class="brand"><img src="${R}assets/bhakti-study-logo.png" alt="Estudio del Bhakti En Español" style="display:block;width:118px;height:118px;object-fit:contain;margin:0 auto 10px"><div>Estudio del Bhakti En Español</div></div><nav class="nav">${link(home)}${grouped}</nav>`;
+
+ const journalSidebarLink=document.querySelector('.sidebar a[href*="student/journal.html"]');
+ if(journalSidebarLink){
+   journalSidebarLink.addEventListener('click',function(event){
+     event.preventDefault();
+
+     const url=new URL(R+'student/journal.html',location.href);
+     const params=new URLSearchParams(location.search);
+     const ref=params.get('ref')||'';
+     const parts=ref.split('.');
+     const path=location.pathname;
+     let context=null;
+
+     if(path.endsWith('/bhakti-sastri/bg-1-6.html')
+        && /^BG\.\d+\.\d+$/i.test(ref)){
+       context={
+         program:'Bhakti Śāstrī',
+         unit:'bg-'+parts[1],
+         book:'bg-es',
+         bookTitle:'Bhagavad-gītā Tal Como Es',
+         section:'Capítulo '+parts[1]
+       };
+     }else if(path.endsWith('/bhakti-vaibhava/sb.html')
+        && /^SB\.\d+\.\d+\.\d+$/i.test(ref)){
+       context={
+         program:'Bhakti Vaibhava',
+         unit:params.get('unit')||'',
+         book:'sb-canto-'+parts[1],
+         bookTitle:'Śrīmad-Bhāgavatam',
+         section:'Canto '+parts[1]+', Capítulo '+parts[2]
+       };
+     }else if(path.endsWith('/bhakti-vedanta/sb.html')
+        && /^SB\.\d+\.\d+\.\d+$/i.test(ref)){
+       context={
+         program:'Bhakti Vedānta',
+         unit:params.get('unit')||'',
+         book:'sb-canto-'+parts[1],
+         bookTitle:'Śrīmad-Bhāgavatam',
+         section:'Canto '+parts[1]+', Capítulo '+parts[2]
+       };
+     }else if(path.endsWith('/bhakti-sarvabhauma/cc.html')
+        && /^CC\.[A-Za-z]+\.\d+\.\d+$/i.test(ref)){
+       context={
+         program:'Bhakti Sārvabhauma',
+         unit:params.get('unit')||'',
+         book:'cc-'+parts[1].toLowerCase(),
+         bookTitle:'Śrī Caitanya-caritāmṛta',
+         section:parts[1].toUpperCase()+', Capítulo '+parts[2]
+       };
+     }
+
+     if(context){
+       Object.entries({...context,ref}).forEach(([key,value])=>{
+         url.searchParams.set(key,value);
+       });
+     }
+
+     journalSidebarLink.href=url.href;
+     const popup=window.open(
+       url.href,
+       '_blank',
+       'popup=yes,width=760,height=900,left=20,top=20,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=no'
+     );
+     if(popup)popup.focus();
+   });
+ }
 
  const main=document.querySelector('.main');
  if(main && !main.querySelector('.academy-creator-credit')){
