@@ -101,8 +101,46 @@ function sidebar(a='home',rootOverride=null){
        };
      }
 
+     if(!context){
+       const sandarbha=path.match(/\/programs\/sat-sandarbhas\/(tattva|bhagavat|paramatma|krsna|bhakti|priti)\/index\.html$/);
+       const prefixes={tattva:'TS',bhagavat:'BGS',paramatma:'PAS',krsna:'KS',bhakti:'BHS',priti:'PS'};
+
+       if(sandarbha){
+         const work=sandarbha[1];
+         const n=Math.max(1,parseInt(params.get('n'),10)||1);
+         const canonical=prefixes[work]+'.'+n;
+         const titles={
+           tattva:'Tattva Sandarbha',
+           bhagavat:'Bhagavat Sandarbha',
+           paramatma:'Paramātma Sandarbha',
+           krsna:'Kṛṣṇa Sandarbha',
+           bhakti:'Bhakti Sandarbha',
+           priti:'Prīti Sandarbha'
+         };
+         context={
+           program:'sat-sandarbhas',
+           unit:work,
+           book:work,
+           bookTitle:titles[work],
+           section:canonical
+         };
+         url.searchParams.set('ref',canonical);
+       }else if(path.endsWith('/library/reader.html')){
+         const book=params.get('book')||'';
+         if(book){
+           context={
+             program:params.get('program')||'',
+             unit:params.get('unit')||'',
+             book,
+             bookTitle:document.getElementById('bookTitle')?.textContent||book,
+             section:document.getElementById('sectionHeader')?.querySelector('h2')?.textContent||''
+           };
+         }
+       }
+     }
+
      if(context){
-       Object.entries({...context,ref}).forEach(([key,value])=>{
+       Object.entries({...context,ref: url.searchParams.get('ref')||ref}).forEach(([key,value])=>{
          url.searchParams.set(key,value);
        });
      }

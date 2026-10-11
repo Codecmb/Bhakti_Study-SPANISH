@@ -29,6 +29,7 @@
       loadScript(ROOT+'shared/data-registry.js',()=>!!window.DataRegistry),
       loadScript(ROOT+'shared/question-engine.js',()=>!!window.QuestionEngine)
     ]);
+    await loadScript(ROOT+'shared/journal-sandarbha-link.js',()=>!!window.AcademyJournalReader);
     await loadScript(ROOT+'shared/question-management-ui.js',()=>!!window.QuestionManagementUI);
     await loadScript(ROOT+'shared/vendor/jszip/jszip.min.js',()=>!!window.JSZip).catch(()=>{});
     await loadScript(ROOT+'shared/question-sheet-importer.js',()=>!!window.QuestionSheetImporter);
@@ -191,6 +192,14 @@ ${verified?`<section class="card"><div class="eyebrow">Fuente Primaria de Estudi
 <h3>Preguntas de Estudio</h3>
 <div id="sandarbhaQuestions"><p class="muted">Cargando banco de preguntas…</p></div><div id="sandarbhaMyQuestions" style="margin-top:1rem"></div><div style="display:flex;gap:.75rem;align-items:center;margin-top:1rem;flex-wrap:wrap"><button class="button" id="saveStudy" type="button">Guardar</button><span id="saveStatus" class="muted" role="status" aria-live="polite">${Object.keys(draft).length?'Borrador no guardado':'Guardado'}</span></div><label style="display:block;margin-top:1rem"><input type="checkbox" id="completed" ${done?'checked':''}> Unidad de estudio completada</label></aside>
 </div><button class="button sandarbha-study-fab" id="studyOpen" aria-controls="studyPanel">Estudiar</button>`
+      window.AcademyJournalReader?.update({
+        program:'sat-sandarbhas',
+        unit:work,
+        book:work,
+        bookTitle:course.displayTitle||course.title,
+        section:id,
+        ref:id
+      });
       const highlightSource=document.getElementById('sandarbhaSourceText');
       if(highlightSource&&window.AcademyHighlighter)AcademyHighlighter.attach(highlightSource,id);
       renderMyQuestions(id,u.id);
