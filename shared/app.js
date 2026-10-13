@@ -50,16 +50,19 @@ function sidebar(a='home',rootOverride=null){
  ];
  const grouped=groups.map(([label,items])=>`<div class="nav-group"><div class="nav-label">${label}</div>${items.map(link).join('')}</div>`).join('');
  document.querySelector('.sidebar').innerHTML=`<div class="brand"><img src="${R}assets/bhakti-study-logo.png" alt="Estudio del Bhakti En Español" style="display:block;width:118px;height:118px;object-fit:contain;margin:0 auto 10px"><div>Estudio del Bhakti En Español</div></div><nav class="nav">${link(home)}<a class="nav-link" href="${R}student/search.html">🔎 Búsqueda Global</a>${grouped}
-<!-- BHakti Study: enlaces de herramientas administrativas -->
-
-<div class="nav-group">
-  <div class="nav-label">Herramientas de Administración</div>
-  <a href="${R}admin/books.html">Biblioteca y Traducciones</a>
-  <a href="${R}admin/questions.html">Administrar Preguntas</a>
-  <a href="${R}admin/references.html">Administrar Referencias</a>
-  <a href="${R}admin/study-guides.html">Administrar Guías de Estudio</a>
-  <a href="${R}student/bg-es-editor.html">Editor de Bhagavad-gītā</a>
-</div>
+<!-- Bhakti Study: menú desplegable de herramientas -->
+<details class="nav-group">
+  <summary class="nav-label" style="cursor:pointer;list-style:auto;padding:10px 0">
+    🛠 Herramientas
+  </summary>
+  <div style="display:grid;gap:10px;padding:10px 0 12px 12px">
+    <a href="${R}admin/books.html">Biblioteca y Traducciones</a>
+    <a href="${R}admin/questions.html">Administrar Preguntas</a>
+    <a href="${R}admin/references.html">Administrar Referencias</a>
+    <a href="${R}admin/study-guides.html">Administrar Guías de Estudio</a>
+    <a href="${R}student/bg-es-editor.html">Editor de Bhagavad-gītā</a>
+  </div>
+</details>
 </nav>`;
 
  const journalSidebarLink=document.querySelector('.sidebar a[href*="student/journal.html"]');
