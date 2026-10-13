@@ -101,7 +101,7 @@ function internalHref(ref,program='bhakti-sastri',unit=''){
       (unit?'&unit='+encodeURIComponent(unit):'');
   }
 
-  const book=canonical.split('.')[0].toLowerCase();
+  const book=/^NOD\./i.test(canonical)?'nod-es':canonical.split('.')[0].toLowerCase();
 
   return '../../library/reader.html?'+new URLSearchParams({
     book,
