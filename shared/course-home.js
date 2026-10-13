@@ -5,6 +5,7 @@
   function readerHref(program,{book,ref,unit}={}){
     const canonical=String(ref||'');
     const b=String(book||'').toLowerCase();
+    if(b==='nod'||b==='nod-es'||/^NOD\./i.test(canonical))book='nod-es';
 
     if(program==='bhakti-sastri' && (b==='bg'||/^BG[. ]/i.test(canonical))){
       return `bg-1-6.html?ref=${encodeURIComponent(canonical)}`;
