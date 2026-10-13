@@ -49,20 +49,21 @@ function sidebar(a='home',rootOverride=null){
    ]]
  ];
  const grouped=groups.map(([label,items])=>`<div class="nav-group"><div class="nav-label">${label}</div>${items.map(link).join('')}</div>`).join('');
- document.querySelector('.sidebar').innerHTML=`<div class="brand"><img src="${R}assets/bhakti-study-logo.png" alt="Estudio del Bhakti En Español" style="display:block;width:118px;height:118px;object-fit:contain;margin:0 auto 10px"><div>Estudio del Bhakti En Español</div></div><nav class="nav">${link(home)}<a class="nav-link" href="${R}student/search.html">🔎 Búsqueda Global</a>${grouped}
-<!-- Bhakti Study: menú desplegable de herramientas -->
-<details class="nav-group">
-  <summary class="nav-label" style="cursor:pointer;list-style:auto;padding:10px 0">
-    🛠 Herramientas
+ document.querySelector('.sidebar').innerHTML=`<div class="brand"><img src="${R}assets/bhakti-study-logo.png" alt="Estudio del Bhakti En Español" style="display:block;width:118px;height:118px;object-fit:contain;margin:0 auto 10px"><div>Estudio del Bhakti En Español</div></div><nav class="nav">${link(home)}
+<details id="bhakti-tools-menu" style="margin:10px 0">
+  <summary style="cursor:pointer;display:block;padding:12px 10px;background:rgba(255,255,255,.15);border-radius:8px;font-size:15px;font-weight:700;color:white">
+    🛠 HERRAMIENTAS ▾
   </summary>
-  <div style="display:grid;gap:10px;padding:10px 0 12px 12px">
+  <div style="display:flex;flex-direction:column;gap:12px;padding:14px 10px">
     <a href="${R}admin/books.html">Biblioteca y Traducciones</a>
+    <a href="${R}admin/sandarbhas-editor.html">Editor de Ṣaṭ Sandarbhas</a>
     <a href="${R}admin/questions.html">Administrar Preguntas</a>
     <a href="${R}admin/references.html">Administrar Referencias</a>
     <a href="${R}admin/study-guides.html">Administrar Guías de Estudio</a>
     <a href="${R}student/bg-es-editor.html">Editor de Bhagavad-gītā</a>
   </div>
-</details>
+</details><a class="nav-link" href="${R}student/search.html">🔎 Búsqueda Global</a>${grouped}
+
 </nav>`;
 
  const journalSidebarLink=document.querySelector('.sidebar a[href*="student/journal.html"]');

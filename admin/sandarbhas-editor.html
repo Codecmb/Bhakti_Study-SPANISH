@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Editor de Ṣaṭ Sandarbhas — Bhakti Study</title>
+<style>
+:root{font-family:system-ui,-apple-system,sans-serif;color-scheme:light;background:#f5f3ee;color:#25251f}*{box-sizing:border-box}
+body{margin:0}header{background:#243b35;color:white;padding:18px 24px}h1{font-size:1.4rem;margin:0 0 6px}header p{margin:0;color:#e0e7e1;font-size:.9rem}
+main{max-width:1600px;margin:auto;padding:20px}nav{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:14px}label{font-size:.88rem;font-weight:650}
+select,button,a.button{font:inherit;padding:9px 12px;border-radius:7px;border:1px solid #9aa8a1;background:white;color:#263b35}button{cursor:pointer}button.primary{background:#275747;color:white;border-color:#275747}button:disabled{opacity:.5;cursor:not-allowed}
+.panel{background:white;border:1px solid #d5dcd7;border-radius:10px;padding:14px}.columns{display:grid;grid-template-columns:1fr 1fr;gap:16px}textarea{display:block;width:100%;min-height:58vh;resize:vertical;padding:15px;font:1rem/1.65 Georgia,serif;border:1px solid #c6d1cb;border-radius:8px;white-space:pre-wrap}
+#english{background:#f7f8f5}h2{font-size:1.05rem;margin:0 0 12px}.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0}#status{font-weight:600}small,.muted{color:#56635d}.hidden{display:none!important}.columns.hide-en{grid-template-columns:1fr}.columns.hide-en #english-panel{display:none}#message{padding:10px 0;min-height:35px}#message.error{color:#a22424}#message.ok{color:#225e43}#progress{font-size:.9rem}a{color:#245e49}
+@media(max-width:900px){.columns{grid-template-columns:1fr}textarea{min-height:35vh}}
+textarea{caret-color:#bc492b}textarea:focus{outline:2px solid #2b6e50;outline-offset:2px}
+@keyframes bookmarkReturn{0%,45%,90%{box-shadow:0 0 0 4px #f2bc4d}25%,70%,100%{box-shadow:0 0 0 0 transparent}}
+textarea.bookmark-return{animation:bookmarkReturn 1.6s ease-in-out}
+</style></head><body>
+<header><h1>Editor de Ṣaṭ Sandarbhas</h1><p>Original inglés de referencia · Traducción española editable · Borradores locales sin alterar los libros publicados</p></header>
+<main>
+<nav><a href="../index.html">← Inicio</a><button type="button" id="resume" title="Regresar al último anuccheda y posición">↩ Continuar donde lo dejé</button><label for="work">Sandarbha</label><select id="work"></select><label for="unit">Anuccheda</label><select id="unit"></select></nav>
+
+<div class="columns" id="columns"><section class="panel" id="english-panel"><h2>Original inglés (solo lectura)</h2><textarea id="english" readonly spellcheck="false"></textarea><div class="toolbar"><button type="button" id="markEnglish">🔖 Marcar posición en inglés</button><button type="button" id="goEnglish">Ir al marcador inglés</button></div></section><section class="panel"><h2>Traducción española</h2><textarea id="spanish" lang="es" spellcheck="true" placeholder="Escribe o revisa aquí la traducción completa, incluidos los comentarios..."></textarea><div id="spanish-controls"><div class="toolbar"><button type="button" id="markSpanish">🔖 Marcar posición en español</button><button type="button" id="goSpanish">Ir al marcador español</button></div>
+<div class="toolbar"><button id="prev">← Anterior</button><button id="next">Siguiente →</button><label><input type="checkbox" id="hideEnglish"> Ocultar original inglés</label><label for="review">Estado</label><select id="review"><option value="pendiente">Pendiente</option><option value="borrador">Borrador</option><option value="en_revision">En revisión</option><option value="verificada">Verificada</option></select><span id="progress"></span></div>
+<div class="toolbar"><button class="primary" id="save">Guardar traducción española</button><button id="export">Exportar borradores JSON</button><label class="button" for="import">Importar borradores JSON</label><input type="file" id="import" accept=".json,application/json" hidden><button id="restore">Restaurar texto español del archivo (solo esta unidad)</button></div>
+</div><small>Los cambios se guardan como borradores en este navegador. No se actualizan automáticamente los archivos del repositorio.</small></section></div>
+
+<div id="message" role="status" aria-live="polite"></div><p class="muted">La exportación contiene únicamente borradores y sus identificadores; no reemplaza automáticamente los archivos de lectura. Conserva una copia del JSON fuera del navegador. La opción «Verificada» es una marca manual, no una comprobación automática de fidelidad.</p>
+</main>
+<script>
+'use strict';
+const WORKS=[['tattva','Tattva Sandarbha'],['bhagavat','Bhagavat Sandarbha'],['paramatma','Paramātma Sandarbha'],['krsna','Kṛṣṇa Sandarbha'],['bhakti','Bhakti Sandarbha'],['priti','Prīti Sandarbha']];
+const $=id=>document.getElementById(id);
+const STORAGE='bhakti-sandarbhas-editor-drafts-v1';
+let en=[],es=[],currentWork='',currentIndex=0,dirty=false,drafts={};
+function notify(message,error=false){$('message').textContent=message;$('message').className=error?'error':'ok';}
+function loadDrafts(){try{const x=JSON.parse(localStorage.getItem(STORAGE)||'{}');drafts=x&&typeof x==='object'&&!Array.isArray(x)?x:{};}catch(e){drafts={};notify('No se pudo leer el almacenamiento local: '+e.message,true);}}
+function storeDrafts(){try{localStorage.setItem(STORAGE,JSON.stringify(drafts));return true;}catch(e){notify('No se pudo guardar en este navegador: '+e.message,true);return false;}}
+function key(){return currentWork+'::'+String(en[currentIndex]?.canonicalId??'');}
+function currentSource(){return es.find(x=>String(x.canonicalId)===String(en[currentIndex]?.canonicalId));}
+function inferStatus(rec){const s=String(rec?.translationStatus||'').toLowerCase();return s.includes('revision')?'en_revision':s.includes('verific')?'verificada':s.includes('borrador')?'borrador':'pendiente';}
+function save(silent=false){if(!en.length)return false;const k=key();if(!k.endsWith('::')){drafts[k]={workId:currentWork,canonicalId:en[currentIndex].canonicalId,content:$('spanish').value,reviewStatus:$('review').value,savedAt:new Date().toISOString()};if(!storeDrafts())return false;dirty=false;updateProgress();if(!silent)notify('Borrador guardado localmente: '+en[currentIndex].canonicalId);return true;}return false;}
+function display(){if(!en.length)return;const record=en[currentIndex],base=currentSource(),draft=drafts[key()];$('unit').value=String(currentIndex);$('english').value=String(record.content??'');$('spanish').value=String(draft?draft.content:(base?.content??''));$('review').value=draft?.reviewStatus||inferStatus(base);$('prev').disabled=currentIndex===0;$('next').disabled=currentIndex===en.length-1;dirty=false;updateProgress();notify('Unidad '+(currentIndex+1)+' de '+en.length+' · '+String(record.canonicalId));}
+function updateProgress(){const count=en.filter(r=>Object.prototype.hasOwnProperty.call(drafts,currentWork+'::'+r.canonicalId)).length;$('progress').textContent='Borradores guardados: '+count+' / '+en.length;}
+function changeUnit(n){
+ if(!Number.isInteger(n)||n<0||n>=en.length)return;
+ if(dirty&&!save(true))return;
+ rememberLast(activeBookmarkPanel);
+ currentIndex=n;display();
+}
+async function loadWork(id){if(dirty&&!save(true))return;if(en.length)rememberLast(activeBookmarkPanel);const old=currentWork;notify('Cargando textos...');try{const [a,b]=await Promise.all([fetch('../sandarbhas/sources/english-reader/'+id+'.json',{cache:'no-store'}),fetch('../sandarbhas/sources/spanish-reader/'+id+'.json',{cache:'no-store'})]);if(!a.ok||!b.ok)throw Error('No se encontraron los archivos de lectura ('+a.status+', '+b.status+')');const [x,y]=await Promise.all([a.json(),b.json()]);if(!Array.isArray(x.records)||!Array.isArray(y.records))throw Error('Estructura de records inesperada');if(!x.records.every(r=>r.canonicalId!==undefined&&typeof r.content==='string'))throw Error('El original inglés tiene una estructura no compatible');en=x.records;es=y.records;currentWork=id;currentIndex=0;$('unit').replaceChildren();en.forEach((r,i)=>{const opt=document.createElement('option');opt.value=String(i);opt.textContent=String(r.sourceLabel||r.canonicalId||('Anuccheda '+(i+1)));$('unit').append(opt);});display();}catch(e){$('work').value=old;notify('No se pudo cargar '+id+': '+e.message,true);}}
+function exportDrafts(){if(dirty&&!save(true))return;const payload={format:'bhakti-sandarbhas-drafts-v1',exportedAt:new Date().toISOString(),drafts};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='sandarbhas-borradores-'+new Date().toISOString().slice(0,10)+'.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);notify('Exportación descargada. Guarda una copia de respaldo.');}
+async function importDrafts(file){try{if(!file)return;const data=JSON.parse(await file.text());if(data.format!=='bhakti-sandarbhas-drafts-v1'||!data.drafts||typeof data.drafts!=='object'||Array.isArray(data.drafts))throw Error('Formato de borradores no compatible');const incoming=Object.entries(data.drafts);if(!incoming.every(([k,v])=>WORKS.some(([id])=>k.startsWith(id+'::'))&&v&&typeof v.content==='string'&&typeof v.canonicalId==='string'))throw Error('Hay registros no válidos');const clashes=incoming.filter(([k])=>Object.hasOwn(drafts,k)).length;if(!confirm('Importar '+incoming.length+' borradores? '+clashes+' ya existen y serán reemplazados.'))return;if(dirty&&!save(true))return;const copy={...drafts};for(const [k,v] of incoming)copy[k]=v;drafts=copy;if(!storeDrafts())return;display();notify('Borradores importados: '+incoming.length);}catch(e){notify('Error al importar: '+e.message,true);}finally{$('import').value='';}}
+
+// Marcadores independientes por idioma y última posición de trabajo.
+const BOOKMARK_STORAGE='bhakti-bookmarks-v1';
+let activeBookmarkPanel='spanish'; // bhakti-caret-bookmarks-v2
+function readBookmarks(){try{const v=JSON.parse(localStorage.getItem(BOOKMARK_STORAGE)||'{}');return v&&typeof v==='object'&&!Array.isArray(v)?v:{};}catch(e){return {};}}
+function writeBookmarks(data){try{localStorage.setItem(BOOKMARK_STORAGE,JSON.stringify(data));return true;}catch(e){notify('No se pudieron guardar los marcadores: '+e.message,true);return false;}}
+function positionOf(panel){const t=$(panel);return {offset:t.selectionStart||0,scrollTop:t.scrollTop||0};}
+function rememberLast(panel='spanish'){
+ if(!en.length||!['english','spanish'].includes(panel))return;
+ activeBookmarkPanel=panel;
+ const data=readBookmarks();
+ data.last={work:currentWork,canonicalId:String(en[currentIndex].canonicalId),panel,position:positionOf(panel)};
+ writeBookmarks(data);
+}
+function restorePosition(panel,pos){
+ if(!pos||!$(panel))return;
+ if(panel==='english'&&$('hideEnglish').checked){$('hideEnglish').checked=false;$('columns').classList.remove('hide-en');}
+ const t=$(panel);
+ // requestAnimationFrame after unit rendering; focus must return to the text area.
+ requestAnimationFrame(()=>requestAnimationFrame(()=>{
+  const at=Math.min(Math.max(0,Number(pos.offset)||0),t.value.length);
+  t.focus({preventScroll:true});t.setSelectionRange(at,at);
+  t.scrollTop=Math.max(0,Number(pos.scrollTop)||0);
+  // Ensure the cursor itself is visible even if saved scroll was imprecise.
+  if(at>0&&t.scrollTop===0){const before=t.value.slice(0,at);const lines=before.split('\n').length;t.scrollTop=Math.max(0,(lines-4)*26);}
+  activeBookmarkPanel=panel;
+  t.classList.remove('bookmark-return');void t.offsetWidth;t.classList.add('bookmark-return');
+  setTimeout(()=>t.classList.remove('bookmark-return'),1800);
+ }));
+}
+function markPosition(panel){
+ if(!en.length)return;
+ const data=readBookmarks(),k=currentWork+'::'+en[currentIndex].canonicalId+'::'+panel;
+ const point=positionOf(panel);
+ data[k]=point;
+ data['latest::'+panel]={work:currentWork,canonicalId:String(en[currentIndex].canonicalId),position:point};
+ data.last={work:currentWork,canonicalId:String(en[currentIndex].canonicalId),panel,position:point};
+ if(writeBookmarks(data))notify('Marcador '+(panel==='english'?'inglés':'español')+' guardado. El cursor regresará a esta posición.');
+}
+async function goPosition(panel){
+ const data=readBookmarks();
+ const point=data['latest::'+panel] || (()=>{
+  const k=currentWork+'::'+en[currentIndex]?.canonicalId+'::'+panel;
+  return data[k]?{work:currentWork,canonicalId:String(en[currentIndex].canonicalId),position:data[k]}:null;
+ })();
+ if(!point){notify('Todavía no hay marcador '+(panel==='english'?'inglés':'español')+'.',true);return;}
+ if(currentWork!==point.work)await loadWork(point.work);
+ if(currentWork!==point.work)return;
+ const i=en.findIndex(r=>String(r.canonicalId)===String(point.canonicalId));
+ if(i<0){notify('No se encontró el anuccheda guardado.',true);return;}
+ if(currentIndex!==i)changeUnit(i);
+ restorePosition(panel,point.position);
+ notify('Marcador recuperado: '+point.canonicalId+' ('+(panel==='english'?'inglés':'español')+').');
+}
+$('markEnglish').addEventListener('click',()=>markPosition('english'));
+$('markSpanish').addEventListener('click',()=>markPosition('spanish'));
+$('goEnglish').addEventListener('click',()=>goPosition('english'));
+$('goSpanish').addEventListener('click',()=>goPosition('spanish'));
+$('resume').addEventListener('click',async()=>{
+  const last=readBookmarks().last;
+  if(!last){notify('Todavía no hay una posición de trabajo guardada.',true);return;}
+  if(currentWork!==last.work)await loadWork(last.work);
+  if(currentWork!==last.work)return;
+  const i=en.findIndex(r=>String(r.canonicalId)===String(last.canonicalId));
+  if(i<0){notify('No se encontró el anuccheda del último marcador.',true);return;}
+  if(currentIndex!==i)changeUnit(i);
+  if(last.panel==='english'&&$('hideEnglish').checked){$('hideEnglish').checked=false;$('columns').classList.remove('hide-en');}
+  restorePosition(last.panel||'spanish',last.position);
+});
+// Guardar automáticamente la última posición al salir del campo (sin modificar borradores).
+for(const panel of ['english','spanish']){
+  $(panel).addEventListener('keyup',()=>rememberLast(panel));
+  $(panel).addEventListener('click',()=>rememberLast(panel));
+  $(panel).addEventListener('scroll',()=>rememberLast(panel),{passive:true});
+}
+
+WORKS.forEach(([id,label])=>{const option=document.createElement('option');option.value=id;option.textContent=label;$('work').append(option);});
+$('work').addEventListener('change',e=>loadWork(e.target.value));$('unit').addEventListener('change',e=>changeUnit(Number(e.target.value)));
+$('prev').addEventListener('click',()=>changeUnit(currentIndex-1));$('next').addEventListener('click',()=>changeUnit(currentIndex+1));
+$('spanish').addEventListener('input',()=>{dirty=true;});$('review').addEventListener('change',()=>{dirty=true;});
+$('hideEnglish').addEventListener('change',e=>$('columns').classList.toggle('hide-en',e.target.checked));
+$('save').addEventListener('click',()=>save());$('export').addEventListener('click',exportDrafts);$('import').addEventListener('change',e=>importDrafts(e.target.files[0]));
+$('restore').addEventListener('click',()=>{if(!confirm('Restaurar el texto español original de esta unidad? El borrador local actual será eliminado.'))return;delete drafts[key()];if(!storeDrafts())return;display();notify('Restaurado el texto del archivo español; los archivos originales no se modificaron.');});
+window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
+loadDrafts();const last=readBookmarks().last;loadWork(WORKS.some(([id])=>id===last?.work)?last.work:'tattva').then(()=>{if(last&&currentWork===last.work){const i=en.findIndex(r=>String(r.canonicalId)===String(last.canonicalId));if(i>=0){currentIndex=i;display();restorePosition(last.panel||'spanish',last.position);}}});
+</script><!-- HIGHLIGHT-BOOKMARKS-V1 -->
+<style>
+.bookmark-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0}
+.bookmark-actions button{border-color:#b19a31;background:#fff6c8;color:#302b12}
+.bookmark-actions .resume{background:#e7f0e8;border-color:#779b84;color:#214734}
+.bookmark-wrap{position:relative}
+.bookmark-wrap textarea{position:relative;z-index:1;background:transparent}
+.bookmark-wrap .bookmark-underlay{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;border:1px solid transparent;border-radius:8px;background:#fff}
+.bookmark-wrap.english .bookmark-underlay{background:#f7f8f5}
+.bookmark-underlay .bookmark-mirror{font:1rem/1.65 Georgia,serif;padding:15px;white-space:pre-wrap;overflow-wrap:break-word;word-break:normal;color:transparent;box-sizing:border-box}
+.bookmark-underlay mark{background:#ffdf55;color:transparent;border-radius:2px;box-shadow:0 0 0 1px #e8c33b}
+.bookmark-wrap textarea:focus{outline:2px solid #6b957d;outline-offset:1px}
+</style>
+<script>
+(()=>{
+'use strict';
+const PREFIX='bhakti-sandarbhas-highlight-bookmarks-v1';
+const find=id=>document.getElementById(id);
+const marks={};
+try{Object.assign(marks,JSON.parse(localStorage.getItem(PREFIX)||'{}'));}catch(e){console.warn('Marcadores no disponibles',e);}
+const wraps={};
+const controls=find('spanish-controls');
+if(!controls){console.warn('No se encontró el panel de controles españoles');return;}
+const bar=document.createElement('div');bar.className='bookmark-actions';
+function button(label,callback,cls=''){
+ const b=document.createElement('button');b.type='button';b.textContent=label;b.className=cls;b.addEventListener('click',callback);bar.append(b);return b;
+}
+button('🟨 Resaltar inglés',()=>setMark('english'));
+button('↪ Ir a inglés',()=>goMark('english'));
+button('🟨 Resaltar español',()=>setMark('spanish'));
+button('↪ Ir a español',()=>goMark('spanish'));
+button('↩ Continuar donde lo dejé',()=>resume(),'resume');
+const toolbar=controls.querySelector('.toolbar');
+if(toolbar)toolbar.insertAdjacentElement('beforebegin',bar);else controls.prepend(bar);
+for(const lang of ['english','spanish']){
+ const ta=find(lang);const wrap=document.createElement('div');wrap.className='bookmark-wrap '+(lang==='english'?'english':'spanish');
+ ta.parentNode.insertBefore(wrap,ta);wrap.append(ta);
+ const under=document.createElement('div');under.className='bookmark-underlay';
+ const mirror=document.createElement('div');mirror.className='bookmark-mirror';under.append(mirror);wrap.insertBefore(under,ta);
+ wraps[lang]={ta,mirror,under};
+ ta.addEventListener('scroll',()=>{mirror.style.transform=`translateY(${-ta.scrollTop}px)`;mirror.style.marginLeft=`${-ta.scrollLeft}px`;});
+ ta.addEventListener('input',()=>render(lang));
+}
+function id(lang){return currentWork+'::'+lang;}
+function validMark(m){return m&&typeof m==='object'&&typeof m.canonicalId==='string'&&Number.isInteger(m.start)&&Number.isInteger(m.end);}
+function persist(){try{localStorage.setItem(PREFIX,JSON.stringify(marks));return true;}catch(e){notify('No se pudo guardar el resaltador: '+e.message,true);return false;}}
+function setMark(lang){
+ if(!en.length)return;
+ const ta=wraps[lang].ta;const start=ta.selectionStart,end=ta.selectionEnd;
+ if(start===end){notify('Selecciona primero una palabra o frase en '+(lang==='english'?'inglés':'español')+' para resaltarla.',true);ta.focus();return;}
+ const m={canonicalId:String(en[currentIndex].canonicalId),start,end,selected:ta.value.slice(start,end),savedAt:new Date().toISOString()};
+ marks[id(lang)]=m;if(!persist())return;
+ render(lang);notify('Resaltador amarillo guardado en '+(lang==='english'?'inglés':'español')+'.');
+}
+function render(lang){
+ const {ta,mirror}=wraps[lang];const m=marks[id(lang)];const value=ta.value;
+ mirror.replaceChildren();
+ if(!validMark(m)||String(en[currentIndex]?.canonicalId)!==m.canonicalId||m.start<0||m.end>value.length||m.start>=m.end||value.slice(m.start,m.end)!==m.selected){
+  mirror.textContent=value+'\n';return;
+ }
+ mirror.append(document.createTextNode(value.slice(0,m.start)));
+ const highlight=document.createElement('mark');highlight.textContent=value.slice(m.start,m.end);mirror.append(highlight);
+ mirror.append(document.createTextNode(value.slice(m.end)+'\n'));
+}
+function renderAll(){render('english');render('spanish');}
+async function goMark(lang){
+ const m=marks[id(lang)];if(!validMark(m)){notify('Todavía no hay un resaltador guardado para este Sandarbha en '+lang+'.',true);return;}
+ const idx=en.findIndex(r=>String(r.canonicalId)===m.canonicalId);
+ if(idx<0){notify('No se encontró el anuccheda del marcador.',true);return;}
+ if(idx!==currentIndex)changeUnit(idx);
+ if(currentIndex!==idx)return;
+ if(lang==='english'&&find('hideEnglish').checked){find('hideEnglish').checked=false;find('columns').classList.remove('hide-en');}
+ renderAll();
+ const ta=wraps[lang].ta;
+ ta.focus({preventScroll:true});
+ ta.setSelectionRange(m.start,m.end);
+ // Firefox desplaza el textarea hasta la selección; se conserva el resaltado amarillo.
+ ta.blur();
+ ta.scrollIntoView({block:'center',behavior:'smooth'});
+ notify('Resaltador localizado en '+(lang==='english'?'inglés':'español')+'.');
+}
+async function resume(){
+ let state;try{state=JSON.parse(localStorage.getItem(PREFIX+'-last')||'null');}catch(e){}
+ if(!state||!WORKS.some(([w])=>w===state.work)){notify('Todavía no hay una posición de trabajo guardada.',true);return;}
+ if(state.work!==currentWork){find('work').value=state.work;await loadWork(state.work);}
+ const lang=state.lang==='english'?'english':'spanish';
+ await goMark(lang);
+}
+function remember(lang){const m=marks[id(lang)];if(validMark(m))try{localStorage.setItem(PREFIX+'-last',JSON.stringify({work:currentWork,lang}));}catch(e){}}
+const originalSetMark=setMark;
+// El último marcador creado es el punto al que lleva «Continuar».
+bar.querySelectorAll('button')[0].addEventListener('click',()=>remember('english'));
+bar.querySelectorAll('button')[2].addEventListener('click',()=>remember('spanish'));
+const previousDisplay=display;
+display=function(){previousDisplay();renderAll();};
+renderAll();
+})();
+</script>
+<!-- /HIGHLIGHT-BOOKMARKS-V1 -->
+
+<!-- GUARDADO-PERMANENTE-SANDARBHAS-V2 -->
+<script>
+(()=>{
+'use strict';
+const API='http://127.0.0.1:8767/drafts';
+const STORAGE='bhakti-sandarbhas-editor-drafts-v1';
+const btn=document.getElementById('save');
+if(!btn)return;
+const info=document.createElement('div');
+info.id='durable-save-status';info.setAttribute('role','status');
+info.style='padding:10px;margin-top:10px;border:1px solid #bbb;border-radius:7px;font-weight:600';
+info.textContent='Guardado en carpeta: comprobando conexión…';
+btn.parentNode.insertBefore(info,btn.nextSibling);
+const set=(msg,ok)=>{info.textContent=msg;info.style.color=ok?'#21613c':'#a22424';};
+function local(){try{return JSON.parse(localStorage.getItem(STORAGE)||'{}')}catch{return {}}}
+async function send(k,v){
+ const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({key:k,entry:v})});
+ if(!r.ok)throw Error((await r.text()).slice(0,180));
+}
+async function saveCurrent(){
+ // El editor original guarda primero en localStorage; esperamos a que termine su manejador.
+ await new Promise(resolve=>setTimeout(resolve,0));
+ const work=document.getElementById('work')?.value;
+ const unit=document.getElementById('unit');
+ const index=Number(unit?.value);
+ // Los borradores del editor contienen workId y canonicalId. Usamos el más reciente
+ // correspondiente al libro, con contenido idéntico al área española.
+ const entries=Object.entries(local()).filter(([k,v])=>v&&v.workId===work&&typeof v.content==='string'&&v.content===document.getElementById('spanish')?.value);
+ if(!entries.length){set('No se encontró un borrador guardado para esta traducción. Comprueba el botón Guardar.',false);return;}
+ entries.sort((a,b)=>String(b[1].savedAt||'').localeCompare(String(a[1].savedAt||'')));
+ try{await send(...entries[0]);set('✓ Traducción guardada también en carpeta permanente: '+entries[0][1].canonicalId,true)}
+ catch(e){set('⚠ Solo guardada en Firefox; NO se guardó en carpeta. Inicia el servidor. '+e.message,false)}
+}
+btn.addEventListener('click',()=>{set('Guardando en carpeta…',false);saveCurrent();});
+const sync=document.createElement('button');sync.type='button';sync.textContent='Respaldar todos los borradores en carpeta';sync.style.margin='8px 0';
+info.parentNode.insertBefore(sync,info.nextSibling);
+sync.addEventListener('click',async()=>{
+ const entries=Object.entries(local()).filter(([k,v])=>v&&typeof v.content==='string'&&typeof v.canonicalId==='string'&&['tattva','bhagavat','paramatma','krsna','bhakti','priti'].includes(v.workId)&&k===v.workId+'::'+v.canonicalId);
+ if(!entries.length){set('No hay borradores locales para respaldar.',false);return;}
+ if(!confirm('Copiar '+entries.length+' borradores de Firefox a la carpeta permanente? Los archivos existentes tendrán respaldo.'))return;
+ sync.disabled=true;let n=0;
+ try{for(const [k,v] of entries){await send(k,v);n++;}set('✓ '+n+' borradores respaldados en carpeta permanente.',true)}
+ catch(e){set('⚠ Respaldados '+n+' de '+entries.length+'. Error: '+e.message,false)}
+ finally{sync.disabled=false}
+});
+async function check(){try{const r=await fetch(API,{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);set('✓ Carpeta permanente conectada. Usa Guardar o Respaldar todos.',true)}catch(e){set('⚠ Servidor de carpeta no conectado. No borres los datos de Firefox.',false)}}
+check();
+})();
+</script>
+
+</body></html>
