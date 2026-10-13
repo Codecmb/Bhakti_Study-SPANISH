@@ -6,6 +6,8 @@
     const canonical=String(ref||'');
     const b=String(book||'').toLowerCase();
     if(b==='nod'||b==='nod-es'||/^NOD\./i.test(canonical))book='nod-es';
+    if(b==='noi'||b==='noi-es'||/^NOI\./i.test(canonical))book='noi-es';
+    if(b==='iso'||b==='iso-es'||/^ISO\./i.test(canonical))book='iso-es';
 
     if(program==='bhakti-sastri' && (b==='bg'||/^BG[. ]/i.test(canonical))){
       return `bg-1-6.html?ref=${encodeURIComponent(canonical)}`;
