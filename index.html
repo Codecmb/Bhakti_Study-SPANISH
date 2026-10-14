@@ -61,7 +61,7 @@ try{
 const registration=await navigator.serviceWorker.register('service-worker.js');
 await navigator.serviceWorker.ready;
 const files=await (await fetch('offline-books.json')).json();
-const cache=await caches.open('bhakti-study-spanish-books-v3');
+const cache=await caches.open('bhakti-study-spanish-books-v4');
 let ready=0;
 for(const file of files){
 if(await cache.match(new URL(file,location.href)))ready++;
