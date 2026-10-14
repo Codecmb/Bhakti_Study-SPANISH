@@ -1,0 +1,161 @@
+{
+  "schema": "bhakti-study.official-question-bank.v1",
+  "program": "bhakti-sastri",
+  "scope": "BS.U1",
+  "provider": "ISKCON Ministry of Education / Board of Examinations",
+  "title": "Official BOEX Question Bank — Bhagavad-gītā 1–6",
+  "source": "https://iskconeducation.org/wp-content/uploads/2025/01/Bhagavad-Gita-1-6.pdf",
+  "note": "Questions below are transcribed from the official Ministry/BOEX BG 1–6 bank. Wording is preserved except for minor whitespace normalization.",
+  "groups": [
+    {
+      "chapter": 6,
+      "sections": [
+        {
+          "type": "Closed Book Short",
+          "questions": [
+            {
+              "q": "¿Cuándo es la mente el mejor amigo y cuándo es el peor enemigo?",
+              "refs": [
+                "BG.6.6"
+              ],
+              "source_english": "When is the mind the best of friends and when is the mind greatest enemy?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de las palabras ekākī y śucau deśe?",
+              "refs": [
+                "BG.6.10",
+                "BG.6.11"
+              ],
+              "source_english": "Give the English meaning of the words ekaki and sucau dese.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el resultado de los excesos en comer, dormir, defenderse y aparearse?",
+              "refs": [
+                "BG.6.17"
+              ],
+              "source_english": "What is the result of extravagance in eating, sleeping, defending, and mating?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado del término yukta?",
+              "refs": [
+                "BG.6.18"
+              ],
+              "source_english": "Give the English meaning of the term yukta.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica mediante una analogía por qué la mente es fuerte y obstinada.",
+              "refs": [
+                "BG.6.34"
+              ],
+              "source_english": "Explain with an analogy that the mind is strong and obstinate.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Describe qué sucede con un yogī que no alcanza el éxito en su práctica.",
+              "refs": [
+                "BG.6.41",
+                "BG.6.42"
+              ],
+              "source_english": "Describe what happens to an unsuccessful yogi.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Closed Book Questions",
+          "questions": [
+            {
+              "q": "Presenta un resumen del capítulo 6 de la Bhagavad-gītā, identificando los principales conceptos filosóficos, las secciones de versos y la relación entre ellas.",
+              "refs": [
+                "BG.6.1",
+                "BG.6.47"
+              ],
+              "source_english": "Present a summary of Bhagavad-Gita Chapter 6, identifying main philosophical concepts and sections of verses, and how they connect.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza cómo BG 6.9 te inspira a cultivar relaciones amistosas y respetuosas con los vaiṣṇavas.",
+              "refs": [
+                "BG.6.9"
+              ],
+              "source_english": "Discuss how BG 6.9 inspires you to cultivate friendly Vaishnava dealings.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica el significado de la historia del gorrión.",
+              "refs": [
+                "BG.6.24"
+              ],
+              "source_english": "Explain the significance of the story of the sparrow.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza el significado de la palabra bhajate y su diferencia con la palabra «adoración», según la explicación de Śrīla Prabhupāda en el significado de BG 6.47.",
+              "refs": [
+                "BG.6.47"
+              ],
+              "source_english": "Discuss the significance of the word bhajate and its distinction from the word worship as explained in Bhagavad-Gita 6.47 purport.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica cómo los principios del aṣṭāṅga-yoga están incluidos en la conciencia de Kṛṣṇa.",
+              "refs": [
+                "BG.6.1",
+                "BG.6.47"
+              ],
+              "source_english": "Explain how the principles of astanga-yoga are included in Krishna consciousness.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Open Book Essays",
+          "questions": [
+            {
+              "q": "Explica las etapas del aṣṭāṅga-yoga, incluyendo yogārurukṣu y yogārūḍha, y cómo el aṣṭāṅga-yoga se relaciona finalmente con el bhakti-yoga.",
+              "refs": [
+                "BG.6.3"
+              ],
+              "source_english": "Explain the stages of astanga-yoga, including yogaruruksu and yogarudha, and how astanga-yoga ultimately relates to bhakti-yoga.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la importancia de la regulación en todos los aspectos de la vida, haciendo referencia a BG 6.16–17.",
+              "refs": [
+                "BG.6.16",
+                "BG.6.17"
+              ],
+              "source_english": "Discuss the importance of regulation in all spheres of life with reference to BG 6.16-17.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Resume por qué la práctica del aṣṭāṅga-yoga resulta poco práctica para la era moderna, haciendo referencia a BG 6.10–14 y 6.33–35.",
+              "refs": [
+                "BG.6.10",
+                "BG.6.14",
+                "BG.6.33",
+                "BG.6.35"
+              ],
+              "source_english": "Summarize the impracticality of astanga-yoga for the modern age with reference to BG 6.10-14 and 6.33-35.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Expón la preocupación de Arjuna y la respuesta de Kṛṣṇa acerca del destino del yogī que no alcanza el éxito.",
+              "refs": [
+                "BG.6.37",
+                "BG.6.45"
+              ],
+              "source_english": "State Arjuna’s concern and Krishna’s response in relation to the destination of the unsuccessful yogi.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "translation_note": "Traducción española del capítulo 6. Original inglés y referencias conservados. Pendiente de revisión académica."
+}

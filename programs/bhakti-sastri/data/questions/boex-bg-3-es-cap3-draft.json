@@ -1,0 +1,158 @@
+{
+  "schema": "bhakti-study.official-question-bank.v1",
+  "program": "bhakti-sastri",
+  "scope": "BS.U1",
+  "provider": "ISKCON Ministry of Education / Board of Examinations",
+  "title": "Official BOEX Question Bank — Bhagavad-gītā 1–6",
+  "source": "https://iskconeducation.org/wp-content/uploads/2025/01/Bhagavad-Gita-1-6.pdf",
+  "note": "Questions below are transcribed from the official Ministry/BOEX BG 1–6 bank. Wording is preserved except for minor whitespace normalization.",
+  "groups": [
+    {
+      "chapter": 3,
+      "sections": [
+        {
+          "type": "Closed Book Short",
+          "questions": [
+            {
+              "q": "¿Con qué se confunde a veces la conciencia de Kṛṣṇa?",
+              "refs": [
+                "BG.3.1"
+              ],
+              "source_english": "What is Krishna consciousness sometimes misunderstood as?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica la analogía de una vacuna antiséptica.",
+              "refs": [
+                "BG.3.14"
+              ],
+              "source_english": "Explain the analogy of an antiseptic vaccine.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Por qué una persona plenamente consciente de Kṛṣṇa no está obligada a seguir los mandamientos védicos?",
+              "refs": [
+                "BG.3.17"
+              ],
+              "source_english": "Why is a fully Krishna conscious person not obliged to follow the Vedic injunctions?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la palabra ācārya?",
+              "refs": [
+                "BG.3.21"
+              ],
+              "source_english": "Give the English meaning of acarya.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la expresión nirāśīr nirmamaḥ?",
+              "refs": [
+                "BG.3.30"
+              ],
+              "source_english": "Give the English meaning of the phrase nirasir nirmamo.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera los tres lugares donde reside la lujuria.",
+              "refs": [
+                "BG.3.40"
+              ],
+              "source_english": "List the three sitting places of lust.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Closed Book Questions",
+          "questions": [
+            {
+              "q": "Presenta un resumen del capítulo 3 de la Bhagavad-gītā, identificando los principales conceptos filosóficos, las secciones de versos y la relación entre ellas.",
+              "refs": [
+                "BG.3.1",
+                "BG.3.43"
+              ],
+              "source_english": "Present a summary of Bhagavad-Gita Chapter 3, identifying the main philosophical concepts and sections of verses, and how they connect.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica cómo, mediante la ejecución del saṅkīrtana-yajña, los semidioses quedan automáticamente satisfechos.",
+              "refs": [
+                "BG.3.10",
+                "BG.3.16"
+              ],
+              "source_english": "Explain how by performance of sankirtan-yajna the demigods are automatically satisfied.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica el principio del ācārya mencionado en el significado de BG 3.21 y analiza su importancia.",
+              "refs": [
+                "BG.3.21"
+              ],
+              "source_english": "Explain the Acarya principle as mentioned in the purport to 3.21 and discuss its relevance.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Basándote en BG 3.20–24, identifica los principios del liderazgo espiritual y analiza su importancia para tu vida.",
+              "refs": [
+                "BG.3.20",
+                "BG.3.24"
+              ],
+              "source_english": "Based in BG 3.20-24, identify principles of spiritual leadership and discuss their relevance for you.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Open Book Essays",
+          "questions": [
+            {
+              "q": "Presenta argumentos que demuestren la superioridad del karma-yoga sobre el karma-sannyāsa, haciendo referencia a BG 3.4–9.",
+              "refs": [
+                "BG.3.4",
+                "BG.3.9"
+              ],
+              "source_english": "Give arguments supporting the superiority of karma-yoga over karma-sannyasa with reference to Bhagavad-Gita 3.4-9.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica cómo una persona se purifica gradualmente mediante la ejecución de los yajñas védicos, haciendo referencia a BG 3.10–16.",
+              "refs": [
+                "BG.3.10",
+                "BG.3.16"
+              ],
+              "source_english": "Explain how one gradually becomes purified by the performance of Vedic yajnas with reference to BG 3.10-16.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica la diferencia entre seguir e imitar, utilizando ejemplos del significado de BG 3.24.",
+              "refs": [
+                "BG.3.24"
+              ],
+              "source_english": "Explain the difference between following and imitating with reference to examples from the purport to 3.24.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Extrae principios generales del análisis que Kṛṣṇa hace de la lujuria en BG 3.36–43 y analiza cómo aplicarlos en tu práctica espiritual.",
+              "refs": [
+                "BG.3.36",
+                "BG.3.43"
+              ],
+              "source_english": "Draw general principles from Krishna’s analysis of lust in 3.36-43 and discuss their application in your practice.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza cómo las declaraciones de BG 3.30, tanto del verso como de su significado, influyen en tu actitud hacia el servicio a Kṛṣṇa.",
+              "refs": [
+                "BG.3.30"
+              ],
+              "source_english": "Discuss ways the statements in BG 3.30, verse and purport, impact your attitude toward serving Krishna.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "translation_note": "Traducción española del capítulo 3. Original inglés y referencias conservados. Pendiente de revisión académica."
+}

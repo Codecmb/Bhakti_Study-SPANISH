@@ -1,0 +1,236 @@
+{
+  "schema": "bhakti-study.official-question-bank.v1",
+  "program": "bhakti-sastri",
+  "scope": "BS.U1",
+  "provider": "ISKCON Ministry of Education / Board of Examinations",
+  "title": "Official BOEX Question Bank — Bhagavad-gītā 1–6",
+  "source": "https://iskconeducation.org/wp-content/uploads/2025/01/Bhagavad-Gita-1-6.pdf",
+  "note": "Questions below are transcribed from the official Ministry/BOEX BG 1–6 bank. Wording is preserved except for minor whitespace normalization.",
+  "groups": [
+    {
+      "chapter": 2,
+      "sections": [
+        {
+          "type": "Closed Book Short",
+          "questions": [
+            {
+              "q": "Enumera las seis características de Bhagavān, en español o sánscrito.",
+              "refs": [
+                "BG.2.2"
+              ],
+              "source_english": "List six symptoms of Bhagavan in English or Sanskrit.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica la analogía de las tres características del Sol.",
+              "refs": [
+                "BG.2.2"
+              ],
+              "source_english": "Explain the analogy of the sun’s three features.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la expresión kṣudraṁ hṛdaya-daurbalyam?",
+              "refs": [
+                "BG.2.3"
+              ],
+              "source_english": "What is the meaning of the phrase ksudram hrdaya-daurbalyam?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la expresión dharma-sammūḍha-cetāḥ?",
+              "refs": [
+                "BG.2.7"
+              ],
+              "source_english": "What is the meaning of the phrase dharma-sammudha-cetah?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el tamaño del alma y cuál es el síntoma de su existencia?",
+              "refs": [
+                "BG.2.17"
+              ],
+              "source_english": "What is the size of soul and what is the symptom of its existence?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las seis transformaciones a las que está sujeto el cuerpo.",
+              "refs": [
+                "BG.2.20"
+              ],
+              "source_english": "List the six kinds of transformations the body is subject to.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica en español el significado de anu-ātmā y vibhu-ātmā.",
+              "refs": [
+                "BG.2.20"
+              ],
+              "source_english": "Give the English meaning of anu-atma and vibhu-atma.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Qué significa sva-dharma y cuáles son sus dos clases?",
+              "refs": [
+                "BG.2.31"
+              ],
+              "source_english": "What is meant by sva-dharma and what are the two types of sva-dharma?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica en español el significado de las expresiones pratyavāyo na vidyate y vyavasāyātmikā buddhir.",
+              "refs": [
+                "BG.2.40",
+                "BG.2.41"
+              ],
+              "source_english": "Give the English meaning of the phrases pratyavayo na vidyate and vyavasayatmika buddhir.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la palabra prajñā?",
+              "refs": [
+                "BG.2.54"
+              ],
+              "source_english": "What is the meaning of the word prajna?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la expresión paraṁ dṛṣṭvā nivartate?",
+              "refs": [
+                "BG.2.59"
+              ],
+              "source_english": "What is the meaning of the phrase param drstva nivartate?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las ocho etapas de la caída espiritual, en español o sánscrito.",
+              "refs": [
+                "BG.2.62",
+                "BG.2.63"
+              ],
+              "source_english": "List the eight stages of spiritual fall down in English or Sanskrit.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Closed Book Questions",
+          "questions": [
+            {
+              "q": "Presenta argumentos para refutar la teoría māyāvāda, haciendo referencia a los versos y significados de BG 2.12–13.",
+              "refs": [
+                "BG.2.12",
+                "BG.2.13"
+              ],
+              "source_english": "Present arguments to refute Mayavadi theory with reference to BG 2.12-13 verses and purports.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica cómo la aplicación de los principios expuestos en BG 2.14 puede mejorar tu actitud de servicio.",
+              "refs": [
+                "BG.2.14"
+              ],
+              "source_english": "Explain how application of the principles conveyed in BG 2.14 can improve your service attitude.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Resume los principales puntos filosóficos del ātma-tattva expuestos en BG 2.11–30, citando versos fundamentales y analogías de los significados de Śrīla Prabhupāda.",
+              "refs": [
+                "BG.2.11",
+                "BG.2.30"
+              ],
+              "source_english": "Summarize main philosophical points on atma-tattva from BG 2.11-30 with reference to key verses and analogies cited in Śrīla Prabhupāda’s purports.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la importancia de pratyavāyaḥ na vidyate y vyavasāyātmikā buddhi para tu práctica personal de conciencia de Kṛṣṇa.",
+              "refs": [
+                "BG.2.40",
+                "BG.2.41"
+              ],
+              "source_english": "Discuss the relevance of pratyavayah na vidyate and vyavasayatmika buddhi for your personal practice of Krishna consciousness.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera al menos cuatro cualidades de una persona sthita-prajña mencionadas en BG 2.55–71 y explica cómo desarrollarlas te ayudaría a mejorar tus relaciones con los demás.",
+              "refs": [
+                "BG.2.55",
+                "BG.2.71"
+              ],
+              "source_english": "List at least four qualities of a sthita-prajna, as mentioned in BG 2.55-71, and explain how developing them would help you improve your relationships.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica la analogía de los ríos que desembocan en el océano.",
+              "refs": [
+                "BG.2.70"
+              ],
+              "source_english": "Explain the analogy of the rivers entering into the ocean.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Open Book Essays",
+          "questions": [
+            {
+              "q": "Describe la importancia de entregarse al maestro espiritual para resolver las perplejidades de la vida, haciendo referencia a BG 2.6–11.",
+              "refs": [
+                "BG.2.6",
+                "BG.2.11"
+              ],
+              "source_english": "Describe the significance of surrender to guru in order to solve the perplexities of life, with reference to Bhagavad-Gita 2.6-11.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica el proceso de transmigración del alma, haciendo referencia a BG 2.13 y 2.22 y a las analogías de sus significados.",
+              "refs": [
+                "BG.2.13",
+                "BG.2.22"
+              ],
+              "source_english": "Explain the process of transmigration with reference to BG 2.13 and 2.22 and analogies from these purports.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica los principios del ātma-tattva citando al menos cuatro versos de Bhagavad-gītā 2.11–30.",
+              "refs": [
+                "BG.2.11",
+                "BG.2.30"
+              ],
+              "source_english": "Explain the principles of atma-tattva with reference to at least four verses from Bhagavad Gita 2.11-30.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica brevemente los principios del karma-yoga y del buddhi-yoga, haciendo referencia a BG 2.38–53.",
+              "refs": [
+                "BG.2.38",
+                "BG.2.53"
+              ],
+              "source_english": "Briefly explain the principles of karma-yoga/buddhi-yoga with reference to Bhagavad-Gita 2.38-53.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica el proceso de controlar los sentidos mediante la conciencia de Kṛṣṇa, haciendo referencia a BG 2.54–68.",
+              "refs": [
+                "BG.2.54",
+                "BG.2.68"
+              ],
+              "source_english": "Explain the process of sense control by Krishna consciousness with reference to Bhagavad-Gita 2.54-68.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica las etapas de la caída espiritual presentadas en BG 2.62–63.",
+              "refs": [
+                "BG.2.62",
+                "BG.2.63"
+              ],
+              "source_english": "Explain the stages of fall down as presented in Bhagavad-Gita 2.62-63.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "translation_note": "Traducción española del capítulo 2. Original inglés y referencias conservados. Pendiente de revisión académica."
+}

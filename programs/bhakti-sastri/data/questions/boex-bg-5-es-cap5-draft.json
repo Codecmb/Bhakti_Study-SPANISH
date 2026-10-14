@@ -1,0 +1,157 @@
+{
+  "schema": "bhakti-study.official-question-bank.v1",
+  "program": "bhakti-sastri",
+  "scope": "BS.U1",
+  "provider": "ISKCON Ministry of Education / Board of Examinations",
+  "title": "Official BOEX Question Bank — Bhagavad-gītā 1–6",
+  "source": "https://iskconeducation.org/wp-content/uploads/2025/01/Bhagavad-Gita-1-6.pdf",
+  "note": "Questions below are transcribed from the official Ministry/BOEX BG 1–6 bank. Wording is preserved except for minor whitespace normalization.",
+  "groups": [
+    {
+      "chapter": 5,
+      "sections": [
+        {
+          "type": "Closed Book Short",
+          "questions": [
+            {
+              "q": "¿Cuál es el significado de la palabra pradhāna?",
+              "refs": [
+                "BG.5.10"
+              ],
+              "source_english": "Give the English meaning of the word pradhana.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la expresión phalaṁ tyaktvā śāntim āpnoti naiṣṭhikīm?",
+              "refs": [
+                "BG.5.12"
+              ],
+              "source_english": "Give the English meaning of the phrase phalam tyaktva santim apnoti naisthikim.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las nueve puertas del cuerpo.",
+              "refs": [
+                "BG.5.13"
+              ],
+              "source_english": "List the nine gates of the body.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de las palabras vibhu y aṇu?",
+              "refs": [
+                "BG.5.15"
+              ],
+              "source_english": "Give the English meaning of the words vibhu and anu.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la expresión paṇḍitāḥ sama-darśinaḥ?",
+              "refs": [
+                "BG.5.18"
+              ],
+              "source_english": "Give the English meaning of the phrase panditah sama-darsinah.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las ocho partes del aṣṭāṅga-yoga.",
+              "refs": [
+                "BG.5.27"
+              ],
+              "source_english": "List the eight limbs of astanga-yoga.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Closed Book Questions",
+          "questions": [
+            {
+              "q": "Presenta un resumen del capítulo 5 de la Bhagavad-gītā, identificando los principales conceptos filosóficos, las secciones de versos y la relación entre ellas.",
+              "refs": [
+                "BG.5.1",
+                "BG.5.29"
+              ],
+              "source_english": "Present a summary of Bhagavad-Gita Chapter 5, identifying main philosophical concepts and sections of verses, and how they connect.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica la analogía de la hoja de loto.",
+              "refs": [
+                "BG.5.10"
+              ],
+              "source_english": "Explain the analogy of lotus leaf.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Qué enseñanzas sobre karma-yoga y karma-sannyāsa presenta Kṛṣṇa en BG 5.2–6?",
+              "refs": [
+                "BG.5.2",
+                "BG.5.6"
+              ],
+              "source_english": "What lessons regarding karma-yoga and karma-sannyasa does Krishna present in BG 5.2-6?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cómo puede una persona llegar a ser querida por todos, según BG 5.7?",
+              "refs": [
+                "BG.5.7"
+              ],
+              "source_english": "How can one become dear to everyone according to BG 5.7?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Kṛṣṇa es el supremo bienqueriente de todos. ¿Qué principios puedes extraer de BG 5.29 para orientar tu relación con los demás?",
+              "refs": [
+                "BG.5.29"
+              ],
+              "source_english": "Krishna is the supreme well-wisher of all. What guidelines can you derive from this verse for your dealings with others?",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Open Book Essays",
+          "questions": [
+            {
+              "q": "Analiza la renunciación artificial (phalgu-vairāgya) y la renunciación apropiada (yukta-vairāgya), haciendo referencia a BG 5.1–2.",
+              "refs": [
+                "BG.5.1",
+                "BG.5.2"
+              ],
+              "source_english": "Discuss phalgu (artificial renunciation) and yukta-vairagya with reference to BG 5.1-2.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica quién es responsable del sufrimiento de las entidades vivientes condicionadas, haciendo referencia a BG 4.14 y 5.14–15.",
+              "refs": [
+                "BG.4.14",
+                "BG.5.14",
+                "BG.5.15"
+              ],
+              "source_english": "Explain who is responsible for the suffering of conditioned living entities with reference to BG 4.14 and 5.14-15.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la aplicación práctica del principio paṇḍitāḥ sama-darśinaḥ, haciendo referencia a BG 5.18.",
+              "refs": [
+                "BG.5.18"
+              ],
+              "source_english": "Discuss practical application of panditah sama-darsinah with reference to Bhagavad-Gita 5.18.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica cómo la aplicación de los principios de BG 5.29 puede contribuir a la paz mundial.",
+              "refs": [
+                "BG.5.29"
+              ],
+              "source_english": "Explain how application of the principles of BG 5.29 can contribute to world peace.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "translation_note": "Traducción española del capítulo 5. Original inglés y referencias conservados. Pendiente de revisión académica."
+}

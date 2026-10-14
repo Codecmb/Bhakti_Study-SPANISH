@@ -1,0 +1,137 @@
+{
+  "schema": "bhakti-study.official-question-bank.v1",
+  "program": "bhakti-sastri",
+  "scope": "BS.U1",
+  "provider": "ISKCON Ministry of Education / Board of Examinations",
+  "title": "Official BOEX Question Bank — Bhagavad-gītā 1–6",
+  "source": "https://iskconeducation.org/wp-content/uploads/2025/01/Bhagavad-Gita-1-6.pdf",
+  "note": "Questions below are transcribed from the official Ministry/BOEX BG 1–6 bank. Wording is preserved except for minor whitespace normalization.",
+  "groups": [
+    {
+      "chapter": 1,
+      "sections": [
+        {
+          "type": "Closed Book Short",
+          "questions": [
+            {
+              "q": "¿Por qué Duryodhana estaba seguro de contar con el pleno apoyo de Bhīṣmadeva y Droṇācārya en la batalla?",
+              "refs": [
+                "BG.1.11"
+              ],
+              "source_english": "Why was Duryodhana confident of full support of Bhismadeva and Dronacarya in the battle?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera y explica el significado de las cuatro señales de victoria de los Pāṇḍavas.",
+              "refs": [
+                "BG.1.14",
+                "BG.1.20"
+              ],
+              "source_english": "List and explain the significance of the four signs of victory for the Pandavas.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "¿Cuál es el significado de la palabra guḍākeśa?",
+              "refs": [
+                "BG.1.24"
+              ],
+              "source_english": "What is the meaning of the word gudakesa?",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las seis clases de agresores.",
+              "refs": [
+                "BG.1.36"
+              ],
+              "source_english": "List the six kinds of aggressors.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera las diversas consecuencias de la destrucción de una dinastía.",
+              "refs": [
+                "BG.1.39",
+                "BG.1.42"
+              ],
+              "source_english": "List the various consequences due to the destruction of the dynasty.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Según el último significado del capítulo 1, ¿qué cualidad de Arjuna lo hace apto para recibir el conocimiento de la Bhagavad-gītā?",
+              "refs": [
+                "BG.1.46"
+              ],
+              "source_english": "Which quality of Arjuna makes him fit to receive the knowledge of Bhagavad-Gita, according to the last purport of Chapter 1?",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Closed Book Questions",
+          "questions": [
+            {
+              "q": "Explica el significado de las palabras dharma-kṣetre en relación con el resultado de la batalla y el temor de Dhṛtarāṣṭra.",
+              "refs": [
+                "BG.1.1"
+              ],
+              "source_english": "Explain the significance of the words dharma-ksetre in relation to the outcome of the battle and the fear of Dhrtarastra.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica el significado del uso de la palabra māmakāḥ por parte de Dhṛtarāṣṭra.",
+              "refs": [
+                "BG.1.1"
+              ],
+              "source_english": "Explain the significance of Dhrtarastra's usage of mamakah.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica el significado de los siguientes nombres de Kṛṣṇa utilizados en este capítulo: Acyuta, Govinda, Mādhava y Hṛṣīkeśa.",
+              "refs": [
+                "BG.1.15",
+                "BG.1.21",
+                "BG.1.24",
+                "BG.1.32",
+                "BG.1.36"
+              ],
+              "source_english": "Explain the significance of the following names of Krishna used in this chapter: Acyuta, Govinda, Madhava, Hrsikesa.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Open Book Essays",
+          "questions": [
+            {
+              "q": "Analiza el significado de que Arjuna diera órdenes a Kṛṣṇa y de que Kṛṣṇa aceptara la posición de auriga, como se observa en BG 1.21–22. Fundamenta tu explicación con las declaraciones de Śrīla Prabhupāda en el significado.",
+              "refs": [
+                "BG.1.21",
+                "BG.1.22"
+              ],
+              "source_english": "Discuss the significance of Arjuna’s ordering Krishna and Krishna’s accepting the position of a charioteer as seen in BG 1.21-22. Give reference to Śrīla Prabhupāda’s statements in the purport.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la relevancia de los argumentos de Arjuna sobre la destrucción de la dinastía en relación con la sociedad moderna.",
+              "refs": [
+                "BG.1.39",
+                "BG.1.43"
+              ],
+              "source_english": "Discuss the relevance of Arjuna’s arguments regarding destruction of the dynasty in relation to modern society.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Enumera y explica al menos cuatro razones de Arjuna para no luchar, citando los versos correspondientes de los capítulos 1 y 2 de la Bhagavad-gītā.",
+              "refs": [
+                "BG.1.28",
+                "BG.2.9"
+              ],
+              "source_english": "List and explain at least four of Arjuna’s reasons for not fighting with reference to the appropriate verses from BG chapters 1 and 2.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "translation_note": "Traducción española del capítulo 1. Texto original inglés conservado en source_english. Pendiente de revisión antes de registrar."
+}

@@ -1,0 +1,103 @@
+{
+  "schema": "bhakti-study.official-question-bank.v1",
+  "program": "bhakti-sastri",
+  "scope": "BS.U1",
+  "provider": "ISKCON Ministry of Education / Board of Examinations",
+  "title": "Official BOEX Question Bank — Bhagavad-gītā 1–6",
+  "source": "https://iskconeducation.org/wp-content/uploads/2025/01/Bhagavad-Gita-1-6.pdf",
+  "note": "Questions below are transcribed from the official Ministry/BOEX BG 1–6 bank. Wording is preserved except for minor whitespace normalization.",
+  "groups": [
+    {
+      "chapter": "1-6",
+      "sections": [
+        {
+          "type": "Closed Book Thematic Questions",
+          "questions": [
+            {
+              "q": "Haciendo referencia a los versos y significados del capítulo 2 de la Bhagavad-gītā, explica la afirmación del significado de BG 2.25 según la cual no existe otra fuente para comprender el alma que el estudio de los Vedas.",
+              "refs": [
+                "BG.2.25"
+              ],
+              "source_english": "With reference to Bhagavad-gita Chapter 2 verses and purports, explain the statement from BG 2.25 purport that there is no source of understanding the soul except by studying the Vedas.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la relevancia de la afirmación del significado de BG 5.7 según la cual una persona que controla sus sentidos no puede ofender a nadie.",
+              "refs": [
+                "BG.5.7"
+              ],
+              "source_english": "Discuss the relevance of the statement from BG 5.7 purport that a man of controlled senses cannot be offensive to anyone.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la relevancia de la afirmación del significado de BG 5.12 acerca de comprender que no existe nada aparte de Kṛṣṇa como fundamento de la paz y la ausencia de temor.",
+              "refs": [
+                "BG.5.12"
+              ],
+              "source_english": "Discuss the relevance of the statement from BG 5.12 purport concerning realization that there is no existence besides Krishna as the platform of peace and fearlessness.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Escoge tres versos de los capítulos 1–6 de la Bhagavad-gītā que, si los aplicaras, fortalecerían tu propia conciencia de Kṛṣṇa. Escribe un plan para ponerlos en práctica.",
+              "refs": [],
+              "source_english": "Choose three verses from Bhagavad-gita Chapters 1-6 which, if applied, would enhance your own Krishna consciousness. Write down a plan for doing this.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Escoge cuatro versos de los capítulos 1–6 de la Bhagavad-gītā que consideres especialmente útiles para la prédica. Explica tus razones y analízalos.",
+              "refs": [],
+              "source_english": "Choose four verses from Bhagavad-gita Chapters 1-6 which you consider most useful in preaching. Explain why and discuss.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        },
+        {
+          "type": "Open Book Thematic Questions",
+          "questions": [
+            {
+              "q": "Analiza la relevancia de los argumentos de Arjuna sobre la destrucción de las tradiciones familiares para la sociedad moderna y las comunidades conscientes de Kṛṣṇa, haciendo referencia a los capítulos 1 y 2.",
+              "refs": [
+                "BG.1.39",
+                "BG.2.1"
+              ],
+              "source_english": "Discuss the relevance for modern society and Krishna conscious communities of Arjuna’s arguments about destruction of family traditions, with reference to Chapters 1 and 2.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Analiza la importancia del principio expuesto en el significado de BG 1.41 acerca del servicio devocional y los antepasados, haciendo referencia a los capítulos 1–3.",
+              "refs": [
+                "BG.1.41"
+              ],
+              "source_english": "Discuss the significance of the principle in BG 1.41 purport concerning devotional service and forefathers, with reference to Chapters 1-3.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Demuestra con tus propias palabras la superioridad del bhakti sobre los demás sistemas de yoga, haciendo referencia a los capítulos 2–6.",
+              "refs": [
+                "BG.2.1",
+                "BG.6.47"
+              ],
+              "source_english": "Establish in your own words the superiority of bhakti over the other yoga systems with reference to Chapters 2-6.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica, con referencias a los capítulos 1–6, la relevancia de la afirmación del significado de BG 3.29 según la cual los devotos son más bondadosos que el Señor porque comprenden el propósito del Señor.",
+              "refs": [
+                "BG.3.29"
+              ],
+              "source_english": "Explain, with references to Chapters 1-6, the relevance of the statement in BG 3.29 purport that devotees are more kind than the Lord because they understand the purpose of the Lord.",
+              "translation_status": "borrador_es"
+            },
+            {
+              "q": "Explica cómo la Bhagavad-gītā parte de una situación real de la vida, la examina filosóficamente y ofrece una solución universal, haciendo referencia a los capítulos 1–6.",
+              "refs": [],
+              "source_english": "Explain how Bhagavad-gita takes a real-life situation, examines it philosophically, and offers a universal solution, with reference to Chapters 1-6.",
+              "translation_status": "borrador_es"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "translation_note": "Traducción española de la evaluación general BG 1–6. Original inglés y referencias conservados. Pendiente de revisión académica."
+}
