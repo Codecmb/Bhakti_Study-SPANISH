@@ -54,38 +54,96 @@
 </section>
 
 <div id="offline-books-status" class="notice" role="status"
-aria-live="polite">Preparando la biblioteca para estudiar sin internet…</div><h2 class="section-title">Áreas de Estudio</h2><section id="programs" class="grid"></section><div class="footer-note">Aplicación de estudio independiente. Los grados śāstricos oficiales de ISKCON requieren el proceso de autorización y evaluación correspondiente de BOEX/Ministerio.</div></main></div><script src="shared/app.js"></script><script>sidebar('home');json('data/programs.json').then(ps=>programs.innerHTML=ps.map(p=>`<article class="card"><div class="eyebrow">Área de Estudio</div><h2>${p.title}</h2><p>${p.subtitle}</p><a class="button" href="programs/${p.id}/index.html">Entrar al Área</a></article>`).join(''))</script><script>if('serviceWorker'in navigator){
-window.addEventListener('load',async()=>{
-const status=document.getElementById('offline-books-status');
-if(!status)return;
-const cacheName='bhakti-study-spanish-books-v4';
-try{
-const registration=await navigator.serviceWorker.register('service-worker.js');
-registration.update().catch(()=>{});
-status.textContent='Preparando la biblioteca sin conexión…';
-const response=await fetch('offline-books.json',{cache:'no-store'});
-if(!response.ok)throw Error('No se pudo leer el inventario');
-const files=await response.json();
-const deadline=Date.now()+120000;
-let ready=0;
-while(Date.now()<deadline){
-const cache=await caches.open(cacheName);
-ready=0;
-for(const file of files){
-if(await cache.match(new URL(file,location.href)))ready++;
-}
-if(ready===files.length)break;
-status.textContent='Descargando biblioteca: '+ready+' de '+files.length+' recursos.';
-await new Promise(resolve=>setTimeout(resolve,1500));
-}
-if(ready===files.length){
-status.textContent='✓ Biblioteca descargada: '+files.length+' recursos guardados para uso sin conexión.';
-}else{
-status.textContent='Descarga incompleta: '+ready+' de '+files.length+' recursos. Mantén internet conectado.';
-}
-}catch(error){
-status.textContent='No se pudo completar la preparación sin conexión. Mantén internet conectado.';
-console.error('Bhakti Study offline:',error);
-}
+aria-live="polite">Preparando la biblioteca para estudiar sin internet…</div><h2 class="section-title">Áreas de Estudio</h2><section id="programs" class="grid"></section><div class="footer-note">Aplicación de estudio independiente. Los grados śāstricos oficiales de ISKCON requieren el proceso de autorización y evaluación correspondiente de BOEX/Ministerio.</div></main></div><script src="shared/app.js"></script><script>sidebar('home');json('data/programs.json').then(ps=>programs.innerHTML=ps.map(p=>`<article class="card"><div class="eyebrow">Área de Estudio</div><h2>${p.title}</h2><p>${p.subtitle}</p><a class="button" href="programs/${p.id}/index.html">Entrar al Área</a></article>`).join(''))</script><script>
+if ('serviceWorker' in navigator) {
+window.addEventListener('load', async () => {
+  const status = document.getElementById('offline-books-status');
+  if (!status) return;
+
+  const button = document.createElement('button');
+  button.textContent = 'Descargar biblioteca completa';
+  button.className = 'button';
+  button.type = 'button';
+  button.style.marginTop = '10px';
+  status.after(button);
+
+  const cacheName = 'bhakti-study-spanish-books-v5';
+  let downloading = false;
+
+  async function downloadLibrary() {
+    if (downloading) return;
+    downloading = true;
+    button.disabled = true;
+
+    try {
+      const response = await fetch('offline-books.json', {
+        cache: 'no-store'
+      });
+      if (!response.ok) throw Error('Inventario no disponible');
+
+      const files = await response.json();
+      const cache = await caches.open(cacheName);
+      let completed = 0;
+      let failed = 0;
+
+      for (const file of files) {
+        const url = new URL(file, location.href);
+
+        if (await cache.match(url.href)) {
+          completed++;
+        } else {
+          try {
+            const result = await fetch(url.href, {
+              cache: 'no-store'
+            });
+            if (!result.ok) throw Error('HTTP ' + result.status);
+            await cache.put(url.href, result);
+            completed++;
+          } catch (error) {
+            failed++;
+            console.warn('Descarga pendiente:', file, error);
+          }
+        }
+
+        status.textContent =
+          'Biblioteca: ' + completed + ' de ' +
+          files.length + ' recursos descargados.';
+      }
+
+      if (failed === 0 && completed === files.length) {
+        status.textContent =
+          '✓ Biblioteca descargada: ' +
+          completed + ' recursos disponibles sin internet.';
+        button.textContent = 'Verificar nuevamente';
+      } else {
+        status.textContent =
+          'Descarga incompleta: ' + completed + ' de ' +
+          files.length + '. Pendientes: ' + failed + '.';
+        button.textContent = 'Reintentar descarga';
+      }
+    } catch (error) {
+      status.textContent =
+        'No se pudo completar la descarga. Comprueba internet.';
+      button.textContent = 'Reintentar descarga';
+      console.error(error);
+    } finally {
+      downloading = false;
+      button.disabled = false;
+    }
+  }
+
+  try {
+    await navigator.serviceWorker.register('service-worker.js');
+    status.textContent =
+      'Biblioteca preparada. Pulsa el botón para descargar todos los libros.';
+  } catch (error) {
+    status.textContent =
+      'No se pudo preparar la descarga sin conexión.';
+    button.disabled = true;
+    console.error(error);
+  }
+
+  button.addEventListener('click', downloadLibrary);
 });
-}</script></body></html>
+}
+</script></body></html>
