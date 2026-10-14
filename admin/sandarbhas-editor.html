@@ -283,4 +283,91 @@ check();
 })();
 </script>
 
+
+<!-- RECUPERACION-SEGURA-SANDARBHAS-V1 -->
+<script>
+(async()=>{
+'use strict';
+
+const API='http://127.0.0.1:8767/drafts';
+const STATUS=document.getElementById('durable-save-status');
+
+function report(message,ok){
+  if(!STATUS)return;
+  STATUS.textContent=message;
+  STATUS.style.color=ok?'#21613c':'#a22424';
+}
+
+try {
+  const response=await fetch(API,{cache:'no-store'});
+  if(!response.ok)throw Error('HTTP '+response.status);
+
+  const payload=await response.json();
+  const incoming=payload.drafts;
+
+  if(!incoming||typeof incoming!=='object'||Array.isArray(incoming))
+    throw Error('Formato de recuperación incorrecto');
+
+  const valid=Object.entries(incoming).filter(([k,v])=>
+    v&&typeof v==='object'&&
+    typeof v.content==='string'&&
+    typeof v.canonicalId==='string'&&
+    typeof v.workId==='string'&&
+    k===v.workId+'::'+v.canonicalId
+  );
+
+  let recovered=0;
+  let conflicts=0;
+  const different=[];
+
+  for(const [k,v] of valid){
+    if(!Object.prototype.hasOwnProperty.call(drafts,k)){
+      drafts[k]=v;
+      recovered++;
+    }else if(drafts[k].content!==v.content){
+      different.push([k,v]);
+      conflicts++;
+    }
+  }
+
+  if(different.length){
+    const choice=confirm(
+      'Se encontraron '+different.length+
+      ' traducciones diferentes entre Firefox y la carpeta permanente.\n\n'+
+      'Aceptar: recuperar las versiones de la carpeta.\n'+
+      'Cancelar: conservar las versiones de Firefox.\n\n'+
+      'Las versiones de la carpeta NO serán borradas.'
+    );
+
+    if(choice){
+      for(const [k,v] of different){
+        drafts[k]=v;
+        recovered++;
+      }
+    }
+  }
+
+  if(recovered){
+    if(!storeDrafts())
+      throw Error('No se pudieron guardar los borradores recuperados en Firefox');
+    if(!dirty&&en.length)display();
+  }
+
+  report(
+    '✓ Carpeta conectada. '+valid.length+
+    ' borradores encontrados; '+recovered+
+    ' recuperados'+(conflicts?' · '+conflicts+' conflictos revisados':'')+'.',
+    true
+  );
+
+}catch(e){
+  report(
+    '⚠ No se pudo recuperar desde la carpeta. Conserva los datos de Firefox. '+e.message,
+    false
+  );
+}
+})();
+</script>
+<!-- /RECUPERACION-SEGURA-SANDARBHAS-V1 -->
+
 </body></html>

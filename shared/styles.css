@@ -70,21 +70,26 @@
 }
 
 
-/* BHakti Study: justified reader text */
-#passage .purport,
-#passage .scripture {
-    text-align: justify;
-    text-justify: inter-word;
-    line-height: 1.8;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    white-space: pre-line;
-}
 
-/* Bhakti Study: justified Sandarbha source text */
+/* Bhakti Study: unified justified reading */
+#passage .purport,
+#passage .scripture,
+#passage .translation,
 #sandarbhaSourceText {
     text-align: justify;
     text-justify: inter-word;
+    text-align-last: auto;
     line-height: 1.8;
     overflow-wrap: break-word;
+    hyphens: auto;
+    white-space: normal;
+}
+
+#passage .purport p,
+#passage .scripture p,
+#passage .translation p,
+#sandarbhaSourceText p {
+    margin: 0 0 1.15em;
+    text-align: justify;
+    text-align-last: auto;
 }
