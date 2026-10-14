@@ -53,4 +53,28 @@
 
 </section>
 
-<h2 class="section-title">Áreas de Estudio</h2><section id="programs" class="grid"></section><div class="footer-note">Aplicación de estudio independiente. Los grados śāstricos oficiales de ISKCON requieren el proceso de autorización y evaluación correspondiente de BOEX/Ministerio.</div></main></div><script src="shared/app.js"></script><script>sidebar('home');json('data/programs.json').then(ps=>programs.innerHTML=ps.map(p=>`<article class="card"><div class="eyebrow">Área de Estudio</div><h2>${p.title}</h2><p>${p.subtitle}</p><a class="button" href="programs/${p.id}/index.html">Entrar al Área</a></article>`).join(''))</script><script>if('serviceWorker'in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('service-worker.js').catch(console.error))}</script></body></html>
+<div id="offline-books-status" class="notice" role="status"
+aria-live="polite">Preparando la biblioteca para estudiar sin internet…</div><h2 class="section-title">Áreas de Estudio</h2><section id="programs" class="grid"></section><div class="footer-note">Aplicación de estudio independiente. Los grados śāstricos oficiales de ISKCON requieren el proceso de autorización y evaluación correspondiente de BOEX/Ministerio.</div></main></div><script src="shared/app.js"></script><script>sidebar('home');json('data/programs.json').then(ps=>programs.innerHTML=ps.map(p=>`<article class="card"><div class="eyebrow">Área de Estudio</div><h2>${p.title}</h2><p>${p.subtitle}</p><a class="button" href="programs/${p.id}/index.html">Entrar al Área</a></article>`).join(''))</script><script>if('serviceWorker'in navigator){
+window.addEventListener('load',async()=>{
+const status=document.getElementById('offline-books-status');
+try{
+const registration=await navigator.serviceWorker.register('service-worker.js');
+await navigator.serviceWorker.ready;
+const files=await (await fetch('offline-books.json')).json();
+const cache=await caches.open('bhakti-study-spanish-books-v3');
+let ready=0;
+for(const file of files){
+if(await cache.match(new URL(file,location.href)))ready++;
+}
+if(status){
+status.textContent=ready===files.length
+?'✓ Biblioteca preparada sin conexión: los 32 libros están descargados.'
+:'Descarga pendiente: '+ready+' de '+files.length+' recursos disponibles. Mantén la conexión para completar la preparación.';
+}
+registration.update().catch(()=>{});
+}catch(error){
+if(status)status.textContent='No se pudo confirmar la biblioteca sin conexión. Conéctate a internet e inténtalo de nuevo.';
+console.error(error);
+}
+});
+}</script></body></html>
