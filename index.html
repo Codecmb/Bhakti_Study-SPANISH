@@ -57,24 +57,35 @@
 aria-live="polite">Preparando la biblioteca para estudiar sin internet…</div><h2 class="section-title">Áreas de Estudio</h2><section id="programs" class="grid"></section><div class="footer-note">Aplicación de estudio independiente. Los grados śāstricos oficiales de ISKCON requieren el proceso de autorización y evaluación correspondiente de BOEX/Ministerio.</div></main></div><script src="shared/app.js"></script><script>sidebar('home');json('data/programs.json').then(ps=>programs.innerHTML=ps.map(p=>`<article class="card"><div class="eyebrow">Área de Estudio</div><h2>${p.title}</h2><p>${p.subtitle}</p><a class="button" href="programs/${p.id}/index.html">Entrar al Área</a></article>`).join(''))</script><script>if('serviceWorker'in navigator){
 window.addEventListener('load',async()=>{
 const status=document.getElementById('offline-books-status');
+if(!status)return;
+const cacheName='bhakti-study-spanish-books-v4';
 try{
 const registration=await navigator.serviceWorker.register('service-worker.js');
-await navigator.serviceWorker.ready;
-const files=await (await fetch('offline-books.json')).json();
-const cache=await caches.open('bhakti-study-spanish-books-v4');
+registration.update().catch(()=>{});
+status.textContent='Preparando la biblioteca sin conexión…';
+const response=await fetch('offline-books.json',{cache:'no-store'});
+if(!response.ok)throw Error('No se pudo leer el inventario');
+const files=await response.json();
+const deadline=Date.now()+120000;
 let ready=0;
+while(Date.now()<deadline){
+const cache=await caches.open(cacheName);
+ready=0;
 for(const file of files){
 if(await cache.match(new URL(file,location.href)))ready++;
 }
-if(status){
-status.textContent=ready===files.length
-?'✓ Biblioteca preparada sin conexión: los 32 libros están descargados.'
-:'Descarga pendiente: '+ready+' de '+files.length+' recursos disponibles. Mantén la conexión para completar la preparación.';
+if(ready===files.length)break;
+status.textContent='Descargando biblioteca: '+ready+' de '+files.length+' recursos.';
+await new Promise(resolve=>setTimeout(resolve,1500));
 }
-registration.update().catch(()=>{});
+if(ready===files.length){
+status.textContent='✓ Biblioteca descargada: '+files.length+' recursos guardados para uso sin conexión.';
+}else{
+status.textContent='Descarga incompleta: '+ready+' de '+files.length+' recursos. Mantén internet conectado.';
+}
 }catch(error){
-if(status)status.textContent='No se pudo confirmar la biblioteca sin conexión. Conéctate a internet e inténtalo de nuevo.';
-console.error(error);
+status.textContent='No se pudo completar la preparación sin conexión. Mantén internet conectado.';
+console.error('Bhakti Study offline:',error);
 }
 });
 }</script></body></html>
