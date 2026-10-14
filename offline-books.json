@@ -206,5 +206,19 @@
   "shared/student-questions.js",
   "shared/internal-source-search.js",
   "shared/my-questions-ui.js",
-  "shared/vendor/jszip/jszip.min.js"
+  "shared/vendor/jszip/jszip.min.js",
+  "shared/reader-navigation.css",
+  "shared/academy-guides.js",
+  "shared/academy-references.js",
+  "shared/course-home.js",
+  "shared/journal-reader-link.js",
+  "shared/program-data.js",
+  "shared/program-workspace.js",
+  "shared/progress-engine.js",
+  "shared/question-provider-data.js",
+  "shared/reader-navigation.js",
+  "shared/reference-registry.js",
+  "shared/student-work-draft.js",
+  "shared/study-workflow.js",
+  "shared/voice-input.js"
 ]

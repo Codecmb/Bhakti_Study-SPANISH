@@ -1,4 +1,4 @@
-const CACHE = 'bhakti-study-spanish-books-v5';
+const CACHE = 'bhakti-study-spanish-books-v6';
 const PREFIX = 'bhakti-study-spanish-';
 
 const CORE = [
@@ -67,13 +67,6 @@ self.addEventListener('fetch', event => {
         await cache.match(request, {ignoreSearch: true});
 
       if (cached) return cached;
-
-      if (request.mode === 'navigate') {
-        const home = await cache.match(
-          new URL('index.html', self.registration.scope)
-        );
-        if (home) return home;
-      }
 
       return Response.error();
     }
