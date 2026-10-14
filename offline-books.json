@@ -47,5 +47,6 @@
   "library/books-es/tlc/book.json",
   "library/books-es/tqk/book.json",
   "library/books-es/ttp/book.json",
-  "library/books-es/bg/book.json"
+  "library/books-es/bg/book.json",
+  "offline-books.json"
 ]
