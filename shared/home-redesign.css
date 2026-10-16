@@ -310,3 +310,48 @@ body:has(#bhakti-layout) {
   }
 }
 
+
+/* AJUSTES EXCLUSIVOS PARA MOVIL */
+
+@media (max-width: 760px) {
+
+  /* Reservar espacio para los botones superiores */
+  .main {
+    padding-top: 90px !important;
+  }
+
+  /* Nombres principales */
+  .academy-creator-credit {
+    margin-top: 0 !important;
+    padding: 15px !important;
+  }
+
+  .academy-creator-credit strong {
+    font-size: 21px !important;
+  }
+
+  .academy-creator-credit span {
+    font-size: 18px !important;
+    color: #79531c !important;
+    opacity: 1 !important;
+  }
+
+  /* Titulo de la portada */
+  .hero h1 {
+    font-size: 25px !important;
+    line-height: 1.25 !important;
+  }
+
+  /* Texto descriptivo */
+  .hero .lead {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Etiquetas */
+  .hero .statbar .stat {
+    font-size: 14px !important;
+  }
+
+}
