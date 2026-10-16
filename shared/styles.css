@@ -93,3 +93,158 @@
     text-align: justify;
     text-align-last: auto;
 }
+
+/* Bhakti Study Español — Mejoras de legibilidad */
+
+/* Menú de navegación */
+.sidebar .nav a {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Textos principales */
+.main p,
+.main li {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Introducciones */
+.main .lead {
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+/* Tarjetas de estudio */
+.main .card p {
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+/* Botones */
+.main .button {
+  font-size: 15px;
+}
+
+/* Campos de estudio */
+.main input,
+.main select,
+.main textarea {
+  font-size: 17px;
+}
+
+
+/* Ajuste final de legibilidad — Academia */
+
+.sidebar .nav a {
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.main p,
+.main li {
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+.main .card p {
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.main .lead {
+  font-size: 20px;
+}
+
+.main .button {
+  font-size: 16px;
+}
+
+
+/* Menú hamburguesa — página principal */
+
+#bhakti-menu-button {
+  position: fixed;
+  top: 72px;
+  left: 12px;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d6d2e8;
+  border-radius: 9px;
+  background: white;
+  color: #142a68;
+  font-size: 23px;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(0,0,0,.15);
+}
+
+#bhakti-layout.menu-hidden {
+  grid-template-columns: minmax(0,1fr);
+}
+
+#bhakti-layout.menu-hidden > .sidebar {
+  display: none;
+}
+
+#bhakti-layout.menu-hidden > .main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media (max-width: 760px) {
+  #bhakti-layout.menu-hidden {
+    grid-template-columns: minmax(0,1fr);
+  }
+}
+
+
+/* Bhakti Study Español: menú lateral en computadora,
+   hamburguesa en teléfonos móviles */
+
+/* Computadoras: menú siempre visible */
+@media (min-width: 761px) {
+  #bhakti-menu-button {
+    display: none !important;
+  }
+
+  #bhakti-layout,
+  #bhakti-layout.menu-hidden {
+    grid-template-columns: 260px minmax(0, 1fr);
+  }
+
+  #bhakti-layout > .sidebar,
+  #bhakti-layout.menu-hidden > .sidebar {
+    display: block !important;
+    visibility: visible;
+  }
+}
+
+/* Teléfonos móviles: menú oculto inicialmente */
+@media (max-width: 760px) {
+  #bhakti-menu-button {
+    display: block;
+    top: 12px;
+    left: 12px;
+  }
+
+  #bhakti-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #bhakti-layout > .sidebar {
+    display: block;
+    height: auto;
+    position: relative;
+    padding-top: 65px;
+  }
+
+  #bhakti-layout.menu-hidden > .sidebar {
+    display: none;
+  }
+
+  #bhakti-layout > .main {
+    padding: 24px 18px;
+    min-width: 0;
+  }
+}
