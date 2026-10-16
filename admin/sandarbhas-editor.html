@@ -17,7 +17,9 @@ textarea.bookmark-return{animation:bookmarkReturn 1.6s ease-in-out}
 <main>
 <nav><a href="../index.html">← Inicio</a><button type="button" id="resume" title="Regresar al último anuccheda y posición">↩ Continuar donde lo dejé</button><label for="work">Sandarbha</label><select id="work"></select><label for="unit">Anuccheda</label><select id="unit"></select></nav>
 
-<div class="columns" id="columns"><section class="panel" id="english-panel"><h2>Original inglés (solo lectura)</h2><textarea id="english" readonly spellcheck="false"></textarea><div class="toolbar"><button type="button" id="markEnglish">🔖 Marcar posición en inglés</button><button type="button" id="goEnglish">Ir al marcador inglés</button></div></section><section class="panel"><h2>Traducción española</h2><textarea id="spanish" lang="es" spellcheck="true" placeholder="Escribe o revisa aquí la traducción completa, incluidos los comentarios..."></textarea><div id="spanish-controls"><div class="toolbar"><button type="button" id="markSpanish">🔖 Marcar posición en español</button><button type="button" id="goSpanish">Ir al marcador español</button></div>
+<div class="columns" id="columns"><section class="panel" id="english-panel"><h2>Original inglés (solo lectura)</h2><textarea id="english" readonly spellcheck="false"></textarea><div class="toolbar"><button type="button" id="markEnglish">🔖 Marcar posición en inglés</button><button type="button" id="goEnglish">Ir al marcador inglés</button></div></section><section class="panel"><h2>Traducción española</h2><textarea id="spanish" lang="es" spellcheck="true" placeholder="Escribe o revisa aquí la traducción completa, incluidos los comentarios..."></textarea>
+
+<div id="spanish-controls"><div class="toolbar"><button type="button" id="markSpanish">🔖 Marcar posición en español</button><button type="button" id="goSpanish">Ir al marcador español</button></div>
 <div class="toolbar"><button id="prev">← Anterior</button><button id="next">Siguiente →</button><label><input type="checkbox" id="hideEnglish"> Ocultar original inglés</label><label for="review">Estado</label><select id="review"><option value="pendiente">Pendiente</option><option value="borrador">Borrador</option><option value="en_revision">En revisión</option><option value="verificada">Verificada</option></select><span id="progress"></span></div>
 <div class="toolbar"><button class="primary" id="save">Guardar traducción española</button><button id="export">Exportar borradores JSON</button><label class="button" for="import">Importar borradores JSON</label><input type="file" id="import" accept=".json,application/json" hidden><button id="restore">Restaurar texto español del archivo (solo esta unidad)</button></div>
 </div><small>Los cambios se guardan como borradores en este navegador. No se actualizan automáticamente los archivos del repositorio.</small></section></div>
@@ -43,9 +45,12 @@ function changeUnit(n){
  if(!Number.isInteger(n)||n<0||n>=en.length)return;
  if(dirty&&!save(true))return;
  rememberLast(activeBookmarkPanel);
- currentIndex=n;display();
+ currentIndex=n;display();rememberLast('spanish');
 }
-async function loadWork(id){if(dirty&&!save(true))return;if(en.length)rememberLast(activeBookmarkPanel);const old=currentWork;notify('Cargando textos...');try{const [a,b]=await Promise.all([fetch('../sandarbhas/sources/english-reader/'+id+'.json',{cache:'no-store'}),fetch('../sandarbhas/sources/spanish-reader/'+id+'.json',{cache:'no-store'})]);if(!a.ok||!b.ok)throw Error('No se encontraron los archivos de lectura ('+a.status+', '+b.status+')');const [x,y]=await Promise.all([a.json(),b.json()]);if(!Array.isArray(x.records)||!Array.isArray(y.records))throw Error('Estructura de records inesperada');if(!x.records.every(r=>r.canonicalId!==undefined&&typeof r.content==='string'))throw Error('El original inglés tiene una estructura no compatible');en=x.records;es=y.records;currentWork=id;currentIndex=0;$('unit').replaceChildren();en.forEach((r,i)=>{const opt=document.createElement('option');opt.value=String(i);opt.textContent=String(r.sourceLabel||r.canonicalId||('Anuccheda '+(i+1)));$('unit').append(opt);});display();}catch(e){$('work').value=old;notify('No se pudo cargar '+id+': '+e.message,true);}}
+async function loadWork(id){if(dirty&&!save(true))return;if(en.length && currentWork)rememberLast(activeBookmarkPanel);const old=currentWork;notify('Cargando textos...');try{const [a,b]=await Promise.all([fetch('../sandarbhas/sources/english-reader/'+id+'.json',{cache:'no-store'}),fetch('../sandarbhas/sources/spanish-reader/'+id+'.json',{cache:'no-store'})]);if(!a.ok||!b.ok)throw Error('No se encontraron los archivos de lectura ('+a.status+', '+b.status+')');const [x,y]=await Promise.all([a.json(),b.json()]);if(!Array.isArray(x.records)||!Array.isArray(y.records))throw Error('Estructura de records inesperada');if(!x.records.every(r=>r.canonicalId!==undefined&&typeof r.content==='string'))throw Error('El original inglés tiene una estructura no compatible');en=x.records;es=y.records;currentWork=id;$('work').value=id;currentIndex=0;
+const workName=WORKS.find(([code])=>code===id)?.[1]||id;
+document.title=workName+' — Editor — Bhakti Study Español';
+document.querySelector('header h1').textContent=workName;$('unit').replaceChildren();en.forEach((r,i)=>{const opt=document.createElement('option');opt.value=String(i);opt.textContent=String(r.sourceLabel||r.canonicalId||('Anuccheda '+(i+1)));$('unit').append(opt);});display();rememberLast('spanish');}catch(e){$('work').value=old;notify('No se pudo cargar '+id+': '+e.message,true);}}
 function exportDrafts(){if(dirty&&!save(true))return;const payload={format:'bhakti-sandarbhas-drafts-v1',exportedAt:new Date().toISOString(),drafts};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='sandarbhas-borradores-'+new Date().toISOString().slice(0,10)+'.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);notify('Exportación descargada. Guarda una copia de respaldo.');}
 async function importDrafts(file){try{if(!file)return;const data=JSON.parse(await file.text());if(data.format!=='bhakti-sandarbhas-drafts-v1'||!data.drafts||typeof data.drafts!=='object'||Array.isArray(data.drafts))throw Error('Formato de borradores no compatible');const incoming=Object.entries(data.drafts);if(!incoming.every(([k,v])=>WORKS.some(([id])=>k.startsWith(id+'::'))&&v&&typeof v.content==='string'&&typeof v.canonicalId==='string'))throw Error('Hay registros no válidos');const clashes=incoming.filter(([k])=>Object.hasOwn(drafts,k)).length;if(!confirm('Importar '+incoming.length+' borradores? '+clashes+' ya existen y serán reemplazados.'))return;if(dirty&&!save(true))return;const copy={...drafts};for(const [k,v] of incoming)copy[k]=v;drafts=copy;if(!storeDrafts())return;display();notify('Borradores importados: '+incoming.length);}catch(e){notify('Error al importar: '+e.message,true);}finally{$('import').value='';}}
 
@@ -131,8 +136,24 @@ $('spanish').addEventListener('input',()=>{dirty=true;});$('review').addEventLis
 $('hideEnglish').addEventListener('change',e=>$('columns').classList.toggle('hide-en',e.target.checked));
 $('save').addEventListener('click',()=>save());$('export').addEventListener('click',exportDrafts);$('import').addEventListener('change',e=>importDrafts(e.target.files[0]));
 $('restore').addEventListener('click',()=>{if(!confirm('Restaurar el texto español original de esta unidad? El borrador local actual será eliminado.'))return;delete drafts[key()];if(!storeDrafts())return;display();notify('Restaurado el texto del archivo español; los archivos originales no se modificaron.');});
-window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
-loadDrafts();const last=readBookmarks().last;loadWork(WORKS.some(([id])=>id===last?.work)?last.work:'tattva').then(()=>{if(last&&currentWork===last.work){const i=en.findIndex(r=>String(r.canonicalId)===String(last.canonicalId));if(i>=0){currentIndex=i;display();restorePosition(last.panel||'spanish',last.position);}}});
+window.addEventListener('beforeunload',e=>{
+ rememberLast(activeBookmarkPanel);
+ if(dirty){e.preventDefault();e.returnValue='';}
+});
+loadDrafts();
+const last=readBookmarks().last;
+const initialWork=WORKS.some(([id])=>id===last?.work)?last.work:'tattva';
+loadWork(initialWork).then(()=>{
+ if(last && currentWork===last.work){
+  const i=en.findIndex(r=>String(r.canonicalId)===String(last.canonicalId));
+  if(i>=0){
+   currentIndex=i;
+   display();
+   restorePosition(last.panel||'spanish',last.position);
+  }
+ }
+ if(en.length)rememberLast(last?.panel==='english'?'english':'spanish');
+});
 </script><!-- HIGHLIGHT-BOOKMARKS-V1 -->
 <style>
 .bookmark-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0}
@@ -260,7 +281,15 @@ async function saveCurrent(){
  const index=Number(unit?.value);
  // Los borradores del editor contienen workId y canonicalId. Usamos el más reciente
  // correspondiente al libro, con contenido idéntico al área española.
- const entries=Object.entries(local()).filter(([k,v])=>v&&v.workId===work&&typeof v.content==='string'&&v.content===document.getElementById('spanish')?.value);
+ const canonicalId = String(en[currentIndex]?.canonicalId ?? '');
+ const draftKey = work + '::' + canonicalId;
+ const entries = Object.entries(local()).filter(([k,v])=>
+   k === draftKey &&
+   v &&
+   v.workId === work &&
+   String(v.canonicalId) === canonicalId &&
+   typeof v.content === 'string'
+ );
  if(!entries.length){set('No se encontró un borrador guardado para esta traducción. Comprueba el botón Guardar.',false);return;}
  entries.sort((a,b)=>String(b[1].savedAt||'').localeCompare(String(a[1].savedAt||'')));
  try{await send(...entries[0]);set('✓ Traducción guardada también en carpeta permanente: '+entries[0][1].canonicalId,true)}
@@ -369,5 +398,8 @@ try {
 })();
 </script>
 <!-- /RECUPERACION-SEGURA-SANDARBHAS-V1 -->
+
+
+
 
 </body></html>
