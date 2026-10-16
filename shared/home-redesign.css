@@ -355,3 +355,51 @@ body:has(#bhakti-layout) {
   }
 
 }
+
+/* NUEVA PALETA MOVIL: LAVANDA Y BLANCO PERLA */
+
+@media (max-width: 760px) {
+
+  body {
+    background: #e9eaf8 !important;
+  }
+
+  .main {
+    background: #ffffff !important;
+    border: 1px solid #b9b2e5 !important;
+    box-shadow: 0 10px 30px rgba(53,48,117,0.12) !important;
+  }
+
+  .academy-creator-credit {
+    border-bottom: 2px solid #b9b2e5 !important;
+  }
+
+  .academy-creator-credit strong {
+    color: #263c83 !important;
+  }
+
+  .academy-creator-credit span {
+    color: #6650a4 !important;
+  }
+
+  .hero h1 {
+    color: #263c83 !important;
+  }
+
+  .hero .lead {
+    color: #34415a !important;
+  }
+
+  .hero .statbar .stat {
+    background: #f0f1fc !important;
+    border: 1px solid #d8d5ef !important;
+    color: #263c83 !important;
+  }
+
+  .hero .notice {
+    background: #f0f1fc !important;
+    border-left: 4px solid #8070c4 !important;
+    color: #263c83 !important;
+  }
+
+}
