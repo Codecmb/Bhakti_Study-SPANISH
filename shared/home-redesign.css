@@ -1,0 +1,63 @@
+
+/* Paleta renovada de la Academia */
+
+body:has(#bhakti-layout) {
+  background: #f8f5ef;
+}
+
+#bhakti-layout .hero {
+  background: linear-gradient(
+    125deg,
+    #233e88 0%,
+    #4158a4 55%,
+    #6554b6 100%
+  );
+}
+
+#bhakti-layout .hero .eyebrow {
+  color: #f6d887;
+}
+
+#bhakti-layout .hero .stat {
+  border-color: rgba(246,216,135,.45);
+}
+
+#bhakti-layout .hero .notice {
+  border-left-color: #efc66f;
+}
+
+#bhakti-layout .button {
+  background: linear-gradient(135deg,#233e88,#6554b6);
+}
+
+#bhakti-layout .button.secondary {
+  background: #f5ecda;
+  color: #233e88;
+}
+
+#bhakti-layout .grid .card:nth-child(4n+1)::before {
+  background: #6554b6;
+}
+
+#bhakti-layout .grid .card:nth-child(4n+2)::before {
+  background: #167e95;
+}
+
+#bhakti-layout .grid .card:nth-child(4n+3)::before {
+  background: #b66b3e;
+}
+
+#bhakti-layout .grid .card:nth-child(4n+4)::before {
+  background: #277e70;
+}
+
+#bhakti-layout .section-title,
+#bhakti-layout .card h2 {
+  color: #233e88;
+}
+
+#bhakti-layout .academy-verse {
+  background: #fcf5e8;
+  border-left-color: #efc66f;
+}
+
