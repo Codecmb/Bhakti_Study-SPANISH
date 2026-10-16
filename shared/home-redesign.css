@@ -61,3 +61,42 @@ body:has(#bhakti-layout) {
   border-left-color: #efc66f;
 }
 
+
+/* Botón de actualización fijo arriba a la derecha */
+
+#bhakti-update-panel {
+  position: fixed !important;
+  top: 12px;
+  right: 12px;
+  left: auto;
+  z-index: 1100;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#bhakti-check-update {
+  box-shadow: 0 4px 16px rgba(20,38,76,.25);
+}
+
+#bhakti-update-message:not(:empty) {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  width: min(290px, 85vw);
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #cbd8f5;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(20,38,76,.15);
+}
+
+@media (max-width: 760px) {
+  #bhakti-check-update {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+}
+
