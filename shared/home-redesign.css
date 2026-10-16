@@ -403,3 +403,130 @@ body:has(#bhakti-layout) {
   }
 
 }
+
+/* HERO MOVIL: DEGRADADO EXACTO DE LA BARRA LATERAL */
+
+@media (max-width: 760px) {
+
+  .hero {
+    background: linear-gradient(
+      180deg,
+      #142a68 0%,
+      #4c1d95 58%,
+      #9d174d 100%
+    ) !important;
+
+    background-image: linear-gradient(
+      180deg,
+      #142a68 0%,
+      #4c1d95 58%,
+      #9d174d 100%
+    ) !important;
+
+    border-radius: 18px !important;
+    padding: 24px 18px !important;
+    border: none !important;
+  }
+
+  .hero h1 {
+    color: #ffffff !important;
+  }
+
+  .hero .lead {
+    color: #ffffff !important;
+    opacity: 1 !important;
+  }
+
+  .hero .statbar .stat {
+    background: rgba(255,255,255,0.14) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255,255,255,0.28) !important;
+  }
+
+  .hero .notice {
+    background: rgba(255,255,255,0.12) !important;
+    color: #ffffff !important;
+    border-left: 4px solid #fbbf24 !important;
+  }
+
+  .hero .notice b {
+    color: #ffffff !important;
+  }
+
+}
+
+/* HEADER MOVIL: NOMBRES DE LA ACADEMIA */
+
+@media (max-width: 760px) {
+
+  .academy-creator-credit {
+    background: linear-gradient(
+      180deg,
+      #142a68 0%,
+      #4c1d95 58%,
+      #9d174d 100%
+    ) !important;
+    border: none !important;
+    border-radius: 18px !important;
+    padding: 26px 18px !important;
+    text-align: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    box-shadow: 0 8px 24px rgba(20,42,104,.18) !important;
+  }
+
+  .academy-creator-credit strong,
+  .academy-creator-credit span {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    text-align: center !important;
+  }
+
+  .academy-creator-credit strong {
+    font-size: 23px !important;
+    font-weight: 800 !important;
+  }
+
+  .academy-creator-credit span {
+    font-size: 19px !important;
+    font-weight: 700 !important;
+  }
+
+  /* RESTAURAR PORTADA CLARA DEBAJO DEL HEADER */
+
+  .hero {
+    background: #ffffff !important;
+    background-image: none !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    box-shadow: none !important;
+    padding: 20px 16px !important;
+  }
+
+  .hero h1 {
+    color: #233e88 !important;
+    font-size: 24px !important;
+  }
+
+  .hero .lead {
+    color: #1e293b !important;
+    font-weight: 600 !important;
+  }
+
+  .hero .statbar .stat {
+    background: #f0f1fc !important;
+    color: #233e88 !important;
+    border: 1px solid #d8d5ef !important;
+  }
+
+  .hero .notice {
+    background: #f0f1fc !important;
+    color: #233e88 !important;
+    border-left: 4px solid #8070c4 !important;
+  }
+
+  .hero .notice b {
+    color: #233e88 !important;
+  }
+
+}
