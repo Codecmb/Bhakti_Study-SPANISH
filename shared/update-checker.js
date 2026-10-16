@@ -67,6 +67,11 @@
   const message = document.getElementById('bhakti-update-message');
 
   button.addEventListener('click', async function () {
+    if (button.dataset.action === 'reload') {
+      window.location.reload();
+      return;
+    }
+
     button.disabled = true;
     message.textContent = 'Buscando actualizaciones…';
 
@@ -96,7 +101,10 @@
           'Se está preparando una nueva versión. Vuelve a comprobar en unos momentos.';
       } else {
         message.textContent =
-          'Comprobación completada. Si publicaste cambios recientemente, pueden tardar en aparecer.';
+          'Comprobación completada. Puedes recargar la aplicación para ver los cambios publicados.';
+
+        button.textContent = '↻ Recargar aplicación';
+        button.dataset.action = 'reload';
       }
 
     } catch (error) {

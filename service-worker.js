@@ -1,10 +1,13 @@
-const CACHE = 'bhakti-study-spanish-books-v6';
+const CACHE = 'bhakti-study-spanish-app-v7';
+const BOOKS_CACHE = 'bhakti-study-spanish-books-v6';
 const PREFIX = 'bhakti-study-spanish-';
 
 const CORE = [
   'index.html',
   'manifest.webmanifest',
   'shared/styles.css',
+  'shared/home-redesign.css',
+  'shared/update-checker.js',
   'shared/app.js',
   'data/programs.json',
   'offline-books.json'
@@ -26,7 +29,7 @@ self.addEventListener('activate', event => {
     const keys = await caches.keys();
 
     for (const key of keys) {
-      if (key.startsWith(PREFIX) && key !== CACHE) {
+      if (key.startsWith(PREFIX) && key !== CACHE && key !== BOOKS_CACHE) {
         const old = await caches.open(key);
         const requests = await old.keys();
 
