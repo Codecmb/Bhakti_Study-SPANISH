@@ -60,7 +60,60 @@ aria-expanded="true">☰</button>
 </section>
 
 <div id="offline-books-status" class="notice" role="status"
-aria-live="polite">Preparando la biblioteca para estudiar sin internet…</div><h2 class="section-title">Áreas de Estudio</h2><section id="programs" class="grid"></section><div class="footer-note">Aplicación de estudio independiente. Los grados śāstricos oficiales de ISKCON requieren el proceso de autorización y evaluación correspondiente de BOEX/Ministerio.</div></main></div><script src="shared/app.js"></script><script>sidebar('home');json('data/programs.json').then(ps=>programs.innerHTML=ps.map(p=>`<article class="card"><div class="eyebrow">Área de Estudio</div><h2>${p.title}</h2><p>${p.subtitle}</p><a class="button" href="programs/${p.id}/index.html">Entrar al Área</a></article>`).join(''))</script><script>
+aria-live="polite">Preparando la biblioteca para estudiar sin internet…</div>
+<h2 class="section-title">Áreas de Estudio</h2><section id="programs" class="grid"></section><div class="footer-note">Aplicación de estudio independiente. Los grados śāstricos oficiales de ISKCON requieren el proceso de autorización y evaluación correspondiente de BOEX/Ministerio.</div></main></div><script src="shared/app.js"></script><script>sidebar('home');json('data/programs.json').then(ps=>programs.innerHTML=ps.map(p=>`<article class="card"><div class="eyebrow">Área de Estudio</div><h2>${p.title}</h2><p>${p.subtitle}</p><a class="button" href="programs/${p.id}/index.html">Entrar al Área</a></article>`).join(''))</script>
+<script>
+(function () {
+  const button = document.getElementById('bhakti-menu-button');
+  const layout = document.getElementById('bhakti-layout');
+
+  if (!button || !layout) return;
+
+  let closed = window.matchMedia('(max-width: 760px)').matches;
+
+  function update() {
+    layout.classList.toggle('menu-hidden', closed);
+    button.setAttribute('aria-expanded', String(!closed));
+    button.setAttribute(
+      'aria-label',
+      closed ? 'Mostrar menú lateral' : 'Ocultar menú lateral'
+    );
+    button.title = closed ? 'Mostrar menú' : 'Ocultar menú';
+  }
+
+  button.addEventListener('click', function () {
+    closed = !closed;
+    update();
+  });
+
+  // Al seleccionar una opción, cerrar el menú en móviles.
+  layout.addEventListener('click', function (event) {
+    const link = event.target.closest('.sidebar a[href]');
+    if (!link || !window.matchMedia('(max-width: 760px)').matches) return;
+
+    closed = true;
+    update();
+
+    // Si el enlace apunta a una sección de esta página,
+    // llevarla inmediatamente a la parte visible.
+    const destination = new URL(link.href, location.href);
+    if (destination.pathname === location.pathname &&
+        destination.search === location.search &&
+        destination.hash) {
+      const target = document.getElementById(
+        decodeURIComponent(destination.hash.slice(1))
+      );
+      if (target) {
+        event.preventDefault();
+        target.scrollIntoView({behavior:'instant', block:'start'});
+      }
+    }
+  });
+
+  update();
+})();
+</script>
+<script src="shared/update-checker.js?v=2"></script><script>
 if ('serviceWorker' in navigator) {
 window.addEventListener('load', async () => {
   const status = document.getElementById('offline-books-status');
@@ -72,6 +125,7 @@ window.addEventListener('load', async () => {
   button.type = 'button';
   button.style.marginTop = '10px';
   status.after(button);
+  button.style.display = 'none';
 
   const cacheName = 'bhakti-study-spanish-books-v6';
   let downloading = false;
@@ -157,58 +211,22 @@ window.addEventListener('load', async () => {
   }
 
   button.addEventListener('click', downloadLibrary);
+
+  const sidebarDownload = document.getElementById('download-library-link');
+
+  if (sidebarDownload) {
+    sidebarDownload.addEventListener('click', event => {
+      event.preventDefault();
+      button.click();
+    });
+  }
+
+  if (new URLSearchParams(location.search).get('descargar-biblioteca') === '1') {
+    history.replaceState(null, '', location.pathname);
+    button.click();
+  }
+
 });
 }
 </script>
-<script>
-(function () {
-  const button = document.getElementById('bhakti-menu-button');
-  const layout = document.getElementById('bhakti-layout');
-
-  if (!button || !layout) return;
-
-  let closed = window.matchMedia('(max-width: 760px)').matches;
-
-  function update() {
-    layout.classList.toggle('menu-hidden', closed);
-    button.setAttribute('aria-expanded', String(!closed));
-    button.setAttribute(
-      'aria-label',
-      closed ? 'Mostrar menú lateral' : 'Ocultar menú lateral'
-    );
-    button.title = closed ? 'Mostrar menú' : 'Ocultar menú';
-  }
-
-  button.addEventListener('click', function () {
-    closed = !closed;
-    update();
-  });
-
-  // Al seleccionar una opción, cerrar el menú en móviles.
-  layout.addEventListener('click', function (event) {
-    const link = event.target.closest('.sidebar a[href]');
-    if (!link || !window.matchMedia('(max-width: 760px)').matches) return;
-
-    closed = true;
-    update();
-
-    // Si el enlace apunta a una sección de esta página,
-    // llevarla inmediatamente a la parte visible.
-    const destination = new URL(link.href, location.href);
-    if (destination.pathname === location.pathname &&
-        destination.search === location.search &&
-        destination.hash) {
-      const target = document.getElementById(
-        decodeURIComponent(destination.hash.slice(1))
-      );
-      if (target) {
-        event.preventDefault();
-        target.scrollIntoView({behavior:'instant', block:'start'});
-      }
-    }
-  });
-
-  update();
-})();
-</script>
-<script src="shared/update-checker.js?v=2"></script></body></html>
+</body></html>

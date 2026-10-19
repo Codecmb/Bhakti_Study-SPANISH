@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estudio de Libros — Bhakti Study Español</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f4f1e9;color:#242936;font-family:Arial,sans-serif}
+header{background:#29213c;color:white;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+header h1{margin:0;font-size:25px}
+header p{margin:6px 0 0;color:#e5d9f2;font-size:13px}
+header a{color:white;text-decoration:none}
+.toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:14px 24px;background:#eae3d7}
+select{padding:10px;border:1px solid #c9c0b2;border-radius:6px;max-width:100%;min-width:180px}
+.workspace{display:grid;grid-template-columns:minmax(0,55%) minmax(0,45%);gap:12px;padding:12px;height:calc(100vh - 155px);min-height:650px}
+.pane{min-width:0;min-height:0;background:white;border:1px solid #ddd;border-radius:10px;overflow:hidden}
+.pane iframe{display:block;width:100%;height:100%;border:0}
+.empty{padding:32px;text-align:center;color:#666}
+@media(max-width:800px){
+header{flex-wrap:wrap}
+.workspace{display:block;height:auto;min-height:0}
+.pane{height:75vh;min-height:480px;margin-bottom:12px}
+}
+</style>
+</head>
+<body>
+<header>
+<div>
+<h1>Estudio de Libros</h1>
+<p>LEE · REFLEXIONA · PROFUNDIZA TU COMPRENSIÓN</p>
+</div>
+<a href="../index.html">← Volver a la Academia</a>
+</header>
+
+<div class="toolbar">
+<label for="areaSelect">Programa académico:</label>
+<select id="areaSelect">
+<option value="">Cargando programas...</option>
+</select>
+<label for="bookSelect">Libro:</label>
+<select id="bookSelect" disabled>
+<option value="">Selecciona primero un programa</option>
+</select>
+</div>
+
+<main class="workspace">
+<section class="pane" aria-label="Lector de libros">
+<iframe id="bookFrame" title="Lector de libros"></iframe>
+</section>
+<section class="pane" aria-label="Diario de Estudio">
+<iframe id="journalFrame" title="Diario de Estudio"
+src="journal.html?aula=1"></iframe>
+</section>
+</main>
+
+<script>
+const areaSelect=document.getElementById('areaSelect');
+const bookSelect=document.getElementById('bookSelect');
+const bookFrame=document.getElementById('bookFrame');
+const journalFrame=document.getElementById('journalFrame');
+
+let programs=[];
+let books=[];
+
+const sandarbhaNames={
+tattva:'Tattva Sandarbha',
+bhagavat:'Bhāgavata Sandarbha',
+paramatma:'Paramātmā Sandarbha',
+krsna:'Kṛṣṇa Sandarbha',
+bhakti:'Bhakti Sandarbha',
+priti:'Prīti Sandarbha'
+};
+
+function addOption(select,value,label){
+const option=document.createElement('option');
+option.value=value;
+option.textContent=label;
+select.appendChild(option);
+}
+
+function updateBooks(){
+bookSelect.replaceChildren();
+bookSelect.disabled=true;
+bookFrame.removeAttribute('src');
+
+const program=programs.find(p=>p.id===areaSelect.value);
+if(!program){
+addOption(bookSelect,'','Selecciona primero un programa');
+return;
+}
+
+addOption(bookSelect,'','Selecciona un libro');
+
+for(const id of program.books||[]){
+if(program.id==='sat-sandarbhas'){
+addOption(bookSelect,'sandarbha:'+id,sandarbhaNames[id]||id);
+continue;
+}
+const catalogId=/^sb\d+$/.test(id)
+  ? 'sb-canto-'+id.slice(2)+'-es'
+  : id+'-es';
+
+const book=books.find(b=>
+  b.id===catalogId && b.status==='imported'
+);
+if(book)addOption(bookSelect,book.id,book.title);
+else if(program.id==='bhakti-vedanta' && (id==='sb11'||id==='sb12')){
+  addOption(bookSelect,'pagina:'+id,
+    'Śrīmad-Bhāgavatam — Canto '+id.slice(2));
+}
+}
+
+bookSelect.disabled=bookSelect.options.length<=1;
+}
+
+function openBook(){
+const id=bookSelect.value;
+const program=programs.find(p=>p.id===areaSelect.value);
+bookFrame.onload=null;
+
+if(!id){
+bookFrame.removeAttribute('src');
+journalFrame.src='journal.html?aula=1';
+return;
+}
+
+const bookTitle=bookSelect.selectedOptions[0]?.textContent||'';
+const params=new URLSearchParams({
+aula:'1',
+program:program?.title||'',
+book:id.startsWith('sandarbha:')?id.split(':')[1]:id,
+bookTitle
+});
+
+journalFrame.src='journal.html?'+params.toString();
+
+if(id.startsWith('pagina:')){
+const canto=id.split(':')[1];
+const inicio={
+  sb11:'SB.11.1.1',
+  sb12:'SB.12.1.1'
+}[canto];
+if(!inicio)return;
+params.set('book',canto);
+params.set('ref',inicio);
+journalFrame.src='journal.html?'+params.toString();
+bookFrame.src='../programs/bhakti-vedanta/sb.html?ref='+
+  encodeURIComponent(inicio);
+}else if(id.startsWith('sandarbha:')){
+const work=id.split(':')[1];
+if(!Object.hasOwn(sandarbhaNames,work))return;
+bookFrame.src='../programs/sat-sandarbhas/'+work+'/index.html?n=1';
+}else{
+const readerParams=new URLSearchParams({
+book:id,
+program:program?.id||''
+});
+bookFrame.src='../library/reader.html?'+readerParams.toString();
+}
+
+bookFrame.onload=()=>{
+try{
+const doc=bookFrame.contentDocument;
+if(!doc)return;
+const style=doc.createElement('style');
+style.textContent=`
+.sidebar{display:none!important}
+.layout{display:block!important}
+.main{width:100%!important;max-width:none!important;margin:0!important;padding:16px!important}
+`;
+doc.head.appendChild(style);
+}catch(error){
+console.warn('No se pudo adaptar el lector integrado:',error);
+}
+};
+}
+
+async function initialize(){
+try{
+const responses=await Promise.all([
+fetch('../data/programs.json'),
+fetch('../data/books.json')
+]);
+if(responses.some(r=>!r.ok))throw Error('No se pudieron cargar los catálogos');
+
+programs=await responses[0].json();
+books=await responses[1].json();
+
+areaSelect.replaceChildren();
+addOption(areaSelect,'','Selecciona un programa');
+
+for(const program of programs){
+addOption(areaSelect,program.id,program.title);
+}
+
+}catch(error){
+console.error(error);
+areaSelect.replaceChildren();
+addOption(areaSelect,'','Error al cargar los programas');
+}
+}
+
+areaSelect.addEventListener('change',updateBooks);
+bookSelect.addEventListener('change',openBook);
+initialize();
+</script>
+</body>
+</html>

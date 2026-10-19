@@ -17,6 +17,7 @@ async function json(p){
 function sidebar(a='home',rootOverride=null){
  const R=rootOverride||ROOT;
  const link=i=>{
+  if(i[2]==='#') return `<span class="nav-placeholder" style="display:block;padding:10px 12px;opacity:.65;cursor:default">${i[1]}</span>`;
   if(i[0]==='journal'){
     return `<a class="${i[0]===a?'active':''}" href="${i[2]}">${i[1]} ↗</a>`;
   }
@@ -32,6 +33,9 @@ function sidebar(a='home',rootOverride=null){
      ['sat-sandarbhas','Ṣaṭ Sandarbhas',R+'programs/sat-sandarbhas/index.html']
    ]],
    ['Mi Estudio',[
+     ['classroom','Aula de Estudio',R+'student/aula-estudio.html'],
+     ['book-study','Estudio de Libros',R+'student/book-study.html'],
+     
      ['study','Estudiar',R+'study/index.html'],
      ['portfolio','Mi Trabajo',R+'student/portfolio.html'],
      ['journal','Diario de Estudio',R+'student/journal.html'],
@@ -62,7 +66,7 @@ function sidebar(a='home',rootOverride=null){
     <a href="${R}admin/study-guides.html">Administrar Guías de Estudio</a>
     <a href="${R}student/bg-es-editor.html">Editor de Bhagavad-gītā</a>
   </div>
-</details><a class="nav-link" href="${R}student/search.html">🔎 Búsqueda Global</a>${grouped}
+</details><a class="nav-link" href="${R}student/search.html">🔎 Búsqueda Global</a><a class="nav-link" href="${R}index.html?descargar-biblioteca=1" id="download-library-link">⬇ Descargar biblioteca completa</a>${grouped}
 
 </nav>`;
 

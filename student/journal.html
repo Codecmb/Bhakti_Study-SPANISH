@@ -80,9 +80,52 @@ body .layout > .main {
     }
 }
 
+
+/* Modo integrado: Diario dentro del Aula de Estudio */
+body:has(.journal-page) .layout:has(.journal-page) {
+    min-width: 0;
+}
+
+html:has(body.aula-mode) {
+    overflow-x: hidden;
+}
+
+body.aula-mode .layout {
+    display: block !important;
+    min-height: 0 !important;
+}
+
+body.aula-mode .layout > .sidebar {
+    display: none !important;
+}
+
+body.aula-mode .layout > .main {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 18px !important;
+}
+
+body.aula-mode .journal-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+}
+
+body.aula-mode .journal-page h1 {
+    font-size: 1.7rem;
+}
+
+body.aula-mode .journal-field textarea {
+    min-height: 180px;
+}
+
 </style>
 </head>
 <body>
+<script>
+if (new URLSearchParams(location.search).get('aula') === '1') {
+    document.body.classList.add('aula-mode');
+}
+</script>
 <!-- enlace-editor-bg-es-local -->
 <div style="margin:12px 24px;padding:12px;border:1px solid #cfc7b7;border-radius:8px;background:#faf8f1"><a href="bg-es-editor.html">Abrir editor local del Bhagavad-gītā (700 versos)</a> — Copiar, pegar y exportar correcciones. No publicar sin permiso.</div>
 

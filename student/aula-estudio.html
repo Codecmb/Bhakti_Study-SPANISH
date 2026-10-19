@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aula de Estudio | Bhakti Study Español</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,sans-serif;background:#f5f3ee;color:#242424}
+header{padding:16px 24px;background:white;border-bottom:1px solid #ddd;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+h1{margin:0;font-size:22px}
+header a{padding:10px 16px;border:1px solid #ccc;border-radius:8px;background:white;color:#242424;text-decoration:none;font-weight:600}
+.toolbar{padding:14px 24px}
+select{padding:10px;font-size:15px;max-width:100%;width:300px}
+.classroom{display:grid;grid-template-columns:minmax(0,35%) minmax(0,65%);min-height:calc(100vh - 145px)}
+.media-panel{padding:16px}
+.media-box{background:#fff;border:1px solid #ddd;border-radius:8px;padding:24px;text-align:center}
+.media-box h2{font-size:18px}
+.media-box p{color:#666;line-height:1.5}
+details{margin-top:14px;padding:12px;background:white;border:1px solid #ddd;border-radius:8px}
+summary{cursor:pointer;font-weight:600}
+.journal-frame{width:100%;min-height:650px;height:100%;border:0;background:white}
+@media(max-width:800px){
+.classroom{display:block}
+.journal-frame{height:75vh;min-height:500px}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Aula de Estudio</h1>
+<a href="../index.html">← Volver a la Academia</a>
+</header>
+
+<div class="toolbar">
+<label for="program">Programa académico: </label>
+<select id="program">
+<option value="bhakti-sastri">Bhakti Śāstrī</option>
+<option value="bhakti-vaibhava">Bhakti Vaibhava</option>
+<option value="bhakti-vedanta">Bhakti Vedānta</option>
+<option value="bhakti-sarvabhauma">Bhakti Sārvabhauma</option>
+<option value="sat-sandarbhas">Ṣaṭ Sandarbhas</option>
+</select>
+</div>
+
+<div class="toolbar">
+<label for="bookSelect">Libro o serie: </label>
+<select id="bookSelect"></select>
+</div>
+
+<main class="classroom">
+<section class="media-panel">
+<div class="media-box">
+<h2 id="programTitle">Bhakti Śāstrī</h2>
+<p>Las clases en video y audio de este programa se incorporarán progresivamente.</p>
+<p>Mientras tanto, puedes utilizar el Diario de Estudio para desarrollar tus reflexiones, preguntas y comprensión filosófica.</p>
+</div>
+<div id="mediaPlayer" hidden>
+<iframe id="classVideo" title="Video de la clase"
+style="width:100%;aspect-ratio:16/9;border:0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen hidden></iframe>
+<audio id="classAudio" controls style="width:100%" hidden></audio>
+</div>
+<details open>
+<summary>Clases y grabaciones</summary>
+<div id="classList">Cargando catálogo...</div>
+</details>
+</section>
+<iframe id="journal" class="journal-frame"
+title="Diario de Estudio"
+src="journal.html?aula=1"></iframe>
+</main>
+
+<script>
+const program=document.getElementById('program');
+const journal=document.getElementById('journal');
+const title=document.getElementById('programTitle');
+
+const names={
+'bhakti-sastri':'Bhakti Śāstrī',
+'bhakti-vaibhava':'Bhakti Vaibhava',
+'bhakti-vedanta':'Bhakti Vedānta',
+'bhakti-sarvabhauma':'Bhakti Sārvabhauma',
+'sat-sandarbhas':'Ṣaṭ Sandarbhas'
+};
+
+const bookNames={
+'bg':'Bhagavad-gītā',
+'iso':'Śrī Īśopaniṣad',
+'noi':'Néctar de la Instrucción',
+'nod':'Néctar de la Devoción',
+'cc-adi':'Caitanya-caritāmṛta — Ādi-līlā',
+'cc-madhya':'Caitanya-caritāmṛta — Madhya-līlā',
+'cc-antya':'Caitanya-caritāmṛta — Antya-līlā',
+'tattva':'Tattva Sandarbha',
+'bhagavat':'Bhāgavata Sandarbha',
+'paramatma':'Paramātmā Sandarbha',
+'krsna':'Kṛṣṇa Sandarbha',
+'bhakti':'Bhakti Sandarbha',
+'priti':'Prīti Sandarbha'
+};
+
+for(let i=1;i<=12;i++){
+  bookNames['sb'+i]='Śrīmad-Bhāgavatam — Canto '+i;
+}
+
+const bookSelect=document.getElementById('bookSelect');
+let programs=[];
+
+let mediaLessons=[];
+
+function youtubeId(url){
+  try {
+    const u=new URL(url);
+    const host=u.hostname.toLowerCase();
+    if(host==='youtu.be'||host==='www.youtu.be'){
+      return u.pathname.split('/')[1]||'';
+    }
+    if(['youtube.com','www.youtube.com','m.youtube.com'].includes(host)){
+      if(u.pathname==='/watch') return u.searchParams.get('v')||'';
+      if(u.pathname.startsWith('/embed/')||u.pathname.startsWith('/shorts/')){
+        return u.pathname.split('/')[2]||'';
+      }
+    }
+  } catch(e){}
+  return '';
+}
+
+function showMedia(lesson){
+  const panel=document.getElementById('mediaPlayer');
+  const video=document.getElementById('classVideo');
+  const audio=document.getElementById('classAudio');
+
+  video.removeAttribute('src');
+  audio.pause();
+  audio.removeAttribute('src');
+  audio.load();
+  video.hidden=true;
+  audio.hidden=true;
+  panel.hidden=true;
+
+  if(lesson.type==='video'){
+    const id=youtubeId(lesson.url);
+    if(!/^[A-Za-z0-9_-]{11}$/.test(id)) return;
+    video.src='https://www.youtube-nocookie.com/embed/'+id;
+    video.hidden=false;
+    panel.hidden=false;
+  }else if(lesson.type==='audio'){
+    try {
+      const u=new URL(lesson.url,location.href);
+      if(!['https:','http:'].includes(u.protocol)) return;
+      audio.src=u.href;
+      audio.hidden=false;
+      panel.hidden=false;
+    }catch(e){}
+  }
+}
+
+function updateClasses(){
+  const list=document.getElementById('classList');
+  list.replaceChildren();
+
+  const selected=mediaLessons.filter(item=>
+    item.program===program.value && item.book===bookSelect.value
+  );
+
+  if(!selected.length){
+    list.textContent='No hay grabaciones disponibles para este libro.';
+    document.getElementById('mediaPlayer').hidden=true;
+    document.getElementById('classVideo').removeAttribute('src');
+    const audio=document.getElementById('classAudio');
+    audio.pause();
+    audio.removeAttribute('src');
+    return;
+  }
+
+  selected.forEach(lesson=>{
+    const button=document.createElement('button');
+    button.type='button';
+    button.textContent=lesson.title;
+    button.style.cssText='display:block;width:100%;padding:12px;margin:8px 0;text-align:left;cursor:pointer';
+    button.addEventListener('click',()=>showMedia(lesson));
+    list.appendChild(button);
+  });
+}
+
+fetch('../data/classroom-media.json')
+  .then(response=>{
+    if(!response.ok) throw Error('No se pudo cargar el catálogo audiovisual');
+    return response.json();
+  })
+  .then(data=>{
+    mediaLessons=Array.isArray(data.lessons)?data.lessons:[];
+    updateClasses();
+  })
+  .catch(error=>{
+    console.error(error);
+    document.getElementById('classList').textContent=
+      'No se pudo cargar el catálogo audiovisual.';
+  });
+
+function updateJournal(){
+  const params=new URLSearchParams({
+    aula:'1',
+    program:names[program.value]||program.value,
+    book:bookSelect.value,
+    bookTitle:bookSelect.selectedOptions[0]?.textContent||''
+  });
+  journal.src='journal.html?'+params.toString();
+}
+
+function updateBooks(){
+  const selected=programs.find(p=>p.id===program.value);
+  bookSelect.replaceChildren();
+
+  for(const id of selected?.books||[]){
+    const option=document.createElement('option');
+    option.value=id;
+    option.textContent=bookNames[id]||id;
+    bookSelect.appendChild(option);
+  }
+
+  title.textContent=names[program.value]||program.value;
+  updateJournal();
+}
+
+program.addEventListener('change',updateBooks);
+bookSelect.addEventListener('change',updateJournal);
+
+fetch('../data/programs.json')
+  .then(response=>{
+    if(!response.ok)throw Error('No se pudo cargar programs.json');
+    return response.json();
+  })
+  .then(data=>{
+    programs=data;
+    updateBooks();
+  })
+  .catch(error=>{
+    console.error(error);
+    bookSelect.replaceChildren();
+    const option=document.createElement('option');
+    option.textContent='No se pudo cargar el catálogo';
+    bookSelect.appendChild(option);
+  });
+</script>
+</body>
+</html>
