@@ -24,6 +24,40 @@ summary{cursor:pointer;font-weight:600}
 .classroom{display:block}
 .journal-frame{height:75vh;min-height:500px}
 }
+.class-tools{margin-top:12px}
+#classSearch{width:100%;padding:11px;border:1px solid #ccc;border-radius:7px;font-size:14px}
+#classCount{font-size:13px;color:#666;margin:8px 0}
+#classList{max-height:420px;overflow-y:auto}
+#classList button{border:1px solid #ddd;border-radius:6px;background:#fafafa}
+#classList button:hover{background:#edf2fa}
+
+#translationScreen{
+  background:#103b29;
+  border:2px solid #b69b46;
+  border-radius:8px;
+  min-height:190px;
+  padding:22px 16px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+}
+.translation-heading{
+  color:#e6c65c;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1.5px;
+}
+#translationText{
+  color:#ffe348;
+  font-size:clamp(18px,2vw,25px);
+  font-weight:600;
+  line-height:1.5;
+  text-align:center;
+  margin:0;
+}
+
 </style>
 </head>
 <body>
@@ -52,8 +86,10 @@ summary{cursor:pointer;font-weight:600}
 <section class="media-panel">
 <div class="media-box">
 <h2 id="programTitle">Bhakti Śāstrī</h2>
-<p>Las clases en video y audio de este programa se incorporarán progresivamente.</p>
-<p>Mientras tanto, puedes utilizar el Diario de Estudio para desarrollar tus reflexiones, preguntas y comprensión filosófica.</p>
+<div id="translationScreen" role="region" aria-label="Traducción escrita al español">
+<div class="translation-heading">TRADUCCIÓN AL ESPAÑOL</div>
+<p id="translationText" aria-live="polite">Selecciona una clase para comenzar. La traducción escrita aparecerá aquí cuando esté disponible.</p>
+</div>
 </div>
 <div id="mediaPlayer" hidden>
 <iframe id="classVideo" title="Video de la clase"
@@ -64,6 +100,12 @@ allowfullscreen hidden></iframe>
 </div>
 <details open>
 <summary>Clases y grabaciones</summary>
+<div class="class-tools">
+<input id="classSearch" type="search"
+placeholder="Buscar clases por título..."
+aria-label="Buscar clases">
+<p id="classCount" aria-live="polite"></p>
+</div>
 <div id="classList">Cargando catálogo...</div>
 </details>
 </section>
@@ -159,23 +201,31 @@ function showMedia(lesson){
 
 function updateClasses(){
   const list=document.getElementById('classList');
+  const count=document.getElementById('classCount');
+  const search=document.getElementById('classSearch');
   list.replaceChildren();
 
   const selected=mediaLessons.filter(item=>
     item.program===program.value && item.book===bookSelect.value
   );
 
-  if(!selected.length){
-    list.textContent='No hay grabaciones disponibles para este libro.';
-    document.getElementById('mediaPlayer').hidden=true;
-    document.getElementById('classVideo').removeAttribute('src');
-    const audio=document.getElementById('classAudio');
-    audio.pause();
-    audio.removeAttribute('src');
+  const query=search.value.trim().toLocaleLowerCase();
+  const filtered=selected.filter(item=>
+    item.title.toLocaleLowerCase().includes(query)
+  );
+
+  count.textContent=query
+    ? `${filtered.length} de ${selected.length} grabaciones`
+    : `${selected.length} grabaciones disponibles`;
+
+  if(!filtered.length){
+    list.textContent=selected.length
+      ? 'No se encontraron clases con esa búsqueda.'
+      : 'No hay grabaciones disponibles para este libro.';
     return;
   }
 
-  selected.forEach(lesson=>{
+  filtered.forEach(lesson=>{
     const button=document.createElement('button');
     button.type='button';
     button.textContent=lesson.title;
@@ -184,6 +234,9 @@ function updateClasses(){
     list.appendChild(button);
   });
 }
+
+document.getElementById('classSearch')
+  .addEventListener('input',updateClasses);
 
 fetch('../data/classroom-media.json')
   .then(response=>{
@@ -226,7 +279,10 @@ function updateBooks(){
 }
 
 program.addEventListener('change',updateBooks);
-bookSelect.addEventListener('change',updateJournal);
+bookSelect.addEventListener('change',()=>{
+  updateJournal();
+  updateClasses();
+});
 
 fetch('../data/programs.json')
   .then(response=>{
