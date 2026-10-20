@@ -25,7 +25,7 @@ function sidebar(a='home',rootOverride=null){
  };
  const home=['home','Inicio de la Academia',R+'index.html'];
  const groups=[
-   ['Estudio',[
+   ['Programas Académicos',[
      ['bhakti-sastri','Bhakti Śāstrī',R+'programs/bhakti-sastri/index.html'],
      ['bhakti-vaibhava','Bhakti Vaibhava',R+'programs/bhakti-vaibhava/index.html'],
      ['bhakti-vedanta','Bhakti Vedānta',R+'programs/bhakti-vedanta/index.html'],
@@ -36,7 +36,6 @@ function sidebar(a='home',rootOverride=null){
      ['classroom','Aula de Estudio',R+'student/aula-estudio.html'],
      ['book-study','Estudio de Libros',R+'student/book-study.html'],
      
-     ['study','Estudiar',R+'study/index.html'],
      ['portfolio','Mi Trabajo',R+'student/portfolio.html'],
      ['journal','Diario de Estudio',R+'student/journal.html'],
      ['question-bank','Banco de Preguntas',R+'question-bank/index.html'],
@@ -52,7 +51,16 @@ function sidebar(a='home',rootOverride=null){
      ['manage','Administrar Academia',R+'admin/index.html']
    ]]
  ];
- const grouped=groups.map(([label,items])=>`<div class="nav-group"><div class="nav-label">${label}</div>${items.map(link).join('')}</div>`).join('');
+  const grouped=groups.map(([label,items])=>{
+    if(label==='Programas Académicos'){
+      const expanded=items.some(item=>item[0]===a);
+      return `<div class="nav-group"><details class="academic-programs-menu" ${expanded?'open':''}>
+        <summary style="cursor:pointer;padding:12px 10px;font-weight:700;list-style-position:inside">Programas Académicos</summary>
+        <div style="padding-left:12px">${items.map(link).join('')}</div>
+      </details></div>`;
+    }
+    return `<div class="nav-group"><div class="nav-label">${label}</div>${items.map(link).join('')}</div>`;
+  }).join('');
  document.querySelector('.sidebar').innerHTML=`<div class="brand"><img src="${R}assets/bhakti-study-logo.png" alt="Estudio del Bhakti En Español" style="display:block;width:118px;height:118px;object-fit:contain;margin:0 auto 10px"><div>Estudio del Bhakti En Español</div></div><nav class="nav">${link(home)}
 <details id="bhakti-tools-menu" style="margin:10px 0">
   <summary style="cursor:pointer;display:block;padding:12px 10px;background:rgba(255,255,255,.15);border-radius:8px;font-size:15px;font-weight:700;color:white">
