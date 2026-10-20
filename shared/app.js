@@ -232,3 +232,64 @@ async function renderProgram(id){
     add();
   }
 })();
+
+
+/* BHAKTI UNIVERSAL MOBILE NAVIGATION */
+(function () {
+  function initializeMobileNavigation() {
+    const layout = document.querySelector(".layout");
+    const sidebar = layout?.querySelector(".sidebar");
+
+    if (!layout || !sidebar) return;
+
+    // La portada ya tiene su propio controlador.
+    if (document.getElementById("bhakti-menu-button")) return;
+
+    layout.classList.add("bhakti-mobile-layout");
+
+    const button = document.createElement("button");
+    button.id = "bhakti-universal-menu-button";
+    button.type = "button";
+    button.textContent = "☰";
+    button.setAttribute("aria-controls", "bhakti-universal-sidebar");
+
+    sidebar.id ||= "bhakti-universal-sidebar";
+
+    let closed = true;
+
+    function update() {
+      layout.classList.toggle("bhakti-mobile-menu-hidden", closed);
+      button.setAttribute("aria-expanded", String(!closed));
+      button.setAttribute(
+        "aria-label",
+        closed ? "Mostrar menú lateral" : "Ocultar menú lateral"
+      );
+      button.title = closed ? "Mostrar menú" : "Ocultar menú";
+      button.textContent = closed ? "☰" : "✕";
+    }
+
+    button.addEventListener("click", function () {
+      closed = !closed;
+      update();
+    });
+
+    sidebar.addEventListener("click", function (event) {
+      const link = event.target.closest("a[href]");
+      if (!link || !window.matchMedia("(max-width:760px)").matches) return;
+      closed = true;
+      update();
+    });
+
+    document.body.appendChild(button);
+    update();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener(
+      "DOMContentLoaded",
+      initializeMobileNavigation
+    );
+  } else {
+    initializeMobileNavigation();
+  }
+})();

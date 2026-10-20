@@ -248,3 +248,51 @@
     min-width: 0;
   }
 }
+
+
+
+/* BHAKTI UNIVERSAL MOBILE NAVIGATION */
+#bhakti-universal-menu-button {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .bhakti-mobile-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .bhakti-mobile-layout > .sidebar {
+    position: relative;
+    height: auto;
+    min-width: 0;
+    padding-top: 65px;
+  }
+
+  .bhakti-mobile-layout.bhakti-mobile-menu-hidden > .sidebar {
+    display: none !important;
+  }
+
+  .bhakti-mobile-layout > .main {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 70px 18px 24px;
+  }
+
+  #bhakti-universal-menu-button {
+    display: block;
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 10000;
+    width: 46px;
+    height: 46px;
+    border: 0;
+    border-radius: 10px;
+    background: #142a68;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 3px 12px rgba(0,0,0,.2);
+  }
+}
