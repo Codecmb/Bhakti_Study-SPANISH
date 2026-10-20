@@ -213,3 +213,206 @@ body:has(#bhakti-layout){background:#eee9df!important;color:#142342!important}
 .hero h1 {
     font-size: 75% !important;
 }
+
+
+/* ===== Presentación institucional V11 ===== */
+
+.institutional-feature {
+    margin-bottom: 12px !important;
+}
+
+.institutional-feature .academy-dedication {
+    background: #fffaf0 !important;
+    border: 1px solid #c8a66a !important;
+    border-left: 4px solid #b68a40 !important;
+    border-radius: 14px !important;
+    box-shadow: 0 5px 18px rgba(46, 35, 15, .10) !important;
+    padding: 22px 25px !important;
+}
+
+.institutional-feature h2 {
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.institutional-feature .academy-dedication h2 {
+    color: #956b29 !important;
+}
+
+.institutional-feature .academy-dedication {
+    color: #182a51;
+}
+
+/* Reducir el título principal de la segunda caja */
+.academy-hero h1,
+.academy-hero-title {
+    font-size: clamp(1.35rem, 2.2vw, 1.85rem) !important;
+    line-height: 1.12 !important;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 700px) {
+    .institutional-feature .academy-dedication {
+        padding: 17px 18px !important;
+    }
+    .academy-hero h1,
+    .academy-hero-title {
+        font-size: 1.45rem !important;
+    }
+}
+
+
+/* INICIO PRESENTACION FUNDADOR V12 */
+
+/* Caja real de identificación, después del script V9 */
+.academy-creator-credit {
+    position: relative !important;
+    overflow: hidden !important;
+    background: linear-gradient(
+        115deg,
+        #fffaf0 0%,
+        #fffaf0 69%,
+        #f0e1c2 100%
+    ) !important;
+    border: 1px solid #c6a36b !important;
+    border-radius: 14px !important;
+    padding: 24px 28px !important;
+    box-shadow: 0 5px 18px rgba(45, 33, 16, .11) !important;
+}
+
+/* Ornamentación discreta */
+.academy-creator-credit::after {
+    content: "❁";
+    position: absolute;
+    right: 22px;
+    top: 20px;
+    font-size: 65px;
+    color: rgba(154, 112, 43, .18);
+    pointer-events: none;
+}
+
+/* El nombre del fundador */
+.academy-creator-credit > :first-child {
+    font-size: 1.65rem !important;
+    line-height: 1.18 !important;
+    color: #172a56 !important;
+    font-weight: 700 !important;
+}
+
+/* Dedicatoria integrada */
+.academy-creator-credit .academy-dedication {
+    margin-top: 16px !important;
+    padding: 14px 0 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-top: 1px solid #c9a66c !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.academy-creator-credit .academy-dedication h2 {
+    color: #916421 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Segunda caja: título menos dominante */
+.hero.academy-hero h1 {
+    font-size: clamp(1.45rem, 2.3vw, 1.9rem) !important;
+    line-height: 1.14 !important;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 700px) {
+    .academy-creator-credit {
+        padding: 19px 20px !important;
+    }
+
+    .academy-creator-credit::after {
+        font-size: 42px;
+        right: 12px;
+        top: 12px;
+    }
+
+    .hero.academy-hero h1 {
+        font-size: 1.45rem !important;
+    }
+}
+
+/* FIN PRESENTACION FUNDADOR V12 */
+
+
+
+/* INICIO FUNDADOR V13 */
+
+.academy-creator-credit {
+    background: #fffaf1 !important;
+    border: 1px solid #d3bb91 !important;
+    border-radius: 14px !important;
+    padding: 24px 28px !important;
+    box-shadow: 0 5px 20px rgba(35, 29, 18, .09) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* Eliminar adornos anteriores */
+.academy-creator-credit::before,
+.academy-creator-credit::after {
+    content: none !important;
+}
+
+/* Destacar el nombre */
+.academy-creator-credit > :first-child {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    color: #172b58 !important;
+}
+
+/* Eliminar visualmente el título repetido de la Academia */
+.academy-creator-credit > h1,
+.academy-creator-credit > h2 {
+    display: none !important;
+}
+
+/* Dedicatoria */
+.academy-creator-credit .academy-dedication {
+    margin-top: 18px !important;
+    padding: 16px 0 0 !important;
+    border: 0 !important;
+    border-top: 2px solid #b58b4a !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.academy-creator-credit .academy-dedication h2 {
+    display: block !important;
+    color: #956b2c !important;
+    font-size: 1.1rem !important;
+    margin-bottom: 8px !important;
+}
+
+.academy-creator-credit .academy-dedication p {
+    font-size: .95rem !important;
+    line-height: 1.6 !important;
+    color: #28364d !important;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 700px) {
+    .academy-creator-credit {
+        padding: 19px 20px !important;
+    }
+
+    .academy-creator-credit > :first-child {
+        font-size: 1.45rem !important;
+    }
+
+    .academy-creator-credit .academy-dedication p {
+        font-size: .9rem !important;
+    }
+}
+
+/* FIN FUNDADOR V13 */
