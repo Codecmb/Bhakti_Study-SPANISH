@@ -44,8 +44,7 @@ function sidebar(a='home',rootOverride=null){
    ]],
    ['Recursos',[
      ['library','Libros y Biblioteca',R+'library/index.html'],
-     ['references','Referencias y Estudio Adicional',R+'references/index.html'],
-     ['slokas','Memorizar Versos',R+'slokas/index.html']
+     ['references','Referencias y Estudio Adicional',R+'references/index.html']
    ]],
    ['Academia',[
      ['manage','Administrar Academia',R+'admin/index.html']
@@ -76,6 +75,8 @@ function sidebar(a='home',rootOverride=null){
   </div>
 </details><a class="nav-link" href="${R}student/search.html">🔎 Búsqueda Global</a><a class="nav-link" href="${R}index.html?descargar-biblioteca=1" id="download-library-link">⬇ Descargar biblioteca completa</a>${grouped}
 
+<div id="bhakti-update-sidebar-slot"
+  style="margin:18px 8px 12px"></div>
 </nav>`;
 
  const journalSidebarLink=document.querySelector('.sidebar a[href*="student/journal.html"]');

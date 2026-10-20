@@ -13,11 +13,19 @@
   const style = document.createElement('style');
   style.textContent = `
     #bhakti-update-panel {
+      position: static !important;
+      top: auto !important;
+      right: auto !important;
+      bottom: auto !important;
+      left: auto !important;
+      z-index: auto !important;
+      width: 100%;
+      box-sizing: border-box;
       display: flex;
       align-items: center;
       gap: 12px;
       flex-wrap: wrap;
-      padding: 15px;
+      padding: 8px 0;
       margin: 20px 0;
       background: #eef3ff;
       border: 1px solid #cbd8f5;
@@ -29,9 +37,10 @@
       color: white;
       border: none;
       border-radius: 10px;
-      padding: 12px 18px;
+      padding: 10px 12px;
+      width: 100%;
       font-weight: bold;
-      font-size: 15px;
+      font-size: 13px;
       cursor: pointer;
     }
     #bhakti-check-update:disabled {
@@ -39,29 +48,17 @@
       cursor: wait;
     }
     #bhakti-update-message {
-      color: #233e88;
-      font-size: 14px;
+      color: #ffffff;
+      font-size: 12px;
     }
   `;
   document.head.appendChild(style);
 
-  // Posición fija, independiente de los estilos de la portada.
-  panel.style.setProperty('position', 'fixed', 'important');
-  panel.style.setProperty('top', '12px', 'important');
-  panel.style.setProperty('right', '12px', 'important');
-  panel.style.setProperty('left', 'auto', 'important');
-  panel.style.setProperty('z-index', '9999', 'important');
-  panel.style.setProperty('margin', '0', 'important');
-  panel.style.setProperty('padding', '0', 'important');
-  panel.style.setProperty('background', 'transparent', 'important');
-  panel.style.setProperty('border', 'none', 'important');
-
-
-  const target = document.querySelector('#offline-books-status');
+  const target = document.querySelector('#bhakti-update-sidebar-slot');
 
   if (!target) return;
 
-  target.before(panel);
+  target.appendChild(panel);
 
   const button = document.getElementById('bhakti-check-update');
   const message = document.getElementById('bhakti-update-message');
