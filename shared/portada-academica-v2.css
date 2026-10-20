@@ -1,0 +1,215 @@
+/* Academia Master Siddhānta Gauḍīya — portada académica v2.
+   Estilos limitados a la portada; scripts, enlaces y contenidos originales intactos. */
+body:has(#bhakti-layout){background:#f7f3ec;color:#16244b}
+#bhakti-layout{grid-template-columns:260px minmax(0,1fr)}
+#bhakti-layout>.sidebar{background:linear-gradient(168deg,#12275d 0%,#23276b 43%,#56236a 78%,#802755 100%);box-shadow:6px 0 25px #142a6815}
+#bhakti-layout>.main{width:100%;max-width:1600px!important;min-width:0;padding:30px clamp(20px,3vw,54px) 60px!important}
+#bhakti-layout .academy-creator-credit{background:#fffdf9!important;border:1px solid #eadfcd!important;border-left:4px solid #c58b2f!important;border-radius:12px!important;padding:15px 24px!important;margin-bottom:16px!important;box-shadow:0 4px 18px #18234a0b!important}
+#bhakti-layout .academy-creator-credit strong{color:#182b5c!important}
+#bhakti-layout .academy-creator-credit span{color:#885b21!important}
+#bhakti-layout .academy-hero{display:grid!important;grid-template-columns:1.1fr .9fr;min-height:390px;position:relative;overflow:hidden;background:#fff8ed!important;border:1px solid #e8dac5!important;border-radius:20px!important;box-shadow:0 12px 34px #24325314!important;padding:0!important}
+#bhakti-layout .academy-hero-visual{grid-column:2;grid-row:1;background-image:linear-gradient(90deg,#fff8ed00,#38251c10),url('portada-libros.jpg');background-size:cover;background-position:center center;min-height:390px}
+#bhakti-layout .academy-hero-copy{grid-column:1;grid-row:1;align-self:center;padding:clamp(24px,4vw,55px);z-index:1}
+#bhakti-layout .academy-hero-kicker,#bhakti-layout .academy-section-eyebrow{font:700 11px/1.5 Arial,sans-serif;letter-spacing:.13em;color:#a46720;text-transform:uppercase}
+#bhakti-layout .academy-hero h1{font:700 clamp(35px,3.4vw,62px)/1.08 Georgia,serif!important;letter-spacing:-.03em;color:#172555!important;margin:12px 0 20px!important}
+#bhakti-layout .academy-hero-intro{font:400 clamp(15px,1.15vw,18px)/1.7 Arial,sans-serif!important;color:#344361!important;max-width:610px;margin:0 0 25px}
+#bhakti-layout .academy-hero-action{display:inline-flex;align-items:center;gap:18px;background:linear-gradient(125deg,#b97920,#d49a3f);border:1px solid #a36a20;border-radius:10px;padding:14px 22px;color:white!important;text-decoration:none;font:700 15px Arial,sans-serif;box-shadow:0 6px 16px #a7722b30}
+#bhakti-layout .academy-hero-action:hover{filter:brightness(1.06)}
+#bhakti-layout .academy-facts{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:0!important;background:#fffdfa;border:1px solid #e9dfd0;border-radius:0 0 12px 12px;overflow:hidden}
+#bhakti-layout .academy-facts .stat{margin:0;background:transparent!important;border:0!important;border-right:1px solid #e9dfd0!important;border-radius:0!important;padding:16px 13px!important;text-align:center;font:600 13px/1.45 Arial,sans-serif!important;color:#273963!important}
+#bhakti-layout .academy-facts .stat:last-child{border-right:0!important}
+#bhakti-layout .academy-source-note{margin:10px 0 22px!important;background:#fff5e2!important;border-left:4px solid #c58a32!important;border-radius:8px;color:#4c3b26!important;padding:12px 16px;font:14px/1.55 Arial,sans-serif}
+#bhakti-layout .academy-section-header{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:30px 0 15px}
+#bhakti-layout .academy-section-header h2{font:700 clamp(24px,2.1vw,32px)/1.2 Georgia,serif;color:#182b59;margin:4px 0 0}
+#bhakti-layout .academy-section-header>a{color:#1e3c85;text-decoration:none;font:700 13px Arial,sans-serif}
+#bhakti-layout .academy-programs{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin:0!important}
+#bhakti-layout .academy-program-card{display:flex;flex-direction:column;overflow:hidden!important;padding:0!important;background:#fffdf9!important;border:1px solid #e9dfd1!important;border-radius:14px!important;box-shadow:0 5px 16px #1d2a480f!important;min-width:0}
+#bhakti-layout .academy-program-card:before{display:none!important}
+#bhakti-layout .academy-program-art{height:105px;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#fff7e9,#e9d2af);border-bottom:1px solid #e9dfd1;color:#b57a29}
+#bhakti-layout .academy-program-art span{font:76px/1 Georgia,serif;text-shadow:0 3px 2px #fff9}
+#bhakti-layout .academy-program-1 .academy-program-art{background:radial-gradient(circle,#edf4ff,#c9d9ec);color:#315c8d}
+#bhakti-layout .academy-program-2 .academy-program-art{background:radial-gradient(circle,#f5f8eb,#dce8cf);color:#4c8151}
+#bhakti-layout .academy-program-3 .academy-program-art{background:radial-gradient(circle,#fff1f8,#ebd0e2);color:#8c4280}
+#bhakti-layout .academy-program-4 .academy-program-art{background:radial-gradient(circle,#fff8eb,#ecd6b4);color:#a16a2b}
+#bhakti-layout .academy-program-body{padding:15px 13px 17px;display:flex;flex-direction:column;flex:1;text-align:center}
+#bhakti-layout .academy-program-body h3{font:700 18px/1.25 Georgia,serif;color:#182b5b;margin:0 0 10px}
+#bhakti-layout .academy-program-body p{font:13px/1.5 Arial,sans-serif!important;color:#53617b!important;margin:0 0 16px;flex:1}
+#bhakti-layout .academy-program-link{background:#fff0d8;border-radius:9px;padding:10px;color:#8b561b;text-decoration:none;font:700 13px Arial,sans-serif}
+#bhakti-layout .academy-tool-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+#bhakti-layout .academy-tool-grid a{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:12px;align-items:center;padding:17px 13px;border:1px solid #e9dfd1;border-radius:12px;background:#fffefa;text-decoration:none;box-shadow:0 4px 14px #2432530c;min-width:0}
+#bhakti-layout .academy-tool-grid .tool-icon{grid-row:1/3;color:#ad7629;font-size:32px}
+#bhakti-layout .academy-tool-grid strong{color:#1d3061;font:700 15px Georgia,serif}
+#bhakti-layout .academy-tool-grid small{color:#63708a;font:12px/1.5 Arial,sans-serif}
+#bhakti-layout .academy-purpose{margin-top:0;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+#bhakti-layout .academy-purpose .card{background:#fffefa;border:1px solid #e9dfd1;box-shadow:0 4px 16px #2432530b}
+#bhakti-layout #offline-books-status{margin:16px 0;border-radius:9px}
+@media(max-width:1250px) and (min-width:761px){#bhakti-layout .academy-programs{grid-template-columns:repeat(3,minmax(0,1fr))}#bhakti-layout .academy-tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#bhakti-layout .academy-hero{grid-template-columns:1.15fr .85fr}#bhakti-layout .academy-hero h1{font-size:clamp(32px,3.2vw,48px)!important}}
+@media(max-width:760px){body:has(#bhakti-layout){background:#f7f4ee}#bhakti-layout{grid-template-columns:minmax(0,1fr)!important}#bhakti-layout>.main{padding:72px 12px 36px!important;max-width:100%!important;min-width:0!important}#bhakti-layout .academy-creator-credit{padding:14px!important;margin-bottom:12px!important;text-align:center}#bhakti-layout .academy-hero{display:flex!important;flex-direction:column;min-height:0}#bhakti-layout .academy-hero-visual{width:100%;min-height:200px;height:200px;background-position:center 45%}#bhakti-layout .academy-hero-copy{padding:22px 18px 26px}#bhakti-layout .academy-hero h1{font-size:clamp(29px,8vw,40px)!important;line-height:1.12!important}#bhakti-layout .academy-hero-intro{font-size:15px!important;line-height:1.65!important}#bhakti-layout .academy-hero-action{display:flex;justify-content:center;text-align:center;width:100%;font-size:14px}#bhakti-layout .academy-facts{grid-template-columns:repeat(2,minmax(0,1fr))}#bhakti-layout .academy-facts .stat{font-size:12px!important;padding:13px 8px!important;border-bottom:1px solid #e9dfd0!important}#bhakti-layout .academy-source-note{font-size:13px}#bhakti-layout .academy-section-header{margin:25px 0 12px;align-items:start}#bhakti-layout .academy-section-header h2{font-size:25px}#bhakti-layout .academy-section-header>a{display:none}#bhakti-layout .academy-programs{grid-template-columns:1fr!important;gap:9px}#bhakti-layout .academy-program-card{display:grid;grid-template-columns:82px minmax(0,1fr);align-items:stretch}#bhakti-layout .academy-program-art{height:100%;min-height:106px;border-bottom:0;border-right:1px solid #e9dfd1}#bhakti-layout .academy-program-art span{font-size:50px}#bhakti-layout .academy-program-body{text-align:left;padding:12px 14px;gap:5px}#bhakti-layout .academy-program-body h3{font-size:18px;margin:0}#bhakti-layout .academy-program-body p{font-size:12px!important;margin:0}#bhakti-layout .academy-program-link{align-self:start;padding:6px 10px;font-size:12px}#bhakti-layout .academy-tool-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}#bhakti-layout .academy-tool-grid a{grid-template-columns:1fr;grid-template-rows:auto auto auto;gap:5px;padding:12px}#bhakti-layout .academy-tool-grid .tool-icon{grid-row:auto;font-size:27px}#bhakti-layout .academy-tool-grid strong{font-size:14px}#bhakti-layout .academy-tool-grid small{font-size:11px}#bhakti-layout .academy-purpose{grid-template-columns:1fr;gap:12px}#bhakti-layout .academy-purpose .card{min-width:0}#bhakti-menu-button{z-index:10001!important}}
+@media(max-width:350px){#bhakti-layout .academy-tool-grid{grid-template-columns:1fr}}
+
+/* V3: identidad del fundador y dedicatoria junto al encabezado */
+#bhakti-layout .academy-founder-profession{font:600 13px/1.5 Arial,sans-serif;color:#7a5b35;margin:4px 0}
+#bhakti-layout .academy-dedication-intro{margin:0 0 18px}
+#bhakti-layout .academy-dedication-intro .academy-dedication{background:#fffdf9;border:1px solid #eadfcd;border-left:4px solid #c58b2f;border-radius:12px;padding:18px 22px;box-shadow:0 4px 18px #18234a0b}
+#bhakti-layout .academy-dedication-intro .academy-dedication:before{display:none}
+#bhakti-layout .academy-dedication-intro .academy-dedication h2{font:700 22px Georgia,serif;margin:6px 0;color:#172555}
+#bhakti-layout .academy-dedication-intro .academy-dedication p{font-size:15px;line-height:1.65;margin:8px 0}
+#bhakti-layout .academy-dedication-intro .academy-dedication p:last-child{margin-bottom:0}
+#bhakti-layout .academy-programs{gap:10px}
+#bhakti-layout .academy-program-art{height:62px}
+#bhakti-layout .academy-program-art span{font-size:42px}
+#bhakti-layout .academy-program-body{padding:10px}
+#bhakti-layout .academy-program-body h3{font-size:16px;margin-bottom:5px}
+#bhakti-layout .academy-program-body p{font-size:12px!important;margin-bottom:8px}
+#bhakti-layout .academy-program-link{padding:7px}
+#bhakti-layout .academy-tool-grid a{padding:12px}
+#bhakti-layout .academy-tool-grid .tool-icon{font-size:24px}
+#bhakti-layout .academy-purpose{grid-template-columns:minmax(0,1fr)}
+@media(max-width:760px){
+#bhakti-layout .academy-dedication-intro .academy-dedication{padding:15px}
+#bhakti-layout .academy-dedication-intro .academy-dedication p{font-size:14px}
+#bhakti-layout .academy-program-art{height:100%;min-height:76px}
+#bhakti-layout .academy-program-art span{font-size:35px}
+#bhakti-layout .academy-program-body{padding:10px}
+#bhakti-layout .academy-program-body h3{font-size:16px}
+#bhakti-layout .academy-program-link{padding:5px 9px}
+}
+
+/* V4 — Contraste y legibilidad. Solo estilos; no cambia navegación ni contenido. */
+body:has(#bhakti-layout){background:#eee9df!important;color:#142342!important}
+#bhakti-layout>.main{color:#142342}
+#bhakti-layout .academy-creator-credit,
+#bhakti-layout .academy-dedication-intro .academy-dedication,
+#bhakti-layout .academy-purpose .card{background:#ffffff!important;border-color:#c7bba9!important;box-shadow:0 5px 18px #18234418!important}
+#bhakti-layout .academy-creator-credit strong{color:#102858!important}
+#bhakti-layout .academy-creator-credit span{color:#694010!important}
+#bhakti-layout .academy-founder-profession{color:#24344f!important;font-size:14px!important}
+#bhakti-layout .academy-dedication-intro .academy-dedication p,
+#bhakti-layout .academy-purpose .card p{color:#243044!important;font-size:16px!important;line-height:1.65!important}
+#bhakti-layout .academy-hero{background:#fffaf2!important;border-color:#cbbba3!important}
+#bhakti-layout .academy-hero-kicker,
+#bhakti-layout .academy-section-eyebrow{color:#80500f!important;font-size:12px!important}
+#bhakti-layout .academy-hero-intro{color:#263449!important;font-size:16px!important}
+#bhakti-layout .academy-hero-action{background:#12336b!important;border-color:#12336b!important;color:#fff!important;font-size:15px!important}
+#bhakti-layout .academy-hero-action:hover{background:#204c94!important}
+#bhakti-layout .academy-facts{background:#fff!important;border-color:#cbbba3!important}
+#bhakti-layout .academy-facts .stat{color:#152d55!important;font-size:14px!important}
+#bhakti-layout .academy-source-note{background:#fff3d7!important;color:#49300f!important;border-left-color:#9b610c!important;font-size:15px!important}
+#bhakti-layout .academy-section-header h2{color:#102858!important}
+#bhakti-layout .academy-section-header>a{color:#123d81!important;text-decoration:underline!important}
+#bhakti-layout .academy-program-card{background:#fff!important;border:1px solid #b9c3d0!important;box-shadow:0 4px 12px #122b4a19!important}
+#bhakti-layout .academy-program-body h3{color:#102858!important;font-size:17px!important}
+#bhakti-layout .academy-program-body p{color:#34445c!important;font-size:14px!important;line-height:1.5!important}
+#bhakti-layout .academy-program-link{background:#173d7b!important;color:#fff!important;font-size:14px!important;font-weight:700!important;text-align:center!important}
+#bhakti-layout .academy-program-link:hover{background:#27569f!important}
+#bhakti-layout .academy-tool-grid a{background:#fff!important;border:1px solid #b9c3d0!important;box-shadow:0 4px 12px #122b4a14!important}
+#bhakti-layout .academy-tool-grid strong{color:#102858!important;font-size:16px!important}
+#bhakti-layout .academy-tool-grid small{color:#34445c!important;font-size:13px!important}
+#bhakti-layout .academy-tool-grid .tool-icon{color:#89510c!important}
+#bhakti-layout .academy-program-card:focus-within,
+#bhakti-layout .academy-tool-grid a:focus-visible,
+#bhakti-layout .academy-hero-action:focus-visible{outline:3px solid #bc761b!important;outline-offset:3px}
+@media(max-width:760px){
+ #bhakti-layout .academy-dedication-intro .academy-dedication p{font-size:15px!important}
+ #bhakti-layout .academy-program-body h3{font-size:17px!important}
+ #bhakti-layout .academy-program-body p{font-size:14px!important}
+ #bhakti-layout .academy-program-link{font-size:14px!important;padding:9px 12px!important}
+ #bhakti-layout .academy-tool-grid strong{font-size:15px!important}
+ #bhakti-layout .academy-tool-grid small{font-size:13px!important}
+}
+
+/* V5 — legibilidad, ritmo y navegación compacta sin tocar las funciones. */
+#bhakti-layout .academy-creator-credit strong{font-size:clamp(19px,1.7vw,26px)!important;line-height:1.25!important}
+#bhakti-layout .academy-founder-profession{font-size:clamp(13px,1vw,16px)!important;line-height:1.5!important}
+#bhakti-layout .academy-dedication-intro{margin-bottom:16px!important}
+#bhakti-layout .academy-dedication-intro .academy-dedication{padding:16px 20px!important}
+#bhakti-layout .academy-dedication-intro .academy-dedication h2{font-size:clamp(20px,1.7vw,25px)!important}
+#bhakti-layout .academy-dedication-intro .academy-dedication p{font-size:clamp(15px,1.1vw,17px)!important;line-height:1.65!important}
+#bhakti-layout .academy-section-header{margin-top:24px!important;margin-bottom:12px!important}
+#bhakti-layout .academy-programs{gap:12px!important}
+#bhakti-layout .academy-program-card{overflow:hidden}
+#bhakti-layout .academy-program-body{padding:12px!important}
+#bhakti-layout .academy-program-body h3{font-size:clamp(16px,1.15vw,19px)!important;line-height:1.3!important}
+#bhakti-layout .academy-program-body p{font-size:clamp(13px,0.95vw,15px)!important;line-height:1.45!important}
+#bhakti-layout .academy-program-link{display:block;padding:9px 12px!important;min-height:36px;box-sizing:border-box}
+#bhakti-layout .academy-tool-grid{gap:10px!important}
+#bhakti-layout .academy-tool-grid a{padding:13px!important;min-height:66px;box-sizing:border-box}
+#bhakti-layout .academy-tool-grid strong{font-size:clamp(15px,1.05vw,17px)!important}
+#bhakti-layout .academy-tool-grid small{font-size:clamp(13px,0.9vw,14px)!important}
+#bhakti-layout .academy-purpose .card p{font-size:clamp(15px,1.1vw,17px)!important;line-height:1.7!important}
+#bhakti-layout .academy-purpose .academy-verse{overflow-wrap:anywhere}
+#bhakti-layout .academy-program-link:focus-visible,#bhakti-layout .academy-tool-grid a:focus-visible{outline:3px solid #bb7619!important;outline-offset:2px}
+@media(max-width:760px){
+ #bhakti-layout .academy-creator-credit strong{font-size:21px!important}
+ #bhakti-layout .academy-dedication-intro .academy-dedication{padding:16px!important}
+ #bhakti-layout .academy-dedication-intro .academy-dedication p{font-size:16px!important}
+ #bhakti-layout .academy-program-card{grid-template-columns:72px minmax(0,1fr)!important}
+ #bhakti-layout .academy-program-art{min-height:100px!important}
+ #bhakti-layout .academy-program-body h3{font-size:17px!important}
+ #bhakti-layout .academy-program-body p{font-size:14px!important}
+ #bhakti-layout .academy-program-link{min-height:40px;display:inline-flex;align-items:center;justify-content:center}
+ #bhakti-layout .academy-tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ #bhakti-layout .academy-tool-grid a{min-height:100px}
+ #bhakti-layout .academy-tool-grid strong{font-size:15px!important}
+ #bhakti-layout .academy-tool-grid small{font-size:13px!important}
+}
+@media(max-width:350px){#bhakti-layout .academy-tool-grid{grid-template-columns:1fr!important}}
+
+/* V6 · Gurukula: escena contemplativa, sin navegación duplicada */
+.gurukula-section{margin:32px 0 38px;text-align:center}
+.gurukula-section h2{font-size:clamp(1.65rem,3vw,2.4rem);margin:9px 0 6px;color:#263b4c}
+.gurukula-intro{font-size:1.08rem;color:#465462;margin:0 auto 20px;max-width:680px}
+.gurukula-scene{overflow:hidden;border:1px solid #d8c8a9;border-radius:20px;background:#f2e9d7;box-shadow:0 12px 35px #31281813}
+.gurukula-art{height:clamp(240px,36vw,480px);background-image:linear-gradient(0deg,rgba(35,40,28,.32),transparent 35%),url('../shared/sabio-gurukula.jpg'),url('../shared/portada-libros.jpg');background-position:center;background-size:cover;background-repeat:no-repeat}
+.gurukula-students{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;padding:17px;background:linear-gradient(180deg,#f5ecd9,#fffaf1)}
+.gurukula-student{display:flex;align-items:center;justify-content:center;gap:7px;min-height:68px;padding:10px 8px;border:1px solid #d8c6a2;border-radius:12px;background:#fffdf8;color:#283b4a;font-size:clamp(.88rem,1.2vw,1.06rem);font-weight:750;line-height:1.3;cursor:default}
+.gurukula-marker{color:#99723a;font-size:1.3rem}
+.gurukula-caption{margin:12px 0 0;color:#526170;font-size:.98rem}
+@media(max-width:950px){.gurukula-students{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:560px){.gurukula-art{height:255px}.gurukula-students{grid-template-columns:repeat(2,minmax(0,1fr));padding:10px;gap:8px}.gurukula-student{min-height:60px;font-size:.95rem}.gurukula-student:last-child{grid-column:1/-1}.gurukula-intro{font-size:1rem}}
+
+/* V7 — Ilustración aprobada con cinco rótulos incorporados.
+   Ocultar etiquetas HTML duplicadas; no son enlaces. */
+#bhakti-layout .gurukula-art{height:auto;aspect-ratio:1293 / 556;background-image:url('sabio-gurukula.jpg');background-size:100% 100%;background-position:center;background-repeat:no-repeat}
+#bhakti-layout .gurukula-students{display:none!important}
+#bhakti-layout .gurukula-scene{border-radius:12px}
+@media(max-width:560px){#bhakti-layout .gurukula-art{height:auto;aspect-ratio:1293 / 556;min-height:0}}
+
+/* V8 — portada compacta: título protagonista y biblioteca más próxima. */
+#bhakti-layout .academy-hero h1 {
+  font-size: clamp(42px, 4.8vw, 76px) !important;
+  line-height: 1.07 !important;
+  letter-spacing: -.025em !important;
+}
+#bhakti-layout .academy-dedication-intro .academy-dedication {padding: 16px 22px !important;}
+#bhakti-layout .academy-dedication-intro .academy-dedication h2 {margin: 0 0 6px !important;}
+#bhakti-layout .academy-dedication-intro .academy-dedication p {margin: 0 !important;}
+#bhakti-layout #offline-books-status {margin: 8px 0 14px !important; padding: 10px 14px !important;}
+@media(max-width:760px){
+  #bhakti-layout .academy-hero h1 {font-size:clamp(34px,8.6vw,48px) !important;}
+  #bhakti-layout .academy-dedication-intro .academy-dedication {padding:14px 16px !important;}
+}
+
+
+/* V9 — Identificación y gratitud en una sola caja. */
+#bhakti-layout .academy-creator-credit{margin-bottom:12px!important;padding:18px 22px!important}
+#bhakti-layout .academy-creator-credit .academy-dedication{
+  margin:12px 0 0!important;padding:12px 0 0!important;
+  background:transparent!important;border:0!important;border-top:1px solid #e5d9c7!important;
+  border-radius:0!important;box-shadow:none!important;
+}
+#bhakti-layout .academy-creator-credit .academy-dedication h2{
+  font-size:clamp(18px,1.5vw,22px)!important;margin:0 0 5px!important;
+}
+#bhakti-layout .academy-creator-credit .academy-dedication p{
+  margin:0!important;font-size:clamp(14px,1.05vw,16px)!important;line-height:1.5!important;
+}
+@media(max-width:760px){
+  #bhakti-layout .academy-creator-credit{padding:14px 16px!important}
+  #bhakti-layout .academy-creator-credit .academy-dedication{margin-top:10px!important;padding-top:10px!important;text-align:left}
+}
+
+/* Ajuste V10: reducir el título principal un 25 % */
+.hero h1 {
+    font-size: 75% !important;
+}
