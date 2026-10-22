@@ -119,6 +119,9 @@
       ${r.purpose
         ? `<p>${esc(r.purpose)}</p>`
         : ''}
+      ${r.id === 'hridayananda-youtube' && r.url
+        ? `<p><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">▶ Abrir canal de YouTube de Hṛdayānanda</a></p>`
+        : ''}
     </article>`;
 
     const philosophyHost=document.getElementById('comparativePhilosophy');
