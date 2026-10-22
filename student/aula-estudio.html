@@ -360,5 +360,46 @@ setInterval(()=>{if(active){ensurePlayer();update();}},500);
 </script>
 <!-- BS_TRANSLATION_002_PATCH_END -->
 <!-- BS_TRANSLATION_001_END -->
+
+<script>
+function ajustarAlturaDiario() {
+    const frame = document.getElementById('journal');
+    if (!frame) return;
+
+    try {
+        const doc = frame.contentDocument;
+        if (!doc || !doc.body) return;
+
+        const altura = Math.max(
+            doc.body.scrollHeight,
+            doc.documentElement.scrollHeight,
+            650
+        );
+
+        frame.style.height = altura + 'px';
+    } catch (error) {
+        console.warn('No se pudo ajustar el Diario:', error);
+    }
+}
+
+window.addEventListener('load', () => {
+    const frame = document.getElementById('journal');
+    if (!frame) return;
+
+    frame.addEventListener('load', ajustarAlturaDiario);
+
+    if (window.ResizeObserver) {
+        frame.addEventListener('load', () => {
+            try {
+                const observer = new ResizeObserver(ajustarAlturaDiario);
+                observer.observe(frame.contentDocument.body);
+            } catch (error) {
+                console.warn(error);
+            }
+        });
+    }
+});
+</script>
+
 </body>
 </html>
