@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Descargar biblioteca completa</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar"></aside>
+<main class="main">
+<h1>Descargar biblioteca completa</h1>
+<p>Guarda los libros para estudiar sin conexión a internet.</p>
+<div id="offline-books-status" class="notice" role="status"
+aria-live="polite">Preparando la biblioteca para estudiar sin internet…</div>
+</main>
+</div>
+<script src="../shared/app.js"></script>
+<script>sidebar('library-download');</script>
+<script>
+if ('serviceWorker' in navigator) {
+window.addEventListener('load', async () => {
+  const status = document.getElementById('offline-books-status');
+  if (!status) return;
+
+  const button = document.createElement('button');
+  button.textContent = 'Descargar biblioteca completa';
+  button.className = 'button';
+  button.type = 'button';
+  button.style.marginTop = '10px';
+  status.after(button);
+
+  const cacheName = 'bhakti-study-spanish-books-v6';
+  let downloading = false;
+
+  async function downloadLibrary() {
+    if (downloading) return;
+    downloading = true;
+    button.disabled = true;
+
+    try {
+      const response = await fetch('../offline-books.json', {
+        cache: 'no-store'
+      });
+      if (!response.ok) throw Error('Inventario no disponible');
+
+      const files = await response.json();
+      const cache = await caches.open(cacheName);
+      let completed = 0;
+      let failed = 0;
+      const failedFiles = [];
+
+      for (const file of files) {
+        const url = new URL(file, new URL('../', location.href));
+
+        if (await cache.match(url.href)) {
+          completed++;
+        } else {
+          try {
+            const result = await fetch(url.href, {
+              cache: 'no-store'
+            });
+            if (!result.ok) throw Error('HTTP ' + result.status);
+            await cache.put(url.href, result);
+            completed++;
+          } catch (error) {
+            failed++;
+            failedFiles.push(file + ': ' + error.message);
+            console.warn('Descarga pendiente:', file, error);
+          }
+        }
+
+        status.textContent =
+          'Biblioteca: ' + completed + ' de ' +
+          files.length + ' recursos descargados.';
+      }
+
+      if (failed === 0 && completed === files.length) {
+        status.textContent =
+          '✓ Biblioteca descargada: ' +
+          completed + ' recursos disponibles sin internet.';
+        button.textContent = 'Verificar nuevamente';
+      } else {
+        status.textContent =
+          'Descarga incompleta: ' + completed + ' de ' +
+          files.length + '. Pendientes: ' + failed + '.';
+        button.textContent = 'Reintentar descarga';
+        if (failedFiles.length) {
+          status.textContent += '\nArchivos pendientes:\n' +
+            failedFiles.join('\n');
+          status.style.whiteSpace = 'pre-wrap';
+        }
+      }
+    } catch (error) {
+      status.textContent =
+        'No se pudo completar la descarga. Comprueba internet.';
+      button.textContent = 'Reintentar descarga';
+      console.error(error);
+    } finally {
+      downloading = false;
+      button.disabled = false;
+    }
+  }
+
+  try {
+    await navigator.serviceWorker.register('../service-worker.js');
+    status.textContent =
+      'Biblioteca preparada. Pulsa el botón para descargar todos los libros.';
+  } catch (error) {
+    status.textContent =
+      'No se pudo preparar la descarga sin conexión.';
+    button.disabled = true;
+    console.error(error);
+  }
+
+  button.addEventListener('click', downloadLibrary);
+});
+}
+</script>
+</body>
+</html>
