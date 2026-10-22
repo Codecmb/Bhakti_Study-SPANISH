@@ -174,6 +174,7 @@ function showMedia(lesson){
   const video=document.getElementById('classVideo');
   const audio=document.getElementById('classAudio');
 
+  window.BS001resetTranslation?.();
   video.removeAttribute('src');
   audio.pause();
   audio.removeAttribute('src');
@@ -185,7 +186,8 @@ function showMedia(lesson){
   if(lesson.type==='video'){
     const id=youtubeId(lesson.url);
     if(!/^[A-Za-z0-9_-]{11}$/.test(id)) return;
-    video.src='https://www.youtube-nocookie.com/embed/'+id;
+    video.src='https://www.youtube-nocookie.com/embed/'+id+'?enablejsapi=1&origin='+encodeURIComponent(location.origin);
+    window.BS001setVideo?.(id);
     video.hidden=false;
     panel.hidden=false;
   }else if(lesson.type==='audio'){
@@ -301,5 +303,62 @@ fetch('../data/programs.json')
     bookSelect.appendChild(option);
   });
 </script>
+
+<!-- BS_TRANSLATION_001_START -->
+<!-- BS_TRANSLATION_002_PATCH_START -->
+
+<script>
+(()=>{
+const target=document.getElementById('translationText');
+const video=document.getElementById('classVideo');
+const videoId='RZ_Mk295LeI';
+let selectedVideoId=null;
+let cues=[],player=null,active=false,lastCue=-1,ready=false;
+const message='Traducción no disponible para esta clase.';
+window.BS001resetTranslation=()=>{active=false;lastCue=-1;if(target)target.textContent=message;};
+window.BS001setVideo=(id)=>{
+ active=(id===videoId||id==='8bGka4-tZMY');selectedVideoId=active?id:null;cues=[];lastCue=-1;
+ if(target)target.textContent=active?'Cargando traducción del video 001…':message;
+ if(active){load();ensurePlayer();}
+};
+async function load(){
+ try{
+  const loadingVideoId=selectedVideoId;
+  const filename=loadingVideoId==='8bGka4-tZMY'?'bhakti-shastri-002-traduccion-es.json':'bhakti-shastri-001-traduccion-es.json';
+  const response=await fetch('../data/biblioteca-audiovisual/'+filename,{cache:'no-store'});
+  if(!response.ok)throw Error('HTTP '+response.status);
+  const data=await response.json();if(loadingVideoId!==selectedVideoId)return;cues=Array.isArray(data.cues)?data.cues:[];
+  if(!cues.length)throw Error('sin fragmentos');
+  update();
+ }catch(err){console.error('Traducción Video 001:',err);if(active&&target)target.textContent='No se pudo cargar la traducción.';}
+}
+function ensurePlayer(){
+ if(!window.YT||!window.YT.Player){
+  if(!document.getElementById('bs-yt-api')){
+   const script=document.createElement('script');script.id='bs-yt-api';script.src='https://www.youtube.com/iframe_api';document.head.appendChild(script);
+  }
+  return;
+ }
+ if(player)return;
+ try{player=new YT.Player('classVideo',{events:{onReady:()=>{ready=true;update();}}});}
+ catch(err){console.error('No se pudo iniciar el lector de tiempos',err);}
+}
+const prior=window.onYouTubeIframeAPIReady;
+window.onYouTubeIframeAPIReady=()=>{if(typeof prior==='function')prior();ensurePlayer();};
+function update(){
+ if(!active||!cues.length||!ready||!player)return;
+ let sec;
+ try{sec=player.getCurrentTime();}catch(e){return;}
+ if(!Number.isFinite(sec))return;
+ const index=cues.findIndex(c=>sec>=c.start&&sec<c.end);
+ if(index===lastCue)return;
+ lastCue=index;
+ if(target)target.textContent=index>=0?cues[index].text:'Esperando el siguiente fragmento…';
+}
+setInterval(()=>{if(active){ensurePlayer();update();}},500);
+})();
+</script>
+<!-- BS_TRANSLATION_002_PATCH_END -->
+<!-- BS_TRANSLATION_001_END -->
 </body>
 </html>

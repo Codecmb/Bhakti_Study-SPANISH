@@ -1,0 +1,513 @@
+{
+  "video_id": "RZ_Mk295LeI",
+  "title": "Bhakti Śāstrī 001 — Introducción al Śrī Īśopaniṣad",
+  "language": "es",
+  "status": "completa_para_prueba_pendiente_revision",
+  "translated_range_seconds": [
+    3,
+    3690
+  ],
+  "note": "Versión española completa PARA PRUEBA, con traducción adaptada y condensada en bloques de lectura a partir de subtítulos automáticos ingleses. NO es traducción literal palabra por palabra. Cotejar con audio, en especial referencias y nombres sánscritos. Los comentarios polémicos se atribuyen al expositor.",
+  "cues": [
+    {
+      "start": 3,
+      "end": 24,
+      "text": "Hare Kṛṣṇa. Les doy la bienvenida a este curso en línea de Bhakti Śāstrī. En él estudiaremos cuatro libros que Śrīla Prabhupāda nos ha dado como parte de esta formación: Śrī Īśopaniṣad, El néctar de la instrucción, Bhagavad-gītā y El néctar de la devoción. Los estudiaremos en ese orden."
+    },
+    {
+      "start": 24,
+      "end": 43,
+      "text": "En términos generales, será un programa de unas doscientas horas: veinticinco horas para Śrī Īśopaniṣad, veinticinco para El néctar de la instrucción, cien para Bhagavad-gītā y cincuenta para El néctar de la devoción."
+    },
+    {
+      "start": 43,
+      "end": 78,
+      "text": "Antes de comenzar con Śrī Īśopaniṣad, quisiera hablar brevemente de la importancia de estos cuatro libros. Como indica el título de la diapositiva: «Cuatro libros son suficientes». ¿Qué importancia tienen estos cuatro libros dentro del amplio canon védico? La palabra «canon» se refiere al conjunto de obras consideradas sagradas o esenciales dentro de una tradición."
+    },
+    {
+      "start": 78,
+      "end": 98,
+      "text": "Dentro de la tradición del vaiṣṇavismo gauḍīya, tal como nos la presentó Śrīla Prabhupāda, él consideraba que los devotos que se incorporaban al movimiento debían comprender claramente estos cuatro libros. Intentaremos entender su importancia dentro del canon védico."
+    },
+    {
+      "start": 98,
+      "end": 129,
+      "text": "Veamos primero una visión general de las distintas escuelas de pensamiento que han existido en la India dentro de la tradición védica. Existen seis sistemas filosóficos: Nyāya, expuesto por Gautama Ṛṣi; Vaiśeṣika, por Kaṇāda Ṛṣi; Sāṅkhya, por Kapila Muni —también descrito en el tercer canto del Śrīmad-Bhāgavatam—; y Yoga, por Patañjali."
+    },
+    {
+      "start": 129,
+      "end": 163,
+      "text": "Luego están las dos Mīmāṁsās. Pūrva-mīmāṁsā, o Karma-mīmāṁsā, fue expuesta por Jaimini. Kṛṣṇa se refiere a este tipo de pensamiento en el décimo canto del Śrīmad-Bhāgavatam, cuando persuade a Nanda Mahārāja de abandonar la adoración a Indra. Uttara-mīmāṁsā es Vedānta, expuesto por Vyāsadeva. Entre estos seis sistemas, Vedānta se presenta aquí como la conclusión."
+    },
+    {
+      "start": 163,
+      "end": 181,
+      "text": "Ahora retrocedamos un paso: del pensamiento védico al pensamiento indio en general. No todos los sistemas filosóficos que surgieron en la India fueron védicos. Podemos clasificarlos en dos grupos: āstika y nāstika."
+    },
+    {
+      "start": 181,
+      "end": 218,
+      "text": "Hoy suele llamarse āstika a quien cree en Dios y nāstika a quien no cree. Pero en el contexto védico, āstika se refiere a quien acepta la autoridad de las escrituras védicas, y nāstika a quien no la acepta. Entre las escuelas nāstika más conocidas se encuentran el budismo, el jainismo y el pensamiento cārvāka, de orientación materialista."
+    },
+    {
+      "start": 218,
+      "end": 249,
+      "text": "Por otra parte, están las seis escuelas āstika que acabamos de mencionar. Todas aceptan la autoridad de los Vedas, pero interpretan sus enseñanzas de acuerdo con su propia filosofía. En ese sentido, se consideran védicas porque derivan su autoridad de los Vedas."
+    },
+    {
+      "start": 249,
+      "end": 290,
+      "text": "Sin embargo, el expositor distingue entre ser una escuela védica y enseñar la conclusión de los Vedas. Vedānta significa «final» o «conclusión de los Vedas». Desde la perspectiva presentada en esta clase, los otros cinco sistemas enseñan principios védicos, pero no expresan completamente su conclusión."
+    },
+    {
+      "start": 290,
+      "end": 327,
+      "text": "Dentro de Vedānta encontramos dos corrientes principales: Advaita y Dvaita. Śaṅkarācārya fue un importante exponente de Advaita, o no dualismo, que enseña que no hay dualidad entre el alma y la realidad suprema, Brahman. Dvaita sostiene que existe diferencia entre el alma y Brahman; su exponente más destacado fue Madhvācārya."
+    },
+    {
+      "start": 327,
+      "end": 354,
+      "text": "La enseñanza de Śrī Caitanya Mahāprabhu se presenta como una reconciliación de unidad y diferencia. Se conoce como acintya-bhedābheda: unidad y diferencia simultáneas e inconcebibles."
+    },
+    {
+      "start": 354,
+      "end": 380,
+      "text": "No se sientan abrumados por todos estos nombres. Pronto llegaremos al Śrī Īśopaniṣad. Este contexto nos ayuda a comprender cómo el pensamiento vedántico y, finalmente, acintya-bhedābheda se presentan como conclusión de los diversos sistemas filosóficos surgidos en el ámbito védico."
+    },
+    {
+      "start": 380,
+      "end": 405,
+      "text": "Hemos pasado de las escuelas de pensamiento de la India a los seis sistemas filosóficos y después a Vedānta. Ahora nos concentraremos en Vedānta. Allí existen tres fuentes principales de autoridad, conocidas como prasthāna-traya, las tres bases: śruti, smṛti y nyāya."
+    },
+    {
+      "start": 405,
+      "end": 445,
+      "text": "Śruti se refiere principalmente a los Vedas. Estos incluyen Saṁhitās, Āraṇyakas y Upaniṣads. Por ejemplo, el Ṛg-veda-saṁhitā contiene versos que glorifican a diversas deidades y buscan propiciarlas para recibir sus bendiciones. Los Āraṇyakas comienzan a desarrollar discusiones filosóficas."
+    },
+    {
+      "start": 445,
+      "end": 478,
+      "text": "Las Saṁhitās se centran principalmente en karma-kāṇḍa: rituales religiosos realizados para obtener beneficios materiales. Los Āraṇyakas empiezan a hablar de renunciación, mientras que los Upaniṣads se concentran en la filosofía. Todo esto pertenece a śruti."
+    },
+    {
+      "start": 478,
+      "end": 510,
+      "text": "La palabra śruti significa «lo que se escucha». Según esta tradición, los Vedas son vibraciones sonoras recibidas de Dios, asimiladas por grandes sabios y transmitidas tal como fueron recibidas. Smṛti también es considerada divina, pero no pertenece a la misma categoría que śruti."
+    },
+    {
+      "start": 510,
+      "end": 540,
+      "text": "Las smṛtis son elaboraciones de las enseñanzas esenciales de śruti, según la comprensión que los grandes sabios han asimilado e interiorizado. Smṛti significa «lo que se recuerda». Śruti es lo escuchado; smṛti es lo que, después de escucharse, se recuerda y se explica."
+    },
+    {
+      "start": 540,
+      "end": 572,
+      "text": "Para explicarlo, pensemos en una familia tradicional. Una madre enseña algo a su hijo y una hermana mayor repasa y desarrolla esa enseñanza para ayudarle a comprender. La madre se compara con śruti y la hermana mayor con smṛti. Ambas educan al niño y no enseñan cosas opuestas."
+    },
+    {
+      "start": 572,
+      "end": 600,
+      "text": "La madre enseña de manera breve porque tiene otras responsabilidades; la hermana desarrolla la explicación para que el niño comprenda. Por tanto, śruti y smṛti no son contradictorias, sino complementarias. Dentro de smṛti encontramos los Purāṇas, los Itihāsas y los Pañcarātras."
+    },
+    {
+      "start": 600,
+      "end": 635,
+      "text": "Entre los Purāṇas están los dieciocho principales, además de otros textos llamados Upa-purāṇas y Sthala-purāṇas. Estos últimos describen las glorias de lugares sagrados, como Jagannātha Purī y Tirupati. Los Itihāsas son narraciones históricas: el Rāmāyaṇa y el Mahābhārata."
+    },
+    {
+      "start": 635,
+      "end": 668,
+      "text": "Los Itihāsas se concentran principalmente en la historia de una persona, un grupo o un linaje. El Mahābhārata se centra en los Pāṇḍavas y el Rāmāyaṇa en el Señor Rāma. Los Purāṇas también contienen historia, pero son compilaciones organizadas en torno a conversaciones."
+    },
+    {
+      "start": 668,
+      "end": 702,
+      "text": "Por ejemplo, el Śrīmad-Bhāgavatam se organiza alrededor de la conversación de Sūta Gosvāmī con los sabios de Naimiṣāraṇya. En ella se reúnen relatos de personas de distintas épocas y universos para exponer principios eternos desde una perspectiva devocional."
+    },
+    {
+      "start": 702,
+      "end": 730,
+      "text": "Los Pañcarātras se centran principalmente en la adoración de la Deidad. Śrīla Prabhupāda cita con frecuencia el Nārada-pañcarātra. Hemos visto śruti y smṛti; ahora consideremos nyāya, que aquí se refiere principalmente al Vedānta-sūtra."
+    },
+    {
+      "start": 730,
+      "end": 760,
+      "text": "Antes usamos la palabra nyāya para designar una de las seis escuelas filosóficas. Aquí tiene otro sentido: una de las tres autoridades fundamentales de Vedānta. En el estudio de las escrituras encontraremos repetidamente palabras que tienen significados diferentes según el contexto."
+    },
+    {
+      "start": 760,
+      "end": 808,
+      "text": "Nyāya significa fundamentalmente lógica. La lógica puede constituir una escuela filosófica independiente o servir como método para establecer las enseñanzas de otra escuela. En el prasthāna-traya, el Vedānta-sūtra es una obra de nyāya porque utiliza el razonamiento lógico para establecer las enseñanzas de Vedānta."
+    },
+    {
+      "start": 808,
+      "end": 846,
+      "text": "¿Cómo se relacionan los cuatro libros de Bhakti Śāstrī con este sistema de śruti, smṛti y nyāya? Śrīla Prabhupāda indicó que en Bhakti Śāstrī se estudien cuatro libros; para el estudio profundo de toda la vida también destacó Bhagavad-gītā, Śrīmad-Bhāgavatam, Caitanya-caritāmṛta y El néctar de la devoción. En nuestro contexto, el texto de śruti que estudiamos es Śrī Īśopaniṣad; el de smṛti es Bhagavad-gītā, y el texto que nos ayuda a comprender nyāya es Śrīmad-Bhāgavatam."
+    },
+    {
+      "start": 846,
+      "end": 884,
+      "text": "En este contexto, el śruti que estudiamos es el Śrī Īśopaniṣad; el smṛti, el Bhagavad-gītā; y el nyāya, el Śrīmad-Bhāgavatam. Como dije antes, los Vedas contienen saṁhitās, āraṇyakas y Upaniṣads. Entre los Upaniṣads más destacados se encuentra el Īśopaniṣad, que Śrīla Prabhupāda nos dio como parte de su legado literario y del curso Bhakti Śāstrī."
+    },
+    {
+      "start": 884,
+      "end": 921,
+      "text": "El Bhagavad-gītā no es simplemente smṛti: es śruti dentro de smṛti. Śruti se refiere a la revelación directa de Dios; smṛti, al recuerdo y la explicación de los grandes sabios. Desde el punto de vista literario, el Gītā pertenece a smṛti porque forma parte del Mahābhārata, que se presenta como una narración dialogada entre Vaiśampāyana y Janamejaya."
+    },
+    {
+      "start": 921,
+      "end": 960,
+      "text": "Por eso, al estar incluido en el Mahābhārata, el Bhagavad-gītā se clasifica como smṛti. Vyāsadeva lo cita de ese modo en el Vedānta-sūtra. Pero, como el Bhagavad-gītā contiene las palabras directas de Dios, también posee el carácter de śruti. Su posición es muy especial; hablaremos más de ello cuando lo estudiemos. En esta clasificación lo consideraremos smṛti, sin olvidar ese carácter de śruti."
+    },
+    {
+      "start": 960,
+      "end": 998,
+      "text": "Entre las escrituras relacionadas con nyāya, el Vedānta-sūtra es un cuerpo de pensamiento muy difícil de comprender. Utiliza un sistema lógico complejo. No es incomprensible por naturaleza, pero sus razonamientos son tan intrincados que resultan difíciles para nuestra mente en Kali-yuga. Por ello, los ācāryas han escrito comentarios sobre él."
+    },
+    {
+      "start": 998,
+      "end": 1042,
+      "text": "Aunque Vyāsadeva había compilado la literatura védica y el Vedānta-sūtra, que expresa la conclusión de los Vedas, todavía no estaba satisfecho. Por eso escribió el Śrīmad-Bhāgavatam, presentado aquí como comentario al Vedānta-sūtra. El propio Bhāgavatam y otros Purāṇas señalan esa relación. Así, nosotros estudiamos nyāya principalmente por medio del Śrīmad-Bhāgavatam y no leyendo directamente el Vedānta-sūtra."
+    },
+    {
+      "start": 1042,
+      "end": 1083,
+      "text": "De esta manera, śruti, smṛti y nyāya están incluidos en el conjunto de obras que Śrīla Prabhupāda nos ha dado: Śrī Īśopaniṣad, Bhagavad-gītā y Śrīmad-Bhāgavatam. Veamos ahora cómo sus libros nos transmiten un legado completo. En la pirámide que aparece en la presentación, las enseñanzas se elevan progresivamente hacia las conclusiones más profundas."
+    },
+    {
+      "start": 1083,
+      "end": 1123,
+      "text": "El Bhagavad-gītā es un libro védico en un sentido amplio: es valorado, citado y respetado por muchas corrientes de la tradición védica. El Śrīmad-Bhāgavatam, en cambio, es especialmente vaiṣṇava. Se considera uno de los Purāṇas sāttvikos y, al mismo tiempo, el Purāṇa inmaculado, el más elevado de los Purāṇas."
+    },
+    {
+      "start": 1123,
+      "end": 1169,
+      "text": "El Śrīmad-Bhāgavatam se centra en el Señor Viṣṇu, sus diversas encarnaciones y, finalmente, Kṛṣṇa. Los Vedas contienen enseñanzas sobre la adoración de diversos devas, pero, según la conclusión presentada aquí, culminan en la adoración de Viṣṇu y de Kṛṣṇa como su manifestación suprema. En la cima de esta pirámide de conocimiento se encuentra la siddhānta vaiṣṇava gauḍīya."
+    },
+    {
+      "start": 1169,
+      "end": 1210,
+      "text": "Śrīla Prabhupāda nos presentó esa siddhānta mediante obras fundamentales como el Caitanya-caritāmṛta y El néctar de la devoción. Así nos transmitió el legado védico y gauḍīya de manera progresiva: el Bhagavad-gītā, ampliamente reconocido en la India y en todo el mundo; el Śrīmad-Bhāgavatam, que profundiza en la visión vaiṣṇava; y las obras que exponen específicamente la siddhānta gauḍīya."
+    },
+    {
+      "start": 1210,
+      "end": 1243,
+      "text": "Por lo tanto, a medida que avanzamos de Bhakti Śāstrī a Bhakti Vaibhava y a cursos superiores, penetramos cada vez más profundamente en nuestra tradición y en el legado de Śrīla Prabhupāda. Ahora bien, en cualquier camino espiritual hay dos conceptos de importancia central: sādhya y sādhana."
+    },
+    {
+      "start": 1243,
+      "end": 1282,
+      "text": "Sādhya significa la meta, aquello que se busca alcanzar. La meta enseñada finalmente por la literatura védica es Kṛṣṇa. En Bhagavad-gītā 15.15, Kṛṣṇa dice que Él es aquello que debe conocerse mediante todos los Vedas. Sādhana significa el medio para llegar a esa meta. Los textos védicos hablan de distintos caminos, como jñāna-yoga y karma-yoga; aquí se presenta bhakti como el más elevado."
+    },
+    {
+      "start": 1282,
+      "end": 1316,
+      "text": "Por ejemplo, si tengo que viajar de Mumbai a Nueva York, primero necesito saber adónde quiero llegar: Nueva York. Luego debo decidir cómo llegaré, si en avión o en barco. Del mismo modo, en la vida espiritual necesito conocer tanto sādhya, la meta, como sādhana, el camino para alcanzarla."
+    },
+    {
+      "start": 1316,
+      "end": 1344,
+      "text": "En las cuatro obras que Śrīla Prabhupāda nos ha dado, Śrī Īśopaniṣad y Bhagavad-gītā establecen la meta y el medio. El Īśopaniṣad establece que la Verdad Absoluta es una persona, aunque no menciona directamente el nombre Kṛṣṇa. El Bhagavad-gītā establece con claridad que esa Persona es Kṛṣṇa. Así, el primero establece el carácter personal de la meta, y el segundo identifica quién es esa Persona."
+    },
+    {
+      "start": 1344,
+      "end": 1377,
+      "text": "En cuanto al medio, el Īśopaniṣad señala hacia bhakti, mientras que el Bhagavad-gītā la establece. Una vez que sabemos que Kṛṣṇa es la meta y bhakti el medio, surge otra pregunta: ¿cómo practicamos bhakti realmente y cómo podemos conocer mejor a Kṛṣṇa? El néctar de la devoción y El néctar de la instrucción nos ayudan a responder."
+    },
+    {
+      "start": 1377,
+      "end": 1410,
+      "text": "El néctar de la devoción presenta, por ejemplo, las sesenta y cuatro cualidades de Kṛṣṇa, ayudándonos a conocer mejor la meta. También describe sesenta y cuatro aspectos o prácticas del servicio devocional, que nos enseñan cómo practicar bhakti. El néctar de la instrucción también explica cómo llevar a la práctica la devoción."
+    },
+    {
+      "start": 1410,
+      "end": 1457,
+      "text": "Así, los cuatro libros de Bhakti Śāstrī proporcionan el conocimiento fundamental necesario para nuestro progreso espiritual: conocemos la meta y el medio, aprendemos cómo recorrer el camino y descubrimos qué hace tan atractiva la meta. Otras obras, como el Bhagavad-gītā, el Caitanya-caritāmṛta, el Śrīmad-Bhāgavatam y El néctar de la devoción, son textos que seguiremos estudiando durante toda la vida para saborear plenamente la siddhānta gauḍīya."
+    },
+    {
+      "start": 1457,
+      "end": 1491,
+      "text": "Comencemos ahora con la introducción del Śrī Īśopaniṣad. Esta introducción no forma parte del texto original del Upaniṣad. Procede de una conferencia que Śrīla Prabhupāda dio en Londres, en la que habló sobre los Vedas en general. Los editores del Bhaktivedanta Book Trust utilizaron esa conferencia como introducción al libro."
+    },
+    {
+      "start": 1491,
+      "end": 1525,
+      "text": "Estudiaremos el Śrī Īśopaniṣad y El néctar de la instrucción dividiendo los significados en temas. No leeremos cada significado completo durante la clase; desarrollaremos sus temas principales. Por ejemplo, cuando la diapositiva dice «párrafos 1 a 5», señala que esos párrafos tratan principalmente de por qué necesitamos los Vedas debido a nuestros cuatro defectos."
+    },
+    {
+      "start": 1525,
+      "end": 1560,
+      "text": "Del mismo modo, los párrafos seis y siete se agrupan bajo la idea de que los Vedas ofrecen una sabiduría universal y axiomática. Cada sección puede contener también ideas secundarias, pero tiene un hilo principal. Iremos examinando esos temas conforme avancemos por los significados. Comencemos con el primero."
+    },
+    {
+      "start": 1560,
+      "end": 1600,
+      "text": "Como tenemos cuatro defectos, necesitamos los Vedas. Muchas personas piensan que no hace falta consultar las escrituras, porque fueron escritas por sabios hace mucho tiempo y ya no serían necesarias. Sin embargo, las escrituras son la palabra de Dios y, por eso, su relevancia es eterna."
+    },
+    {
+      "start": 1600,
+      "end": 1640,
+      "text": "Así como necesitamos la luz del sol tanto en la antigüedad como en la época moderna, también necesitamos la iluminación de las escrituras, sin importar el tiempo en que vivamos. Las escrituras ofrecen conocimiento eterno que necesitamos en todas las épocas."
+    },
+    {
+      "start": 1640,
+      "end": 1680,
+      "text": "Podemos comprender esa necesidad reconociendo las limitaciones de nuestras propias fuentes de conocimiento. Hay un mundo exterior que intentamos conocer mediante los sentidos. Pero existen cuatro limitaciones progresivas que dificultan cada vez más nuestra comprensión de la realidad."
+    },
+    {
+      "start": 1680,
+      "end": 1720,
+      "text": "Imaginemos cuatro puertas delante de nosotros. Si todas están abiertas, vemos lo que hay enfrente. Si la primera se cierra parcialmente, vemos menos. Si también se cierra la segunda, la tercera y la cuarta, cada vez queda menos realidad visible. Así actúan los cuatro defectos."
+    },
+    {
+      "start": 1720,
+      "end": 1760,
+      "text": "Estos cuatro defectos se mencionan en la literatura védica: bhrama, pramāda, vipralipsā y karaṇāpāṭava. En el orden en que intentamos adquirir conocimiento desde el exterior, el primero es karaṇāpāṭava: la imperfección o limitación de nuestros sentidos."
+    },
+    {
+      "start": 1760,
+      "end": 1800,
+      "text": "Nuestros sentidos no pueden percibirlo todo. Desde el punto de vista científico, nuestros ojos solo captan una pequeña parte del espectro electromagnético: la luz visible. Por tanto, incluso antes de interpretar algo, ya existe un límite en lo que podemos percibir."
+    },
+    {
+      "start": 1800,
+      "end": 1840,
+      "text": "El segundo problema es que cometemos errores. Por ejemplo, al contar billetes podemos tener cien y pensar que hay ciento uno. Aunque utilicemos los ojos y los dedos para contar, podemos equivocarnos. Este defecto se añade a la limitación natural de los sentidos."
+    },
+    {
+      "start": 1840,
+      "end": 1880,
+      "text": "También tenemos la tendencia a caer en ilusión: una percepción puede resultar alterada sin que nos demos cuenta. Si salimos de una habitación muy fría, el exterior puede parecernos más caliente de lo que es. Nuestra experiencia anterior influye en lo que sentimos."
+    },
+    {
+      "start": 1880,
+      "end": 1920,
+      "text": "Si acabamos de comer un dulce muy intenso, otro alimento ligeramente dulce puede parecernos insípido. El azúcar está allí, pero no percibimos su dulzura del mismo modo. La ilusión puede actuar de manera inconsciente, sin que advirtamos la distorsión."
+    },
+    {
+      "start": 1920,
+      "end": 1960,
+      "text": "El cuarto defecto es la tendencia a engañar. A veces queremos que la realidad se ajuste a nuestras opiniones previas; entonces seleccionamos, ocultamos o alteramos hechos para sostener aquello que deseamos creer. No se trata solamente de percibir mal, sino de distorsionar lo que sabemos."
+    },
+    {
+      "start": 1960,
+      "end": 2000,
+      "text": "Un comediante estadounidense bromeó: «Ya he tomado una decisión; no me confundas con los hechos». La broma señala una contradicción: ¿cómo podemos estar seguros de nuestra opinión si nos negamos a examinar los hechos? A menudo las personas ocultan esa actitud y deforman la información."
+    },
+    {
+      "start": 2000,
+      "end": 2040,
+      "text": "El expositor aplica después estos cuatro defectos a la manera en que algunas personas explican el origen del mundo. Señala que, al no percibir directamente a Dios con los sentidos, alguien podría concluir que Dios no existe. Presenta esta conclusión como un ejemplo de los límites de la percepción."
+    },
+    {
+      "start": 2040,
+      "end": 2080,
+      "text": "Continúa criticando ciertas explicaciones materialistas sobre el origen de los seres humanos. Según su argumento, las semejanzas externas entre humanos y monos pueden conducir a especulaciones y conclusiones equivocadas cuando se excluye de antemano la posibilidad de un creador."
+    },
+    {
+      "start": 2080,
+      "end": 2120,
+      "text": "El expositor considera que esas especulaciones pueden convertirse en ilusión cuando se aceptan relatos simplificados como si fueran explicaciones completas. También sostiene que la tendencia a engañar aparece cuando se ocultan pruebas que contradicen una convicción previa. Estas son afirmaciones de su exposición, no conclusiones científicas verificadas aquí."
+    },
+    {
+      "start": 2120,
+      "end": 2160,
+      "text": "Menciona a uno de los discípulos eruditos de Śrīla Prabhupāda y sus escritos críticos sobre la teoría de la evolución. Su propósito en esta parte es ilustrar cómo los cuatro defectos, según su planteamiento, pueden acumularse y restringir el conocimiento humano."
+    },
+    {
+      "start": 2160,
+      "end": 2200,
+      "text": "En resumen, de toda la realidad nuestros sentidos perciben solo una parte. Dentro de esa parte podemos cometer errores; además, podemos experimentar ilusiones y finalmente ceder a la tendencia a engañar. Por eso, afirma el expositor, el conocimiento humano por sí solo no puede ser perfecto."
+    },
+    {
+      "start": 2200,
+      "end": 2240,
+      "text": "Śrīla Prabhupāda ofrece el ejemplo de Gandhi, quien asistió a una reunión de oración a pesar de una advertencia y fue asesinado allí. El expositor reconoce que algunas personas pueden cuestionar si aquella decisión debe llamarse un error. Esto introduce una distinción importante."
+    },
+    {
+      "start": 2240,
+      "end": 2280,
+      "text": "Los principios pueden ser permanentes, mientras que los ejemplos dependen de su contexto. El principio aquí es que todos cometemos errores. Un estudiante que marca una respuesta incorrecta en un examen ofrece un ejemplo sencillo y claro; otros ejemplos históricos pueden ser discutibles."
+    },
+    {
+      "start": 2280,
+      "end": 2320,
+      "text": "Al estudiar los significados de Śrīla Prabhupāda, no debemos aferrarnos siempre a los ejemplos literales. En otro pasaje se habla del conflicto entre comunistas y capitalistas, una referencia histórica cuyo contexto ha cambiado. Lo importante es comprender el principio que el ejemplo busca ilustrar."
+    },
+    {
+      "start": 2320,
+      "end": 2360,
+      "text": "Como todos tenemos estos cuatro defectos, necesitamos otra fuente de conocimiento. Desde la perspectiva de la clase, esa fuente son los Vedas. A continuación, el expositor explica que la palabra «Veda» puede utilizarse con distintos alcances."
+    },
+    {
+      "start": 2360,
+      "end": 2400,
+      "text": "En su sentido más amplio, «veda» significa conocimiento y puede referirse a todo conocimiento. En un sentido habitual, distinguimos entre tradiciones védicas y no védicas según acepten o no la autoridad de los Vedas."
+    },
+    {
+      "start": 2400,
+      "end": 2440,
+      "text": "Algunos estudiosos utilizan «Veda» de forma mucho más restringida y se refieren solamente a los cuatro Vedas, sin incluir las smṛtis, los Purāṇas o los Itihāsas. Śrīla Prabhupāda suele emplear el término para designar la literatura védica en general; aquí lo utiliza en un sentido especialmente amplio."
+    },
+    {
+      "start": 2440,
+      "end": 2480,
+      "text": "La sabiduría védica se describe como universal y axiomática. Universal significa que se aplica en todas las épocas. Axiomática significa, en esta explicación, que se acepta como verdadera por su origen divino. Si no comprendemos algo, el expositor atribuye esa dificultad a la limitación de nuestro conocimiento."
+    },
+    {
+      "start": 2480,
+      "end": 2520,
+      "text": "Śrīla Prabhupāda explica después por qué considera superior el conocimiento védico a pratyakṣa y anumāna. Pratyakṣa significa percepción directa de los sentidos. Por ejemplo, podemos mirar el desierto y creer que vemos agua, cuando en realidad se trata de un espejismo."
+    },
+    {
+      "start": 2520,
+      "end": 2560,
+      "text": "Anumāna significa inferencia o razonamiento. El expositor compara estas vías, de manera general, con el empirismo y el racionalismo. El empirismo destaca la experiencia sensorial; el racionalismo concede un papel central a la razón y a la inferencia lógica."
+    },
+    {
+      "start": 2560,
+      "end": 2600,
+      "text": "Percepción e inferencia son útiles, pero ambas están sujetas a los cuatro defectos humanos. El argumento de la clase no es que debamos dejar de observar o razonar, sino que reconozcamos sus límites. La inteligencia humana es finita y puede equivocarse."
+    },
+    {
+      "start": 2600,
+      "end": 2640,
+      "text": "Desde el marco teológico del expositor, la inteligencia divina es infinita e infalible. Por eso sostiene que el conocimiento revelado posee una autoridad superior a la percepción y la inferencia humanas. Después pasa a una segunda razón para estudiar las escrituras: el conocimiento trascendental."
+    },
+    {
+      "start": 2640,
+      "end": 2680,
+      "text": "«Trascender» significa ir más allá. El expositor afirma que el mundo espiritual no puede conocerse con los sentidos materiales ordinarios. Por muy sofisticado que sea un microscopio, no podrá mostrar el alma, porque un microscopio observa materia y el alma no es material."
+    },
+    {
+      "start": 2680,
+      "end": 2720,
+      "text": "Para conocer la realidad espiritual se necesita una forma distinta de percepción, vinculada a la purificación y al despertar de las facultades espirituales del alma. Antes de alcanzar esa percepción, la persona recibe conocimiento mediante la revelación de las escrituras."
+    },
+    {
+      "start": 2720,
+      "end": 2760,
+      "text": "Podemos hablar de tres relaciones entre conocimiento védico y conocimiento obtenido por observación o inferencia: enseñanzas que coinciden con él; enseñanzas que parecen discrepar; y enseñanzas que lo trascienden por completo."
+    },
+    {
+      "start": 2760,
+      "end": 2800,
+      "text": "Como ejemplo de coincidencia, el expositor menciona procedimientos de matemáticas védicas que llegan a resultados comparables con los de otros métodos. Es un ejemplo de conocimiento material, porque trata de cuestiones que también pueden examinarse mediante razonamiento."
+    },
+    {
+      "start": 2800,
+      "end": 2840,
+      "text": "A veces el conocimiento material parece contradecir una afirmación de las escrituras. El expositor recuerda que las interpretaciones humanas pueden cambiar con el tiempo. Pero insiste en que el centro del estudio espiritual no debe ser la coincidencia ni la discrepancia con cuestiones materiales."
+    },
+    {
+      "start": 2840,
+      "end": 2880,
+      "text": "El interés principal debe ser el conocimiento que trasciende los sentidos materiales: la realidad espiritual, Kṛṣṇa y sus actividades. Según la exposición, ese conocimiento no puede demostrarse ni refutarse con un microscopio o un telescopio, porque queda fuera del alcance de esos instrumentos."
+    },
+    {
+      "start": 2880,
+      "end": 2920,
+      "text": "El expositor describe a Kṛṣṇa en su manifestación trascendental como un joven pastor de tez oscura, que toca la flauta, lleva una pluma de pavo real y se relaciona amorosamente con sus asociados. Presenta esta realidad como objeto de la revelación espiritual, no de la observación física."
+    },
+    {
+      "start": 2920,
+      "end": 2960,
+      "text": "Si alguna afirmación de las escrituras parece contradecir lo que conocemos, podemos plantear nuestras dudas a devotos experimentados. Sin embargo, la prioridad del estudio debe ser aquello que revela la meta última de la vida y la realidad espiritual."
+    },
+    {
+      "start": 2960,
+      "end": 3000,
+      "text": "Śrīla Prabhupāda afirma que Kṛṣṇa es la meta de los Vedas. El expositor recuerda Bhagavad-gītā 15.15, donde Kṛṣṇa declara que Él es quien debe ser conocido mediante todos los Vedas. Menciona también la idea de que quien comprende esa verdad alcanza conocimiento esencial."
+    },
+    {
+      "start": 3000,
+      "end": 3040,
+      "text": "Alguien podría objetar que el nombre Kṛṣṇa no aparece de manera destacada en todos los textos védicos. El expositor responde que sí existen referencias, entre ellas el Gopāla-tāpanī Upaniṣad, dedicado a Gopāla. Añade que cada obra debe entenderse según su propósito particular."
+    },
+    {
+      "start": 3040,
+      "end": 3080,
+      "text": "No debemos esperar que todos los libros desarrollen el mismo tema con la misma intensidad. Para comprender el lugar de una obra dentro del conjunto de la literatura védica, primero debemos reconocer cuál es su enfoque y qué pretende enseñar."
+    },
+    {
+      "start": 3080,
+      "end": 3120,
+      "text": "El expositor presenta una división general del conocimiento védico en tres secciones: karma-kāṇḍa, jñāna-kāṇḍa y upāsanā-kāṇḍa, cuya culminación, desde la perspectiva de esta clase, es bhakti."
+    },
+    {
+      "start": 3120,
+      "end": 3160,
+      "text": "Karma-kāṇḍa se ocupa principalmente de acciones religiosas que producen resultados materiales favorables. Las personas desean prosperidad, bienestar y disfrute; los Vedas les enseñan a buscar esos resultados mediante actividades reguladas y piadosas."
+    },
+    {
+      "start": 3160,
+      "end": 3200,
+      "text": "En ese contexto se habla de dharma, artha y kāma: deber religioso, prosperidad y disfrute. Por esa razón se glorifica a Indra, presentado como alguien que realizó sacrificios y obtuvo una posición elevada. Cada sección de las escrituras se dirige a determinadas aspiraciones."
+    },
+    {
+      "start": 3200,
+      "end": 3240,
+      "text": "El expositor utiliza una analogía: un manual para prisioneros puede no mencionar el nombre personal o el apodo familiar del primer ministro, porque ese dato no es necesario para el propósito del manual. Del mismo modo, no todos los textos védicos destacan los nombres íntimos de Dios."
+    },
+    {
+      "start": 3240,
+      "end": 3280,
+      "text": "En esta explicación, Viṣṇu aparece en los Vedas en una función divina de administración y como receptor de sacrificios. Kṛṣṇa es presentado como el aspecto íntimo y personal de la Divinidad. El expositor sostiene que los Vedas conducen progresivamente hacia su conocimiento."
+    },
+    {
+      "start": 3280,
+      "end": 3320,
+      "text": "Imaginemos una progresión desde las metas materiales hacia las espirituales. Karma-kāṇḍa orienta a quienes desean resultados materiales para que actúen de manera regulada y piadosa, en lugar de buscar esos resultados mediante acciones perjudiciales."
+    },
+    {
+      "start": 3320,
+      "end": 3360,
+      "text": "Después aparece jñāna-kāṇḍa, asociado aquí principalmente con los Upaniṣads. La persona empieza a preguntarse: «Aunque realice sacrificios y alcance los planetas celestiales, ¿qué habré ganado si todo eso es temporal?». Entonces busca comprender su naturaleza espiritual."
+    },
+    {
+      "start": 3360,
+      "end": 3400,
+      "text": "Los Upaniṣads enseñan a reconocer la temporalidad de los objetos, los placeres, los nombres y las formas materiales. Con frecuencia describen la verdad absoluta mediante negaciones, para ayudar al estudiante a desprenderse de sus identificaciones y deseos temporales."
+    },
+    {
+      "start": 3400,
+      "end": 3440,
+      "text": "Ese desapego prepara el terreno para comprender positivamente la realidad espiritual: no solamente como ausencia de materia, sino como una realidad de relaciones, belleza y amor. En la literatura de bhakti, Dios se revela como una persona que intercambia amor con sus devotos."
+    },
+    {
+      "start": 3440,
+      "end": 3480,
+      "text": "La tercera etapa, upāsanā, culmina en bhakti: devoción pura al Señor Supremo. El expositor presenta el Śrīmad-Bhāgavatam como la obra que desarrolla especialmente esa conclusión. Así explica que los Vedas, aun cuando traten inicialmente de metas materiales, conducen finalmente hacia Kṛṣṇa."
+    },
+    {
+      "start": 3480,
+      "end": 3520,
+      "text": "Primero, una persona puede acercarse a las escrituras buscando beneficios materiales. Luego reconoce que esos beneficios, incluso los celestiales, son temporales. Más tarde pregunta por la realidad espiritual y finalmente descubre que esta posee variedad, belleza y relaciones personales."
+    },
+    {
+      "start": 3520,
+      "end": 3560,
+      "text": "La meta final, según la clase, es entrar en una relación amorosa con el Señor Supremo, que es plenamente atractivo. De ese modo, la literatura védica guía progresivamente al estudiante desde la búsqueda de resultados temporales hacia la devoción."
+    },
+    {
+      "start": 3560,
+      "end": 3600,
+      "text": "El expositor concluye recordando la historia de la literatura védica y su esencia, el Śrīmad-Bhāgavatam. Las escrituras también ofrecen enseñanzas relacionadas con necesidades materiales, lo cual puede despertar en algunas personas confianza para seguir investigando."
+    },
+    {
+      "start": 3600,
+      "end": 3640,
+      "text": "Menciona la conversación entre Nārada y Vyāsa, en los capítulos cuatro a seis del primer canto del Śrīmad-Bhāgavatam. Nārada reprende a Vyāsa por no haber presentado de manera suficientemente directa la glorificación de la Suprema Personalidad de Dios en sus obras anteriores."
+    },
+    {
+      "start": 3640,
+      "end": 3680,
+      "text": "Aunque Vyāsa había compilado la literatura védica, no se sentía plenamente satisfecho. Según esta enseñanza, alcanzó satisfacción cuando compuso el Śrīmad-Bhāgavatam y glorificó de manera exclusiva al Señor Supremo. Por eso se considera una esencia de la sabiduría védica."
+    },
+    {
+      "start": 3680,
+      "end": 3690,
+      "text": "Para terminar, el expositor resume el recorrido: las escuelas āstika y nāstika; los seis sistemas filosóficos; Vedānta, Advaita, Dvaita y la comprensión gauḍīya; las fuentes śruti, smṛti y nyāya; y la importancia de los cuatro libros del programa Bhakti Śāstrī."
+    }
+  ]
+}
