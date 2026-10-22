@@ -70,6 +70,16 @@
       "scope": "academy",
       "category": "comparative-philosophy",
       "provenance": "Academy Reference"
+    },
+    {
+      "id": "hridayananda-youtube",
+      "title": "Hṛdayānanda Dāsa Gosvāmī — Canal oficial de YouTube",
+      "author": "Hṛdayānanda Dāsa Gosvāmī",
+      "url": "https://www.youtube.com/c/HDGoswami",
+      "purpose": "Conferencias y enseñanzas de filosofía gauḍīya-vaiṣṇava, incluyendo materiales disponibles en español.",
+      "scope": "academy",
+      "category": "gaudiya-vaishnava",
+      "provenance": "Academy Reference"
     }
   ]
 }
