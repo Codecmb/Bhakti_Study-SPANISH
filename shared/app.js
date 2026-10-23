@@ -43,6 +43,7 @@ function sidebar(a='home',rootOverride=null){
      ['certificates','Certificados',R+'certificates/index.html']
    ]],
    ['Recursos',[
+     ['versos-mas-mencionados','Versos Más Mencionados',R+'versos-mas-mencionados/index.html'],
      ['library','Libros y Biblioteca',R+'library/index.html'],
      ['references','Referencias y Estudio Adicional',R+'references/index.html']
    ]],

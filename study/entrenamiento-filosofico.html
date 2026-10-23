@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entrenamiento Filosófico — Bhakti Study</title>
+<link rel="stylesheet" href="../shared/styles.css">
+<style>
+body{margin:0;background:#f6f3e9;color:#292720;font-family:system-ui,sans-serif}
+main{max-width:800px;margin:35px auto;padding:20px}
+.panel{background:white;border:1px solid #ddd5c5;border-radius:14px;padding:25px}
+h1{font-size:1.8rem}
+button{padding:12px 20px;border:0;border-radius:9px;cursor:pointer;font-size:1rem}
+#microfono{background:#624d30;color:white}
+#limpiar{background:#e9e5dc;color:#292720}
+textarea{box-sizing:border-box;width:100%;min-height:200px;padding:15px;font-size:1rem;line-height:1.6;border:1px solid #bdb6a8;border-radius:9px}
+#estado{margin:15px 0;color:#625b50}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+</style>
+</head>
+<body>
+<main>
+<a href="../index.html">← Volver al inicio</a>
+<div class="panel">
+<h1>Entrenamiento Filosófico</h1>
+<p>Explica con tus propias palabras lo que has comprendido de la enseñanza.</p>
+
+<h2>Mi comprensión</h2>
+<p>Presiona el micrófono y habla en español. También puedes escribir tu respuesta.</p>
+
+<div class="controls">
+<button id="microfono" type="button">🎙️ Comenzar a hablar</button>
+<button id="limpiar" type="button">Limpiar respuesta</button>
+</div>
+
+<p id="estado" role="status" aria-live="polite">Listo para comenzar.</p>
+
+<label for="respuesta">Tu explicación:</label>
+<textarea id="respuesta" placeholder="Explica aquí tu comprensión filosófica..."></textarea>
+
+<p><small>Esta prueba no guarda grabaciones. El reconocimiento de voz del navegador puede utilizar servicios externos.</small></p>
+</div>
+</main>
+
+<script>
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const boton = document.getElementById('microfono');
+const limpiar = document.getElementById('limpiar');
+const respuesta = document.getElementById('respuesta');
+const estado = document.getElementById('estado');
+
+let recognition = null;
+let escuchando = false;
+let textoBase = '';
+
+if (!SpeechRecognition) {
+  boton.disabled = true;
+  estado.textContent = 'Este navegador no admite este sistema de reconocimiento de voz. Puedes escribir tu respuesta.';
+} else {
+  recognition = new SpeechRecognition();
+  recognition.lang = 'es-ES';
+  recognition.continuous = true;
+  recognition.interimResults = true;
+
+  recognition.onstart = () => {
+    escuchando = true;
+    boton.textContent = '⏹ Detener micrófono';
+    estado.textContent = 'Escuchando...';
+  };
+
+  recognition.onresult = event => {
+    let provisional = '';
+    let definitivo = '';
+
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      const fragmento = event.results[i][0].transcript;
+      if (event.results[i].isFinal) definitivo += fragmento + ' ';
+      else provisional += fragmento;
+    }
+
+    textoBase += definitivo;
+    respuesta.value = textoBase + provisional;
+  };
+
+  recognition.onerror = event => {
+    estado.textContent = 'Error del micrófono: ' + event.error;
+  };
+
+  recognition.onend = () => {
+    escuchando = false;
+    boton.textContent = '🎙️ Comenzar a hablar';
+    textoBase = respuesta.value.trim() + ' ';
+    if (estado.textContent === 'Escuchando...') {
+      estado.textContent = 'Micrófono detenido.';
+    }
+  };
+
+  boton.addEventListener('click', () => {
+    if (escuchando) {
+      recognition.stop();
+    } else {
+      textoBase = respuesta.value.trim();
+      if (textoBase) textoBase += ' ';
+      try {
+        recognition.start();
+      } catch (error) {
+        estado.textContent = 'No se pudo iniciar el micrófono: ' + error.message;
+      }
+    }
+  });
+}
+
+limpiar.addEventListener('click', () => {
+  if (recognition && escuchando) recognition.stop();
+  respuesta.value = '';
+  textoBase = '';
+  estado.textContent = 'Respuesta borrada.';
+});
+</script>
+</body>
+</html>
