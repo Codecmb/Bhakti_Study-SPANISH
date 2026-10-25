@@ -234,6 +234,26 @@ function updateClasses(){
     button.style.cssText='display:block;width:100%;padding:12px;margin:8px 0;text-align:left;cursor:pointer';
     button.addEventListener('click',()=>showMedia(lesson));
     list.appendChild(button);
+
+    if(lesson.type==='video'){
+      const id=youtubeId(lesson.url);
+      const match=lesson.title.match(/\((\d{3})\)/);
+      if(match && /^[A-Za-z0-9_-]{11}$/.test(id)){
+        const number=match[1];
+        const filename='bhakti-shastri-'+number+'-traduccion-es.json';
+        fetch('../data/biblioteca-audiovisual/'+filename,{cache:'no-store'})
+          .then(response=>{
+            if(!response.ok)throw Error('Translation unavailable');
+            return response.json();
+          })
+          .then(data=>{
+            if(Array.isArray(data.cues) && data.cues.length>0 && button.isConnected){
+              button.style.color='#16803c';
+            }
+          })
+          .catch(()=>{});
+      }
+    }
   });
 }
 
