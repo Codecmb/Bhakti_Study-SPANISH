@@ -317,14 +317,19 @@ let cues=[],player=null,active=false,lastCue=-1,ready=false;
 const message='Traducción no disponible para esta clase.';
 window.BS001resetTranslation=()=>{active=false;lastCue=-1;if(target)target.textContent=message;};
 window.BS001setVideo=(id)=>{
- active=(id===videoId||id==='8bGka4-tZMY');selectedVideoId=active?id:null;cues=[];lastCue=-1;
+ active=(id===videoId||id==='8bGka4-tZMY'||id==='OUHyStcFuAM');selectedVideoId=active?id:null;cues=[];lastCue=-1;
  if(target)target.textContent=active?'Cargando traducción del video 001…':message;
  if(active){load();ensurePlayer();}
 };
 async function load(){
  try{
   const loadingVideoId=selectedVideoId;
-  const filename=loadingVideoId==='8bGka4-tZMY'?'bhakti-shastri-002-traduccion-es.json':'bhakti-shastri-001-traduccion-es.json';
+  const filename =
+    loadingVideoId === 'OUHyStcFuAM'
+      ? 'bhakti-shastri-003-traduccion-es.json'
+      : loadingVideoId === '8bGka4-tZMY'
+      ? 'bhakti-shastri-002-traduccion-es.json'
+      : 'bhakti-shastri-001-traduccion-es.json';
   const response=await fetch('../data/biblioteca-audiovisual/'+filename,{cache:'no-store'});
   if(!response.ok)throw Error('HTTP '+response.status);
   const data=await response.json();if(loadingVideoId!==selectedVideoId)return;cues=Array.isArray(data.cues)?data.cues:[];
