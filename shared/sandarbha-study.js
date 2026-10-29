@@ -261,7 +261,7 @@ ${verified?`<section class="card"><div class="eyebrow">Fuente Primaria de Estudi
     const refBox=document.getElementById('references');
     if(refBox && window.ReferenceRegistry){
       try{
-        const references=await window.ReferenceRegistry.sandarbha(id);
+        const references=await window.ReferenceRegistry.sandarbha(`${prefixes[work]}.${selected}`);
 
         if(references.length){
           refBox.innerHTML=`<div class="card"><div class="eyebrow">Estudio Adicional</div><h2>Referencias y Recursos</h2>${references.map(r=>`<p>${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer"><strong>${esc(r.title)}</strong></a>`:`<strong>${esc(r.title)}</strong>`}${r.author?`<br><span class="small">Autor: ${esc(r.author)}</span>`:''}${r.source?`<br><span class="small">Fuente: ${esc(r.source)}</span>`:''}${r.purpose?`<br><span class="small">${esc(r.purpose)}</span>`:''}</p>`).join('')}</div>`;
