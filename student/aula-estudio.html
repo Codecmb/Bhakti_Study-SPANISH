@@ -337,7 +337,7 @@ let cues=[],player=null,active=false,lastCue=-1,ready=false;
 const message='Traducción no disponible para esta clase.';
 window.BS001resetTranslation=()=>{active=false;lastCue=-1;if(target)target.textContent=message;};
 window.BS001setVideo=(id)=>{
- active=(id===videoId||id==='8bGka4-tZMY'||id==='OUHyStcFuAM');selectedVideoId=active?id:null;cues=[];lastCue=-1;
+ active=(id===videoId||id==='8bGka4-tZMY'||id==='OUHyStcFuAM'||id==='CaDJA68zwT4');selectedVideoId=active?id:null;cues=[];lastCue=-1;
  if(target)target.textContent=active?'Cargando traducción del video 001…':message;
  if(active){load();ensurePlayer();}
 };
@@ -345,7 +345,9 @@ async function load(){
  try{
   const loadingVideoId=selectedVideoId;
   const filename =
-    loadingVideoId === 'OUHyStcFuAM'
+    loadingVideoId === 'CaDJA68zwT4'
+      ? 'bhakti-shastri-004-traduccion-es.json'
+      : loadingVideoId === 'OUHyStcFuAM'
       ? 'bhakti-shastri-003-traduccion-es.json'
       : loadingVideoId === '8bGka4-tZMY'
       ? 'bhakti-shastri-002-traduccion-es.json'
